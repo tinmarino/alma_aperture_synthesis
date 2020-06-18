@@ -3,6 +3,8 @@
 % Xparse: Optional argument
 \usepackage{xparse}
 \makeatletter
+\define@key{xarg}{x}{\def\xx{#1}}
+\define@key{xarg}{y}{\def\xy{#1}}
 \define@key{xarg}{shift}{\def\xshift{#1}}
 \define@key{xarg}{scale}{\def\xscale{#1}}
 \define@key{xarg}{rotate}{\def\xrotate{#1}}
@@ -11,9 +13,9 @@
 %\DeclareExpandableDocumentCommand{\fishingfloat}{O{}}{%
 \NewDocumentCommand{\fishingfloat}{O{}}{%
     % Fishing float
-    \setkeys{xarg}{shift={(0,0)}, scale={1}, rotate={0},#1}%
+    \setkeys{xarg}{x={0}, y={0}, scale={1}, rotate={0},#1}%
 
-    \begin{scope}[shift=\xshift, scale=\xscale, rotate=\xrotate]
+    \begin{scope}[shift={(\xx, \xy)}, scale=\xscale, rotate=\xrotate]
     %\show{shift = \xshift}
     % Lines
     % Triangle
