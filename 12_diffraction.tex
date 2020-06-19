@@ -1,5 +1,14 @@
 \documentclass[crop,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}
 \usetikzlibrary{decorations.pathreplacing}
+
+% Color to white
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+\AtBeginDocument{\globalcolor{white}}
+
 \begin{document}
 \begin{tikzpicture}[slit/.pic={%
 \draw[thick,fill=gray] (-0.15,1.5) |- (0.15,0.2) -- (0.15,1.5)

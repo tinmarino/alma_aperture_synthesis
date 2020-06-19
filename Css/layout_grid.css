@@ -1,0 +1,51 @@
+/*
+GRID betwenn 1 and 3
+*/
+
+@import 'include_layout.css';
+
+.level2 {
+  --repeat: auto-fit;
+}
+@media (min-width: calc(400 * 2px)) {
+  .level2 {
+    --repeat: 2;
+  }
+}
+@media (min-width: calc(400 * 3px)) {
+  .level2 {
+    --repeat: 3;
+  }
+}
+
+.level2 {
+  display: grid;
+
+  grid-gap: 0;
+  grid-auto-rows auto;
+  grid-auto-flow: row dense;
+
+  grid-template-columns: repeat(var(--repeat), min(400px));
+
+  justify-items: start;
+  align-items: start;
+}
+
+/* Expand right h2 */
+h2 {
+  grid-column: 1/-1;
+  width: 100%;
+  margin: 20px 0px 0px 0px
+}
+h2:after {
+    content: ' ';
+    display: block;
+    border: 2px solid;
+    border-radius: 4px;
+		max-width: 83%;
+}
+
+/* Reduce header margins: just pad */
+h3, h4, h5, h6 {
+  margin: 0px;
+}

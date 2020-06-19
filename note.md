@@ -1,3 +1,8 @@
+# TODO
+
+* include css
+* make figure svg (makefile) ?
+* Figure  reference placeholder in md
 
 # intro
  (de diamétre égal à la séparation maximale entre deux petits).
@@ -38,16 +43,8 @@ The symbol was adopted from the Hindu by the Jews from the spiritual symbol Anah
 A five-pointed star (☆)
 https://en.wikipedia.org/wiki/Polygram_(geometry)#Regular_compound_polygons
 
-# Links
 
-Feynman 
-https://en.wikipedia.org/wiki/Quantum_electrodynamics
-http://www.johnboccio.com/courses/QESMS_2017/QED.pdf
-
-Airy
-https://en.wikipedia.org/wiki/Optical_resolution
-
-Primary beam
+# Star representation pentagram
 
 Phylosophy Pentagram
 Symbolize Venus, teh risig star, the guide
@@ -68,3 +65,19 @@ know this."
  Ithasbeen foundscratchedonthewallsofNeolithiccaves,andinBabyloniandrawings,whereit marksthepattern theplanetVenus makesonitstravels-asecretsymboloftheGoddessIshta
  5 visible planets then Venus
  In normal vision, diffraction through eyelashes – and due to the edges of the eyelids if one is squinting – produce many diffractions spikes.
+
+# Links
+
+Feynman 
+https://en.wikipedia.org/wiki/Quantum_electrodynamics
+http://www.johnboccio.com/courses/QESMS_2017/QED.pdf
+
+Airy
+https://en.wikipedia.org/wiki/Optical_resolution
+https://fr.wikipedia.org/wiki/Diffraction_de_Fraunhofer
+https://fr.wikipedia.org/wiki/Fonction_de_transfert_optique#Syst%C3%A8me_optique_limit%C3%A9_par_la_diffraction
+
+Primary beam
+
+https://fr.wikipedia.org/wiki/Fonction_de_transfert_optique#Syst%C3%A8me_optique_limit%C3%A9_par_la_diffraction
+

@@ -7,10 +7,13 @@
     decorations.pathmorphing, decorations.pathreplacing
 }
 
-% Settings
-\tikzset{
-    fontscale/.style = {font=\relsize{#1}}
+% Color to white
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
 }
+\makeatother
+\AtBeginDocument{\globalcolor{white}}
 
 
 % Xparse: Optional argument
@@ -94,13 +97,9 @@
     % Sights
     \draw[dotted,->] (10,0) -- (20, 20);
     \draw[dotted,->] (-10,0) -- (0, 20);
-    \draw[decoration={brace,raise=4pt},decorate]
-        (-10,0) -- (-6,8)
-        node [black,midway, anchor=west, xshift=-15, yshift=5] {$y$};
 
     % Horizontal
-    \draw[blue] (-12,0) -- (14, 0);
-
+    \draw[blue] (-12,0) -- (16, 0);
 
     % Float
     \fishingfloat[x=10, y=0, scale=1, rotate=0]

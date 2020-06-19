@@ -1,12 +1,118 @@
 ---
-title: aperture_synthesis
+title: Synthèse d'ouverture
 category: 
-wiki_css: Css/color_dark_solarized.css, Css/layout_toc.css
-header-includes: <script type="text/javascript" src="Css/js_masonry_desandro.js"></script>
-wiki_pandoc: --toc
+header-includes: |
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <style>
+
+    body {
+      background-color: #232629;
+      color: #eee;
+      margin: 15px; max-width=900px;  float: left;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      
+      /* Font */
+      color: #eee; font-family: 'Droid Sans', sans-serif; font-size: 17px; font-weight: 400; line-height: 30px;
+    }
+
+    /* H1 */
+    h1 { 
+      --color: #b81; color: #b81; font-family: 'Droid serif', serif; font-size: 40px; font-weight: 400; font-style: italic; line-height: 44px; margin: 50px -10px 20px; 
+      max-width: 900px;
+    }
+    h1:after {
+      content:' ';
+      display:block;
+      border:2px solid #b81;
+      border-radius:4px;
+      box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+      max-width: 900px;
+    }
+    h1.title {
+      text-align: center;
+      font-size: 50px;
+      line-height: 60px;
+      color: #eee;
+      max-width: 900px;
+      margin: 0;
+    }
+    h1.title:before {
+      content:' ';
+      display:block;
+      border:4px solid #48D;
+      border-radius:4px;
+      margin: 0px 0px 10px 0px;
+      box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+    h1.title:after {
+      content:' ';
+      display:block;
+      border:4px solid #D41;
+      border-radius:4px;
+      margin: 10px 0px 30px 0px;
+      box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+
+
+    /* H2 */
+    h2 { --color:#460 ; margin: 0 -10px 20px; color:#b81; 
+      text-decoration: underline;
+      max-width: 800px;
+    }
+
+    /* Normal */
+    p {
+      margin: 0 0 14px; 
+      max-width: 1000px; /* or a suitable width*/
+    }
+
+    /* Link */
+    a { color: var(--h0); text-decoration: none; border-bottom: 1px solid #4c3a07; }
+    a:hover { color: #fff; background: var(--h0); }
+
+    /* List */
+    li {
+      color: #eee;
+      max-width: 1000px; /* or a suitable width*/
+    }
+
+    /* Blockquote */
+    blockquote {
+      background: #232629;
+      color: #eee;
+      border-left: 10px solid #232629;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      quotes: "\201C""\201D""\2018""\2019";
+      max-width: 800px;
+    }
+    blockquote:before {
+      color: #eee;
+      content: "\201C";
+      /* Bigger lefter */
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+    blockquote:after {
+      content:' ';
+      display:block;
+      border:1px solid #aaa;
+      border-radius:1px;
+      margin: 10px 0px 0px 0px;
+      box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+    blockquote p {
+    display: inline;
+    }
+
+    </style>
 ---
 
-La [synthèse d'ouverture] est une procédé qui permet, avec plusieurs petits telescopes, de simulter un grand téléscope. Ce grand téléscope a pour diamétre la distance maximale entre deux petits.
+La [synthèse d'ouverture](https://fr.wikipedia.org/wiki/Synth%C3%A8se_d%27ouverture) est une procédé qui permet, avec plusieurs petits telescopes, de simulter un grand téléscope. Ce grand téléscope a pour diamétre la distance maximale entre deux petits.
 
 Nous verrons (1) pourquoi les grand telescopes ont une meilleure résolution angulaire et que simulter un grand telescope signifie obtenir cette même résolution.
 
@@ -21,46 +127,93 @@ Puis la partie (3) explique comment plusieurs informations angulaire permettent 
 On mesure la qualité d'une image astrophysique avec deux paramètres: sa [résolution angulaire](https://en.wikipedia.org/wiki/Dynamic_range#Photography) et sa [profondeur](https://fr.wikipedia.org/wiki/Liste_des_champs_profonds).
 
 
-1. __La profondeur__ est le flux de la source la moins lumineuse que l'on peu detecter. Une grande profondeur permet de détécter des objects peu brillant,par exemple, des objects lointains.
-2. __La résolution angulaire__ est le plus petit angle qu'un telescope peut résoudre. C'est à dire que deux objects séparés d'un angle inférieur, donc plus proches que la résolution aparaisseront comme un seul. La résolution typique (téléscope optique de 1m de diamètre) est de 1 seconde de degrés c'est à dire 1 degré divisé par 3600. Une grande résolution angulaire permet d'observer des objects de petite taille angulaire par exemple, des objects lointain.
+1. __La profondeur__ est le flux de la source la moins lumineuse que l'on peut détecter. Une grande profondeur permet de détecter des abjects peu brillant,par exemple, des abjects lointains.
+2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre. C'est à dire que deux abjects séparés d'un angle inférieur, donc plus proches que la résolution apparaitront comme un seul. La résolution typique (télescope optique de 1m de diamètre) est de 1 seconde de degrés c'est à dire 1 degré divisé par 3600. Une grande résolution angulaire permet d'observer des abjects de petite taille angulaire par exemple, des abjects lointain.
 
+Jusqu'à preuve du contraire, un télescope quelconque peut générer des images d'une résolution et profondeur arbitrairement grande à condition de:
 
-Jusqu'à preuve du contraire un telescope quelquonque peut générer des images d'une résolution et profondeur arbitrairement grande à condition de:
+1. Exposer suffisamment longtemps l'objet pour obtenir plus de lumière dans sa direction que le bruit du ciel et de l'appareil et
+2. Utiliser un détecteur (Couple Charged Device) avec suffisamment de pixels par cm.<sup>[1](#detecteur_pixel)</sup>
 
-1. Exposer suffisament longtemps l'objet pour obtenir plus de lumière dans sa direction que le bruit du ciel et de l'appareil et
-2. Utiliser un détecteur (Couple Charged Device) avec suffisament de pixels par cm.<sup>[1](#detecteur_pixel)</sup>
+Je vais maintenant vous prouvez le contraire.
 
-Je vais maintenant vous prouvez le contaire.
-
-Pour ce qui est de la __profondeur__, un grand téléscope est nécéssaire.
-En effet, bien qu'en sommant un grand nombre d'image du même endroit, nous pouvons obtenir une profondeur infinie, avant de pouvoir les sommer, il faut pouvoir les aligner convenablement et pour ceci, il faut ... des images sufisament profondes et résoluent.
+Pour ce qui est de la __profondeur__, un grand télescope est nécessaire.
+En effet, bien qu'en sommant un grand nombre d'image du même endroit, nous pouvons obtenir une profondeur infinie, avant de pouvoir les sommer, il faut pouvoir les aligner convenablement et pour ceci, il faut ... des images suffisamment profondes et résolvent.
 En effet, si on ne voit rien sur les images comment sait on vers où elle pointent.
-Il nous faut donc un téléscope suffisament grand qui puisse absorber la lumière pour résoudre au moins deux étoiles de champs à chaque exposition.
-Vous pourez penser : "si la mécanique du telsecope est sufisament bonne, les images sont aligné par le pointage". Malheureusement, il n'est pas possible d'obtenir un position précise sans [viseur d'étoile](https://fr.wikipedia.org/wiki/Viseur_d%27%C3%A9toiles) qui lui même nécessite de voir un étoile proche du champ d'observation.
+Il nous faut donc un télescope suffisamment grand qui puisse absorber la lumière pour résoudre au moins deux étoiles de champs à chaque exposition.
+Vous pourrez penser : "si la mécanique du télescope est suffisamment bonne, les images sont aligné par le pointage". Malheureusement, il n'est pas possible d'obtenir un position précise sans [viseur d'étoile](https://fr.wikipedia.org/wiki/Viseur_d%27%C3%A9toiles) qui lui même nécessite de voir un étoile proche du champ d'observation.
 
-Pour ce qui est de la __résolution angulaire__, la taille du télescope est limitante également.
+Pour ce qui est de la __résolution angulaire__, la taille du télescope est limitant également.
 Mais cette fois, ce n'est plus pour une simple question de signal sur bruit, une simple collection d'un maximum de lumière.
-L'effet nefaste est la [diffraction](https://en.wikipedia.org/wiki/Diffraction#Mechanism) que subie toute onde qui passe par une ouverture.
+L'effet néfaste est la [diffraction](https://en.wikipedia.org/wiki/Diffraction#Mechanism) que subie toute onde qui passe par une ouverture.
 Dans le cas d'une ouverture circulaire comme celle du miroir principale, l'image d'un point est une [tache d'airy](https://fr.wikipedia.org/wiki/Tache_d%27Airy). Ce n'est plus un point, même si le télescope est parfait.
-Cette tache est d'autant plus petite que l'ouverture du téléscope est grande.
+Cette tache est d'autant plus petite que l'ouverture du télescope est grande.
+
+<!-- Figure diffraction -->
+<figure style="float: right; width:300px;" >
+  <img src='Figure/12_diffraction.svg' alt='missing' />
+  <figcaption>
+    Figure de difraction d'une onde traversant une porte.<br/>
+    Le front d'ondle linéaire devient circulaire avec pour rayon de courbure $\frac{\lambda}{D}$ où $\lambda$ est la longueur d'onde de la vague et D la taille de la porte.
+  </figcaption>
+</figure>
 
 
-Ces deux raisons expliquent l'interêt pour les grand telescope.
-Cependant il est économiquement difficile de contruire de très grandes ouvertures de qualités, refleteurs ou lentilles.
+Ces deux raisons expliquent l'intérêt pour les grand télescope.
+Cependant il est économiquement difficile de construire de très grandes ouvertures de qualités, réflecteurs ou lentilles.
 C'est pourquoi la [synthèse d'ouverture](https://fr.wikipedia.org/wiki/Synth%C3%A8se_d%27ouverture)
-est utilisée pour simuler un telscope de grande ouverture avec plusieurs petits.
+est utilisée pour simuler un télescope de grande ouverture avec plusieurs petits.
 
-La synthèse d'ouverture est un technologie très liée à la radio-astronomy car son emploi est aujourd'hui techniquement proche du miracle dans l'optique visible.
-En effet, comme vous allez le voir, les detecteurs radio permettent de mesurer la lumière comme une onde, ce qui permet une reconstruction à-posteriori.
-Par le suite les détecteurs (antennes) seront modlisée par des flotteurs dans l'eau et leur position est mesurable. En optique visible, cette position n'est pas mesurable, on peut juste savoir si le floteur bouge. En terme techniques, on dit que les antennes radio (ou milimétriques) mesures simultanéments la phase et l'amplitude du signal electromagnétique.
-
-
-## Délai d'un choc
+La synthèse d'ouverture est un technologie très liée à la radioastronome car son emploi est aujourd'hui techniquement proche du miracle dans l'optique visible.
+En effet, comme vous allez le voir, les détecteurs radio permettent de mesurer la lumière comme une onde, ce qui permet une reconstruction à posteriori.
+Par le suite les détecteurs (antennes) seront modélisée par des flotteurs dans l'eau et leur position est mesurable. En optique visible, cette position n'est pas mesurable, on peut juste savoir si le flotteur bouge. En terme techniques, on dit que les antennes radio (ou millimétriques) mesures simultanément la phase et l'amplitude du signal électromagnétique.
 
 
-## Délai d'une onde
+## 2 Délai d'un choc
 
-##
+
+Supposons qu'une pierre soit lancé dans un lac calme.
+Une vague va se propager en cercles concentriques autour de cette pierre.
+Nous disposons de deux flotteurs pour mesurer la position de la source de la vague, c'est à dire l'endroit où la pierre est tombée.
+Comme en astrophysique, nous voulons mesurer sa position angulaire et non sa distance.
+
+Supposons, pour commencer, qu'il n'y a qu'une vague généré par cette pierre.
+Alors, si la pierre a été lancé à droite, comme sur la figure, le flotteur de droite va recevoir la vague avant celui de gauche. Réciproquement, si nous mesurons que le flotteur de droite est déplacé avant celui de gauche, c'est que la vague a été lancé à droite.
+
+<!-- Figure diffraction -->
+<figure style="text-align:center; display: inline-block; margin:10px; width:900px;" >
+  <img style="width:600px; height:300px" src='Figure/21_float_n_stone.svg' alt='missing' />
+  <figcaption style="text-align:left; margin:300px; width:600px">
+    Vagues crées par un caillou jeter dans l'eau et reçue par deux flotteurs au premier plan. La vague va soulever le flotteur de droite puis le flotteur de gauche.<br/>
+    Le caillou a un position angulaire de $\theta$, et est à une distance infinie, c'est pourquoi le front d'onde arrive en forme de ligne sur le flotteurs comme une vague de houle de haute mer et non un ricochet de lavoir.
+  </figcaption>
+</figure>
+
+En employant une formule magique ("trigonometrum s'il te plum") dans le triangle ABC (TODO figure), on obtient:
+
+$$cos(\theta) = \frac{a}{c}$$
+
+Où:
+
+* $c$ est une distance connu : la distance entre les deux flotteurs, alias [ligne de base](https://en.wikipedia.org/wiki/Astronomical_interferometer)
+* $a$ est la distance supplémentaire que la vague a due parcourir.
+
+
+On connait la vitesse de la vague $v$ et le temps de délai $\Delta t$ que la vague a pris pour atteindre le deuxième flotteur
+
+Ainsi a est donné par la formule $vitesse = \frac{distance}{temps} \Leftrightarrow distance = vistesse \times temps$. Ce qui nous donne l'équation:
+
+$$\theta = arccos\left( \frac{Distance\_de\_la\_base}{Vitesse\_de\_la\_vage \times Delai\_temporel\_mesuré} \right)$$
+
+Par example, si la vitesse de la vague est de $1\frac{m}{s}$, la distance entre les deux flotteurs est de 2m et le temps mesuré est de 2 seconde,  C'est que $\theta = 0°$ soit la vague vient de l'extrème droite (à ne pas citer hors contexte).
+Si le temps mesuré est de 1 seconde, la vague viens d'un angle $\theta = arccos\left(\frac{2}{1 \times 1 }\right) = arccos(1/2) = 60°$ (en effet $cos(60°): = 1/2$). C'est la situation su schema (TODO link schema).
+
+
+## 3 Délai d'une onde
+
+## 4 Délai de plusieurs objects
+
+## 5 Reconstruction d'image
 
 ## Conclusion
 
