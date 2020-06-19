@@ -1,2 +1,5 @@
 *.pdf
+*.svg
+*.html
 *.synctex(busy)
+
