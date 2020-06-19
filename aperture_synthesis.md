@@ -9,7 +9,7 @@ header-includes: |
     body {
       background-color: #232629;
       color: #eee;
-      margin: 15px; max-width=900px;  float: left;
+      margin: 15px; max-width=900px;
       word-wrap: break-word;
       overflow-wrap: break-word;
       
