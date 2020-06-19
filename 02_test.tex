@@ -1,14 +1,54 @@
 \documentclass{standalone}
 \usepackage{tikz}
 
+\iffalse
+TODO : flottuer aligné au milieu
+\fi
+
 \input{01_include.tex}
 
 \begin{document}
 \begin{tikzpicture}
-%
 
-\fishingfloat
-\fishingfloat[x=1, y=2, scale=3, rotate=90]
+% Origin, Float, sight
+\coordinate (X) at (10, 0);
+\coordinate (X2) at (11, 0);
+\coordinate (Y) at (-10, 0);
+\coordinate (Z) at (-6, 8);
+\coordinate (S) at (20, 20);
+
+% Stone and wave
+\stone[x=20, y=20, scale=10]
+\draw (20, 16) arc (-90:-180:4);
+\draw (20, 15) arc (-90:-180:5);
+\draw (20, 14) arc (-90:-180:6);
+\draw (20, 10) arc (-90:-180:10);
+%\draw (20, 5) arc (-90:-180:15);
+% Not centered
+\draw (14, 8) arc (-116.565:-150:30);
+\draw (14, 8) arc (-116.565:-105:30);
+\draw (12, 4) arc (-116.565:-145:50);
+\draw (12, 4) arc (-116.565:-107:50);
+% Last line
+\draw (15, -2.5) -- (-10, 10);
+
+% Sights
+\draw[dotted,->] (10,0) -- (20, 20);
+\draw[dotted,->] (-10,0) -- (0, 20);
+\draw[decoration={brace,raise=40pt},decorate]
+    (-10,0) -- (-6,8) node [black,midway] {$y$};
+
+% Horizontal
+\draw[blue] (-12,0) -- (14, 0);
+
+
+% Float
+\fishingfloat[x=10, y=0, scale=1, rotate=0]
+\fishingfloat[x=-10, y=0, scale=1, rotate=0]
+
+% Angle
+\draw pic [draw, ->, "$\theta$", scale=4, draw, thick, angle eccentricity=1.2] {angle = X--Y--Z};
+    \draw pic [draw, ->, "$\theta$", scale=4, draw, thick, angle eccentricity=1.2] {angle = X2--X--S};
 
 \end{tikzpicture}
 \end{document}
