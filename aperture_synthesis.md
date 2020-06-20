@@ -181,9 +181,14 @@ Supposons, pour commencer, qu'il n'y a qu'une vague généré par cette pierre.
 Alors, si la pierre a été lancé à droite, comme sur la figure, le flotteur de droite va recevoir la vague avant celui de gauche. Réciproquement, si nous mesurons que le flotteur de droite est déplacé avant celui de gauche, c'est que la vague a été lancé à droite.
 
 <!-- Figure diffraction -->
-<figure style="text-align:center; display: inline-block; margin:10px; width:900px;" >
-  <img style="width:600px; height:300px" src='Figure/21_float_n_stone.svg' alt='missing' />
-  <figcaption style="text-align:left; margin:300px; width:600px">
+<figure style="margin:10px" >
+  <img src='Figure/21_float_n_stone.svg' alt='missing'
+    style="
+      width:70%; max-width:700px; min-width:500px; height:300px;
+      display: block;
+      margin: 0 auto;"
+  />
+  <figcaption style="text-align:left; width:600px">
     Vagues crées par un caillou jeter dans l'eau et reçue par deux flotteurs au premier plan. La vague va soulever le flotteur de droite puis le flotteur de gauche.<br/>
     Le caillou a un position angulaire de $\theta$, et est à une distance infinie, c'est pourquoi le front d'onde arrive en forme de ligne sur le flotteurs comme une vague de houle de haute mer et non un ricochet de lavoir.
   </figcaption>

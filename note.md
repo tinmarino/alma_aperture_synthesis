@@ -8,7 +8,13 @@
  (de diamétre égal à la séparation maximale entre deux petits).
  
 Un téléscope est un appareil optique qui sert à observer les objects lointains.
+
+# CSS
+
+float:center; text-align:center; display: inline-block; 
+
 # Old
+
 
 avec deux paramètres: la [résolution angulaire](https://en.wikipedia.org/wiki/Dynamic_range#Photography) et sa superficie et sa [gamme dynamique](https://fr.wikipedia.org/wiki/Gamme_dynamique).
 * __La superficie__ est la surface non obstrué qui pointe vers l'objectif. Plus elle est grande, plus le flux lumineux obtenue sera elevé. C'est intéréssant pour les objects peu lumineux.
