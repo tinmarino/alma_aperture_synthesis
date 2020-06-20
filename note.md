@@ -2,7 +2,7 @@
 
 * Parler de la résolution totale fente d'young et principe de raylight
 * Trois bouchons, mettre la ligne hozontale comme une sinuzoide
-* Trois bouch, déplacer dans linclude
+* Trois bouch, déplacer dansinclude
 * Mettre des couleurs tranquillement, souligner
 * Figure reference placeholder in md (pendant relecture)
   * Donner un titre en gras
@@ -15,6 +15,7 @@ Un téléscope est un appareil optique qui sert à observer les objects lointain
 # CSS
 
 float:center; text-align:center; display: inline-block; 
+    <link rel="stylesheet" type="text/css" href="Css/alma_solarized.css">
 
 # Old
 

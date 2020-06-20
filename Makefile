@@ -2,6 +2,8 @@
 
 tikz = 21_float_n_stone 12_diffraction 22_float_triangle 23_float_three
 
+all: tex md
+
 $(tikz):
 	echo $@
 	latexmk $@.tex 
@@ -15,5 +17,3 @@ tex: $(tikz)
 
 md:
 	pandoc aperture_synthesis.md -t html --mathjax  -s --standalone  -o aperture_synthesis.html
-
-all: tex md
