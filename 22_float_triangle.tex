@@ -2,12 +2,23 @@
 \usepackage{tikz}
 \input{01_include.tex}
 
+%\AtBeginDocument{\globalcolor{black}}
+
 \begin{document}
 \begin{tikzpicture}[scale=0.1]
-    \wave
     \floattriangle
-    \draw[decoration={brace,raise=4pt},decorate]
-        (-10,0) -- (-6,8)
-        node [midway, anchor=west, xshift=-15, yshift=5] {$y$};
+    %\draw[decoration={brace,raise=6pt},decorate]
+    %    (-10,0) -- (-6,8)
+    %    node [midway, anchor=west, xshift=-15, yshift=5] {$y$};
+    \draw (X) -- (Y) node[midway, below]{$b$};
+    \node[draw, circle, fill, scale=0.1, label={[label distance=0]-120:A} ] at (X) {};
+    \draw (Y) -- (Z) node[midway, left]{$a$};
+    \node[draw, circle, fill, scale=0.1, label={[label distance=0]-120:C} ] at (Y) {};
+    \draw (Z) -- (X) node[midway, above]{$c$};
+    \node[draw, circle, fill, scale=0.1, label={[label distance=0]6:B} ] at (Z) {};
+
+    % Sights
+    \draw[dotted,<-] (10,0) -- (16, 12);
+    \draw[dotted,<-] (-10,0) -- (-4, 12);
 \end{tikzpicture}
 \end{document}

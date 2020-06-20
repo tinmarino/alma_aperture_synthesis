@@ -2,7 +2,9 @@
 
 * include css
 * make figure svg (makefile) ?
-* Figure  reference placeholder in md
+* Mettre des couleurs tranquillement, souligner
+* Figure reference placeholder in md (pendant relecture)
+  * Donner un titre en gras
 
 # intro
  (de diamétre égal à la séparation maximale entre deux petits).

@@ -60,6 +60,7 @@ header-includes: |
     h2 { --color:#460 ; margin: 0 -10px 20px; color:#b81; 
       text-decoration: underline;
       max-width: 800px;
+      margin: 60px 0 20px 0;
     }
 
     /* Normal */
@@ -153,7 +154,7 @@ Cette tache est d'autant plus petite que l'ouverture du télescope est grande.
 <figure style="float: right; width:300px;" >
   <img src='Figure/12_diffraction.svg' alt='missing' />
   <figcaption>
-    Figure de difraction d'une onde traversant une porte.<br/>
+    Diffraction d'une onde traversant une porte.<br/>
     Le front d'ondle linéaire devient circulaire avec pour rayon de courbure $\frac{\lambda}{D}$ où $\lambda$ est la longueur d'onde de la vague et D la taille de la porte.
   </figcaption>
 </figure>
@@ -182,39 +183,52 @@ Alors, si la pierre a été lancé à droite, comme sur la figure, le flotteur d
 
 <!-- Figure diffraction -->
 <figure style="margin:10px" >
-  <img src='Figure/21_float_n_stone.svg' alt='missing'
-    style="
-      width:70%; max-width:700px; min-width:500px; height:300px;
-      display: block;
-      margin: 0 auto;"
-  />
-  <figcaption style="text-align:left; width:600px">
+  <img src='Figure/21_float_n_stone.svg' alt='missing' style="
+    width:70%; max-width:700px; min-width:300px; height:300px;
+    display: block;
+    margin: 0 auto;
+  "/>
+  <figcaption style="
+    text-align:left;
+    width:70%; max-width:700px; min-width:300px;
+    display: block;
+    margin: 0 auto;
+  ">
     Vagues crées par un caillou jeter dans l'eau et reçue par deux flotteurs au premier plan. La vague va soulever le flotteur de droite puis le flotteur de gauche.<br/>
-    Le caillou a un position angulaire de $\theta$, et est à une distance infinie, c'est pourquoi le front d'onde arrive en forme de ligne sur le flotteurs comme une vague de houle de haute mer et non un ricochet de lavoir.
+    Le caillou a un position angulaire de $\theta$, et se situe à une distance infinie, c'est pourquoi le front d'onde arrive en forme de ligne sur le flotteurs à l'image d'une majestueuse vague de houle en haute mer et non d'un misérable ricochet de lavoir.<br/>
+    Note: Infinie signifie simplement : "beaucoup plus grand que la distance entre les deux flotteurs".
   </figcaption>
 </figure>
 
 En employant une formule magique ("trigonometrum s'il te plum") dans le triangle ABC (TODO figure), on obtient:
 
-$$cos(\theta) = \frac{a}{c}$$
+<!-- Figure diffraction -->
+<figure style="float: left; min-width:40%; width:300px" >
+  <img style="width:100%" src='Figure/22_float_triangle.svg' alt='missing' />
+  <figcaption>
+    $$cos(\theta) = \frac{a}{b}$$
+  </figcaption>
+</figure>
 
 Où:
 
-* $c$ est une distance connu : la distance entre les deux flotteurs, alias [ligne de base](https://en.wikipedia.org/wiki/Astronomical_interferometer)
-* $a$ est la distance supplémentaire que la vague a due parcourir.
+* $b$ est une distance connu : la distance entre les deux flotteurs (b pour [ligne de Base](https://en.wikipedia.org/wiki/Astronomical_interferometer)).
+* $a$ est la distance supplémentaire que la vague a due parcourir (a pour Á remplacer).
 
 
-On connait la vitesse de la vague $v$ et le temps de délai $\Delta t$ que la vague a pris pour atteindre le deuxième flotteur
+Remplaçons le ! On connait la vitesse de la vague $v$ et le temps de délai $\Delta t$ que la vague a pris pour atteindre le deuxième flotteur
 
 Ainsi a est donné par la formule $vitesse = \frac{distance}{temps} \Leftrightarrow distance = vistesse \times temps$. Ce qui nous donne l'équation:
 
-$$\theta = arccos\left( \frac{Distance\_de\_la\_base}{Vitesse\_de\_la\_vage \times Delai\_temporel\_mesuré} \right)$$
+$$\theta = arccos\left(\frac{b}{v\times\Delta t}\right) = arccos\left( \frac{Distance\_de\_la\_base}{Vitesse\_de\_la\_vage \times Delai\_temporel\_mesuré} \right)$$
 
-Par example, si la vitesse de la vague est de $1\frac{m}{s}$, la distance entre les deux flotteurs est de 2m et le temps mesuré est de 2 seconde,  C'est que $\theta = 0°$ soit la vague vient de l'extrème droite (à ne pas citer hors contexte).
+Par exemple, si la vitesse de la vague est de $1\frac{m}{s}$, la distance entre les deux flotteurs est de 2m et le temps mesuré est de 2 seconde,  C'est que $\theta = 0°$ soit la vague vient de l'extrème droite (à ne pas citer hors contexte).
 Si le temps mesuré est de 1 seconde, la vague viens d'un angle $\theta = arccos\left(\frac{2}{1 \times 1 }\right) = arccos(1/2) = 60°$ (en effet $cos(60°): = 1/2$). C'est la situation su schema (TODO link schema).
 
 
 ## 3 Délai d'une onde
+
+La section précédente nous a donné la 
 
 ## 4 Délai de plusieurs objects
 

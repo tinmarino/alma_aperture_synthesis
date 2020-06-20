@@ -4,7 +4,8 @@
 \usetikzlibrary{
     calc, patterns, angles, quotes,
     shapes.geometric,
-    decorations.pathmorphing, decorations.pathreplacing
+    decorations.pathmorphing, decorations.pathreplacing,
+    arrows.meta,
 }
 
 % Color to white
@@ -83,7 +84,7 @@
 
 
 \NewDocumentCommand{\floattriangle}{O{}}{%
-    % Origin, Float, sight
+    % Origin, Float, sight, source
     \coordinate (X) at (10, 0);
     \coordinate (X2) at (11, 0);
     \coordinate (Y) at (-10, 0);
@@ -93,10 +94,6 @@
 
     % Last line
     \draw (15, -2.5) -- (-10, 10);
-
-    % Sights
-    \draw[dotted,->] (10,0) -- (20, 20);
-    \draw[dotted,->] (-10,0) -- (0, 20);
 
     % Horizontal
     \draw[blue] (-12,0) -- (16, 0);
