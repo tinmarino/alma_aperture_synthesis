@@ -2,11 +2,7 @@
 \usepackage{tikz}
 \input{01_include.tex}
 
-\iffalse
-
-\fi
-
-\AtBeginDocument{\globalcolor{black}}
+%\AtBeginDocument{\globalcolor{black}}
 
 \begin{document}
 \begin{tikzpicture}[scale=0.2]
@@ -20,17 +16,13 @@
     \fishingfloat[x=-10, y=0, scale=1, rotate=0]
 
     \node[draw, circle, fill, scale=0.1, label={[label distance=0]-120:X} ] at (X) {};
-    \draw[decoration={brace,mirror},decorate]
+    \draw[decoration={brace,mirror, amplitude=6pt},decorate]
         (X) -- (Z)
-        node [midway, anchor=middle, above] {\tiny0.5m};
+        node [midway, anchor=middle, above=5pt] {\tiny0.5m};
     \node[draw, circle, fill, scale=0.1, label={[label distance=0]-120:Y} ] at (Y) {};
-    \draw[decoration={brace,mirror},decorate]
+    \draw[decoration={brace,mirror, amplitude=6pt},decorate]
         (Z) -- (Y)
-        node [midway, anchor=middle, above] {\tiny1.5m};
+        node [midway, anchor=middle, above=5pt] {\tiny1.5m};
     \node[draw, circle, fill, scale=0.1, label={[label distance=0]-120:Z} ] at (Z) {};
 \end{tikzpicture}
-
-
-
-
 \end{document}

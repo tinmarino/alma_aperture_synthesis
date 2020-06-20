@@ -27,6 +27,16 @@
 \define@key{xarg}{rotate}{\def\xrotate{#1}}
 \makeatother
 
+\NewDocumentCommand{\tincoord}{O{}}{%
+    % Origin, Float, sight, source
+    \coordinate (X) at (10, 0);
+    \coordinate (Y) at (-10, 0);
+    \coordinate (Z) at (5, 0);
+    \coordinate (X2) at (11, 0);
+    \coordinate (cross) at (-6, 8);
+    \coordinate (S) at (20, 20);
+}
+
 
 %\DeclareExpandableDocumentCommand{\fishingfloat}{O{}}{%
 \NewDocumentCommand{\fishingfloat}{O{}}{%
@@ -84,13 +94,7 @@
 
 
 \NewDocumentCommand{\floattriangle}{O{}}{%
-    % Origin, Float, sight, source
-    \coordinate (X) at (10, 0);
-    \coordinate (X2) at (11, 0);
-    \coordinate (Y) at (-10, 0);
-    \coordinate (Z) at (-6, 8);
-    \coordinate (S) at (20, 20);
-
+    \tincoord
 
     % Last line
     \draw (15, -2.5) -- (-10, 10);

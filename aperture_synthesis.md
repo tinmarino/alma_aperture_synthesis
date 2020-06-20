@@ -9,7 +9,7 @@ header-includes: |
     body {
       background-color: #232629;
       color: #eee;
-      margin: 15px; max-width=900px;
+      margin: 15px; max-width:900px;
       word-wrap: break-word;
       overflow-wrap: break-word;
       
@@ -113,42 +113,48 @@ header-includes: |
     </style>
 ---
 
-La [synthèse d'ouverture](https://fr.wikipedia.org/wiki/Synth%C3%A8se_d%27ouverture) est une procédé qui permet, avec plusieurs petits telescopes, de simulter un grand téléscope. Ce grand téléscope a pour diamétre la distance maximale entre deux petits.
-
-Nous verrons (1) pourquoi les grand telescopes ont une meilleure résolution angulaire et que simulter un grand telescope signifie obtenir cette même résolution.
-
-En (2), nous verrons comment joindre les informations de deux téléscopes pour obtenir des informations précise sur l'angle d'une source. Spoiler: il faut faire une somme
-
-Puis la partie (3) explique comment plusieurs informations angulaire permettent de constituer une image via une [transormée de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier).
 
 
+La [synthèse d'ouverture](https://fr.wikipedia.org/wiki/Synth%C3%A8se_d%27ouverture) est un procédé qui permet de simuler l'ouverture d'un grand télescope avec plusieurs petits. Ce grand télescope virtuel a pour diamètre la distance maximale entre deux petits.
 
-## 1. Limitations du téléscope
+Nous verrons (1) pourquoi les grands télescopes ont une meilleure résolution angulaire et que simuler un grand télescope signifie obtenir cette même résolution.
+
+En (2) 
+
+En (3) nous verrons comment joindre les informations de deux télescopes pour obtenir des informations précise sur l'angle d'une source. Spoiler: il faut faire une somme
+
+Puis la partie (4) explique comment plusieurs informations angulaire permettent de constituer une image via une [transormée de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier).
+
+
+
+# 1. Limitations du télescope
 
 On mesure la qualité d'une image astrophysique avec deux paramètres: sa [résolution angulaire](https://en.wikipedia.org/wiki/Dynamic_range#Photography) et sa [profondeur](https://fr.wikipedia.org/wiki/Liste_des_champs_profonds).
 
 
 1. __La profondeur__ est le flux de la source la moins lumineuse que l'on peut détecter. Une grande profondeur permet de détecter des abjects peu brillant,par exemple, des abjects lointains.
-2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre. C'est à dire que deux abjects séparés d'un angle inférieur, donc plus proches que la résolution apparaitront comme un seul. La résolution typique (télescope optique de 1m de diamètre) est de 1 seconde de degrés c'est à dire 1 degré divisé par 3600. Une grande résolution angulaire permet d'observer des abjects de petite taille angulaire par exemple, des abjects lointain.
+2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre. C'est à dire que deux abjects séparés d'un angle inférieur, donc plus proches que la résolution apparaitront comme un seul.<sup>[1](#resolution_telescope)</sup>
 
 Jusqu'à preuve du contraire, un télescope quelconque peut générer des images d'une résolution et profondeur arbitrairement grande à condition de:
 
-1. Exposer suffisamment longtemps l'objet pour obtenir plus de lumière dans sa direction que le bruit du ciel et de l'appareil et
-2. Utiliser un détecteur (Couple Charged Device) avec suffisamment de pixels par cm.<sup>[1](#detecteur_pixel)</sup>
+1. Exposer suffisamment longtemps l'objet pour obtenir plus de lumière dans sa direction que le bruit du ciel et de l'appareil.
+2. Utiliser un détecteur (Couple Charged Device) avec suffisamment de pixels par cm.<sup>[2](#detecteur_pixel)</sup>
 
 Je vais maintenant vous prouvez le contraire.
 
 Pour ce qui est de la __profondeur__, un grand télescope est nécessaire.
-En effet, bien qu'en sommant un grand nombre d'image du même endroit, nous pouvons obtenir une profondeur infinie, avant de pouvoir les sommer, il faut pouvoir les aligner convenablement et pour ceci, il faut ... des images suffisamment profondes et résolvent.
+En effet, bien qu'en sommant un grand nombre d'image du même endroit, nous pouvons obtenir une profondeur infinie, avant de pouvoir les sommer, il faut pouvoir les aligner convenablement et pour ceci, il faut ... des images suffisamment profondes et résoluent.
 En effet, si on ne voit rien sur les images comment sait on vers où elle pointent.
 Il nous faut donc un télescope suffisamment grand qui puisse absorber la lumière pour résoudre au moins deux étoiles de champs à chaque exposition.
 Vous pourrez penser : "si la mécanique du télescope est suffisamment bonne, les images sont aligné par le pointage". Malheureusement, il n'est pas possible d'obtenir un position précise sans [viseur d'étoile](https://fr.wikipedia.org/wiki/Viseur_d%27%C3%A9toiles) qui lui même nécessite de voir un étoile proche du champ d'observation.
 
 Pour ce qui est de la __résolution angulaire__, la taille du télescope est limitant également.
-Mais cette fois, ce n'est plus pour une simple question de signal sur bruit, une simple collection d'un maximum de lumière.
+Mais cette fois, ce n'est plus pour une simple question de collecter un maximum de flux lumineux afin d'obtenir un bon signal sur bruit suffisant pour la détection.
 L'effet néfaste est la [diffraction](https://en.wikipedia.org/wiki/Diffraction#Mechanism) que subie toute onde qui passe par une ouverture.
 Dans le cas d'une ouverture circulaire comme celle du miroir principale, l'image d'un point est une [tache d'airy](https://fr.wikipedia.org/wiki/Tache_d%27Airy). Ce n'est plus un point, même si le télescope est parfait.
 Cette tache est d'autant plus petite que l'ouverture du télescope est grande.
+
+TODO ici un dessin de tache d'airy
 
 <!-- Figure diffraction -->
 <figure style="float: right; width:300px;" >
@@ -170,7 +176,7 @@ En effet, comme vous allez le voir, les détecteurs radio permettent de mesurer 
 Par le suite les détecteurs (antennes) seront modélisée par des flotteurs dans l'eau et leur position est mesurable. En optique visible, cette position n'est pas mesurable, on peut juste savoir si le flotteur bouge. En terme techniques, on dit que les antennes radio (ou millimétriques) mesures simultanément la phase et l'amplitude du signal électromagnétique.
 
 
-## 2 Délai d'un choc
+# 2 Délai d'un choc
 
 
 Supposons qu'une pierre soit lancé dans un lac calme.
@@ -183,14 +189,14 @@ Alors, si la pierre a été lancé à droite, comme sur la figure, le flotteur d
 
 <!-- Figure diffraction -->
 <figure style="margin:10px" >
-  <img src='Figure/21_float_n_stone.svg' alt='missing' style="
-    width:70%; max-width:700px; min-width:300px; height:300px;
+  <img src='Figure/21_float_n_stone.svg#svgView(preserveAspectRatio(none))' alt='missing' style="
+    width:70%; min-width:300px; height:300px;
     display: block;
     margin: 0 auto;
   "/>
   <figcaption style="
     text-align:left;
-    width:70%; max-width:700px; min-width:300px;
+    width:70%; min-width:300px;
     display: block;
     margin: 0 auto;
   ">
@@ -226,18 +232,103 @@ Par exemple, si la vitesse de la vague est de $1\frac{m}{s}$, la distance entre 
 Si le temps mesuré est de 1 seconde, la vague viens d'un angle $\theta = arccos\left(\frac{2}{1 \times 1 }\right) = arccos(1/2) = 60°$ (en effet $cos(60°): = 1/2$). C'est la situation su schema (TODO link schema).
 
 
-## 3 Délai d'une onde
+# 3 Délai d'une onde
 
-La section précédente nous a donné la 
+La section précédente nous a donné $\theta$, la position (angulaire) de l'objectif.
+C'est donc mission acomplie pour la section 2 !
 
-## 4 Délai de plusieurs objects
+Le problème est que les objectifs astrophysques, ne s'allument pas d'un seul coup mais emmèttent de manière continue.
+Il n'y a donc pas de front d'onde de référence.
+L'altitude de chaque floteur variera au grès de la vague et suivra une sinoïde plus ou moins synchronisée avec l'autre flotteur.
+Ce degrès de synchronysme est appellé [correlation](https://kids.alma.cl/como-estan-conectadas-las-antenas-de-alma/)
 
-## 5 Reconstruction d'image
+On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\nu$ est la fréquence de l'onde et donc son inverse, $\frac{1}{\nu}, est le temp qui sépare deux vagues.
 
-## Conclusion
+* Par exemple, supposons que la longueur d'onde est de 1m.
+* Rapellons les valeurs précédentes (vitesse = 1m/s, ligne de base = 2m). Le temps qui sépare deux maximum est donc de 1s.
+* Imaginons, cas 1, une vague venant de $\theta=0 (l'extrème droite) alors elle devra parcourir 2m de plus pour arriver au bouchon de gauche. 2m étant multiple de 1m, les deux bouchons seront "en phase" (i.e. à la même altitude à tout moment).
+* Imaginons maintenant, cas 2, une vague venant de $\theta = 60°$ (centre-droite). Alors elle devra parcourir $a = cos(\theta) \times b$ = cos(60°) * 2 ) = \frac{1}{2} * 2 = 1m$. 1m étant aussi multiple de 1m, les deux bouchons seront en phase.
+* En mesurant l'altitude des deux bouchons, nous ne pourrons pas discriminer le cas 1 du cas 2.
+* [Keck](https://fr.wikipedia.org/wiki/Observatoire_W._M._Keck) c'est ti qu'on fait pour savoir si le caillou a été jeté à 0° (cas 1) ou a 60° (cas 2).
+
+* Rajoutons un bouchon. Par exemple, à 0.5m à gauche du bouchon de référence (celui de droite) et donc a 1.5m à droite de celui de gauche.
+
+<figure style="margin:10px" >
+  <img src='Figure/23_float_three.svg' alt='missing' style="
+    width:90%; max-width:700px; min-width:300px; height:200px;
+    display: block;
+    margin: 0 auto;
+  "/>
+  <figcaption style="
+    text-align:center;
+    width:90%; max-width:700px; min-width:300px;
+    display: block;
+    margin: 0 auto;
+  ">
+  Trois bouchons valent mieux que deux.
+  </figcaption>
+</figure>
+
+* Alors si $\theta = 0$ (cas 1), le bouchon Z recevra l'onde 0.5m plus loin. Se bouchon sera en opposition de phase avec X : quand X sera au sommet de la vague, il sera en bas. En sommant les altitudes de X et de Z, en tout temps, on obtient zéro. Cette somme est une [interférence](https://fr.wikipedia.org/wiki/Interf%C3%A9rence) artificielle, ici destructive.
+* Mais si $\theta = 60°$, le bouchon Z recevra le front d'onde 0.5 * cos(60°) = 0.25m plus loin. Il sera déphasé de $\frac{pi}{2}$ et quand X sera en haut de la vague, Z sera au milieu de sa descente.
+* Au final, ajouter une ligne de base nous a permis de restreindre le champs des possibilités sur la positions du callou, d'un facteur 2. Ce qui est le maximum qu'une information de plus peut nous apporter.
+* Par contre ajouté un bouchon, dans ce cas nous a ajouté 2 ligne de base : celle de 0.5m __et__ celle de 1.5m. Ce qui nous donnde 2 informations de corrélations supplémentaires. Par example si la section 2 hésitait entre 100 chois possibles la ligne de 0.5m en élimine la moitié : il en reste alors 50. De la même manière la deuxième ligne en elimine aussi une mooitié, il en reste 25. Nous supposons ici que chaque ligne est indépendante, ce qui est le cas si leurs tailles sont différentes.
+
+Chaque ligne permet de discriminer un rang d'angle différent. Suposez que l'on puisse faire tourner la ligne des flotteurs, alors $\theta$ changerai et chaque ligne nous aporterai des informations nouvelles. Le plus simple pour efectuer cette rotation avec un réseau d'antennes et une source extraterestre est de faire tourner la planète. J'ai donc personellement pris la responsabilité de maintenir la rotation de la terre et voyez vous, elle continue de tourner.
+
+
+
+# 4 Délai de plusieurs objects avec plusieurs longueur d'onde.
+
+Non là sérieux, ça devient compliqué : il y a plus de paramètres à déterminer (positions, longueurs d'ondes) que de paramètres mesurables. Sans information à priori, c'est donc mathématiquement impossible.
+
+La solution la plus simple dans ce cas, le cas réel, est de limiter physiquement:
+
+1. Le champ de vision avec des avec des digues qui bloquent les vagues ne venant pas de la direction d'observation. En effet, elle contamineraient la mesure.
+2. Les fréquences mesurées avec des filtres. Simplement en limitant la vitesse d'oscillation des bouchons, les vagues plus rapides ou plus lentes seront ignorées.
+
+TODO chose par ailleur effectué sur les téléscopes entier, il 
+Malgrès les efforts de la section 4 pour repousser les signaux parasites et limiter le champs d'étude, il reste un manque d'information 
+
+
+# 5 Reconstruction d'image
+
+De cette manière, avec plusieurs ligne de base, il est également possible de detecter simulanément des vagues provenant de différents endroit.
+La compréhension des détails de ce processus implique une vision performante des sommes de sinuzoides que procure la [transformation de fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier) ou les [ondelettes](https://fr.wikipedia.org/wiki/Ondelette) et fera peut être l'object d'un chapitre 2 dans le cas improbable d'une demande d'un des 2,3 lecteurs.
+
+
+# 6 Des vagues aux ondes radios
+
+Le concept mathématique utilisé par un telescope à ouverture synthétique (alias réseau d'antenne) et le détecteur utilisant des flotteurs est identique.
+
+Pour enrichir le vocabuliare du lecteur voici l'analogie:
+
+
+| Presente explication | [ALMA](https://fr.wikipedia.org/wiki/Grand_r%C3%A9seau_d%27antennes_millim%C3%A9trique/submillim%C3%A9trique_de_l%27Atacama) |
+| ---                  | --- |
+| Vague                | Onde Electromagnétique |
+| Callou               | Astre |
+| Bouchon              | Antenne |
+| Position             | Accélération d'éléctron |
+|                      |   |
+
+J'ai l'espoir d'avoir démontré au lecteur que, comme moi même, il ignore beaucoup sur la nature des vagues de surface eau-air. Pourtant, grosso modo, il sait de quoi il s'agit.
+
+De même il est intéréssant de comprendre de quoi s'agit une onde éléctromagnétique.
+
+Quelle est la différence entre le callou et le bouchon ? (Faire un pause ... réponse:) L'un émet des vagues en se dépançant verticalement dans l'eau et l'autre se déplace verticalement sur l'eau lorsqu'il reçoit des vagues. De plus, si j'agitait artificiellement le bouchon, il émetrai des vagues. Donc la différence n'est pas dans leur nature mais dans leur comportement.
+
+L'accélération d'une charge éléctrique, tipiquement un éléctron, engendre l'émission d'un [photon](https://fr.wikipedia.org/wiki/Photon) et réciproquement la reception d'un photon engendre l'accélération d'un electron.
+En agitant artificielement un éléctron dans une antenne, par exemple avec un aimant, on peut trasmettre un signal à une antenne voisine. Le porteur de ce signal est le photon : il est, plus généralement [porteur de la force](https://en.wikipedia.org/wiki/Force_carrier) [électromagnétique](https://fr.wikipedia.org/wiki/%C3%89lectromagn%C3%A9tisme).
+
+
+
+# Conclusion
 
 
 
 # Notes
 
-<a name="detecteur_pixel">1</a>: Le nombre de pixel par centimètre peut être arbitrairement elevé avec des bancs optiques à l'intérieur du détcteur. Par exemple les nouveaux smartphones déclarent des détecteurs de 9Mpixels (3000x3000) et de 2mm tandis qu'un detecteur de telescope est de 1Mpixel (1000x1000) et mesure 3cm.
+<a name="resolution_telescope">1</a>: La résolution typique (télescope optique de 1m de diamètre) est de 1 seconde de degrés c'est à dire 1 degré divisé par 3600. Une grande résolution angulaire permet d'observer des objects de petite taille angulaire par exemple, des objects lointain.
+
+<a name="detecteur_pixel">2</a>: Le nombre de pixel par centimètre peut être arbitrairement elevé avec des bancs optiques à l'intérieur du détcteur. Par exemple les nouveaux smartphones déclarent des détecteurs de 9Mpixels (3000x3000) et de 2mm tandis qu'un detecteur de telescope est de 1Mpixel (1000x1000) et mesure 3cm.

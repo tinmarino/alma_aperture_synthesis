@@ -1,7 +1,8 @@
 # TODO
 
-* include css
-* make figure svg (makefile) ?
+* Parler de la résolution totale fente d'young et principe de raylight
+* Trois bouchons, mettre la ligne hozontale comme une sinuzoide
+* Trois bouch, déplacer dans linclude
 * Mettre des couleurs tranquillement, souligner
 * Figure reference placeholder in md (pendant relecture)
   * Donner un titre en gras
@@ -51,6 +52,17 @@ The symbol was adopted from the Hindu by the Jews from the spiritual symbol Anah
 A five-pointed star (☆)
 https://en.wikipedia.org/wiki/Polygram_(geometry)#Regular_compound_polygons
 
+# More
+
+* Loi thremodynamique, comment accélérer un electron,
+* 10 liens sympas
+  * Cosmocuentos
+  * les 10 cosmondements
+  * Richard feynman QED for newbies
+  * Fentes de young et tache d'Airy
+  * CCD
+  * Vagues air-mer
+  * Plus sur fourier
 
 # Star representation pentagram
 
@@ -76,6 +88,12 @@ know this."
 
 # Links
 
+Image sampling
+https://www.eso.org/sci/software/esomidas/doc/user/98NOV/volb/node12.html
+https://svi.nl/IdealSampling
+Calteh, perfect: http://web.ipac.caltech.edu/staff/fmasci/home/astro_refs/InverseImageProblem.pdf
+https://cds.cern.ch/record/392895/files/9907100.pdf
+
 Feynman 
 https://en.wikipedia.org/wiki/Quantum_electrodynamics
 http://www.johnboccio.com/courses/QESMS_2017/QED.pdf
@@ -89,3 +107,5 @@ Primary beam
 
 https://fr.wikipedia.org/wiki/Fonction_de_transfert_optique#Syst%C3%A8me_optique_limit%C3%A9_par_la_diffraction
 
+Correlator
+https://astronomy.swin.edu.au/cosmos/C/Correlator

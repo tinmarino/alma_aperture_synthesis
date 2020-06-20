@@ -12,10 +12,10 @@
     %    node [midway, anchor=west, xshift=-15, yshift=5] {$y$};
     \draw (X) -- (Y) node[midway, below]{$b$};
     \node[draw, circle, fill, scale=0.1, label={[label distance=0]-120:A} ] at (X) {};
-    \draw (Y) -- (Z) node[midway, left]{$a$};
+    \draw (Y) -- (cross) node[midway, left]{$a$};
     \node[draw, circle, fill, scale=0.1, label={[label distance=0]-120:C} ] at (Y) {};
-    \draw (Z) -- (X) node[midway, above]{$c$};
-    \node[draw, circle, fill, scale=0.1, label={[label distance=0]6:B} ] at (Z) {};
+    \draw (cross) -- (X) node[midway, above]{$c$};
+    \node[draw, circle, fill, scale=0.1, label={[label distance=0]6:B} ] at (cross) {};
 
     % Sights
     \draw[dotted,<-] (10,0) -- (16, 12);
