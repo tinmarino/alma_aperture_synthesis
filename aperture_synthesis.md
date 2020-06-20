@@ -22,7 +22,7 @@ Puis la partie (4) explique comment plusieurs informations angulaire permettent 
 
 # 1. Limitations du télescope
 
-On mesure la qualité d'une image astrophysique avec deux paramètres: sa [résolution angulaire](https://en.wikipedia.org/wiki/Dynamic_range#Photography) et sa [profondeur](https://fr.wikipedia.org/wiki/Liste_des_champs_profonds).
+On mesure la qualité d'une image astrophysique avec deux paramètres : sa [résolution angulaire](https://en.wikipedia.org/wiki/Dynamic_range#Photography) et sa [profondeur](https://fr.wikipedia.org/wiki/Liste_des_champs_profonds).
 
 
 1. __La profondeur__ est le flux de la source la moins lumineuse que l'on peut détecter. Une grande profondeur permet de détecter des abjects peu brillant,par exemple, des abjects lointains.
@@ -127,21 +127,24 @@ Si le temps mesuré est de 1 seconde, la vague viens d'un angle $\theta = arccos
 
 # 3 Délai d'une onde
 
-La section précédente nous a donné $\theta$, la position (angulaire) de l'objectif.
+La section précédente nous a donné $\theta$ : la position (angulaire) de l'objectif.
 C'est donc mission acomplie pour la section 2 !
 
 Le problème est que les objectifs astrophysques, ne s'allument pas d'un seul coup mais emmèttent de manière continue.
-Il n'y a donc pas de front d'onde de référence.
+Il n'y a donc pas de front d'onde (ou vague) de référence.
 L'altitude de chaque floteur variera au grès de la vague et suivra une sinoïde plus ou moins synchronisée avec l'autre flotteur.
 Ce degrès de synchronysme est appellé [correlation](https://kids.alma.cl/como-estan-conectadas-las-antenas-de-alma/)
 
-On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\nu$ est la fréquence de l'onde et donc son inverse, $\frac{1}{\nu}, est le temp qui sépare deux vagues.
+On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\nu$ est la fréquence de l'onde et donc son inverse, $\frac{1}{\nu}$, est le temp qui sépare deux vagues.
 
-* Par exemple, supposons que la longueur d'onde est de 1m.
-* Rapellons les valeurs précédentes (vitesse = 1m/s, ligne de base = 2m). Le temps qui sépare deux maximum est donc de 1s.
-* Imaginons, cas 1, une vague venant de $\theta=0 (l'extrème droite) alors elle devra parcourir 2m de plus pour arriver au bouchon de gauche. 2m étant multiple de 1m, les deux bouchons seront "en phase" (i.e. à la même altitude à tout moment).
-* Imaginons maintenant, cas 2, une vague venant de $\theta = 60°$ (centre-droite). Alors elle devra parcourir $a = cos(\theta) \times b$ = cos(60°) * 2 ) = \frac{1}{2} * 2 = 1m$. 1m étant aussi multiple de 1m, les deux bouchons seront en phase.
+* Par exemple, supposons que la longueur d'onde est de $\lambda = 10cm = 0.1m$.
+* Rapellons les valeurs précédentes (vitesse: $v= 1m/s$, ligne de base: $b = 2m$). Le temps qui sépare deux maximum est donc de \frac{1}{\nu} = 0.1s. TODO on a utilisé $v = \frac{d}{t} = \lambda\nu$
+
+
+* Imaginons, cas 1, une vague venant de $\theta=0 (l'extrème droite) alors elle devra parcourir 2m de plus pour arriver au bouchon de gauche. 2m étant multiple de 0.1m, les deux bouchons seront "en phase" (i.e. à la même altitude à tout moment).
+* Imaginons maintenant, cas 2, une vague venant de $\theta = 60°$ (centre-droite). Alors elle devra parcourir $a = cos(\theta) \times b$ = cos(60°) * 2 ) = \frac{1}{2} * 2 = 1m$. 1m étant aussi multiple de 10cm, les deux bouchons seront en phase.
 * En mesurant l'altitude des deux bouchons, nous ne pourrons pas discriminer le cas 1 du cas 2.
+* Toutes les valuers possibles de $\theta$ sont dans la figure à droite, pour une vague venant d'en face, 
 * [Keck](https://fr.wikipedia.org/wiki/Observatoire_W._M._Keck) c'est ti qu'on fait pour savoir si le caillou a été jeté à 0° (cas 1) ou a 60° (cas 2).
 
 * Rajoutons un bouchon. Par exemple, à 0.5m à gauche du bouchon de référence (celui de droite) et donc a 1.5m à droite de celui de gauche.

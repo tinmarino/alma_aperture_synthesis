@@ -1,73 +1,28 @@
+@import 'include_color_use_custom_var.css';
+
+@import 'color_dark_gruvbox.css';
+
 body {
   /* Variable */
-  --sol-blue: #268bd2;
-  --sol-cyan: #2aa198;
-
-  --gb-dark0_hard  : #1d2021;
-  --gb-dark0       : #282828;
-  --gb-dark0_soft  : #32302f;
-  --gb-dark1       : #3c3836;
-  --gb-dark2       : #504945;
-  --gb-dark3       : #665c54;
-  --gb-dark4       : #7c6f64;
-  --gb-dark4_256   : #7c6f64;
-
-  --gb-gray_245    : #928374;
-  --gb-gray_244    : #928374;
-
-  --gb-light0_hard : #f9f5d7;
-  --gb-light0      : #fbf1c7;
-  --gb-light0_soft : #f2e5bc;
-  --gb-light1      : #ebdbb2;
-  --gb-light2      : #d5c4a1;
-  --gb-light3      : #bdae93;
-  --gb-light4      : #a89984;
-  --gb-light4_256  : #a89984;
-
-  --gb-bright_red     : #fb4934;
-  --gb-bright_green   : #b8bb26;
-  --gb-bright_yellow  : #fabd2f;
-  --gb-bright_blue    : #83a598;
-  --gb-bright_purple  : #d3869b;
-  --gb-bright_aqua    : #8ec07c;
-  --gb-bright_orange  : #fe8019;
-
-  --gb-neutral_red    : #cc241d;
-  --gb-neutral_green  : #98971a;
-  --gb-neutral_yellow : #d79921;
-  --gb-neutral_blue   : #458588;
-  --gb-neutral_purple : #b16286;
-  --gb-neutral_aqua   : #689d6a;
-  --gb-neutral_orange : #d65d0e;
-
-  --gb-faded_red      : #9d0006;
-  --gb-faded_green    : #79740e;
-  --gb-faded_yellow   : #b57614;
-  --gb-faded_blue     : #076678;
-  --gb-faded_purple   : #8f3f71;
-  --gb-faded_aqua     : #427b58;
-  --gb-faded_orange   : #af3a03;
   
   /* Page */
-  background-color: var(--gb-);
-  color: #eee;
   margin: 15px; max-width:900px;
   word-wrap: break-word;
   overflow-wrap: break-word;
   
   /* Font */
-  color: #eee; font-family: 'Droid Sans', sans-serif; font-size: 17px; font-weight: 400; line-height: 30px;
+  font-family: 'Droid Sans', sans-serif; font-size: 17px; font-weight: 400; line-height: 30px;
 }
 
 /* H1 */
 h1 { 
-  --color: #b81; color: #b81; font-family: 'Droid serif', serif; font-size: 40px; font-weight: 400; font-style: italic; line-height: 44px; margin: 50px -10px 20px; 
+  font-family: 'Droid serif', serif; font-size: 40px; font-weight: 400; font-style: italic; line-height: 44px; margin: 50px -10px 20px; 
   max-width: 900px;
 }
 h1:after {
   content:' ';
   display:block;
-  border:2px solid #b81;
+  border:2px solid var(--col-h1);
   border-radius:4px;
   box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
   max-width: 900px;
@@ -83,7 +38,7 @@ h1.title {
 h1.title:before {
   content:' ';
   display:block;
-  border:4px solid #48D;
+  border:4px solid var(--gb-faded_blue);
   border-radius:4px;
   margin: 0px 0px 10px 0px;
   box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
@@ -91,7 +46,7 @@ h1.title:before {
 h1.title:after {
   content:' ';
   display:block;
-  border:4px solid #D41;
+  border:4px solid var(--gb-faded_red);
   border-radius:4px;
   margin: 10px 0px 30px 0px;
   box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
@@ -99,7 +54,8 @@ h1.title:after {
 
 
 /* H2 */
-h2 { --color:#460 ; margin: 0 -10px 20px; color:#b81; 
+h2 {
+  color: color(--col-h2) ; margin: 0 -10px 20px; 
   text-decoration: underline;
   max-width: 800px;
   margin: 60px 0 20px 0;
@@ -112,19 +68,12 @@ p {
 }
 
 /* Link */
-a {
-  color: var(--sol-cyan);
-  text-decoration: none;
-  }
-a:hover { color: #fff; background: var(--h0); }
+a { text-decoration: none; }
 
-/* List */
-li {
-  color: #eee;
-  max-width: 1000px; /* or a suitable width*/
-}
 
-/* Blockquote */
+/* Blockquote 
+TODO
+ */
 blockquote {
   background: #232629;
   color: #eee;

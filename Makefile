@@ -1,6 +1,6 @@
 # Name of command = file FROM
 
-tikz = 21_float_n_stone 12_diffraction 22_float_triangle 23_float_three
+tikz = 21_float_n_stone 12_diffraction 22_float_triangle 23_float_three 24_float_all
 
 all: tex md
 
