@@ -25,15 +25,23 @@ Puis la partie (4) explique comment plusieurs informations angulaire permettent 
 On mesure la qualité d'une image astrophysique avec deux paramètres : sa [résolution angulaire](https://en.wikipedia.org/wiki/Dynamic_range#Photography) et sa [profondeur](https://fr.wikipedia.org/wiki/Liste_des_champs_profonds).
 
 
-1. __La profondeur__ est le flux de la source la moins lumineuse que l'on peut détecter. Une grande profondeur permet de détecter des abjects peu brillant,par exemple, des abjects lointains.
-2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre. C'est à dire que deux abjects séparés d'un angle inférieur, donc plus proches que la résolution apparaitront comme un seul.<sup>[1](#resolution_telescope)</sup>
+1. __La profondeur__ est le flux de la source la moins lumineuse que l'on peut détecter.
+<sup>[+]<div class="description">
+Une grande profondeur permet de détecter des objects peu brillant. Par exemple, des objects lointains.
+</div></sup>
+2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre. 
+<sup>[+]<div class="description">
+C'est à dire que deux objects séparés d'un angle inférieur à la résolution apparaitront comme un seul.<br/>
+Tout object de taille inférieur à la résolution angulaire apparaitra comme un point.<br/>
+Un télescope optique de 1m de diamètre ($D$) dans le jaune 550nm ($\lambda$) a une résolution de 0.1 seconde de degrés c'est à dire 0.1 degré divisé par 3600. Une grande résolution angulaire permet d'observer des objects de petite taille angulaire par exemple, des objects lointain.
+</div></sup>
 
-Jusqu'à preuve du contraire, un télescope quelconque peut générer des images d'une résolution et profondeur arbitrairement grande à condition de:
+-> Jusqu'à preuve du contraire, un télescope quelconque peut générer des images d'une résolution et profondeur arbitrairement grande à condition de:
 
 1. Exposer suffisamment longtemps l'objet pour obtenir plus de lumière dans sa direction que le bruit du ciel et de l'appareil.
 2. Utiliser un détecteur (Couple Charged Device) avec suffisamment de pixels par cm.<sup>[2](#detecteur_pixel)</sup>
 
-Je vais maintenant vous prouvez le contraire.
+<- Je vais maintenant vous prouvez le contraire.
 
 Pour ce qui est de la __profondeur__, un grand télescope est nécessaire.
 En effet, bien qu'en sommant un grand nombre d'image du même endroit, nous pouvons obtenir une profondeur infinie, avant de pouvoir les sommer, il faut pouvoir les aligner convenablement et pour ceci, il faut ... des images suffisamment profondes et résoluent.
@@ -51,7 +59,7 @@ TODO ici un dessin de tache d'airy
 
 <!-- Figure diffraction -->
 <figure style="float: right; width:300px;" >
-  <img src='Figure/12_diffraction.svg' alt='missing' />
+  <img style='width:100%' src='Figure/12_diffraction.svg' alt='missing' />
   <figcaption>
     Diffraction d'une onde traversant une porte.<br/>
     Le front d'ondle linéaire devient circulaire avec pour rayon de courbure $\frac{\lambda}{D}$ où $\lambda$ est la longueur d'onde de la vague et D la taille de la porte.
@@ -122,7 +130,7 @@ Ainsi a est donné par la formule $vitesse = \frac{distance}{temps} \Leftrightar
 $$\theta = arccos\left(\frac{b}{v\times\Delta t}\right) = arccos\left( \frac{Distance\_de\_la\_base}{Vitesse\_de\_la\_vage \times Delai\_temporel\_mesuré} \right)$$
 
 Par exemple, si la vitesse de la vague est de $1\frac{m}{s}$, la distance entre les deux flotteurs est de 2m et le temps mesuré est de 2 seconde,  C'est que $\theta = 0°$ soit la vague vient de l'extrème droite (à ne pas citer hors contexte).
-Si le temps mesuré est de 1 seconde, la vague viens d'un angle $\theta = arccos\left(\frac{2}{1 \times 1 }\right) = arccos(1/2) = 60°$ (en effet $cos(60°): = 1/2$). C'est la situation su schema (TODO link schema).
+<- Si le temps mesuré est de 1 seconde, la vague viens d'un angle $\theta = arccos\left(\frac{2}{1 \times 1 }\right) = arccos(1/2) = 60°$ (en effet $cos(60°): = 1/2$). C'est la situation su schema (TODO link schema).
 
 
 # 3 Délai d'une onde
@@ -133,21 +141,36 @@ C'est donc mission acomplie pour la section 2 !
 Le problème est que les objectifs astrophysques, ne s'allument pas d'un seul coup mais emmèttent de manière continue.
 Il n'y a donc pas de front d'onde (ou vague) de référence.
 L'altitude de chaque floteur variera au grès de la vague et suivra une sinoïde plus ou moins synchronisée avec l'autre flotteur.
-Ce degrès de synchronysme est appellé [correlation](https://kids.alma.cl/como-estan-conectadas-las-antenas-de-alma/)
+Ce degrès de synchronysme est appellé [correlation](https://kids.alma.cl/como-estan-conectadas-las-antenas-de-alma/).
 
 On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\nu$ est la fréquence de l'onde et donc son inverse, $\frac{1}{\nu}$, est le temp qui sépare deux vagues.
+<sup>[+]<div class="description">
+On ne peut plus savoir sur quelle vague est chaque flotteur mais à quelle position de la vague : en haut, en descente ...
+
+</div></sup>
 
 * Par exemple, supposons que la longueur d'onde est de $\lambda = 10cm = 0.1m$.
 * Rapellons les valeurs précédentes (vitesse: $v= 1m/s$, ligne de base: $b = 2m$). Le temps qui sépare deux maximum est donc de \frac{1}{\nu} = 0.1s. TODO on a utilisé $v = \frac{d}{t} = \lambda\nu$
 
+<!-- Figure Multiple direciton in -->
+<figure style="float: right; width:300px;" >
+  <img style="width:100%" src='Figure/24_float_all.svg' alt='missing' />
+  <figcaption>
+    Quelques angles d'origine des vagues qui permettent d'avoir les deux bouchons en phase. <br/>
+    Le nombre de vague de retard du bouchon de gauche est indiqué. C'est justement ce nombre qu'on ne peut pas mesurer.<br/>
+  </figcaption>
+</figure>
 
-* Imaginons, cas 1, une vague venant de $\theta=0 (l'extrème droite) alors elle devra parcourir 2m de plus pour arriver au bouchon de gauche. 2m étant multiple de 0.1m, les deux bouchons seront "en phase" (i.e. à la même altitude à tout moment).
+* Imaginons, cas 1, une vague venant de $\theta=37° (bien à droite) alors elle devra parcourir $b \times cos(\theta)=2\times cos(37°) = 1.6m$ de plus pour arriver au bouchon de gauche. 1.6m étant multiple de 0.1m, le bouchon de gauche sera en retard de 16 vagues sur celui de droite mais "en phase" (i.e. à la même altitude à tout moment)
 * Imaginons maintenant, cas 2, une vague venant de $\theta = 60°$ (centre-droite). Alors elle devra parcourir $a = cos(\theta) \times b$ = cos(60°) * 2 ) = \frac{1}{2} * 2 = 1m$. 1m étant aussi multiple de 10cm, les deux bouchons seront en phase.
 * En mesurant l'altitude des deux bouchons, nous ne pourrons pas discriminer le cas 1 du cas 2.
-* Toutes les valuers possibles de $\theta$ sont dans la figure à droite, pour une vague venant d'en face, 
-* [Keck](https://fr.wikipedia.org/wiki/Observatoire_W._M._Keck) c'est ti qu'on fait pour savoir si le caillou a été jeté à 0° (cas 1) ou a 60° (cas 2).
+* Quelques valeurs possibles de $\theta$ pour deux bouchons en phase sont dans la figure ci-après.
 
-* Rajoutons un bouchon. Par exemple, à 0.5m à gauche du bouchon de référence (celui de droite) et donc a 1.5m à droite de celui de gauche.
+
+
+* [Keck](https://fr.wikipedia.org/wiki/Observatoire_W._M._Keck) c'est ti qu'on fait pour savoir si le caillou a été jeté à 37° (cas 1) ou a 60° (cas 2) ?
+
+* Rajoutons un bouchon : "Z". Par exemple, à 0.5m à gauche du bouchon de référence : "X" : celui de droite, et donc a 1.5m à droite de celui de gauche : "Y". Comme sur la figure suivante:
 
 <figure style="margin:10px" >
   <img src='Figure/23_float_three.svg' alt='missing' style="
@@ -165,16 +188,22 @@ On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\
   </figcaption>
 </figure>
 
-* Alors si $\theta = 0$ (cas 1), le bouchon Z recevra l'onde 0.5m plus loin. Se bouchon sera en opposition de phase avec X : quand X sera au sommet de la vague, il sera en bas. En sommant les altitudes de X et de Z, en tout temps, on obtient zéro. Cette somme est une [interférence](https://fr.wikipedia.org/wiki/Interf%C3%A9rence) artificielle, ici destructive.
-* Mais si $\theta = 60°$, le bouchon Z recevra le front d'onde 0.5 * cos(60°) = 0.25m plus loin. Il sera déphasé de $\frac{pi}{2}$ et quand X sera en haut de la vague, Z sera au milieu de sa descente.
-* Au final, ajouter une ligne de base nous a permis de restreindre le champs des possibilités sur la positions du callou, d'un facteur 2. Ce qui est le maximum qu'une information de plus peut nous apporter.
-* Par contre ajouté un bouchon, dans ce cas nous a ajouté 2 ligne de base : celle de 0.5m __et__ celle de 1.5m. Ce qui nous donnde 2 informations de corrélations supplémentaires. Par example si la section 2 hésitait entre 100 chois possibles la ligne de 0.5m en élimine la moitié : il en reste alors 50. De la même manière la deuxième ligne en elimine aussi une mooitié, il en reste 25. Nous supposons ici que chaque ligne est indépendante, ce qui est le cas si leurs tailles sont différentes.
+* Alors si $\theta = 37°$ (cas 1), le bouchon Z recevra l'onde $0.5 \times arccos(37°) = 0.40m = 40cm$ plus loin. Ce bouchon aura 4 vagues de retard sur X et sera en phase
+
+* Mais si $\theta = 60°$, le bouchon Z recevra le front d'onde 0.5 * cos(60°) = 0.25m = 20cm + 5cm$ plus loin. Ce bouchon aura 2 vagues et demi de retard.
+Encore une fois, on ne peut pas mesurer les "2 vagues" mais on peut mesurer le "et demi" car Z sera en opposition de phase (déphasé de $\pi$) avec X : quand X sera au sommet de la vague, il sera en bas.
+En sommant les altitudes de X et de Z, en tout temps, on obtient zéro. Cette somme est une [interférence](https://fr.wikipedia.org/wiki/Interf%C3%A9rence) artificielle, ici destructive.
+On nomme (l'intégrale temporel de ) cette somme $V(b)$ pour "Visibilité avec la basse b".
 
 Chaque ligne permet de discriminer un rang d'angle différent. Suposez que l'on puisse faire tourner la ligne des flotteurs, alors $\theta$ changerai et chaque ligne nous aporterai des informations nouvelles. Le plus simple pour efectuer cette rotation avec un réseau d'antennes et une source extraterestre est de faire tourner la planète. J'ai donc personellement pris la responsabilité de maintenir la rotation de la terre et voyez vous, elle continue de tourner.
 
 
 
-# 4 Délai de plusieurs objects avec plusieurs longueur d'onde.
+# 4 Délai de plusieurs objects
+
+## 4.1 
+
+## 4.2 Avec plusieurs longueur d'onde
 
 Non là sérieux, ça devient compliqué : il y a plus de paramètres à déterminer (positions, longueurs d'ondes) que de paramètres mesurables. Sans information à priori, c'est donc mathématiquement impossible.
 
@@ -210,7 +239,7 @@ Pour enrichir le vocabuliare du lecteur voici l'analogie:
 
 J'ai l'espoir d'avoir démontré au lecteur que, comme moi même, il ignore beaucoup sur la nature des vagues de surface eau-air. Pourtant, grosso modo, il sait de quoi il s'agit.
 
-De même il est intéréssant de comprendre de quoi s'agit une onde éléctromagnétique.
+De même, il est intéréssant d'apréhender la notion d'onde éléctromagnétique alias lumière, flux de photon.
 
 Quelle est la différence entre le callou et le bouchon ? (Faire un pause ... réponse:) L'un émet des vagues en se dépançant verticalement dans l'eau et l'autre se déplace verticalement sur l'eau lorsqu'il reçoit des vagues. De plus, si j'agitait artificiellement le bouchon, il émetrai des vagues. Donc la différence n'est pas dans leur nature mais dans leur comportement.
 
@@ -221,6 +250,15 @@ En agitant artificielement un éléctron dans une antenne, par exemple avec un a
 
 # Conclusion
 
+La section 6 montre qu'il es tpossible de détecter l'agitation electronique extraterrestre via celle sur terre. La section 1 donne les limitations et les autres expliquent comment on peut les atteindre en combinant des antennes.
+
+Ici le lecteur devrait avoir compris:
+
+* L'origine de la limitation des téléscopes.
+* Comment déterminer la position angulaire d'une source avec la correlation entre deux recepteurs.
+* TODO La différence entre interferométrie et triangulation.
+* Pourquoi plus de deux recepteurs sont nécéssaires pour former une image.
+* TODO Pourquoi beaucoup de calcul.
 
 
 # Notes
@@ -228,3 +266,18 @@ En agitant artificielement un éléctron dans une antenne, par exemple avec un a
 <a name="resolution_telescope">1</a>: La résolution typique (télescope optique de 1m de diamètre) est de 1 seconde de degrés c'est à dire 1 degré divisé par 3600. Une grande résolution angulaire permet d'observer des objects de petite taille angulaire par exemple, des objects lointain.
 
 <a name="detecteur_pixel">2</a>: Le nombre de pixel par centimètre peut être arbitrairement elevé avec des bancs optiques à l'intérieur du détcteur. Par exemple les nouveaux smartphones déclarent des détecteurs de 9Mpixels (3000x3000) et de 2mm tandis qu'un detecteur de telescope est de 1Mpixel (1000x1000) et mesure 3cm.
+
+
+# Liens, aller plus loin
+
+* ESO spectroscopie (pdf) : Introduction gentille à l'interferométrie : [ERIS : Enhanced Resolution Imager and Spectrograph](https://www.eso.org/sci/meetings/2015/eris2015/program.html)
+
+
+* 
+<div> MORE
+  <div class="description">
+    Html app</br></br>
+    Perlito.js: Raku interpreter compiled in javascript
+  </div>
+</div>
+

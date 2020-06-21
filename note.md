@@ -1,5 +1,7 @@
 # TODO
 
+* discussion  sur pourquoi c'est pas de la triangulation
+* POurquoi la précision est énorme (voir avec les différents angles theta
 * Parler de la résolution totale fente d'young et principe de raylight
 * Trois bouchons, mettre la ligne hozontale comme une sinuzoide
 * Trois bouch, déplacer dansinclude
@@ -17,8 +19,15 @@ Un téléscope est un appareil optique qui sert à observer les objects lointain
 float:center; text-align:center; display: inline-block; 
     <link rel="stylesheet" type="text/css" href="Css/alma_solarized.css">
 
-# Old
+# Backup
 
+* Au final, ajouter une ligne de base nous a permis de restreindre le champs des possibilités sur la positions du callou, d'un facteur 2. Ce qui est le maximum qu'une information de plus peut nous apporter.
+* Par contre ajouté un bouchon, dans ce cas nous a ajouté 2 ligne de base : celle de 0.5m __et__ celle de 1.5m. Ce qui nous donnde 2 informations de corrélations supplémentaires. Par exemple si la section 2 hésitait entre 100 chois possibles la ligne de 0.5m en élimine la moitié : il en reste alors 50. De la même manière la deuxième ligne en elimine aussi une mooitié, il en reste 25. Nous supposons ici que chaque ligne est indépendante, ce qui est le cas si leurs tailles sont différentes.
+
+
+Notez que si le bouchon de gauche est déphasé, il suffit de touner cette figure très légérement (pour les intimes : de $\frac{\lambda}{b}. TODO est ce vrai ? Voir arccos
+
+* Par exemple, quand la vague viens de droite, le bouchon de gauche a 2m/0.1m = 20 vagues de retard; quand ell vient de $\theta =  quand elle vient d'en face, les deux bouchons sont sur la même vague, le bouchon de gauche a 0 vague de retard; enfin, quand elle vient de 60°, il faut a la vague parcourir $b\times cos(\theta) = 2\times\frac{1}{2} = m$ de plus pour arriver au bouchon de gacuhe. Pendant ce mètre, il y a 10 oscillations (vagues) de 10cm, le bouchon de gauche a donc 10 vagues de retard.
 
 avec deux paramètres: la [résolution angulaire](https://en.wikipedia.org/wiki/Dynamic_range#Photography) et sa superficie et sa [gamme dynamique](https://fr.wikipedia.org/wiki/Gamme_dynamique).
 * __La superficie__ est la surface non obstrué qui pointe vers l'objectif. Plus elle est grande, plus le flux lumineux obtenue sera elevé. C'est intéréssant pour les objects peu lumineux.
@@ -64,6 +73,7 @@ https://en.wikipedia.org/wiki/Polygram_(geometry)#Regular_compound_polygons
   * CCD
   * Vagues air-mer
   * Plus sur fourier
+  * Visibility + Airy: https://web.njit.edu/~gary/728/Lecture6.htm
 
 # Star representation pentagram
 
@@ -88,6 +98,11 @@ know this."
  In normal vision, diffraction through eyelashes – and due to the edges of the eyelids if one is squinting – produce many diffractions spikes.
 
 # Links
+
+Lecture on radioastro
+https://web.njit.edu/~gary/728/
+Corrrelation Web lectures (pdf): https://web.njit.edu/~gary/728/Lecture7.html
+Correlation NRAO lecture: http://www.aoc.nrao.edu/events/synthesis/2004/presentations.html
 
 Image sampling
 https://www.eso.org/sci/software/esomidas/doc/user/98NOV/volb/node12.html

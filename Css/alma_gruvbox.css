@@ -71,6 +71,34 @@ p {
 a { text-decoration: none; }
 
 
+
+/* Show description when hover or focus */
+ *:hover > .description {
+  display: block;
+  overflow-wrap: break-word;
+}
+
+/*.sidebar > *:focus > .description {
+  display: block;
+}*/
+  /* Add overlay description */
+.description {
+  /* Position */
+  position: absolute;
+  /* Remove superscirpt */
+  font-size: 17px;
+  /* Apperance */
+  text-align: left;
+  background: #222;
+  padding: 10px;
+  border: 3px solid var(--gb-faded_blue);
+  border-radius: 20px;
+  /* Push in front */
+  z-index: 4;
+  display: none;
+}
+  
+
 /* Blockquote 
 TODO
  */
