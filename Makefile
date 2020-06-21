@@ -16,4 +16,4 @@ tex: $(tikz)
 
 
 md:
-	pandoc aperture_synthesis.md -t html --mathjax  --self-contained --standalone -o aperture_synthesis.html
+	pandoc aperture_synthesis.md -t html -s --self-contained --standalone -o aperture_synthesis.html
