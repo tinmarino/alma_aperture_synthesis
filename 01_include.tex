@@ -1,4 +1,6 @@
 \usepackage{tikz} % Drawing
+\usepackage{pgfplots} % Axes
+\pgfplotsset{compat=1.7}
 \usepackage{relsize} % Font size
 \usepackage{scalefnt}
 \usetikzlibrary{
@@ -26,7 +28,34 @@
 \define@key{xarg}{shift}{\def\xshift{#1}}
 \define@key{xarg}{scale}{\def\xscale{#1}}
 \define@key{xarg}{rotate}{\def\xrotate{#1}}
+\define@key{xarg}{color}{\def\xcolor{#1}}
 \makeatother
+
+\definecolor{orange}{HTML}{FF7F00}
+
+\definecolor{gb-bright-red}{HTML}{fb4934}
+\definecolor{gb-bright-green}{HTML}{b8bb26}
+\definecolor{gb-bright-yellow}{HTML}{fabd2f}
+\definecolor{gb-bright-blue}{HTML}{83a598}
+\definecolor{gb-bright-purple}{HTML}{d3869b}
+\definecolor{gb-bright-aqua}{HTML}{8ec07c}
+\definecolor{gb-bright-orange}{HTML}{fe8019}
+
+\definecolor{gb-neutral-red}{HTML}{cc241d}
+\definecolor{gb-neutral-green}{HTML}{98971a}
+\definecolor{gb-neutral-yellow}{HTML}{d79921}
+\definecolor{gb-neutral-blue}{HTML}{458588}
+\definecolor{gb-neutral-purple}{HTML}{b16286}
+\definecolor{gb-neutral-aqua}{HTML}{689d6a}
+\definecolor{gb-neutral-orange}{HTML}{d65d0e}
+
+\definecolor{gb-faded-red}{HTML}{9d0006}
+\definecolor{gb-faded-green}{HTML}{79740e}
+\definecolor{gb-faded-yellow}{HTML}{b57614}
+\definecolor{gb-faded-blue}{HTML}{076678}
+\definecolor{gb-faded-purple}{HTML}{8f3f71}
+\definecolor{gb-faded-aqua}{HTML}{427b58}
+\definecolor{gb-faded-orange}{HTML}{af3a03}
 
 \NewDocumentCommand{\tincoord}{O{}}{%
     % Origin, Float, sight, source
@@ -103,7 +132,7 @@
     \draw (15, -2.5) -- (-10, 10);
 
     % Horizontal
-    \draw[blue] (-12,0) -- (16, 0);
+    \draw[gb-neutral-blue] (-12,0) -- (16, 0);
 
     % Float
     \fishingfloat[x=10, y=0, scale=1, rotate=0]
