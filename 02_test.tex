@@ -3,31 +3,64 @@
 \input{01_include.tex}
 
 \iffalse
+Warning Here theta is from horizontal
 
+Last line 60 + 90 =150; 
+Or 90 - 37 = 53; 180-37 = 143; 
+    y=(-150:1.0),
+    %x=(-15:1.2),
+    %y=(30:1.0),
+    %z=(90:1.0)
+
+% Ligne droite
+plot (
+    {-1 + \x / 1.6 * cos(60) },
+    { \x / 1.6 * sin(60) },
+    { 0 }
+);
 \fi
 
 \AtBeginDocument{\globalcolor{black}}
 
 \begin{document}
-\begin{tikzpicture}[scale=1]
 
-  % monochromatic incident light with electric field
-  \draw[gb-neutral-blue, variable=\x, samples at={0, 0.05,...,6}]
-        plot ( {\x}, {sin(\x*pi r)} );
-        %plot (\x, {-cos(1.0*\x r)*sin(2.0*\x r)}, {-sin(1.0*\x r)*sin(2.0*\x r)});
+% Perspective
+\tdplotsetmaincoords{60}{110}
+\tdplotsetrotatedcoords{-180}{0}{-90}
+\begin{tikzpicture}[ tdplot_rotated_coords ]
 
-  \globalcolor{gb-neutral-orange}
-  % (0, 0) pgf = (0.7, 2.8) tikz
 
-  \fishingfloat[scale=0.15, x=0.75, y=0.7]
-  \fishingfloat[scale=0.15, x=1.25, y=-0.6]
-  \fishingfloat[scale=0.15, x=4.75, y=0.7]
+% main axes
+\def\A{1.5}
+\draw[] (0,0,0) -- ++(1.4,0,0) node[right] {$x$};
+\draw[] (0,0,0) -- (0,\A*1.4,0) node[right] {$y$};
+\draw[] (0,0,0) -- (0,0,\A*1.4) node[above left] {$z$};
 
-  \globalcolor{white}
-  \node at (0.75, 0.7) {\tiny A};
-  \node at (1.25, -0.6) {\tiny B};
-  \node at (4.75, 0.7) {\tiny C};
 
+% 2 floatteurs
+% Horizontal
+\draw[gb-neutral-blue] (-1.2, 0, 0) -- (1.6, 0, 0);
+
+% Float
+\fishingfloatd[x=1, y=0, scale=0.1, rotate=0]
+\fishingfloatd[x=-1, y=0, scale=0.1, rotate=0]
+
+% Front d'onde
+\draw (1, 0)+(-30:0.4) -- +(150:2);
+
+% Sight
+\draw (-1, 0, 0) -- +(60:1.5);
+
+
+% Lambda = 0.4
+\draw[blue, variable=\x, samples at={0, 0.01, ..., 1.6}]
+    plot (
+        {-1 + \x / 1.6 * cos(60) },
+        { \x / 1.6 * sin(60) },
+        { 1* cos(\x *2*pi/0.4 r) }
+    )
+    ;
+    %plot (\x, {-cos(1.0*\x r)*sin(2.0*\x r)}, {-sin(1.0*\x r)*sin(2.0*\x r)});
 
 \end{tikzpicture}
 

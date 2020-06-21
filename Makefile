@@ -3,7 +3,8 @@ tikz = 21_float_n_stone 12_diffraction 22_float_triangle 23_float_three 24_float
 all: svg html
 
 $(tikz):
-	latexmk $@.tex 
+	# --font-format=woff
+	latexmk  $@.tex 
 	# Create svg
 	pdf2svg $@.pdf $@.svg
 	mv $@.svg Figure/

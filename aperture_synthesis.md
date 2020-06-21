@@ -40,7 +40,7 @@ Un télescope optique de 1m de diamètre ($D$) dans le jaune 550nm ($\lambda$) a
 1. Exposer suffisamment longtemps l'objet pour obtenir plus de lumière dans sa direction que le bruit du ciel et de l'appareil.
 2. Utiliser un détecteur (Couple Charged Device) avec suffisamment de pixels par cm.
 <sup>[+]<div class="description">
-<a name="detecteur_pixel">2</a>: Le nombre de pixel par centimètre peut être arbitrairement elevé avec des bancs optiques à l'intérieur du détcteur. Par exemple les nouveaux smartphones déclarent des détecteurs de 9Mpixels (3000x3000) et de 2mm tandis qu'un detecteur de telescope est de 1Mpixel (1000x1000) et mesure 3cm.
+Le nombre de pixel par centimètre peut être arbitrairement elevé avec des bancs optiques à l'intérieur du détcteur. Par exemple les nouveaux smartphones déclarent des détecteurs de 9Mpixels (3000x3000) et de 2mm tandis qu'un detecteur de telescope est de 1Mpixel (1000x1000) et mesure 3cm.
 </div></sup>
 
 <- Je vais maintenant vous prouvez le contraire.

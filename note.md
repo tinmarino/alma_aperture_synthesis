@@ -8,6 +8,7 @@
 * POurquoi la précision est énorme (voir avec les différents angles theta
 * Parler de la résolution totale fente d'young et principe de raylight
 
+* Warning theta isthe other side (SO get a sin \theta (p59)
 * Trois bouchons, mettre la ligne hozontale comme une sinuzoide
 * Trois bouch, déplacer dans include
 * Mettre des couleurs tranquillement, souligner
