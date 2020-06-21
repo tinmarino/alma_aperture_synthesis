@@ -129,7 +129,7 @@ Remplaçons le ! On connait la vitesse de la vague $v$ et le temps de délai $\D
 
 Ainsi a est donné par la formule $vitesse = \frac{distance}{temps} \Leftrightarrow distance = vistesse \times temps$. Ce qui nous donne l'équation:
 
-$$\theta = arccos\left(\frac{b}{v\times\Delta t}\right) = arccos\left( \frac{Distance\_de\_la\_base}{Vitesse\_de\_la\_vage \times Delai\_temporel\_mesuré} \right)$$
+$$\theta = arccos\left(\frac{b}{v\times\Delta t}\right) = arccos\left( \frac{Distance\_de\_la\_base}{Vitesse\_de\_la\_vage \times Delai\_temporel\_mesure} \right)$$
 
 Par exemple, si la vitesse de la vague est de $1\frac{m}{s}$, la distance entre les deux flotteurs est de 2m et le temps mesuré est de 2 seconde,  C'est que $\theta = 0°$ soit la vague vient de l'extrème droite (à ne pas citer hors contexte).
 <- Si le temps mesuré est de 1 seconde, la vague viens d'un angle $\theta = arccos\left(\frac{2}{1 \times 1 }\right) = arccos(1/2) = 60°$ (en effet $cos(60°): = 1/2$). C'est la situation su schema (TODO link schema).
@@ -159,7 +159,7 @@ On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\
     margin: 0 auto;
   ">
     On peut mesurer que A et C sont en phase et A et B sont défasé de $\frac{\pi}{2}$.</br>
-    Mais on ne peut pas mesurer que A et sur une autre vague que C.
+    Mais il est impossible de savoir que A sur la même vague que B et une autre que C par la seule mesure de la position vertical des bouchons puisque toutes les vagues sont parfaitement identiques.
   </figcaption>
 </figure>
 
@@ -178,10 +178,10 @@ Utilisé $v = \frac{d}{t} \left(= \frac{distance}{temps}\right) = \lambda\nu$
   </figcaption>
 </figure>
 
-* Imaginons, cas 1, une vague venant de $\theta=37° (bien à droite) alors elle devra parcourir $b \times cos(\theta)=2\times cos(37°) = 1.6m$ de plus pour arriver au bouchon de gauche. 1.6m étant multiple de 0.1m, le bouchon de gauche sera en retard de 16 vagues sur celui de droite mais "en phase" (i.e. à la même altitude à tout moment)
-* Imaginons maintenant, cas 2, une vague venant de $\theta = 60°$ (centre-droite). Alors elle devra parcourir $a = cos(\theta) \times b$ = cos(60°) * 2 ) = \frac{1}{2} * 2 = 1m$. 1m étant aussi multiple de 10cm, les deux bouchons seront en phase.
+* Imaginons, cas 1, une vague venant de $\theta=37°$ (bien à droite) alors elle devra parcourir $b \times cos(\theta)=2\times cos(37°) = 1.6m$ de plus pour arriver au bouchon de gauche. 1.6m étant multiple de 0.1m, le bouchon de gauche sera en retard de 16 vagues sur celui de droite mais "en phase" (i.e. à la même altitude à tout moment)
+* Imaginons maintenant, cas 2, une vague venant de $\theta = 60°$ (centre-droite). Alors elle devra parcourir $a = b \times cos(\theta) = 2 \times cos(60°) = \frac{1}{2} * 2 = 1m$. 1m étant aussi multiple de 10cm, les deux bouchons seront aussi en phase.
 * En mesurant l'altitude des deux bouchons, nous ne pourrons pas discriminer le cas 1 du cas 2.
-* Quelques valeurs possibles de $\theta$ pour deux bouchons en phase sont dans la figure ci-après.
+* Quelques valeurs possibles de $\theta$ pour deux bouchons en phase sont dans la figure de droite.
 
 
 
@@ -241,7 +241,7 @@ La compréhension des détails de ce processus implique une vision performante d
 
 # 6 Des vagues aux ondes radios
 
-Le concept mathématique utilisé par un telescope à ouverture synthétique (alias réseau d'antenne) et le détecteur utilisant des flotteurs est identique.
+Le concept mathématique utilisé par un telescope à ouverture synthétique est identique à celui du détecteur utilisant des flotteurs.
 
 Pour enrichir le vocabuliare du lecteur voici l'analogie:
 
@@ -258,7 +258,7 @@ J'ai l'espoir d'avoir démontré au lecteur que, comme moi même, il ignore beau
 
 De même, il est intéréssant d'apréhender la notion d'onde éléctromagnétique alias lumière, flux de photon.
 
-Quelle est la différence entre le callou et le bouchon ? (Faire un pause ... réponse:) L'un émet des vagues en se dépançant verticalement dans l'eau et l'autre se déplace verticalement sur l'eau lorsqu'il reçoit des vagues. De plus, si j'agitait artificiellement le bouchon, il émetrai des vagues. Donc la différence n'est pas dans leur nature mais dans leur comportement.
+Quelle est la différence entre le callou et le bouchon ? (Faire un pause ... réponse:) Le premier émet des vagues en se dépançant verticalement dans l'eau et le second se déplace verticalement sur l'eau lorsqu'il reçoit des vagues. De plus, si j'agitais artificiellement le bouchon, il émetrai des vagues. Donc la différence n'est pas dans leur nature mais dans leur comportement.
 
 L'accélération d'une charge éléctrique, tipiquement un éléctron, engendre l'émission d'un [photon](https://fr.wikipedia.org/wiki/Photon) et réciproquement la reception d'un photon engendre l'accélération d'un electron.
 En agitant artificielement un éléctron dans une antenne, par exemple avec un aimant, on peut trasmettre un signal à une antenne voisine. Le porteur de ce signal est le photon : il est, plus généralement [porteur de la force](https://en.wikipedia.org/wiki/Force_carrier) [électromagnétique](https://fr.wikipedia.org/wiki/%C3%89lectromagn%C3%A9tisme).
@@ -267,7 +267,7 @@ En agitant artificielement un éléctron dans une antenne, par exemple avec un a
 
 # Conclusion
 
-La section 6 montre qu'il es tpossible de détecter l'agitation electronique extraterrestre via celle sur terre. La section 1 donne les limitations et les autres expliquent comment on peut les atteindre en combinant des antennes.
+La section 6 montre qu'il est possible de détecter l'agitation electronique extraterrestre via une une autre induite sur terre. La section 1 donne les limitations. Enfin, les autres sections expliquent la correlation de plusieurs récepteurs distants peut pousser la limite à celle d'un téléscope de la taille de leur séparation.
 
 Ici le lecteur devrait avoir compris:
 
@@ -277,9 +277,13 @@ Ici le lecteur devrait avoir compris:
 * Pourquoi plus de deux recepteurs sont nécéssaires pour former une image.
 * TODO Pourquoi beaucoup de calcul.
 
-
-# Notes
-
+Voilà cette explication est terminée.
+J'espère que tu as lu lentement sans quoi la compréhensieux a due être hasardeuse.
+Enfin, si tu as tout compris c'est très très bien.
+Félicitation, si tu es arrivé jusque ici, le voyage était périlleux.
+S'il t'as plue, je m'en vois ravis. 
+C'est 
+Sinon, 
 
 
 # Liens, aller plus loin

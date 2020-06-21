@@ -1,10 +1,15 @@
 # TODO
 
-* discussion  sur pourquoi c'est pas de la triangulation
+* Insister au moins dans un bloon, le manque d'information terrible qu'on avec le modulo 2pi
+* Wrapable equation for smartphone (destroying the display)
+* Draw les deux cas 37° et 60° avec 16 et 10 vagues etavec 0.5m de baseline aussi.
+* discussion sur pourquoi c'est pas de la triangulation
+* discussion sur pourquoi c'est vraiment plus précis
 * POurquoi la précision est énorme (voir avec les différents angles theta
 * Parler de la résolution totale fente d'young et principe de raylight
+
 * Trois bouchons, mettre la ligne hozontale comme une sinuzoide
-* Trois bouch, déplacer dansinclude
+* Trois bouch, déplacer dans include
 * Mettre des couleurs tranquillement, souligner
 * Figure reference placeholder in md (pendant relecture)
   * Donner un titre en gras
@@ -22,6 +27,7 @@ float:center; text-align:center; display: inline-block;
 # Backup
 
     <script type="text/javascript" src="/usr/share/javascript/mathjax/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 * Au final, ajouter une ligne de base nous a permis de restreindre le champs des possibilités sur la positions du callou, d'un facteur 2. Ce qui est le maximum qu'une information de plus peut nous apporter.
 * Par contre ajouté un bouchon, dans ce cas nous a ajouté 2 ligne de base : celle de 0.5m __et__ celle de 1.5m. Ce qui nous donnde 2 informations de corrélations supplémentaires. Par exemple si la section 2 hésitait entre 100 chois possibles la ligne de 0.5m en élimine la moitié : il en reste alors 50. De la même manière la deuxième ligne en elimine aussi une mooitié, il en reste 25. Nous supposons ici que chaque ligne est indépendante, ce qui est le cas si leurs tailles sont différentes.
 
