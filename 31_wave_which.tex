@@ -5,7 +5,27 @@
 %\AtBeginDocument{\globalcolor{black}}
 
 \begin{document}
-\begin{tikzpicture}[scale=0.2]
+
+\begin{tikzpicture}[scale=1]
+
+    % monochromatic incident light with electric field
+    \draw[gb-neutral-blue, variable=\x, samples at={0, 0.05,...,6}]
+        plot ( {\x}, {sin(\x*pi r)} );
+        %plot (\x, {-cos(1.0*\x r)*sin(2.0*\x r)}, {-sin(1.0*\x r)*sin(2.0*\x r)});
+
+  \globalcolor{gb-neutral-orange}
+  % (0, 0) pgf = (0.7, 2.8) tikz
+
+  \fishingfloat[scale=0.15, x=0.75, y=0.7]
+  \fishingfloat[scale=0.15, x=1.25, y=-0.6]
+  \fishingfloat[scale=0.15, x=4.75, y=0.7]
+
+  \globalcolor{white}
+  \node at (0.75, 0.7) {\tiny A};
+  \node at (1.25, -0.6) {\tiny B};
+  \node at (4.75, 0.7) {\tiny C};
+
 
 \end{tikzpicture}
+
 \end{document}

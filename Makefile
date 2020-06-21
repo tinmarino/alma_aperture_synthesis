@@ -1,6 +1,6 @@
 # Name of command = file FROM
 
-tikz = 21_float_n_stone 12_diffraction 22_float_triangle 23_float_three 24_float_all
+tikz = 21_float_n_stone 12_diffraction 22_float_triangle 23_float_three 24_float_all 31_wave_which
 
 all: tex md
 
@@ -16,4 +16,4 @@ tex: $(tikz)
 
 
 md:
-	pandoc aperture_synthesis.md -t html --mathjax  -s --standalone  -o aperture_synthesis.html
+	pandoc aperture_synthesis.md -t html --mathjax  --self-contained --standalone -o aperture_synthesis.html

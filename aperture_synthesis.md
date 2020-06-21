@@ -39,7 +39,10 @@ Un télescope optique de 1m de diamètre ($D$) dans le jaune 550nm ($\lambda$) a
 -> Jusqu'à preuve du contraire, un télescope quelconque peut générer des images d'une résolution et profondeur arbitrairement grande à condition de:
 
 1. Exposer suffisamment longtemps l'objet pour obtenir plus de lumière dans sa direction que le bruit du ciel et de l'appareil.
-2. Utiliser un détecteur (Couple Charged Device) avec suffisamment de pixels par cm.<sup>[2](#detecteur_pixel)</sup>
+2. Utiliser un détecteur (Couple Charged Device) avec suffisamment de pixels par cm.
+<sup>[+]<div class="description">
+<a name="detecteur_pixel">2</a>: Le nombre de pixel par centimètre peut être arbitrairement elevé avec des bancs optiques à l'intérieur du détcteur. Par exemple les nouveaux smartphones déclarent des détecteurs de 9Mpixels (3000x3000) et de 2mm tandis qu'un detecteur de telescope est de 1Mpixel (1000x1000) et mesure 3cm.
+</div></sup>
 
 <- Je vais maintenant vous prouvez le contraire.
 
@@ -143,14 +146,29 @@ Il n'y a donc pas de front d'onde (ou vague) de référence.
 L'altitude de chaque floteur variera au grès de la vague et suivra une sinoïde plus ou moins synchronisée avec l'autre flotteur.
 Ce degrès de synchronysme est appellé [correlation](https://kids.alma.cl/como-estan-conectadas-las-antenas-de-alma/).
 
+<div>
 On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\nu$ est la fréquence de l'onde et donc son inverse, $\frac{1}{\nu}$, est le temp qui sépare deux vagues.
-<sup>[+]<div class="description">
-On ne peut plus savoir sur quelle vague est chaque flotteur mais à quelle position de la vague : en haut, en descente ...
+<sup>[+]<div class="description"> On ne peut plus savoir sur quelle vague est chaque flotteur mais à quelle position de la vague : en haut, en descente ...
+</div></sup></div>
 
-</div></sup>
+<!-- Figure Multiple direciton in -->
+<figure style="margin:10px" >
+  <img style="width:90%" src='Figure/31_wave_which.svg' alt='missing' />
+  <figcaption style="
+    width:90%; min-width:300px;
+    display: block;
+    margin: 0 auto;
+  ">
+    On peut mesurer que A et C sont en phase et A et B sont défasé de $\frac{\pi}{2}$.</br>
+    Mais on ne peut pas mesurer que A et sur une autre vague que C.
+  </figcaption>
+</figure>
 
 * Par exemple, supposons que la longueur d'onde est de $\lambda = 10cm = 0.1m$.
-* Rapellons les valeurs précédentes (vitesse: $v= 1m/s$, ligne de base: $b = 2m$). Le temps qui sépare deux maximum est donc de \frac{1}{\nu} = 0.1s. TODO on a utilisé $v = \frac{d}{t} = \lambda\nu$
+* Rapellant les valeurs précédentes (vitesse: $v= 1m/s$, ligne de base: $b = 2m$), le temps qui sépare deux maximum est donc de \frac{1}{\nu} = 0.1s.
+<sup>[+]<div class="description">
+Utilisé $v = \frac{d}{t} \left(= \frac{distance}{temps}\right) = \lambda\nu$
+</div></sup></div>
 
 <!-- Figure Multiple direciton in -->
 <figure style="float: right; width:300px;" >
@@ -263,9 +281,6 @@ Ici le lecteur devrait avoir compris:
 
 # Notes
 
-<a name="resolution_telescope">1</a>: La résolution typique (télescope optique de 1m de diamètre) est de 1 seconde de degrés c'est à dire 1 degré divisé par 3600. Une grande résolution angulaire permet d'observer des objects de petite taille angulaire par exemple, des objects lointain.
-
-<a name="detecteur_pixel">2</a>: Le nombre de pixel par centimètre peut être arbitrairement elevé avec des bancs optiques à l'intérieur du détcteur. Par exemple les nouveaux smartphones déclarent des détecteurs de 9Mpixels (3000x3000) et de 2mm tandis qu'un detecteur de telescope est de 1Mpixel (1000x1000) et mesure 3cm.
 
 
 # Liens, aller plus loin

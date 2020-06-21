@@ -11,41 +11,25 @@
 \begin{document}
 \begin{tikzpicture}[scale=1]
 
+    % monochromatic incident light with electric field
+    \draw[gb-neutral-blue, variable=\x, samples at={0, 0.05,...,6}]
+        plot ( {\x}, {sin(\x*pi r)} );
+        %plot (\x, {-cos(1.0*\x r)*sin(2.0*\x r)}, {-sin(1.0*\x r)*sin(2.0*\x r)});
 
-  \begin{axis}%
-    [
-     %grid=both,
-     %minor tick num=4,
-     %grid style={line width=.1pt, draw=gray!10},
-     %major grid style={line width=.2pt,draw=gray!50},
-     %axis lines=middle,
-     ymin=-1,    ymax=1,
-     x=5cm,
-     y=1cm,
-     %hide axis,   
-     %axis equal,
-     %enlargelimits={abs=0.2},
-    ]
-    \addplot[domain=0:5,samples=50,smooth, gb-neutral-blue] {sin(deg(pi*x))};
-      \node at (axis cs:1,0.642788) [anchor=east] {\includefigure{}};
-           
-  \end{axis}
   \globalcolor{gb-neutral-orange}
   % (0, 0) pgf = (0.7, 2.8) tikz
-  \fishingfloat[scale=0.15, x=1.9, y=2.4, color={gb-neutral-yellow}]
 
-  \fishingfloat[scale=0.15, x=1.5, y=3.5]
-  \fishingfloat[scale=0.15, x=1.9, y=2.4]
-  \fishingfloat[scale=0.15, x=4.2, y=2.4]
+  \fishingfloat[scale=0.15, x=0.75, y=0.7]
+  \fishingfloat[scale=0.15, x=1.25, y=-0.6]
+  \fishingfloat[scale=0.15, x=4.75, y=0.7]
 
   \globalcolor{white}
-  \node at (1.5, 3.5) {\tiny A};
-  \node at (1.9, 2.4) {\tiny B};
-  \node at (4.2, 2.4) {\tiny C};
+  \node at (0.75, 0.7) {\tiny A};
+  \node at (1.25, -0.6) {\tiny B};
+  \node at (4.75, 0.7) {\tiny C};
+
 
 \end{tikzpicture}
-
-
 
 
 \end{document}
