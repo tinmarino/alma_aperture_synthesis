@@ -2,7 +2,6 @@
 title: Synthèse d'ouverture
 category: 
 header-includes: |
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="stylesheet" type="text/css" href="Css/alma_gruvbox.css">
 ---
 
