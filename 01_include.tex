@@ -4,6 +4,7 @@
 \usepackage{relsize} % Font size
 \usepackage{scalefnt}
 \usepackage{ifthen}
+\usepackage{tkz-euclide}
 \usetikzlibrary{
     calc, patterns, angles, quotes, backgrounds,
     animations,
@@ -63,9 +64,13 @@
 \NewDocumentCommand{\tincoord}{O{}}{%
     % Origin, Float, sight, source
     \coordinate (X) at (10, 0);
-    \coordinate (Y) at (-10, 0);
-    \coordinate (Z) at (5, 0);
+    \coordinate (Xz) at (10, 15);
     \coordinate (X2) at (11, 0);
+
+    \coordinate (Y) at (-10, 0);
+    \coordinate (Yz) at (-10, 15);
+
+    \coordinate (Z) at (5, 0);
     \coordinate (cross) at (-6, 8);
     \coordinate (S) at (20, 20);
 }
@@ -148,8 +153,13 @@
     \floattwo
 
     % Angle
-    \draw pic [draw, ->, "$\theta$", angle eccentricity=1.4] {angle = X--Y--cross};
-    \draw pic [draw, ->, "$\theta$", angle eccentricity=1.4] {angle = X2--X--S};
+    \draw[dashed, gb-neutral-blue] (Xz) -- (X);
+    \draw pic [draw, <-, "$\theta$", angle eccentricity=1.4] {angle = cross--Y--Yz};
+    \draw[dashed, gb-neutral-blue] (Yz) -- (Y);
+    \draw pic [draw, <-, "$\theta$", angle eccentricity=1.4] {angle = S--X--Xz};
+
+    % Right angle
+    \tkzMarkRightAngle[size=1.5](X,cross,Y);
 }
 
 

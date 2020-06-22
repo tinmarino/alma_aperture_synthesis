@@ -1,3 +1,10 @@
+* discussion sur pourquoi c'est vraiment plus précis
+  * discussion Pourquoi la précision est énorme (voir avec les différents angles theta)
+* discussion sur pourquoi c'est pas de la triangulation
+* links cas 1 et cas 2
+* Warning theta is the other side (SO get a sin \theta (p59)
+* Figure reference placeholder in md (pendant relecture)
+  * Donner un titre en gras
 * Markdown Header, mettre 1 label puis faire l'intro et la conclusion avec des liens
   * and Get all disccussin in place
   * Merge 4, 5, 6

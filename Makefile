@@ -9,12 +9,12 @@ $(tikz):
 	latexmk $@.tex 
 	# Create svg
 	pdf2svg $@.pdf $@.svg
-	mv $@.svg Figure/
+	cp $@.svg Figure/
 
 $(animates):
 	 latex $@.tex
 	 dvisvgm --zoom=-1 --exact --font-format=woff $@
-	 mv $@-1.svg Figure/$@.svg
+	 cp $@-1.svg Figure/$@.svg
 
 
 

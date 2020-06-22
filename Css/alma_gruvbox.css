@@ -73,7 +73,7 @@ a { text-decoration: none; }
 
 
 /* Show description when hover or focus */
- *:hover > .description, *:active > .description, *:focus > .description {
+*:hover > .description, *:active > .description, *:focus > .description {
   display: block;
   overflow-wrap: break-word;
 }

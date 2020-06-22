@@ -1,18 +1,20 @@
 # TODO
 
+* Liens: Shanon (4.2)
+* Règles: parler des régles que j'ai bien et liée au 10 cosmondement.
+  * La matière ne traverse pas la matière (c'est la définition de matière)
+  * Les charges
+
 ## TODO forme: 
 * Mettre des couleurs tranquillement, souligner
+* Transofrmée de fourier, retirer le lien de l'intro !!
 
 ## Image
 * Bouchons sous les vagues de 37°, le front d'onde est mauvais
+* Young / Airy
+* Aprtur synthesis many smalll in one big (so I again metion de discretisation)
 
 ## NEXT
-
-* Figure reference placeholder in md (pendant relecture)
-  * Donner un titre en gras
-* Warning theta is the other side (SO get a sin \theta (p59)
-
-## DONE
 
 
 # IDEA
@@ -20,6 +22,14 @@
 * Un faisceau (sinuzoidale si t'es chaud qui bouge et une sinuzoide que "ralentit" sur la ligne de base, jusquà même être nulle. Ainsi on peux voir
 
 ================================================================================
+
+# Note copy paste
+<a href="#f_carte"><i>"carte des mers"</i></a>
+  <a name="f_carte"></a>
+    <b>Carte des mer :</b>
+<sup>[+]<div class="description">
+Ou mesure spectrale pour les ondes radios, 
+</div></sup>
 
 # intro
  (de diamétre égal à la séparation maximale entre deux petits).
