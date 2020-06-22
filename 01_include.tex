@@ -96,21 +96,16 @@
 \NewDocumentCommand{\drawfishingfloatd}{}{%
     % To embed in scope
     % Triangle
-    \draw (0, 0, -3) -- (1, 0, 1);
-    \draw (0, 0, -3) -- (-1, 0, 1);
+    \draw (0, -3, 0) -- (1, 1, 0);
+    \draw (0, -3, 0) -- (-1, 1, 0);
     % 2 lines
-    \draw (-1,0,  1) -- (1, 0, 1);
-    \draw (-0.9375, 0, 0.75) -- (0.9375, 0, 0.75);
+    \draw (-1, 1, 0) -- (1, 1, 0);
+    \draw (-0.9375, 0.75, 0) -- (0.9375, 0.75, 0);
     % Top bottom
-    \draw (0, 0, 2) -- (0, 0, 2.5);
-    \draw (0, 0, -3) -- (0, 0, -3.5);
+    \draw (0, 2, 0) -- (0, 2.5, 0);
+    \draw (0, -3, 0) -- (0, -3.5, 0);
     % Arc: start angle, end angle, radius
-    %\draw (1, 0, 1) arc (0:180:1);
-    % TODO
-    %\tdplotsetthetaplanecoords{180}
-    \tdplotdrawarc[]
-        {(0,0,1)}{1}
-        {0}{180}{anchor=north}{}
+    \draw (1, 1, 0) arc (0:180:1);
 }
 
 \NewDocumentCommand{\fishingfloatd}{O{}}{%

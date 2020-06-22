@@ -7,9 +7,8 @@
 \begin{document}
 
 % Perspective
-\tdplotsetmaincoords{60}{110}
-\tdplotsetrotatedcoords{90}{0}{0}
-\begin{tikzpicture}[ tdplot_rotated_coords,
+\begin{tikzpicture}[
+    x=0.5cm,y=0.5cm,z=0.3cm,>=stealth,
     framed
 ]
 % main axes
@@ -23,15 +22,18 @@
 
 % 2 floatteurs
 % Float
+\foreach \xorigin in {-1cm, 0.5cm, 0, 1cm} {
 \begin{scope}
-    :xshift={ 0s = "1cm", 30s = "-3cm", repeats }
-    :xscale={ 0.1 } 
-    :yscale={ 0.1 } 
+    :xshift={ 0s = "\xorigin", 10s = "\xorigin", repeats }
+    :yshift={ 0s = "0.25cm", 5s= "-0.25cm", 10s = "0.25cm", repeats }
+    :xscale={ 0s = "0.05", 10s = "0.05", repeats } 
+    :yscale={ 0s = "0.05", 10s = "0.05", repeats } 
+    :line width={ 0s = "10pt", 10s = "10pt", repeats }
     \drawfishingfloatd
 \end{scope}
+}
 
-\fishingfloatd[x=1, y=0, scale=0.1, rotate=0,
-    xshift={ 0s = "0cm", 30s = "-3cm", repeats }]
+\fishingfloatd[x=1, y=0, scale=0.1, rotate=0]
 \fishingfloatd[x=0.5, y=0, scale=0.1, rotate=0]
 \fishingfloatd[x=-1, y=0, scale=0.1, rotate=0]
 
