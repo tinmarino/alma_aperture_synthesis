@@ -36,7 +36,9 @@
         4s = "orange",
         repeats}
     {Sun};
-\begin{scope}[animate={orbit={2.5cm}{365}}]
+\begin{scope} :xshift={0s = "0cm", 30s = "-3cm", repeats}
+    [scale=4]
+%\begin{scope}[animate={orbit={2.5cm}{365}}]
 \node {Earth};
 \node [animate={orbit={1cm}{28}}] {Moon};
 \end{scope}

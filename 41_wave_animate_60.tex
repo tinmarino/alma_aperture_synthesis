@@ -18,14 +18,20 @@
 \draw[] (0,0,0) -- (0,\A*1.4,0) node[right] {$y$};
 \draw[] (0,0,0) -- (0,0,\A*1.4) node[above left] {$z$};
 
+% Test Move
 \draw :xshift = {0s = "0cm", 30s = "-3cm", repeats} (0,0) circle (5mm);
 
 % 2 floatteurs
-% Horizontal
-\draw[gb-neutral-blue] (-1.2, 0, 0) -- (1.6, 0, 0);
-
 % Float
-\fishingfloatd[x=1, y=0, scale=0.1, rotate=0]
+\begin{scope}
+    :xshift={ 0s = "1cm", 30s = "-3cm", repeats }
+    :xscale={ 0.1 } 
+    :yscale={ 0.1 } 
+    \drawfishingfloatd
+\end{scope}
+
+\fishingfloatd[x=1, y=0, scale=0.1, rotate=0,
+    xshift={ 0s = "0cm", 30s = "-3cm", repeats }]
 \fishingfloatd[x=0.5, y=0, scale=0.1, rotate=0]
 \fishingfloatd[x=-1, y=0, scale=0.1, rotate=0]
 
@@ -35,12 +41,16 @@
 % Sight
 \draw (-1, 0, 0) -- +(60:1.5);
 
+% Horizontal
+\draw[gb-neutral-blue] (-1.2, 0, 0) -- (1.6, 0, 0);
+
 
 % Lambda = 0.4 0.5 has 1/2 late
-\draw :xshift = {0s = "0", 30s = "-3", repeats} (0,0) circle (5mm);
 
 \foreach \xorigin in {-1, 1} {
-\draw[gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., 1}]
+\draw
+    % :xshift = {0s = "0", 30s = "-3", repeats}
+    [gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., 1}]
     plot (
         { \xorigin + \x / 1 * cos(60) },
         { \x / 1 * sin(60) },
@@ -54,6 +64,7 @@
         { 0.3 * cos( (pi +  \x/0.4*2*pi) r) }
     ) ;
     %plot (\x, {-cos(1.0*\x r)*sin(2.0*\x r)}, {-sin(1.0*\x r)*sin(2.0*\x r)});
+
 
 
 \end{tikzpicture}
