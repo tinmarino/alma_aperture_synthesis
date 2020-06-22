@@ -21,7 +21,7 @@ Ce grand télescope virtuel a pour diamètre la distance maximale entre deux pet
 - [-> 4: Imagerie :](#s4_image) Le caillou ponctuel devient contiue : une forme.
 Constitution d'image avec plusieurs informations angulaires via une [transormée de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier) : "À l'abordage !"
 
-- [-> 5: Onde radio : ](#s5_radio) Augmentation de la distance des flotteurs et transformation en antennes. "TODO Per aspera ad astra."
+- [-> 5: Onde radio : ](#s5_radio) Augmentation de la distance des flotteurs et transformation en antennes. "Cap vers les étoiles !"
 
 - [-> Optionel: Nouvelles limitations:](#so_new_limit) Calcul des limitations anciennes et nouvelle. Détermination de la qualité maximale atteignable. "Marc Pageot ne navigue pas sur des cageots."
 
@@ -94,7 +94,7 @@ Par le suite les détecteurs (antennes) seront modélisée par des flotteurs dan
 
 # 2 <a name="s2_dirac"></a> Délai d'un choc
 
-<blockquote> Verba docent exempla trahunt </blockquote>
+<blockquote> Verba docent, exempla trahunt </blockquote>
 
 Supposons qu'une pierre soit lancé dans un lac calme.
 Une vague va se propager en cercles concentriques autour de cette pierre.
