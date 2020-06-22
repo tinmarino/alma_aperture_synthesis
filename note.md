@@ -1,25 +1,24 @@
 # TODO
 
 * Liens: Shanon (4.2)
+* Liens (5 photon) au moins un bloon pour parler d'à quel point il est génail
 * Règles: parler des régles que j'ai bien et liée au 10 cosmondement.
   * La matière ne traverse pas la matière (c'est la définition de matière)
   * Les charges
 
 ## TODO forme: 
 * Mettre des couleurs tranquillement, souligner
-* Transofrmée de fourier, retirer le lien de l'intro !!
 
 ## Image
 * Bouchons sous les vagues de 37°, le front d'onde est mauvais
 * Young / Airy
-* Aprtur synthesis many smalll in one big (so I again metion de discretisation)
+* Aprture synthesis many smalll in one big (so I again metion de discretisation)
+* IDEA: Un faisceau (sinuzoidale si t'es chaud qui bouge et une sinuzoide que "ralentit" sur la ligne de base, jusquà même être nulle. Ainsi on peux voir
 
 ## NEXT
+* Transofrmée de fourier, retirer le lien de l'intro !!
 
 
-# IDEA
-
-* Un faisceau (sinuzoidale si t'es chaud qui bouge et une sinuzoide que "ralentit" sur la ligne de base, jusquà même être nulle. Ainsi on peux voir
 
 ================================================================================
 

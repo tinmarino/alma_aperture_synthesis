@@ -8,7 +8,7 @@ header-includes: |
 
 
 La [synthèse d'ouverture](https://fr.wikipedia.org/wiki/Synth%C3%A8se_d%27ouverture)
-est le procésus de construction d'image utilisé par les réseaux d'antennes comme ALMA.
+est le procésus de construction d'image utilisé par les réseaux d'antennes comme ALMA(https://fr.wikipedia.org/wiki/Grand_r%C3%A9seau_d%27antennes_millim%C3%A9trique/submillim%C3%A9trique_de_l%27Atacama).
 Elle permet de simuler l'ouverture d'un grand [télescope](https://en.wikipedia.org/wiki/Telescope) avec plusieurs petits.
 Ce grand télescope virtuel a pour diamètre la distance maximale entre deux petits.
 
@@ -463,7 +463,7 @@ Lumière, Photon, Onde (radio)
 </div></sup>
 </div>
 
-Quelle est la différence entre le callou et le bouchon ? (Faire un pause ... réponse:) Le premier émet des vagues en se dépançant verticalement dans l'eau et le second se déplace verticalement sur l'eau lorsqu'il reçoit des vagues. De plus, si j'agitais artificiellement le bouchon, il émetrai des vagues. Donc la différence n'est pas dans leur nature mais dans leur comportement.
+Quelle est la différence entre le callou et le bouchon ? (Faire un pause ... réponse : ) Le premier émet des vagues en se dépançant verticalement dans l'eau et le second se déplace verticalement sur l'eau lorsqu'il reçoit des vagues. De plus, si j'agitais artificiellement le bouchon, il émetrai des vagues. Donc la différence n'est pas dans leur nature mais dans leur comportement.
 
 L'accélération d'une charge éléctrique, tipiquement un éléctron, engendre l'émission d'un [photon](https://fr.wikipedia.org/wiki/Photon) et réciproquement la reception d'un photon engendre l'accélération d'un electron.
 En agitant artificielement un éléctron dans une antenne, par exemple avec un aimant, on peut trasmettre un signal à une antenne voisine. Le porteur de ce signal est le photon : il est, plus généralement [porteur de la force](https://en.wikipedia.org/wiki/Force_carrier) [électromagnétique](https://fr.wikipedia.org/wiki/%C3%89lectromagn%C3%A9tisme).
