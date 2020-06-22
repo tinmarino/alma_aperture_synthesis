@@ -24,12 +24,6 @@
 
 % 2 flotteurs
 \foreach \xorigin in {-1, 0.5, 1} {
-    \draw[gb-neutral-red, variable=\x, samples at={0, 0.01, ..., 1}]
-        plot (
-            { \xorigin},
-            { 0 },
-            { \x },
-        ) ;
 
     %% In cm sir
     \pgfmathsetmacro{\xcm}{\xorigin*1cm}
@@ -57,7 +51,6 @@
     \end{scope}
 }
 
-% Front d'onde
 \draw (1, 0, 0)+(-30:0.4) -- +(150:2);
 
 \end{tikzpicture}
