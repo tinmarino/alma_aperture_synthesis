@@ -21,9 +21,9 @@ Ce grand télescope virtuel a pour diamètre la distance maximale entre deux pet
 - [-> 4: Imagerie :](#s4_image) Le caillou ponctuel devient contiue : une forme.
 Constitution d'image avec plusieurs informations angulaires via une [transormée de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier) : "À l'abordage !"
 
-- [-> 5: Onde radio : ](#s5_radio) Augmentation de la distance des flotteurs et transformation en antennes. "Per aspera ad astra."
+- [-> 5: Onde radio : ](#s5_radio) Augmentation de la distance des flotteurs et transformation en antennes. "TODO Per aspera ad astra."
 
-- [-> Optionel: Nouvelles limitations:](#so_new_limit) Calcul des limitations anciennes et nouvelle. Détermination de la qualité maximale atteignable. "Marc Pageot ne navigue sur des cageots."
+- [-> Optionel: Nouvelles limitations:](#so_new_limit) Calcul des limitations anciennes et nouvelle. Détermination de la qualité maximale atteignable. "Marc Pageot ne navigue pas sur des cageots."
 
 - [-> Conclusion: ](#s_conclusion) "C'est pas bientôt fini !"
 
@@ -31,6 +31,8 @@ Constitution d'image avec plusieurs informations angulaires via une [transormée
 
 
 # 1 <a name="s1_limit"></a> Limitations du télescope
+
+<blockquote> Nosce te ipsum </blockquote>
 
 On mesure la qualité d'une image astrophysique avec deux paramètres : sa [résolution angulaire](https://en.wikipedia.org/wiki/Dynamic_range#Photography) et sa [profondeur](https://fr.wikipedia.org/wiki/Liste_des_champs_profonds).
 
@@ -92,6 +94,7 @@ Par le suite les détecteurs (antennes) seront modélisée par des flotteurs dan
 
 # 2 <a name="s2_dirac"></a> Délai d'un choc
 
+<blockquote> Verba docent exempla trahunt </blockquote>
 
 Supposons qu'une pierre soit lancé dans un lac calme.
 Une vague va se propager en cercles concentriques autour de cette pierre.
@@ -152,6 +155,8 @@ Par exemple, si la vitesse de la vague est de $1\frac{m}{s}$, la distance entre 
 
 
 # 3 <a name="s3_modulo"></a> Délai d'une onde
+
+<blockquote> Fluctuat nec mergitur </blockquote>
 
 * TODO bloon discuss: Insister au moins dans un bloon, le manque d'information terrible qu'on avec le modulo 2pi
 
@@ -271,6 +276,8 @@ Chaque ligne permet de discriminer un rang d'angle différent. Suposez que l'on 
 
 # 4 <a name="s4_image"></a>Délai de plusieurs objects : reconstruction d'image
 
+<blockquote> Divide ut reges </blockquote>
+
 * TODO discussion sur pourquoi c'est pas de la triangulation
 * TODO discussion sur pourquoi c'est vraiment plus précis
   * TODO discussion Pourquoi la précision est énorme (voir avec les différents angles theta)
@@ -301,6 +308,8 @@ La compréhension des détails de ce processus implique une vision performante d
 
 # 5 <a name="s5_radio"></a> Des vagues aux ondes radios
 
+<blockquote> Per aspera ad astra </blockquote>
+
 Le concept mathématique utilisé par un telescope à ouverture synthétique est identique à celui du détecteur utilisant des flotteurs.
 
 Pour enrichir le vocabuliare du lecteur voici l'analogie:
@@ -326,11 +335,15 @@ En agitant artificielement un éléctron dans une antenne, par exemple avec un a
 
 # <a name="so_new_limit"></a> Optionel Limitations du réseau d'antennes
 
+<blockquote> Dura lex, sed lex </blockquote>
+
 * Parler de la résolution totale fente d'young et principe de raylight
 * OPtional section: démonstration des anciennes et nouvelles limitations (young et aperture)
 
 
 # <a name="s_conclusion"></a> Conclusion
+
+<blockquote> Quid novi </blockquote>
 
 La section 6 montre qu'il est possible de détecter l'agitation electronique extraterrestre via une une autre induite sur terre. La section 1 donne les limitations. Enfin, les autres sections expliquent la correlation de plusieurs récepteurs distants peut pousser la limite à celle d'un téléscope de la taille de leur séparation.
 
@@ -352,6 +365,8 @@ Sinon,
 
 
 # Liens pour aller plus loin
+
+<blockquote> Sic itur ad astra </blockquote>
 
 * [ESO spectroscopie (pdf)](https://www.eso.org/sci/meetings/2015/eris2015/program.html) : Introduction gentille à l'interferométrie : "ERIS : Enhanced Resolution Imager and Spectrograph"
 
