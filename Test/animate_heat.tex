@@ -1,0 +1,17 @@
+\documentclass[dvisvgm]{standalone}
+\usepackage{pst-plot}
+\usepackage[nomessages]{fp}
+\FPeval\Delta{round(2*pi/30:2)}
+
+\def\x(#1){sin(#1)^3}
+\def\y(#1){(13*cos(#1)-5*cos(2*#1)-2*cos(3*#1)-cos(4*#1))/16}
+
+\psset{algebraic,plotpoints=100}
+
+\begin{document}
+\multido{\n=0.00+\Delta}{31}{%
+\begin{pspicture}[showgrid=false](-1.5,-1.5)(1.5,1.5)
+    \psparametricplot[origin={0,0.15},linecolor=red]{0}{\n}{\x(t)|\y(t)}
+\end{pspicture}}
+
+\end{document}

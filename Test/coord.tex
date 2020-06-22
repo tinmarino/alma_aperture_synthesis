@@ -1,0 +1,49 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage{animate}  % Animations
+\usepackage{tikz-3dplot}
+
+\usepgflibrary{arrows}
+\usetikzlibrary{decorations.markings, arrows, decorations.pathmorphing,
+   backgrounds, positioning, fit, shapes.geometric}
+
+\def\drawaxes{
+    \draw[thick,->] (0,0,0) -- (5,0,0) node[anchor=north east]{$x$};
+    \draw[thick,->] (0,0,0) -- (0,5,0) node[anchor=north west]{$y$};
+    \draw[thick,->] (0,0,0) -- (0,0,5) node[anchor=south]{$z$};
+}
+
+\begin{document}
+\begin{frame}
+  \begin{center}
+    \begin{animateinline}[autoplay, controls, poster=first]{60}
+      \multiframe{90}{iFrame=0+1}{
+        \tdplotsetmaincoords{0}{0}
+        \begin{tikzpicture}[tdplot_main_coords]
+          \draw (-5cm, -3cm) rectangle (5cm, 3cm);
+
+          \tdplotsetrotatedcoords{\iFrame}{0}{0}
+          \begin{scope}[color=red,
+                        tdplot_rotated_coords,
+                        xshift=-3cm,scale=0.25]
+            \drawaxes
+          \end{scope}
+
+          \tdplotsetrotatedcoords{0}{\iFrame}{0}
+          \begin{scope}[color=red,tdplot_rotated_coords,scale=0.25]
+            \drawaxes
+          \end{scope}
+
+          \tdplotsetrotatedcoords{0}{0}{\iFrame}
+          \begin{scope}[color=red,
+                        tdplot_rotated_coords,
+                        xshift=3cm,scale=0.25]
+            \drawaxes
+          \end{scope}
+        \end{tikzpicture}
+      }
+    \end{animateinline}
+  \end{center}
+\end{frame}
+\end{document}

@@ -1,0 +1,16 @@
+% latex texsx-469409
+% dvisvgm --zoom=-1 --exact --font-format=woff texsx-469409
+
+\documentclass[dvisvgm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{animations}
+
+\begin{document}
+
+\tikz
+\node :fill opacity = { 0s="0", 5s="1" }
+:rotate = { 6s="0", 10s="360", repeats, restart=false}
+[fill = blue!20, draw = blue, ultra thick, circle]
+{Animate 2!};
+
+\end{document}

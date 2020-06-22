@@ -1,0 +1,22 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{animations}
+\usepackage{animate}
+\newcommand{\myAnim}[1]{
+\begin{tikzpicture}[make snapshot of=#1]
+\draw (1,.5) circle [radius=1mm];
+\node :shift = {
+along = {(0,0) circle[radius=5mm]} upright,
+0s="0", 2s="1", begin on=click }
+at (1,.5) [fill = blue, opacity=.5, circle] {Click};
+\end{tikzpicture}
+}
+\begin{document}
+\pagestyle{empty}
+
+\begin{animateinline}[autoplay,loop]{2}
+\multiframe{5}{nSec=0+0.5}{
+\myAnim{\nSec}
+}
+\end{animateinline}
+\end{document}

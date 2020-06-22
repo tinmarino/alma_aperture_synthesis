@@ -8,10 +8,9 @@
 
 \begin{tikzpicture}[scale=1]
 
-    % monochromatic incident light with electric field
-    \draw[gb-neutral-blue, variable=\x, samples at={0, 0.05,...,6}]
-        plot ( {\x}, {sin(\x*pi r)} );
-        %plot (\x, {-cos(1.0*\x r)*sin(2.0*\x r)}, {-sin(1.0*\x r)*sin(2.0*\x r)});
+  % monochromatic incident light with electric field
+  \draw[gb-neutral-blue, variable=\x, samples at={0, 0.05, ..., 6}]
+      plot ( {\x}, {sin(\x*pi r)} );
 
   \globalcolor{gb-neutral-orange}
   % (0, 0) pgf = (0.7, 2.8) tikz

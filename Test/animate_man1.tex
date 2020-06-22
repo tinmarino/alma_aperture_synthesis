@@ -1,0 +1,41 @@
+% latex texsx-469409
+% dvisvgm --zoom=-1 --exact --font-format=woff texsx-469409
+
+\documentclass[dvisvgm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{animations}
+
+\begin{document}
+
+\iffalse
+\tikz
+\node :fill opacity = { 0s="0", 5s="1" }
+:rotate = { 6s="0", 10s="360", repeats, restart=false}
+[fill = blue!20, draw = blue, ultra thick, circle]
+{Animate 2!};
+
+\fi
+
+\iftrue
+\begin{tikzpicture}[
+animate/orbit/.style 2 args = {
+myself:shift = {
+along = {
+(0,0) circle [radius=#1]
+} sloped in #2s/10,
+repeats }} ]
+
+\node :color = {
+        0s = "orange",
+        2s = "red",
+        4s = "orange",
+        repeats}
+    {Sun};
+\begin{scope}[animate={orbit={2.5cm}{365}}]
+\node {Earth};
+\node [animate={orbit={1cm}{28}}] {Moon};
+\end{scope}
+\useasboundingbox (-3.8,-3.8) (3.8,3.8);
+\end{tikzpicture}
+\end{document}
+\fi
