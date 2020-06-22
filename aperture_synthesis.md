@@ -207,6 +207,24 @@ Utilisé $v = \frac{d}{t} \left(= \frac{distance}{temps}\right) = \lambda\nu$
 
 * Alors si $\theta = 37°$ (cas 1), le bouchon Z recevra l'onde $0.5 \times arccos(37°) = 0.40m = 40cm$ plus loin. Ce bouchon aura 4 vagues de retard sur X et sera en phase
 
+<!-- CENTER -->
+<figure style="margin:10px" >
+  <img src='Figure/41_wave_animate_60.svg' alt='missing' style="
+    width:90%; max-width:700px; min-width:300px;
+    display: block;
+    margin: 0 auto;
+  "/>
+  <figcaption style="
+    text-align:center;
+    width:90%; max-width:700px; min-width:300px;
+    display: block;
+    margin: 0 auto;
+  ">
+  Trois bouchons valent mieux que deux.
+  </figcaption>
+</figure>
+
+
 * Mais si $\theta = 60°$, le bouchon Z recevra le front d'onde 0.5 * cos(60°) = 0.25m = 20cm + 5cm$ plus loin. Ce bouchon aura 2 vagues et demi de retard.
 Encore une fois, on ne peut pas mesurer les "2 vagues" mais on peut mesurer le "et demi" car Z sera en opposition de phase (déphasé de $\pi$) avec X : quand X sera au sommet de la vague, il sera en bas.
 En sommant les altitudes de X et de Z, en tout temps, on obtient zéro. Cette somme est une [interférence](https://fr.wikipedia.org/wiki/Interf%C3%A9rence) artificielle, ici destructive.

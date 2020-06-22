@@ -182,10 +182,10 @@
 \newcommand\drawwaved[2]{
     % Argument xorigin
     \draw
-    [gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., 1}]
+    [gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., 2}]
     plot (
         { #1  },
-        { 0.3 * cos( ( #2 +  \x/0.4*2) * pi r) },
-        { \x / 1 * sin(60) },
+        { 3 * cos( ( #2 +  \x/0.4*2) * pi r) },
+        { 10 * \x  * sin(60) },
     ) ;
 }

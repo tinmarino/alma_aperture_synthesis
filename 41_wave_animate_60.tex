@@ -7,33 +7,26 @@
 
 \begin{document}
 
-% Perspective
-%\tdplotsetmaincoords{0}{30}
-% Tourne x, z
-%\tdplotsetmaincoords{0}{10}
+\tikzset{every picture/.style={line width=20pt}}
 \begin{tikzpicture}[
-    %x={(1,0)},y={(0,1)},z={(0.5,0.87)},
-    x={(1cm,0cm)}, y={(0cm,1cm)}, z={(0.5cm,0.866cm)}, 
-    %tdplot_main_coords,
-    %x=1cm,y=1cm,z=1cm,>=stealth,
-    framed,
+    x={(10.0cm,0.0cm)}, y={(0.0cm,10.0cm)}, z={(5.0cm,8.66cm)}, 
 ]
 
 % Horizontal
-\draw[gb-neutral-blue] (-1.2, 0, 0) -- (1.6, 0, 0);
+\draw[gb-neutral-blue] (-12.0, 0.0, 0.0) -- (16.0, 0.0, 0.0);
 
-% 2 flotteurs
-\foreach \xorigin in {-1, 0.5, 1} {
+% 20.0 flotteurs
+\foreach \xorigin in {-10.0, 5.0, 10.0} {
 
     %% In cm sir
-    \pgfmathsetmacro{\xcm}{\xorigin*1cm}
+    \pgfmathsetmacro{\xcm}{\xorigin*10cm}
     % Y <0 if x=0.5
-    \pgfmathparse{0.5 == \xorigin ? 1 : 0}
+    \pgfmathparse{5 == \xorigin ? 1 : 0}
     \ifthenelse{\pgfmathresult>0}{
-        \pgfmathsetmacro{\tinmul}{-1}
+        \pgfmathsetmacro{\tinmul}{-10}
         \pgfmathsetmacro{\phase}{1}
     }{
-        \pgfmathsetmacro{\tinmul}{1}
+        \pgfmathsetmacro{\tinmul}{10}
         \pgfmathsetmacro{\phase}{0}
     }
 
@@ -43,15 +36,13 @@
     \begin{scope}
         % Warning: First shift then scale
         :xshift={ 0s = "\xcm"}
-        :line width={ 0s = "10pt"}
-        :yshift={ 0s = "\tinmul*0.25cm", 5s= "-\tinmul*0.25cm", 10s = "\tinmul*0.25cm", repeats }
-        :xscale={ 0s = "0.05"}
-        :yscale={ 0s = "0.05"}
+        :yshift={ 0s = "\tinmul*2.5cm", 5s= "-\tinmul*2.5cm", 10s = "\tinmul*2.5cm", repeats }
         \drawfishingfloatd
     \end{scope}
 }
 
-\draw (1, 0, 0)+(-30:0.4) -- +(150:2);
+% Wavefront
+\draw (10, 0, 0)+(-30:4) -- +(150:20);
 
 \end{tikzpicture}
 \end{document}

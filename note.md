@@ -1,19 +1,25 @@
 # TODO
 
+* Un faisceau (sinuzoidale si t'es chadu qui bouge et une sinuzoide que "ralentit" sur la ligne de base, jusquà même être nulle. Ainsi on peux voir
+* Image des bouchons oscillants, ajouter la droite suivant y le long du plan d'onde (à 30°): trouver le point et ensuite c'est selon y
 * Insister au moins dans un bloon, le manque d'information terrible qu'on avec le modulo 2pi
 * Wrapable equation for smartphone (destroying the display)
 * Draw les deux cas 37° et 60° avec 16 et 10 vagues etavec 0.5m de baseline aussi.
 * discussion sur pourquoi c'est pas de la triangulation
 * discussion sur pourquoi c'est vraiment plus précis
-* POurquoi la précision est énorme (voir avec les différents angles theta
+* POurquoi la précision est énorme (voir avec les différents angles theta)
 * Parler de la résolution totale fente d'young et principe de raylight
 
 * Warning theta isthe other side (SO get a sin \theta (p59)
 * Trois bouchons, mettre la ligne hozontale comme une sinuzoide
 * Trois bouch, déplacer dans include
 * Mettre des couleurs tranquillement, souligner
+
+# TODO forme: 
+* Markdown Header, mettre 1 label puis faire l'intro et la conclusion avec des liens
 * Figure reference placeholder in md (pendant relecture)
   * Donner un titre en gras
+
 
 # intro
  (de diamétre égal à la séparation maximale entre deux petits).
