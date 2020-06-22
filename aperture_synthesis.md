@@ -7,19 +7,30 @@ header-includes: |
 
 
 
-La [synthèse d'ouverture](https://fr.wikipedia.org/wiki/Synth%C3%A8se_d%27ouverture) est un procédé qui permet de simuler l'ouverture d'un grand [télescope](https://en.wikipedia.org/wiki/Telescope) avec plusieurs petits. Ce grand télescope virtuel a pour diamètre la distance maximale entre deux petits.
+La [synthèse d'ouverture](https://fr.wikipedia.org/wiki/Synth%C3%A8se_d%27ouverture)
+est le procédé de construction d'image utilisé par les réseau d'antennes comme ALMA.
+Elle permet de simuler l'ouverture d'un grand [télescope](https://en.wikipedia.org/wiki/Telescope) avec plusieurs petits.
+Ce grand télescope virtuel a pour diamètre la distance maximale entre deux petits.
 
-Nous verrons (1) pourquoi les grands télescopes ont une meilleure résolution angulaire et que simuler un grand télescope signifie obtenir cette même résolution.
+- [-> 1: Limitations du télescope :](#s1_limit) Pourquoi les grands télescopes ont une meilleure résolution angulaire et que simuler un grand télescope signifie obtenir cette même résolution : "Pourquoi moi ?"
 
-En (2) 
+- [-> 2: Délai :](#s2_dirac) Section fondamentale. En commençant, la méthaphore avec les vagues eau-air, nous verrons comment le délai de reception d'une vague entre deux flotteurs peut nous donner la direction d'une vague : "Bienvenu à bord !"
 
-En (3) nous verrons comment joindre les informations de deux télescopes pour obtenir des informations précise sur l'angle d'une source. Spoiler: il faut faire une somme
+- [-> 3: Sinuzoïde :](#s3_modulo) Ajout de réalisme au modèle, la vague deviens une synusoïde, c'est à dire un ensemble de vagues : "On s'amarine moussaillon ?"
 
-Puis la partie (4) explique comment plusieurs informations angulaire permettent de constituer une image via une [transormée de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier).
+- [-> 4: Imagerie :](#s4_image) Le caillou ponctuel devient contiue : une forme.
+Constitution d'image avec plusieurs informations angulaires via une [transormée de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier) : "À l'abordage !"
+
+- [-> 5: Onde radio : ](#s5_radio) Augmentation de la distance des flotteurs et transformation en antennes. "Per aspera ad astra."
+
+- [-> Optionel: Nouvelles limitations:](#so_new_limit) Calcul des limitations anciennes et nouvelle. Détermination de la qualité maximale atteignable. "Marc Pageot ne navigue sur des cageots."
+
+- [-> Conclusion: ](#s_conclusion) "C'est pas bientôt fini !"
+
+- [-> Aller plus loin: ](#s_conclusion) "Quand y'en a plus, y'en a encore."
 
 
-
-# 1. Limitations du télescope
+# 1 <a name="s1_limit"></a> Limitations du télescope
 
 On mesure la qualité d'une image astrophysique avec deux paramètres : sa [résolution angulaire](https://en.wikipedia.org/wiki/Dynamic_range#Photography) et sa [profondeur](https://fr.wikipedia.org/wiki/Liste_des_champs_profonds).
 
@@ -79,7 +90,7 @@ En effet, comme vous allez le voir, les détecteurs radio permettent de mesurer 
 Par le suite les détecteurs (antennes) seront modélisée par des flotteurs dans l'eau et leur position est mesurable. En optique visible, cette position n'est pas mesurable, on peut juste savoir si le flotteur bouge. En terme techniques, on dit que les antennes radio (ou millimétriques) mesures simultanément la phase et l'amplitude du signal électromagnétique.
 
 
-# 2 Délai d'un choc
+# 2 <a name="s2_dirac"></a> Délai d'un choc
 
 
 Supposons qu'une pierre soit lancé dans un lac calme.
@@ -90,10 +101,10 @@ Comme en astrophysique, nous voulons mesurer sa position angulaire et non sa dis
 Supposons, pour commencer, qu'il n'y a qu'une vague généré par cette pierre.
 Alors, si la pierre a été lancé à droite, comme sur la figure, le flotteur de droite va recevoir la vague avant celui de gauche. Réciproquement, si nous mesurons que le flotteur de droite est déplacé avant celui de gauche, c'est que la vague a été lancé à droite.
 
-<!-- Figure diffraction -->
+<!-- Center Figure diffraction -->
 <figure style="margin:10px" >
   <img src='Figure/21_float_n_stone.svg#svgView(preserveAspectRatio(none))' alt='missing' style="
-    width:70%; min-width:300px; height:300px;
+    width:70%; min-width:300px; height:450px;
     display: block;
     margin: 0 auto;
   "/>
@@ -129,13 +140,20 @@ Remplaçons le ! On connait la vitesse de la vague $v$ et le temps de délai $\D
 
 Ainsi a est donné par la formule $vitesse = \frac{distance}{temps} \Leftrightarrow distance = vistesse \times temps$. Ce qui nous donne l'équation:
 
-$$\theta = arccos\left(\frac{b}{v\times\Delta t}\right) = arccos\left( \frac{Distance\_de\_la\_base}{Vitesse\_de\_la\_vage \times Delai\_temporel\_mesure} \right)$$
+$$
+\begin{aligned} 
+\theta &= arccos\left(\frac{b}{v\times\Delta t}\right) \\
+       & = arccos\left( \frac{Distance\_de\_la\_base}{Vitesse\_de\_la\_vage \times Delai\_temporel\_mesure} \right) \\
+\end{aligned} 
+$$
 
 Par exemple, si la vitesse de la vague est de $1\frac{m}{s}$, la distance entre les deux flotteurs est de 2m et le temps mesuré est de 2 seconde,  C'est que $\theta = 0°$ soit la vague vient de l'extrème droite (à ne pas citer hors contexte).
 <- Si le temps mesuré est de 1 seconde, la vague viens d'un angle $\theta = arccos\left(\frac{2}{1 \times 1 }\right) = arccos(1/2) = 60°$ (en effet $cos(60°): = 1/2$). C'est la situation su schema (TODO link schema).
 
 
-# 3 Délai d'une onde
+# 3 <a name="s3_modulo"></a> Délai d'une onde
+
+* TODO bloon discuss: Insister au moins dans un bloon, le manque d'information terrible qu'on avec le modulo 2pi
 
 La section précédente nous a donné $\theta$ : la position (angulaire) de l'objectif.
 C'est donc mission acomplie pour la section 2 !
@@ -207,22 +225,39 @@ Utilisé $v = \frac{d}{t} \left(= \frac{distance}{temps}\right) = \lambda\nu$
 
 * Alors si $\theta = 37°$ (cas 1), le bouchon Z recevra l'onde $0.5 \times arccos(37°) = 0.40m = 40cm$ plus loin. Ce bouchon aura 4 vagues de retard sur X et sera en phase
 
-<!-- CENTER -->
-<figure style="margin:10px" >
-  <img src='Figure/41_wave_animate_60.svg' alt='missing' style="
-    width:90%; max-width:700px; min-width:300px;
-    display: block;
-    margin: 0 auto;
-  "/>
+<!-- Left -->
+<div style="clear: both; margin:0; display:flex">
+<figure style="float: left; min-width:300px; width:450px; margin:0;
+    margin-top:auto;
+    align-self: flex-end;
+    " >
+  <img src='Figure/42_wave_animate_37.svg' alt='missing' style="
+    width:90%;
+    "/>
   <figcaption style="
     text-align:center;
-    width:90%; max-width:700px; min-width:300px;
-    display: block;
-    margin: 0 auto;
+    width:90%;
   ">
-  Trois bouchons valent mieux que deux.
+  Vague avec $theta= 37°$. X, Y, Z sont en phase.
   </figcaption>
 </figure>
+<!-- Right -->
+<figure style="float: right; min-width:300px; width:450px; margin:0;
+    margin-top:auto;
+    align-self: flex-end;
+    " >
+  <img src='Figure/41_wave_animate_60.svg' alt='missing' style="
+    width:90%;
+    "/>
+  <figcaption style="
+    text-align:center;
+    width:90%;
+  ">
+  Vague avec $theta= 60°$. Z et en opposition de phase.
+  </figcaption>
+</figure>
+</div>
+<div style="display: block; clear: both;"></div>
 
 
 * Mais si $\theta = 60°$, le bouchon Z recevra le front d'onde 0.5 * cos(60°) = 0.25m = 20cm + 5cm$ plus loin. Ce bouchon aura 2 vagues et demi de retard.
@@ -234,7 +269,11 @@ Chaque ligne permet de discriminer un rang d'angle différent. Suposez que l'on 
 
 
 
-# 4 Délai de plusieurs objects
+# 4 <a name="s4_image"></a>Délai de plusieurs objects : reconstruction d'image
+
+* TODO discussion sur pourquoi c'est pas de la triangulation
+* TODO discussion sur pourquoi c'est vraiment plus précis
+  * TODO discussion Pourquoi la précision est énorme (voir avec les différents angles theta)
 
 ## 4.1 
 
@@ -250,14 +289,17 @@ La solution la plus simple dans ce cas, le cas réel, est de limiter physiquemen
 TODO chose par ailleur effectué sur les téléscopes entier, il 
 Malgrès les efforts de la section 4 pour repousser les signaux parasites et limiter le champs d'étude, il reste un manque d'information 
 
-
-# 5 Reconstruction d'image
+## 4.3 Reconstruction d'image
 
 De cette manière, avec plusieurs ligne de base, il est également possible de detecter simulanément des vagues provenant de différents endroit.
 La compréhension des détails de ce processus implique une vision performante des sommes de sinuzoides que procure la [transformation de fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier) ou les [ondelettes](https://fr.wikipedia.org/wiki/Ondelette) et fera peut être l'object d'un chapitre 2 dans le cas improbable d'une demande d'un des 2,3 lecteurs.
 
+* TODO Recontruction d'image somme de sinuzoide:
+  * text: pourquoi c'est comme plussieurs petits
+  * image step function de -thete a theta)
 
-# 6 Des vagues aux ondes radios
+
+# 5 <a name="s5_radio"></a> Des vagues aux ondes radios
 
 Le concept mathématique utilisé par un telescope à ouverture synthétique est identique à celui du détecteur utilisant des flotteurs.
 
@@ -282,8 +324,13 @@ L'accélération d'une charge éléctrique, tipiquement un éléctron, engendre 
 En agitant artificielement un éléctron dans une antenne, par exemple avec un aimant, on peut trasmettre un signal à une antenne voisine. Le porteur de ce signal est le photon : il est, plus généralement [porteur de la force](https://en.wikipedia.org/wiki/Force_carrier) [électromagnétique](https://fr.wikipedia.org/wiki/%C3%89lectromagn%C3%A9tisme).
 
 
+# <a name="so_new_limit"></a> Optionel Limitations du réseau d'antennes
 
-# Conclusion
+* Parler de la résolution totale fente d'young et principe de raylight
+* OPtional section: démonstration des anciennes et nouvelles limitations (young et aperture)
+
+
+# <a name="s_conclusion"></a> Conclusion
 
 La section 6 montre qu'il est possible de détecter l'agitation electronique extraterrestre via une une autre induite sur terre. La section 1 donne les limitations. Enfin, les autres sections expliquent la correlation de plusieurs récepteurs distants peut pousser la limite à celle d'un téléscope de la taille de leur séparation.
 
@@ -304,16 +351,9 @@ C'est
 Sinon, 
 
 
-# Liens, aller plus loin
+# Liens pour aller plus loin
 
-* ESO spectroscopie (pdf) : Introduction gentille à l'interferométrie : [ERIS : Enhanced Resolution Imager and Spectrograph](https://www.eso.org/sci/meetings/2015/eris2015/program.html)
+* [ESO spectroscopie (pdf)](https://www.eso.org/sci/meetings/2015/eris2015/program.html) : Introduction gentille à l'interferométrie : "ERIS : Enhanced Resolution Imager and Spectrograph"
 
 
 * 
-<div> MORE
-  <div class="description">
-    Html app</br></br>
-    Perlito.js: Raku interpreter compiled in javascript
-  </div>
-</div>
-

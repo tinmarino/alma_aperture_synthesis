@@ -179,10 +179,19 @@
     \end{scope}
 }
 
-\newcommand\drawwaved[2]{
+\newcommand\drawwaved[3]{
     % Argument xorigin
-    \draw
-    [gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., 2}]
+    \draw [gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., #3}]
+    plot (
+        { #1  },
+        { 3 * cos( ( #2 +  \x/0.4*2) * pi r) },
+        { 10 * \x  * sin(60) },
+    ) ;
+}
+
+\newcommand\drawwavedtwo[3]{
+    % Argument xorigin
+    \draw [gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., #3}]
     plot (
         { #1  },
         { 3 * cos( ( #2 +  \x/0.4*2) * pi r) },

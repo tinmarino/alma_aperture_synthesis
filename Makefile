@@ -1,6 +1,6 @@
 tikz = 21_float_n_stone 12_diffraction 22_float_triangle 23_float_three 24_float_all 31_wave_which
 
-animates = 41_wave_animate_60
+animates = 41_wave_animate_60 42_wave_animate_37
 
 all: svg html
 
