@@ -18,12 +18,17 @@
 
 \iftrue
 \begin{tikzpicture}[
-animate/orbit/.style 2 args = {
-myself:shift = {
-along = {
-(0,0) circle [radius=#1]
-} sloped in #2s/10,
-repeats }} ]
+    animate/orbit/.style 2 args = {
+        myself:shift = {
+            along = {
+                (0,0) circle [radius=#1]
+            } sloped in #2s/10,
+            repeats
+        }
+    } ]
+
+
+\draw :xshift = {0s = "0cm", 30s = "-3cm", repeats} (0,0) circle (5mm);
 
 \node :color = {
         0s = "orange",
