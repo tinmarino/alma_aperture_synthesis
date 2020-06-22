@@ -29,5 +29,32 @@
 \fishingfloatd[x=0.5, y=0, scale=0.1, rotate=0]
 \fishingfloatd[x=-1, y=0, scale=0.1, rotate=0]
 
+% Front d'onde
+\draw (1, 0)+(-30:0.4) -- +(150:2);
+
+% Sight
+\draw (-1, 0, 0) -- +(60:1.5);
+
+
+% Lambda = 0.4 0.5 has 1/2 late
+\draw :xshift = {0s = "0", 30s = "-3", repeats} (0,0) circle (5mm);
+
+\foreach \xorigin in {-1, 1} {
+\draw[gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., 1}]
+    plot (
+        { \xorigin + \x / 1 * cos(60) },
+        { \x / 1 * sin(60) },
+        { 0.3 * cos( (0 +  \x/0.4*2*pi) r) }
+    ) ;
+}
+\draw[gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., 1}]
+    plot (
+        { 0.5 + \x / 1 * cos(60) },
+        { \x / 1 * sin(60) },
+        { 0.3 * cos( (pi +  \x/0.4*2*pi) r) }
+    ) ;
+    %plot (\x, {-cos(1.0*\x r)*sin(2.0*\x r)}, {-sin(1.0*\x r)*sin(2.0*\x r)});
+
+
 \end{tikzpicture}
 \end{document}
