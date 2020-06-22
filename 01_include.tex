@@ -1,9 +1,9 @@
 \usepackage{tikz} % Drawing
 \usepackage{pgfplots} % Axes
-\usepackage{tikz-3dplot} % 3d
 \pgfplotsset{compat=1.16}
 \usepackage{relsize} % Font size
 \usepackage{scalefnt}
+\usepackage{ifthen}
 \usetikzlibrary{
     calc, patterns, angles, quotes, backgrounds,
     animations,
@@ -176,4 +176,16 @@
     % Angle
     \draw pic [draw, ->, "$\theta$", angle eccentricity=1.4] {angle = X--Y--cross};
     \draw pic [draw, ->, "$\theta$", angle eccentricity=1.4] {angle = X2--X--S};
+}
+
+
+\newcommand\drawwaved[2]{
+    % Argument xorigin
+    \draw
+    [gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., 1}]
+    plot (
+        { #1  },
+        { 0.3 * cos( ( #2 +  \x/0.4*2) * pi r) },
+        { \x / 1 * sin(60) },
+    ) ;
 }

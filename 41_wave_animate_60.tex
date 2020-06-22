@@ -19,85 +19,46 @@
     framed,
 ]
 
-% main axes
-\def\A{1.5}
-\draw[] (0,0,0) -- ++(1.4,0,0) node[right] {$x$};
-\draw[pink] (0,0,0) -- (0,\A*1.4,0) node[right] {$y$};
-\draw[blue] (0,0,0) -- (0,0,\A*1.4) node[above left] {$z$};
-
-% Test Move
-\draw :xshift = {0s = "0cm", 30s = "-3cm", repeats} (0,0) circle (5mm);
-
-
 % Horizontal
 \draw[gb-neutral-blue] (-1.2, 0, 0) -- (1.6, 0, 0);
 
-% 2 floatteurs
-% Float
-\foreach \xorigin in {-1cm, 0.5cm, 0, 1cm} {
-\begin{scope}
-    :xshift={ 0s = "\xorigin", 10s = "\xorigin", repeats }
-    :yshift={ 0s = "0.25cm", 5s= "-0.25cm", 10s = "0.25cm", repeats }
-    :xscale={ 0s = "0.05", 10s = "0.05", repeats } 
-    :yscale={ 0s = "0.05", 10s = "0.05", repeats } 
-    :line width={ 0s = "10pt", 10s = "10pt", repeats }
-    \drawfishingfloatd
-\end{scope}
-}
+% 2 flotteurs
+\foreach \xorigin in {-1, 0.5, 1} {
+    \draw[gb-neutral-red, variable=\x, samples at={0, 0.01, ..., 1}]
+        plot (
+            { \xorigin},
+            { 0 },
+            { \x },
+        ) ;
 
-\fishingfloatd[x=1, y=0, scale=0.1, rotate=0]
-\fishingfloatd[x=0.5, y=0, scale=0.1, rotate=0]
-\fishingfloatd[x=-1, y=0, scale=0.1, rotate=0]
+    %% In cm sir
+    \pgfmathsetmacro{\xcm}{\xorigin*1cm}
+    % Y <0 if x=0.5
+    \pgfmathparse{0.5 == \xorigin ? 1 : 0}
+    \ifthenelse{\pgfmathresult>0}{
+        \pgfmathsetmacro{\tinmul}{-1}
+        \pgfmathsetmacro{\phase}{1}
+    }{
+        \pgfmathsetmacro{\tinmul}{1}
+        \pgfmathsetmacro{\phase}{0}
+    }
+
+    % drawvawe
+    \drawwaved{\xorigin}{\phase}
+
+    \begin{scope}
+        % Warning: First shift then scale
+        :xshift={ 0s = "\xcm"}
+        :line width={ 0s = "10pt"}
+        :yshift={ 0s = "\tinmul*0.25cm", 5s= "-\tinmul*0.25cm", 10s = "\tinmul*0.25cm", repeats }
+        :xscale={ 0s = "0.05"}
+        :yscale={ 0s = "0.05"}
+        \drawfishingfloatd
+    \end{scope}
+}
 
 % Front d'onde
 \draw (1, 0, 0)+(-30:0.4) -- +(150:2);
-
-% Sight
-\draw (-1, 0, 0) -- +(60:1.5);
-
-
-% Lambda = 0.4 0.5 has 1/2 late
-
-
-\NewDocumentCommand{\drawwaved}{}{
-    % :xshift = {0s = "0", 30s = "-3", repeats}
-    \draw
-    [gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., 1}]
-    plot (
-        { \xorigin + \x / 1 * cos(60) },
-        { 0.3 * cos( (0 +  \x/0.4*2*pi) r) },
-        { \x / 1 * sin(60) },
-    ) ;
-}
-
-%\foreach \xorigin in {-1, 0.5, 1} {
-%\begin{scope}
-%    :xshift={ 0s = "\xorigin", 10s = "\xorigin", repeats }
-%    :yshift={ 0s = "0.25cm", 5s= "-0.25cm", 10s = "0.25cm", repeats }
-%    :xscale={ 0s = "1", 10s = "1", repeats } 
-%    :yscale={ 0s = "1", 10s = "1", repeats } 
-%    %:line width={ 0s = "10pt", 10s = "10pt", repeats }
-%    \drawwaved
-%\end{scope}
-%}
-
-
-
-\draw[gb-neutral-blue, variable=\x, samples at={0, 0.01, ..., 1}]
-    plot (
-        { 0.5 + \x / 1 * cos(60) },
-        { 0.3 * cos( (pi +  \x/0.4*2*pi) r) },
-        { \x },
-    ) ;
-    %plot (\x, {-cos(1.0*\x r)*sin(2.0*\x r)}, {-sin(1.0*\x r)*sin(2.0*\x r)});
-
-\draw[gb-neutral-red, variable=\x, samples at={0, 0.01, ..., 1}]
-    plot (
-        { 0 },
-        { 0 },
-        { \x },
-    ) ;
-
 
 \end{tikzpicture}
 \end{document}
