@@ -1,5 +1,4 @@
 \documentclass[tikz]{standalone}
-% From: https://tex.stackexchange.com/questions/469109/how-to-change-arrowheads-to-lie-on-a-plane
 % \documentclass[dvisvgm]{standalone}
 \usepackage{tikz}
 \input{01_include.tex}
@@ -66,8 +65,8 @@
             \draw[thin, densely dashed,gb-neutral-purple] (axis cs:0.3941,0.03938) -- (axis cs:0.3941,0);
             \draw[thin, densely dashed,gb-neutral-purple] (axis cs:-0.3941,0.03938) -- (axis cs:-0.3941,0);
 
-            % Label FWHM
-            \draw [decorate, rotate=180, decoration={brace, amplitude=10pt,raise=2pt}] (-0.07,0.4) -- (0.07,0.4) node
+            % FWHM
+            \draw [decorate, decoration={brace, amplitude=10pt,raise=2pt}] (-0.07,0.4) -- (0.07,0.4) node
                 %[midway, anchor=south west, yshift=1mm, xshift=1mm, outer sep=10pt,font=\tiny]
                 [midway, anchor=west,
                     %yshift=1mm, xshift=1mm,
