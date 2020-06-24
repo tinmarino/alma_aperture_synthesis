@@ -1,0 +1,114 @@
+\documentclass[tikz]{standalone}
+% \documentclass[dvisvgm]{standalone}
+% From: https://tex.stackexchange.com/questions/469109/how-to-change-arrowheads-to-lie-on-a-plane
+\usepackage{tikz}
+\input{01_include.tex}
+\input{53_slit_include.tex}
+
+\usetikzlibrary{3d}
+
+% Warning, magics
+\definecolor{wall}{HTML}{665c54} % gb-dark3
+\definecolor{background}{HTML}{282828} % gb-dark0
+
+% Debug
+%\definecolor{background}{HTML}{ffffff} \AtBeginDocument{\globalcolor{black}}
+
+\begin{document}
+
+\tikzset{invclip/.style={clip,insert path={{[reset cm]
+      (-16383.99999pt,-16383.99999pt) rectangle (16383.99999pt,16383.99999pt)
+    }}}}
+
+
+\begin{tikzpicture}[scale=1.5,every node/.append style={transform shape}
+    ]
+
+    % Declare sinc
+    \pgfmathdeclarefunction{sinc}{1}{%
+        \pgfmathparse{abs(#1) < 0.01
+            ? 1
+            %: #1
+            : sin(#1 r) / #1
+            %: 1 /#1
+        }
+    }
+
+    % Set clip size
+    \clip (-0.51, -2.25) rectangle + (8, 4.5);
+
+    % Rectangle 1:
+    \rectone
+
+    % Rectangle 2: Slits
+    \draw[fill=wall] (2,-1.7,-1) -- (2,-1.7,1) -- (2,1.7,1) -- (2,1.7,-1) -- (2,-1.7,-1);
+    \fill (2,0.5) circle (0.05) (2,-0.5) circle (0.05);
+    \fill (1.95,-0.5) rectangle (2.05,0.5);
+
+    % Draw pseudo circles
+    \begin{scope}
+        % Filled
+        \def\source{1.5}
+        \def\angle{30}
+        \foreach \inc in {1, 1.25, ..., 2.75} {
+            \pgfmathsetmacro\r{\inc + \source}
+            \draw (\source, 0) ++(-\angle:\inc) arc (-\angle:\angle:\inc);
+        }
+        % Dashed
+        \foreach \inc in {1.125, 1.375, ..., 2.7} {
+            \pgfmathsetmacro\r{\inc + \source}
+            \draw[dashed] (\source,0) ++(-\angle:\inc) arc (-\angle:\angle:\inc);
+        }
+        % Hide end of waves
+        \fill [color=background] (4, -2) rectangle (7, 2);
+    \end{scope}
+
+
+    % Rectangle 3: Image
+    \draw[fill=wall] (4,-1.7,-1) -- (4,-1.7,0) -- (4,1.7,0) -- (4,1.7,-1) -- (4,-1.7,-1);
+
+    % Label X, Y, d
+    \begin{scope}[canvas is yz plane at x=2,rotate=-90]
+        \node[above] at (0,0.5) {Fente};
+        %\node[below] at (0,-0.5) {Y};
+        \node[left] at (-0.5,0) {d};
+    \end{scope}
+    % Label source
+    \begin{scope}[canvas is yz plane at x=0.5,rotate=-90]
+        \node[above] at (0,0) {Source};
+    \end{scope}
+
+    % Bessel plot
+    \begin{scope}[xshift=4cm,yshift=2cm,rotate=-90,canvas is xy plane at z=0]
+        \begin{axis}[
+            width=5.575cm,
+            xmin=-0.62,
+            xmax=0.62,
+            ymin=0,
+            ticks=none
+        ]
+            % Bessel curve
+            \addplot [samples=500,smooth] {
+                (
+                   sinc( 5*pi*sin(deg(x)) )
+                    %/  deg( 5*pi*sin(deg(x)) ) 
+                )^(2)
+            };
+
+            \draw[thick, dotted, gb-neutral-aqua] (axis cs:-0.197, 0.9) -- (axis cs:-0.197,0);
+
+            % Brace first min
+            \draw [decorate, decoration={brace, amplitude=5pt, raise=2pt}]
+                (-0.2,0.7) -- (0,0.7) node
+                [midway, anchor=west,
+                    yshift=-0.1cm, 
+                    outer sep=10pt,font=\scriptsize, rotate=90]
+                {$\frac{\lambda}{d}$};
+        \end{axis}
+    \end{scope}
+
+    % Rays, mesured by eye
+    \draw[thick,densely dashed,gb-neutral-purple] (2,0) -- (6.9,0);
+
+\end{tikzpicture}
+\end{document}

@@ -520,7 +520,7 @@ Voici quelques liens pour comprendre la mécanique physique du parcourt de la lu
 2. Le spectre angulaire est la transformée de fourier de la forme de l'emétteur : [ondes planes](https://fr.wikipedia.org/wiki/Spectre_d%27ondes_planes)).
 2. Une onde se comporte comme si tout point agité se comportait comme un émetteur secondaire : [principe de Huygens-Fresnel](https://fr.wikipedia.org/wiki/Principe_de_Huygens-Fresnel).
 3. Une onde traversant une ouverture va se disperser : [théorie de la diffraction](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_diffraction).
-4. Figure de diffraction loins de l'ouverture : [diffraction de fraunhoffer](https://fr.wikipedia.org/wiki/Diffraction_de_Fraunhofer).
+4. Figure de diffraction loins de l'ouverture : [diffraction de Fraunhoffer](https://fr.wikipedia.org/wiki/Diffraction_de_Fraunhofer).
 5. On ne peut pas voir d'objets plus petit que la longueur d'onde : [diffraction de Fresnel](https://fr.wikipedia.org/wiki/Diffraction_de_Fresnel).
 
 
