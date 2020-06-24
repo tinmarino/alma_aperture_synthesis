@@ -319,7 +319,7 @@ Félicitation au lecteur qui est arrivé jusqu'ici : il peut en effet désormais
 
 - [4.2:](#s42_forme) Puis verrons en quoi un caillou non ponctuel peut être considéré comme plusieurs caillou ponctuels côte à côte.
 
-- [4.3:](#s41_image) Ce qui nous permettra de reconstuire la forme d'un caillou à partir des déplacements détectés.
+- [4.3:](#s43_image) Ce qui nous permettra de reconstuire la forme d'un caillou à partir des déplacements détectés.
 
 - [4.4:](#s44_spectre) Enfin nous aborderons l'importance des filtres et la mesure de la taille des vagues.
 <sup>[+]<div class="description">
@@ -382,7 +382,7 @@ Nous avons utilisé le [critère de Rayleight](http://ressources.univ-lemans.fr/
 </div></sup>
 </div>
 
-La résolution d'ALMA est donc de 0.0000036° ou 10 mili-arc-segonde de degrés. Ce qui est très précis et permet de synthétiser des images avec un grand détail en suivant la méthode que nous décrirons prochainement à la <a href="#s41_image">section 4.3</a>.
+La résolution d'ALMA est donc de 0.0000036° ou 10 mili-arc-segonde de degrés. Ce qui est très précis et permet de synthétiser des images avec un grand détail en suivant la méthode que nous décrirons prochainement à la <a href="#s43_image">section 4.3</a>.
 </div>
 
 
@@ -469,11 +469,18 @@ La lumière, colonie de photon figés dans le temps et fonçant dans l'espace, e
 
 <hr>
 
-Cette document vous a expliqué, je l'espère, la synthèse d'ouverture, technique utilisé principalement par les réseaux d'antennes. Dans cette optique, je me permet de vous expliquer pourquoi les antennes (réflecteur + oscilloscope) sont supérieures aux télescopes (miroir + CCD ou bolomètre). La réponse réside dans les facultés de l'oscilloscope ou plus généralement du traitement de signal électrique versus optique.
+Ce document vous a expliqué, je l'espère, la synthèse d'ouverture, technique utilisée principalement par les réseaux d'antennes.
+Dans cette optique, je me permet de vous expliquer pourquoi les antennes (réflecteur + oscilloscope) sont supérieures aux télescopes (miroir + CCD ou bolomètre). La réponse réside dans les facultés de l'oscilloscope ou plus généralement du traitement de signal électrique par raport à l'optique.
+
 
 L'oscilloscope a la capacité de mesurer simultanément phase et amplitude alors que la CCD ou le bolomètre ne mesure que l'intensité (amplitude au carré).
 Cette capacité permet au réseau d'antennes d'enregistrer toutes ses mesures afin que les machines fassent, à postériori, le traitement du signal. La corrélation est effectué, au calme, avec des ordinateurs. Alors que dans l'optique, la corrélation doit être faite en temps réel, avec un banc optique vulnérable à la moindre oscillation, au milieu des machines à 3500m d'altitude, dans un pays sismique. Chaque acquisition du VLTI (optique) est une aventure humaine. Les acquisitions d'ALMA (radio) commence à ressmbler à une croisière (sauf pour les ordinateurs qui vitualisent tout le banc optique).<br/>
 De plus, un signal électrique peut être multiplié avec beaucoup moins de bruit qu'un signal optique. Ceci facilite la synthèse d'ouverture avec plus de deux antennes. Par exemple ALMA en a 66 alors que le VLTI n'en a que ... 2.
+
+<hr>
+
+TODO ALMA a 66 antennes donc $\frac{66 \times 65}{2} = 2145$ paires, mesure une onde de 1mm donc de fréquence 300GHz. C'est à dire que 
+Un processeur va à un rythme d'environ 1GHz, ALMA en a 130 millions.
 
 
 # <a name="so_new_limit"></a> Optionnel/ Limitations du réseau d'antennes
@@ -513,25 +520,22 @@ De plus, un signal électrique peut être multiplié avec beaucoup moins de brui
 
 <blockquote> Quid novi </blockquote>
 
-La section 6 montre qu'il est possible de détecter l'agitation électronique extraterrestre via une autre induite sur terre. La section 1 donne les limitations. Enfin, les autres sections expliquent la corrélation de plusieurs récepteurs distants peut pousser la limite à celle d'un téleescope de la taille de leur séparation.
+La section 6 montre qu'il est possible de détecter l'agitation électronique extraterrestre via une autre induite sur terre. La section 1 donne les limitations. Enfin, les autres sections expliquent la corrélation de plusieurs récepteurs distants peut pousser la limite à celle d'un télescope de la taille de leur séparation.
 
 Ici le lecteur devrait avoir compris:
 
-* L'origine de la [limitation des télescopes](#s1_limit)
-* Comment déterminer la position angulaire d'une source avec la corrélation entre deux récepteurs.
+* L'origine de la [limitation des télescopes](#s1_limit).
+* [Comment](#s3_modulo) déterminer la position angulaire d'une source avec la corrélation entre deux récepteurs.
 * La [différence entre interférométrie et triangulation](#s41_triangulation).
-* Pourquoi plus de deux récepteurs sont nécessaires pour [former une image](#s41_image).
-* TODO Pourquoi beaucoup de calcul.
-* TODO télescope > antennes
+* Pourquoi plus de deux récepteurs sont nécessaires pour [former une image](#s43_image).
+* Pourquoi le corrélateur a une importante charge de calcul (TODO cite 5.3)
+* Pourquoi la synthèse d'ouverture est plus facile à effectuer avec des antennes qu'avec des télescope (TODO cite 5.2)
 
-TODO final not good
 Voilà cette explication est terminée.
-J'espère que tu as lu lentement sans quoi la compréhension a due être hasardeuse.
-Enfin, si tu as tout compris c'est très bien.
-Félicitation, si tu es arrivé jusqu'ici, le voyage était périlleux.
-S'il t'as plue, je m'en vois ravis.
-C'est
-Sinon,
+J'espère que tu as lu lentement sans quoi la compréhension a due être laborieuse.
+Quoi qu'il en soit, merci pour la lecture et félicitation pour l'effort.
+Si tu as appris quelque chose de nouveau, c'est une petite victoire.
+Puisses-tu la célébrer pour, demain, te réveiller avec plus d'enthousiasme qu'hier.
 
 
 # Liens pour aller plus loin

@@ -17,15 +17,18 @@
 
 * Faire une intro sympa et honête (public, niveau, compllétude, reference, from-where, where I am, where I go, doctrine, regles, physique)
 
+* Bouger chare ge calcul de la conclusion ?
+* Faire section au 5: Méthaphore, Telescope Vs Antene, 3 Charge de calcul
+
 ## TODO forme: 
 * Mettre des couleurs tranquillement, souligner
 * Mettre des <hr> aussi 
+
 
 ## Image
 * Bouchons sous les vagues de 37°, le front d'onde est mauvais
 * Young / Airy
 * Aprture synthesis many smalll in one big (so I again metion de discretisation)
-* IDEA: Un faisceau (sinuzoidale si t'es chaud qui bouge et une sinuzoide que "ralentit" sur la ligne de base, jusquà même être nulle. Ainsi on peux voir
 
 ## NEXT
 

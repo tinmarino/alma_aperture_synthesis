@@ -15,6 +15,10 @@
 * Wrapable equation for smartphone (destroying the display)
 
 
+## IDEA
+
+* IDEA: Un faisceau (sinuzoidale si t'es chaud qui bouge et une sinuzoide que "ralentit" sur la ligne de base, jusquà même être nulle. Ainsi on peux voir
+* IDEA Signature SVG
 
 ## Citation latines
 https://www.superprof.fr/blog/top-20-expressions-en-langue-latine/
