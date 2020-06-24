@@ -1,4 +1,5 @@
-tikz = 21_float_n_stone 12_diffraction 22_float_triangle 23_float_three 24_float_all 31_wave_which
+tikz = 21_float_n_stone 12_diffraction 22_float_triangle 23_float_three 24_float_all 31_wave_which \
+	51_slit_two
 
 animates = 41_wave_animate_60 42_wave_animate_37
 
@@ -12,10 +13,9 @@ $(tikz):
 	cp $@.svg Figure/
 
 $(animates):
-	 latex $@.tex
-	 dvisvgm --zoom=-1 --exact --font-format=woff $@
-	 cp $@-1.svg Figure/$@.svg
-
+	latex $@.tex
+	dvisvgm --zoom=-1 --exact --font-format=woff $@
+	cp $@-1.svg Figure/$@.svg
 
 
 # Compile latex

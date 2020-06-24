@@ -19,7 +19,7 @@ Ce grand télescope virtuel a pour diamètre la distance maximale entre deux pet
 - [3/ Sinusoïde :](#s3_modulo) Ajout de réalisme au modèle, la vague deviens une sinusoïde, c'est-à-dire un ensemble de vagues : "On s'amarine moussaillon ?"
 
 - [4/ Imagerie :](#s4_image) Le caillou ponctuel devient continue : une forme.
-Constitution d'image avec plusieurs informations angulaires via une [transformée de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier) : "À l'abordage !"
+Constitution d'image depuis plusieurs informations angulaires : "À l'abordage !"
 
 - [5/ Onde radio : ](#s5_radio) Augmentation de la distance des flotteurs et transformation en antennes. "Cap vers les étoiles !"
 
@@ -171,7 +171,6 @@ Par exemples:
 
 <blockquote> Fluctuat nec mergitur </blockquote>
 
-* TODO bloon discuss: Insister au moins dans un bloon, le manque d'information terrible qu'on avec le modulo 2pi
 
 La section précédente nous a donné $\theta$ : la position (angulaire) de l'objectif.
 C'est donc mission accomplie pour la section 2 !
@@ -183,10 +182,11 @@ Ce degrés de synchronisme est appelé [corrélation](https://kids.alma.cl/como-
 
 <div>
 On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\nu$ est la fréquence de l'onde et donc son inverse, $\frac{1}{\nu}$, est le temp qui sépare deux vagues.
-<sup>[+]<div class="description"> On ne peut plus savoir sur quelle vague est chaque flotteur mais à quelle position de la vague : en haut, en descente ...
-(voir figure
-<a href="#f_altitude"><i>"altitude"</i></a>
-)
+<sup>[+]<div class="description">
+On ne peut plus savoir sur quelle vague est chaque flotteur mais à quelle position de la vague : en haut, en descente ...
+(voir figure <a href="#f_altitude"><i>"altitude"</i></a>)<br/>
+Remarquez que ce manque d'information est drastique.
+En effet, savec une ligne de base de 16km et des ondes de 1mm, on peut avoir un doute entre $\frac{16km \times \pi}{1mm} = 50M$ (50 millions) de valeurs possibles de $\theta$ pour une source ponctuelle. (Pour 10 sources, ce serai $50M^{10} = 9\times10^{76}$).
 </div></sup></div>
 
 <!-- Figure Multiple direciton in -->
@@ -332,38 +332,41 @@ Ou mesure spectrale pour les ondes radios. En Français la couleur.
 La vulgarisation, fréquemment compare l'interférométrie avec la [triangulation](https://fr.wikipedia.org/wiki/Triangulation).
 En effet, dans les deux cas, la corrélation entre deux détecteurs : télescope et oeil respectivement, permet d'obtenir une information nouvelle.
 
-__La Triangulation :__
+<div class="border-aqua">
+<b>La Triangulation :</b>
 permet à l'être humain de [percevoir la profondeur](https://fr.wikipedia.org/wiki/Perception_de_la_profondeur). Elle suppose que chaque oeil connaisse son orientation. La combinaison des deux yeux par une formule trigonométrique donne la profondeur. En résumé:
+<ul><li>
+Distance entre les deux yeux, angle oeil droit, angle oeil gauche -> distance de l'objet.
+</li></ul>
+</div>
 
-* Distance entre les deux yeux, angle oeil droit, angle oeil gauche -> distance de l'objet.
 
-<div>
+<div class="border-aqua">
 <b>L'Interférométrie :</b>
 permet de connaitre l'angle de l'émetteur. Elle suppose que chaque détecteur puisse mesurer l'intensité et la phase de l'onde incidente. C'est-à-dire la taille des vagues et l'altitude du flotteur.
-Hors dans la triangulation, il n'est jamais question de la nature ondulatoire des raies. Par ailleurs: 1 l'oeil humain est incapable de mesurer la phase de la lumière incidente et 2 les capteurs interférométriques
-<sup>[+]<div class="description">
-Antenne.<br/>
-Ou télescope avec une fibre optique au foyer image.
-Cette fibre optique va mélanger tout les angles et perdre l'information angulaire des rayons incidents. Ce n'est pas grave car cette information sera mesurée postérieurement bien plus précisément via les interférences avec un autre télescope éloigné TODO voir VLTI.
+Hors dans la triangulation, il n'est jamais question de la nature ondulatoire des raies. Par ailleurs: 1 l'oeil humain est incapable de mesurer la phase de la lumière incidente et 2 les capteurs interférométriques<sup>[+]<div class="description">
+Exemple de capteur :<br/>
+<b>1/ Antenne radio</b><br/>
+<b>2/ Télescope</b> avec une fibre optique au foyer image.
+Cette fibre optique va mélanger tout les angles et perdre l'information angulaire des rayons incidents. Ce n'est pas grave car cette information sera mesurée postérieurement bien plus précisément via les interférences avec un autre télescope éloigné. Voir par exemple le [Very Large Telescope Interferometer](https://www.eso.org/sci/facilities/paranal/telescopes/vlti.html).<br/>
+<b>3/ Sismomètre</b>. On parle d'[interférométrie sismique](https://en.wikipedia.org/wiki/Seismic_interferometry)
+([Sens-Schönfelder et Wegler 2011](https://www.sciencedirect.com/science/article/pii/S1631071311000861))<br/>
+<b>4/ Flotteur de Tinmarino</b>. Voir [ici même](https://tinmarino.github.io/?show=aperture_synthesis_page)<br/>
 </div></sup>
-sont incapables indépendamment de mesurer l'angle de l'émetteur. D'ailleurs c'est l'objectif de la mesure synchronisée. En résumé:
+sont incapables, indépendamment, de mesurer l'angle de l'émetteur. D'ailleurs c'est l'objectif de la mesure synchronisée. En résumé :
 <ul><li>
 Distance entre les capteurs, phase capteur droit, phase capteur gauche -> angle de l'objet.
 </li></ul>
-<div>
+</div>
+
 
 <div>
 En les rapprochant, la vulgarisation fait une analogie facilement compréhensible mais incorrecte.
-De plus, la distance des astres lointains par triangulation est impossible.
-<sup>[+]<div class="description">
+De plus, la distance des astres lointains par triangulation est impossible.<sup>[+]<div class="description">
 La distance des astres est bien plus grande que celle des capteurs et ces derniers les voient à une distance infinie.<br/>
 Pour mesurer la distance  des astres (étoiles, supernovaes, galaxies), les physiciens font apel à une compréhension fine de ces derniers, respectivement : lumosité, décroissance lumineuse et fréquences d'ocilations connues décalés par l'expansion de l'univers.
 </div></sup>
-</div>
-
-<div>
-Maintenant que vous savez que ces mécanismes sont différents, vient, à mon avis, une question légitime : <b>quel est l'avantage de l'interférométrie ?</b>
-<sup>[+]<div class="description">
+Maintenant que vous savez que ces mécanismes sont différents, vient, à mon avis, une question légitime : <b>quel est l'avantage de l'interférométrie ?</b><sup>[+]<div class="description">
 L'oeil humain est d'un technologie remarquable : petit, léger, résistant, rapide, peu gourmand en energie, déjà branché (au cerveau), doté d'une grande gamme dynamique, d'un grand champs de vision et d'une acceptable résolution angulaire et profondeur.<br/>
 Alors pourquoi contruisons nous des observatoires artificiels ? On sent que la réponse réside dans la résolution angulaire et la profondeur.
 </div></sup>
@@ -372,21 +375,15 @@ Alors pourquoi contruisons nous des observatoires artificiels ? On sent que la r
 <div>
 <b>Réponse : la précision de la mesure angulaire.</b>
 Nous avons, dans l'exemple précédent, séparer deux bouchons de 2m pour mesurer l'orientation d'une vague de 10cm de longueur d'onde. En effet, c'était plus facile à dessiner.
-En réalité, les antennes d'ALMA sont séparées de 16km et mesurent l'angle d'incidence d'une onde de 1mm. En gardant notre exemple avec nos vagues et nos flotteurs, c'est comme si on séparait les flotteurs de $16km \times \frac{10cm}{1mm} = 1600km$. A cette distance, les flotteurs peuvent mesurer la différence entre une vague venant de $theta=0$ et une vague venant de
+En réalité, les antennes d'ALMA sont séparées de 16km et mesurent l'angle d'incidence d'une onde de 1mm. En gardant notre exemple avec nos vagues et nos flotteurs, c'est comme si on séparait les flotteurs de $16km \times \frac{10cm}{1mm} = 1600km$. À cette distance, les flotteurs peuvent mesurer la différence entre une vague venant de $theta=0$ et une vague venant de
 $\theta = arcsin\left(\frac{10cm}{1600km}\right) = 0.0000036°$,
-deuxième angle où les deux flotteurs se retrouveront de nouveau en phase.
-<sup>[+]<div class="description">
-TODO petit angle approximation, distance de résolution, critère dde Rayleight
- où les deux flotteurs sont en phase 
+deuxième angle où les deux flotteurs se retrouveront de nouveau en phase.<sup>[+]<div class="description">
+Nous avons utilisé le [critère de Rayleight](http://ressources.univ-lemans.fr/AccesLibre/UM/Pedago/physique/02/optiondu/rayleigh.html) qui stipule qu'on ne peut distinguer deux taches de diffraction si le maximum de l'une correspond au premier minima de l'autre.
 </div></sup>
 </div>
 
 La résolution d'ALMA est donc de 0.0000036° ou 10 mili-arc-segonde de degrés. Ce qui est très précis et permet de synthétiser des images avec un grand détail en suivant la méthode que nous décrirons prochainement à la <a href="#s41_image">section 4.3</a>.
 </div>
-
-* TODO antnne > Télescope
-  * pour 1 multiplier le signal et
-  * 2 pouvoir mesurer phase et amplitude
 
 
 ## 4.2/ <a name="s42_forme"></a> D'un point à une forme
@@ -400,16 +397,16 @@ En d'autre termes, on peut prédire précisément, avec une somme, ce que les r�
 
 Ce manque d'information est dû au fait qu'il n'y a pas de flotteurs partout sur la ligne de mesure. L'équation mathématique est complexe. Le lecteur peut le prédire des mots : manque d'information, mesure réciproque (alias inverse) sans parler de l'erreur de mesure. Mais heureusement pour le physicien ou l'amateur, qui bien souvent sont les mêmes, il existe une règle intuitive en théorie de l'information : <b>on ne peut mesurer au maximum autant de valeurs que l'on a de données</b>. Ça veut dire qu'on peut s'épargner les calculs et considérer qu'on peut mesurer autant d'angles d'incidences de sources ponctuelles (vagues) que l'on a de détecteurs (flotteurs).
 
-Comme nous pouvons mesurer l'angle de plusieurs sources ponctuelles, nous divisons la forme de la source en plusieurs sous-sources ponctuelles et puis interpoler pour trouver la forme continue de la source classique.
-* TODO bloon, Algorithme d'interpolation CLEAN, MAx entropie, supposition ou non, erreur.
-
 <div>
-En résumé : nous allons d'un point à un forme en passant par plusieurs points.
-<sup>[+]<div class="description">
-Le terme technique est
-<a href=https://fr.wikipedia.org/wiki/Discr%C3%A9tisation>Discrétisation</a></br>
+Comme nous pouvons mesurer l'angle de plusieurs sources ponctuelles, nous divisons la forme de la source en plusieurs sous-sources ponctuelles et puis interpoler pour trouver la forme continue de la source classique.<sup>[+]<div class="description">
+Il existe, plusieurs algorithmes d'interpolation et [déconvolution](https://en.wikipedia.org/wiki/Deconvolution) utilisable à cette fin :
+[CLEAN](https://en.wikipedia.org/wiki/CLEAN_(algorithm)), [Maximum Entropy Method](http://repositorio.uchile.cl/handle/2250/149958), Hybrid.<br/>
+Ces algorithmes diffèrent dans les hypothèses qu'ils font sur l'émetteur. Ils sont itératifs et paramétrables.</br>
+Voir la page des radio astronomes Français](http://www.iram.fr/IRAMFR/GILDAS/doc/html/map-html/node35.html) pour un petit descriptif sympa.
 </div></sup>
 </div>
+
+En résumé : nous allons d'un point à un forme en passant par plusieurs points. Le terme technique de cette approche est "Discrétisation".
 
 
 ## 4.3/ <a name="s43_image"></a> Reconstruction d'image
@@ -466,12 +463,39 @@ Quelle est la différence entre le caillou et le bouchon ? (Faire un pause ... r
 L'accélération d'une charge électrique, typiquement un électron, engendre l'émission d'un [photon](https://fr.wikipedia.org/wiki/Photon) et réciproquement la réception d'un photon engendre l'accélération d'un électron.
 En agitant artificiellement un électron dans une antenne, par exemple avec un aimant, on peut transmettre un signal à une antenne voisine. Le porteur de ce signal est le photon : il est, plus généralement [porteur de la force](https://en.wikipedia.org/wiki/Force_carrier) [électromagnétique](https://fr.wikipedia.org/wiki/%C3%89lectromagn%C3%A9tisme).
 
+* TODO antnne > Télescope
+  * pour 1 multiplier le signal et
+  * 2 pouvoir mesurer phase et amplitude
+
 
 # <a name="so_new_limit"></a> Optionnel/ Limitations du réseau d'antennes
 
 <blockquote> Dura lex, sed lex </blockquote>
 
 * TODO Parler de la résolution totale fente d'young et principe de raylight
+* TODO link: https://fr.wikipedia.org/wiki/Fentes_de_Young
+
+<!-- Center Figure Fente de Young -->
+<figure style="margin:10px" >
+  <a name="f_carte"></a>
+  <img src='Figure/51_slit_two.svg#svgView(preserveAspectRatio(none))'
+      alt='missing'
+      style=" width:90%; min-width:300px; height:450px;
+    display: block;
+    margin: 0 auto;
+  "/>
+  <figcaption style="
+    text-align:left;
+    width:70%; min-width:300px;
+    display: block;
+    margin: 0 auto;
+  ">
+    <b>Fentes de Young :</b>
+  </figcaption>
+</figure>
+
+
+
 * TODO OPtional section: démonstration des anciennes et nouvelles limitations (young et aperture)
 * TODO ici un dessin de tache d'airy
 

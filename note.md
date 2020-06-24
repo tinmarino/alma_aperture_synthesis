@@ -1,10 +1,21 @@
 # TODO
 
+* Lines: Equation de Helmoth (Anglais): https://en.wikipedia.org/wiki/Helmholtz_equation
+* Lien: Onde plane: https://fr.wikipedia.org/wiki/Onde_plane
+* Lien: https://fr.wikipedia.org/wiki/Diffraction_de_Fraunhofer
+* Spectre d'onde plane qui explique
+  * 1 que l'image est la transformée de foureir de la source https://fr.wikipedia.org/wiki/Spectre_d%27ondes_planes
+  * 2 Qu'on ne peut pas voir plus petit que la longuer d'onde
+* Liens: diffraction de fraunhoffer : https://fr.wikipedia.org/wiki/Diffraction_de_Fraunhofer
+* Liens: https://fr.wikipedia.org/wiki/Spectre_d%27ondes_planes : qui dit que le spectre angulaire est la transformée de fourier de la forme de l'emtteur
+* Lien: Théorie de la diffraction (qui n'est pas la diffraciton) https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_diffraction
 * Liens: Shanon (4.2)
 * Liens (5 photon) au moins un bloon pour parler d'à quel point il est génail
 * Règles: parler des régles que j'ai bien et liée au 10 cosmondement.
   * La matière ne traverse pas la matière (c'est la définition de matière)
   * Les charges
+
+* Faire une intro sympa et honête (public, niveau, compllétude, reference, from-where, where I am, where I go, doctrine, regles, physique)
 
 ## TODO forme: 
 * Mettre des couleurs tranquillement, souligner
@@ -16,19 +27,23 @@
 * IDEA: Un faisceau (sinuzoidale si t'es chaud qui bouge et une sinuzoide que "ralentit" sur la ligne de base, jusquà même être nulle. Ainsi on peux voir
 
 ## NEXT
-* Transofrmée de fourier, retirer le lien de l'intro !!
 
 
 
 ================================================================================
 
 # Note copy paste
+### Copy: image and ref
 <a href="#f_carte"><i>"carte des mers"</i></a>
   <a name="f_carte"></a>
     <b>Carte des mer :</b>
+
+### Copy: bloon
+<div>
 <sup>[+]<div class="description">
 Ou mesure spectrale pour les ondes radios, 
 </div></sup>
+</div>
 
 # intro
  (de diamétre égal à la séparation maximale entre deux petits).
