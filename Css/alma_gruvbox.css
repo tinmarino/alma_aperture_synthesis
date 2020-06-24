@@ -105,6 +105,10 @@ a { text-decoration: none; }
     margin-bottom: 20px;
 }
 
+table {
+    margin-bottom: 10px;
+}
+
 
 /* Blockquote */ 
 blockquote {

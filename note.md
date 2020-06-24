@@ -9,8 +9,8 @@
 * Liens: diffraction de fraunhoffer : https://fr.wikipedia.org/wiki/Diffraction_de_Fraunhofer
 * Liens: https://fr.wikipedia.org/wiki/Spectre_d%27ondes_planes : qui dit que le spectre angulaire est la transformée de fourier de la forme de l'emtteur
 * Lien: Théorie de la diffraction (qui n'est pas la diffraciton) https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_diffraction
-* Liens: Shanon (4.2)
 * Liens (5 photon) au moins un bloon pour parler d'à quel point il est génail
+* 0 Liens: https://fr.wikipedia.org/wiki/Rasoir_d%27Ockham
 * Règles: parler des régles que j'ai bien et liée au 10 cosmondement.
   * La matière ne traverse pas la matière (c'est la définition de matière)
   * Les charges
@@ -19,6 +19,7 @@
 
 ## TODO forme: 
 * Mettre des couleurs tranquillement, souligner
+* Mettre des <hr> aussi 
 
 ## Image
 * Bouchons sous les vagues de 37°, le front d'onde est mauvais

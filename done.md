@@ -1,3 +1,5 @@
+* Liens: Shanon (4.2)
+* Ref: 4.4 Lien: pourquoi on ne peux decrire un modele 
 * discussion sur pourquoi c'est vraiment plus précis
   * discussion Pourquoi la précision est énorme (voir avec les différents angles theta)
 * discussion sur pourquoi c'est pas de la triangulation

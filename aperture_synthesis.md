@@ -1,6 +1,6 @@
 ---
 title: Synthèse d'ouverture
-category: 
+category: Astronomie, Radio, Optique
 header-includes: |
     <link rel="stylesheet" type="text/css" href="Css/alma_gruvbox.css">
 ---
@@ -41,7 +41,7 @@ On mesure la qualité d'une image astrophysique avec deux paramètres : sa [rés
 <sup>[+]<div class="description">
 Une grande profondeur permet de détecter des objets peu brillant. Par exemple, des objets lointains.
 </div></sup>
-2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre. 
+2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre.
 <sup>[+]<div class="description">
 C'est à dire que deux objets séparés d'un angle inférieur à la résolution apparaîtront comme un seul.<br/>
 Tout objet de taille inférieur à la résolution angulaire apparaîtra comme un point.<br/>
@@ -66,7 +66,7 @@ Vous pourrez penser : "si la mécanique du télescope est suffisamment bonne, le
 
 Pour ce qui est de la __résolution angulaire__, la taille du télescope est limitant également.
 Mais cette fois, ce n'est plus pour une simple question de collecter un maximum de flux lumineux afin d'obtenir un bon signal sur bruit suffisant pour la détection.
-L'effet néfaste est la [diffraction](https://en.wikipedia.org/wiki/Diffraction#Mechanism) que subie toute onde qui passe par une ouverture (voir la figure 
+L'effet néfaste est la [diffraction](https://en.wikipedia.org/wiki/Diffraction#Mechanism) que subie toute onde qui passe par une ouverture (voir la figure
 <a href="#f_fente"><i>"fente"</i></a>).
 Dans le cas d'une ouverture circulaire comme celle du miroir principale, l'image d'un point est une [tache d'Airy](https://fr.wikipedia.org/wiki/Tache_d%27Airy). Ce n'est plus un point, même si le télescope est parfait.
 Cette tache est d'autant plus petite que l'ouverture du télescope est grande.
@@ -128,7 +128,7 @@ le flotteur de droite va recevoir la vague avant celui de gauche. Réciproquemen
   </figcaption>
 </figure>
 
-En employant une formule magique ("trigonometrum s'il te plum") dans le triangle ABC (figure 
+En employant une formule magique ("trigonometrum s'il te plum") dans le triangle ABC (figure
 <a href="#f_trigo"><i>"trigonométrie"</i></a>
 ), on obtient :
 
@@ -153,10 +153,10 @@ Remplaçons-le ! On connait la vitesse de la vague $v$ et le temps de délai $\D
 Ainsi a est donné par la formule $vitesse = \frac{distance}{temps} \Leftrightarrow distance = vistesse \times temps$. Ce qui nous donne l'équation:
 
 $$
-\begin{aligned} 
+\begin{aligned}
 \theta &= arcsin\left(\frac{b}{v\times\Delta t}\right) \\
        & = arcsin\left( \frac{Distance\_de\_la\_base}{Vitesse\_de\_la\_vague \times Delai\_temporel\_mesure} \right) \\
-\end{aligned} 
+\end{aligned}
 $$
 
 Par exemples:
@@ -228,7 +228,7 @@ Utilisant : $v = \frac{d}{t} \left(= \frac{distance}{temps}\right) = \lambda\nu$
 <a href="#f_cas2"><i>cas 2</i></a>,
 une vague venant de $\theta = 30°$ (centre-droite). Alors elle devra parcourir $a = b \times sin(\theta) = 2 \times sin(30°) = \frac{1}{2} * 2 = 1m$. 1m étant aussi multiple de 10cm, les deux bouchons seront aussi en phase.
 * En mesurant l'altitude des deux bouchons, nous ne pourrons pas discriminer le cas 1 du cas 2.
-* Quelques valeurs possibles de $\theta$ pour deux bouchons en phase sont dans la figure 
+* Quelques valeurs possibles de $\theta$ pour deux bouchons en phase sont dans la figure
 <a href="#f_possible"><i>"angles possibles"</i></a>
 .
 
@@ -412,24 +412,30 @@ En résumé : nous allons d'un point à un forme en passant par plusieurs points
 ## 4.3/ <a name="s43_image"></a> Reconstruction d'image
 
 De cette manière, avec plusieurs lignes de base, il est également possible de détecter simultanément des vagues provenant de différents endroit.
-La compréhension des détails de ce processus implique une vision performante des sommes de sinusïdes que procure la [transformation de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier) ou les [ondelettes](https://fr.wikipedia.org/wiki/Ondelette) et fera peut-être l'objet d'un chapitre 2 dans le cas improbable d'une demande d'un des 2,3 lecteurs.
+La compréhension des détails de ce processus implique une vision performante des sommes de sinusoïdes que procure la [transformation de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier) ou les [ondelettes](https://fr.wikipedia.org/wiki/Ondelette) et fera peut-être l'objet d'un chapitre 2.
 
 * TODO Reconstruction d'image somme de sinusoïde:
-  * text: pourquoi c'est comme plusieurs petits
+  * text + image: pourquoi c'est comme plusieurs petits
   * image step function de -thete a theta)
 
 
 ## 4.4/ <a name="s44_spectre"></a> Avec plusieurs longueurs d'ondes
 
-Non là sérieux, ça devient compliqué : il y a plus de paramètres à déterminer (positions, longueurs d'ondes) que de paramètres mesurables. Sans information à priori, c'est donc mathématiquement impossible.
+Non là sérieux, ça devient compliqué : il y a plus de paramètres à déterminer (positions, longueurs d'ondes) que de paramètres mesurables. Sans information à priori, c'est impossible car absurde (voir [parcimonie](https://fr.wikipedia.org/wiki/Parcimonie) puis [entropie de Shannon](https://fr.wikipedia.org/wiki/Entropie_de_Shannon)).
 
-La solution la plus simple dans ce cas, le cas réel, est de limiter physiquement:
+<blockquote> Pluralitas non est ponenda sine necessitate </blockquote>
+
+La solution la plus simple dans ce cas, le cas réel, est de limiter physiquement :
 
 1. Le champ de vision avec des digues qui bloquent les vagues ne venant pas de la direction d'observation. En effet, elles contamineraient la mesure.
-2. Les fréquences mesurées avec des filtres. Simplement en limitant la vitesse d'oscillation des bouchons, les vagues plus rapides ou plus lentes seront ignorées.
+2. Les fréquences mesurées avec des filtres étroits.<sup>[+]<div class="description">
+L'épaisseur de filtre $\Delta\lambda$ est très inférieur à $\lambda$, la longueur d'onde centrale du filtre.</br>
+Par exemple, pour nos flotteurs sous des vagues de fréquence $0.1s$, on limiterai la vitesse d'oscillation des flotteurs à $0.1s \pm petit \times 0.1s$. Disons $0.1s\pm0.00001s$<br/>
+</div></sup>
+En contraignant la vitesse d'oscillation des bouchons, les vagues plus rapides ou plus lentes seront ignorées.
 
-TODO chose par ailleurs effectué sur les télescopes entier, il 
-Malgré les efforts de la section 4 pour repousser les signaux parasites et limiter le champ d'étude, il reste un manque d'information 
+Cette réduction du périmètre d'analyse est d'ailleurs effectuée par les télescopes indépendants pour réduire le bruit et le coût des mesures.
+En ouverture synthétique, cette réduction ajoute l'avantage de diminuer le manque d'information. Ce qui concrètement réduit le bruit systématique de la mesure (alias le [biais](https://fr.wikipedia.org/wiki/Biais_(statistique))).
 
 
 
@@ -437,7 +443,7 @@ Malgré les efforts de la section 4 pour repousser les signaux parasites et limi
 
 <blockquote> Per aspera ad astra </blockquote>
 
-Le concept mathématique utilisé par un télescope à ouverture synthétique est identique à celui du détecteur utilisant des flotteurs.
+Le concept mathématique utilisé par un télescope à synthèse d'ouverture est identique à celui du détecteur utilisant des flotteurs.
 
 Pour enrichir le vocabulaire du lecteur voici l'analogie:
 
@@ -450,22 +456,24 @@ Pour enrichir le vocabulaire du lecteur voici l'analogie:
 | Position             | Accélération d'électron |
 
 J'ai l'espoir d'avoir démontré au lecteur que, comme moi-même, il ignore beaucoup sur la nature des vagues de surface eau-air. Pourtant, grosso modo, il sait de quoi il s'agit.
+De même, il est intéressant d'appréhender la notion d’onde électromagnétique (alias : lumière, photon).
 
-<div>
-De même, il est intéressant d'appréhender la notion d’onde électromagnétique.
-<sup>[alias]<div class="description">
-Lumière, Photon, Onde (radio)
-</div></sup>
-</div>
+Quelle est la différence entre le caillou et le bouchon ? (Réfléchir ... réponse : ) Le premier émet des vagues en se déplaçant verticalement dans l'eau et le second se déplace verticalement sur l'eau lorsqu'il reçoit des vagues. De plus, si j'agitais artificiellement le bouchon, il emmétrai des vagues. Donc la différence n'est pas dans leur nature mais dans leur comportement.
 
-Quelle est la différence entre le caillou et le bouchon ? (Faire un pause ... réponse : ) Le premier émet des vagues en se déplaçant verticalement dans l'eau et le second se déplace verticalement sur l'eau lorsqu'il reçoit des vagues. De plus, si j'agitais artificiellement le bouchon, il emmétrai des vagues. Donc la différence n'est pas dans leur nature mais dans leur comportement.
+L'accélération d'une charge électrique, typiquement un électron, engendre l'émission d'un [photon](https://fr.wikipedia.org/wiki/Photon) et réciproquement la réception d'un photon engendre l'accélération d'un électron.<br\>
+En agitant artificiellement un électron dans une antenne, par exemple avec un aimant, on peut transmettre un signal photonique à une antenne voisine.
+Au sein de cette antennes voisine, le photon fera accélérer un électron que cette dernière pourra mesurer, par exemple avec un aimant.<br/>
+Le photon est le [porteur de la force](https://en.wikipedia.org/wiki/Force_carrier) [électromagnétique](https://fr.wikipedia.org/wiki/%C3%89lectromagn%C3%A9tisme).
 
-L'accélération d'une charge électrique, typiquement un électron, engendre l'émission d'un [photon](https://fr.wikipedia.org/wiki/Photon) et réciproquement la réception d'un photon engendre l'accélération d'un électron.
-En agitant artificiellement un électron dans une antenne, par exemple avec un aimant, on peut transmettre un signal à une antenne voisine. Le porteur de ce signal est le photon : il est, plus généralement [porteur de la force](https://en.wikipedia.org/wiki/Force_carrier) [électromagnétique](https://fr.wikipedia.org/wiki/%C3%89lectromagn%C3%A9tisme).
+La lumière, colonie de photon figés dans le temps et fonçant dans l'espace, est très intéressante autant dans la recherche que l'enseignement scientifique. Ce qui, en soi est naturel car c'est la seule chose que l'on voit. Sachez tout de même qu'un géologue aurait la même rhétorique pour le son.
 
-* TODO antnne > Télescope
-  * pour 1 multiplier le signal et
-  * 2 pouvoir mesurer phase et amplitude
+<hr>
+
+Cette document vous a expliqué, je l'espère, la synthèse d'ouverture, technique utilisé principalement par les réseaux d'antennes. Dans cette optique, je me permet de vous expliquer pourquoi les antennes (réflecteur + oscilloscope) sont supérieures aux télescopes (miroir + CCD ou bolomètre). La réponse réside dans les facultés de l'oscilloscope ou plus généralement du traitement de signal électrique versus optique.
+
+L'oscilloscope a la capacité de mesurer simultanément phase et amplitude alors que la CCD ou le bolomètre ne mesure que l'intensité (amplitude au carré).
+Cette capacité permet au réseau d'antennes d'enregistrer toutes ses mesures afin que les machines fassent, à postériori, le traitement du signal. La corrélation est effectué, au calme, avec des ordinateurs. Alors que dans l'optique, la corrélation doit être faite en temps réel, avec un banc optique vulnérable à la moindre oscillation, au milieu des machines à 3500m d'altitude, dans un pays sismique. Chaque acquisition du VLTI (optique) est une aventure humaine. Les acquisitions d'ALMA (radio) commence à ressmbler à une croisière (sauf pour les ordinateurs qui vitualisent tout le banc optique).<br/>
+De plus, un signal électrique peut être multiplié avec beaucoup moins de bruit qu'un signal optique. Ceci facilite la synthèse d'ouverture avec plus de deux antennes. Par exemple ALMA en a 66 alors que le VLTI n'en a que ... 2.
 
 
 # <a name="so_new_limit"></a> Optionnel/ Limitations du réseau d'antennes
@@ -521,9 +529,9 @@ Voilà cette explication est terminée.
 J'espère que tu as lu lentement sans quoi la compréhension a due être hasardeuse.
 Enfin, si tu as tout compris c'est très bien.
 Félicitation, si tu es arrivé jusqu'ici, le voyage était périlleux.
-S'il t'as plue, je m'en vois ravis. 
-C'est 
-Sinon, 
+S'il t'as plue, je m'en vois ravis.
+C'est
+Sinon,
 
 
 # Liens pour aller plus loin
@@ -532,4 +540,4 @@ Sinon,
 
 * [ESO spectroscopie (pdf)](https://www.eso.org/sci/meetings/2015/eris2015/program.html) : Introduction gentille à l'interférométrie : "ERIS : Enhanced Resolution Imager and Spectrograph"
 
-* 
+*
