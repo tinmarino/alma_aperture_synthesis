@@ -1,4 +1,3 @@
-* Liens: Shanon (4.2)
 * Ref: 4.4 Lien: pourquoi on ne peux decrire un modele 
 * discussion sur pourquoi c'est vraiment plus précis
   * discussion Pourquoi la précision est énorme (voir avec les différents angles theta)
@@ -14,6 +13,10 @@
 * Trois bouchons, mettre la ligne hozontale comme une sinuzoide
 * Wrapable equation for smartphone (destroying the display)
 
+# Liens
+
+* 0 Liens: https://fr.wikipedia.org/wiki/Rasoir_d%27Ockham
+* Liens: Shanon (4.2)
 
 ## IDEA
 

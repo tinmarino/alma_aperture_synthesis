@@ -1,24 +1,10 @@
 # TODO
 
-* Lines: Equation de Helmoth (Anglais): https://en.wikipedia.org/wiki/Helmholtz_equation
-* Lien: Onde plane: https://fr.wikipedia.org/wiki/Onde_plane
-* Lien: https://fr.wikipedia.org/wiki/Diffraction_de_Fraunhofer
-* Spectre d'onde plane qui explique
-  * 1 que l'image est la transformée de foureir de la source https://fr.wikipedia.org/wiki/Spectre_d%27ondes_planes
-  * 2 Qu'on ne peut pas voir plus petit que la longuer d'onde
-* Liens: diffraction de fraunhoffer : https://fr.wikipedia.org/wiki/Diffraction_de_Fraunhofer
-* Liens: https://fr.wikipedia.org/wiki/Spectre_d%27ondes_planes : qui dit que le spectre angulaire est la transformée de fourier de la forme de l'emtteur
-* Lien: Théorie de la diffraction (qui n'est pas la diffraciton) https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_diffraction
-* Liens (5 photon) au moins un bloon pour parler d'à quel point il est génail
-* 0 Liens: https://fr.wikipedia.org/wiki/Rasoir_d%27Ockham
+
 * Règles: parler des régles que j'ai bien et liée au 10 cosmondement.
   * La matière ne traverse pas la matière (c'est la définition de matière)
   * Les charges
-
-* Faire une intro sympa et honête (public, niveau, compllétude, reference, from-where, where I am, where I go, doctrine, regles, physique)
-
-* Bouger chare ge calcul de la conclusion ?
-* Faire section au 5: Méthaphore, Telescope Vs Antene, 3 Charge de calcul
+* une ligne de base donne une info => Comme un pixel
 
 ## TODO forme: 
 * Mettre des couleurs tranquillement, souligner
@@ -32,6 +18,8 @@
 
 ## NEXT
 
+* Faire section au 5: Méthaphore, Telescope Vs Antene, 3 Charge de calcul
+* Faire une intro sympa et honête (public, niveau, compllétude, reference, from-where, where I am, where I go, doctrine, regles, physique)
 
 
 ================================================================================
@@ -49,15 +37,13 @@ Ou mesure spectrale pour les ondes radios,
 </div></sup>
 </div>
 
+# Destinataire
+
 # intro
  (de diamétre égal à la séparation maximale entre deux petits).
  
 Un téléscope est un appareil optique qui sert à observer les objects lointains.
 
-# CSS
-
-float:center; text-align:center; display: inline-block; 
-    <link rel="stylesheet" type="text/css" href="Css/alma_solarized.css">
 
 # Backup
 
@@ -141,7 +127,12 @@ know this."
 
 # Links
 
-## Me
+* Tourneboeuf
+* Bobo, Hyppo
+* Bechet, Gomez
+* X: Achal, Chetra, Ana, Vianney, Alfredo
+* Chile, Arturito
+
 
 ## ToAdd
 Lecture on radioastro

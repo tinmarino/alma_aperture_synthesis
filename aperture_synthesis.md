@@ -14,16 +14,16 @@ Ce grand télescope virtuel a pour diamètre la distance maximale entre deux pet
 
 - [1/ Limitations du télescope :](#s1_limit) Pourquoi les grands télescopes ont une meilleure résolution angulaire et que simuler un grand télescope signifie obtenir cette même résolution : "Pourquoi moi ?"
 
-- [2/ Délai :](#s2_dirac) Section fondamentale. En commençant, la métaphore avec les vagues eau-air, nous verrons comment le délai de réception d'une vague entre deux flotteurs peut nous donner la direction d'une vague : "Bienvenu à bord !"
+- [2/ Délai :](#s2_dirac) Section fondamentale. Une métaphore avec les vagues eau-airs montre comment le délai de réception d'une vague entre deux flotteurs peut nous donner la direction d'une vague : "Bienvenu à bord !"
 
-- [3/ Sinusoïde :](#s3_modulo) Ajout de réalisme au modèle, la vague deviens une sinusoïde, c'est-à-dire un ensemble de vagues : "On s'amarine moussaillon ?"
+- [3/ Sinusoïde :](#s3_modulo) Ajout de réalisme au modèle, la vague devient une sinusoïde, c'est-à-dire un ensemble de vagues : "On s'amarine moussaillon ?"
 
 - [4/ Imagerie :](#s4_image) Le caillou ponctuel devient continue : une forme.
 Constitution d'image depuis plusieurs informations angulaires : "À l'abordage !"
 
 - [5/ Onde radio : ](#s5_radio) Augmentation de la distance des flotteurs et transformation en antennes. "Cap vers les étoiles !"
 
-- [Optionnel/ Nouvelles limitations:](#so_new_limit) Calcul des limitations anciennes et nouvelle. Détermination de la qualité maximale atteignable. "Marc Pageot ne navigue pas sur des cageots."
+- [Optionnel/ Nouvelles limitations:](#so_new_limit) Calcul des limitations anciennes et nouvelles. Détermination de la qualité maximale atteignable. "Marc Pageot ne navigue pas sur des cageots."
 
 - [Conclusion: ](#s_conclusion) "C'est pas bientôt fini !"
 
@@ -41,8 +41,7 @@ On mesure la qualité d'une image astrophysique avec deux paramètres : sa [rés
 <sup>[+]<div class="description">
 Une grande profondeur permet de détecter des objets peu brillant. Par exemple, des objets lointains.
 </div></sup>
-2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre.
-<sup>[+]<div class="description">
+2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre.<sup>[+]<div class="description">
 C'est à dire que deux objets séparés d'un angle inférieur à la résolution apparaîtront comme un seul.<br/>
 Tout objet de taille inférieur à la résolution angulaire apparaîtra comme un point.<br/>
 Un télescope optique de 1m de diamètre ($D$), observant un signal de longueur d'onde $\lambda = 550nm$ (dans le jaune) a une résolution de 0.1 seconde de degrés c'est à dire 0.1 degré divisé par 3600. Une grande résolution angulaire permet d'observer des objets de petite taille angulaire par exemple, des objets lointains.
@@ -51,8 +50,7 @@ Un télescope optique de 1m de diamètre ($D$), observant un signal de longueur 
 -> Jusqu'à preuve du contraire, un télescope quelconque peut générer des images d'une résolution et profondeur arbitrairement grande à condition de :
 
 1. Exposer suffisamment longtemps l'objet pour obtenir plus de lumière dans sa direction que le bruit du ciel et de l'appareil.
-2. Utiliser un détecteur (Couple Charged Device) avec suffisamment de pixels par cm.
-<sup>[+]<div class="description">
+2. Utiliser un détecteur (Couple Charged Device) avec suffisamment de pixels par cm.<sup>[+]<div class="description">
 Le nombre de pixels par centimètre peut être arbitrairement élevé avec des bancs optiques à l'intérieur du détecteur. Par exemple les nouveaux téléphones portables déclarent des détecteurs de 9Mpixels (= 3000x3000) et de 2mm tandis qu'un détecteur de télescope est de 1Mpixel (1000x1000) et mesure 3cm.
 </div></sup>
 
@@ -397,6 +395,8 @@ En d'autre termes, on peut prédire précisément, avec une somme, ce que les r�
 
 Ce manque d'information est dû au fait qu'il n'y a pas de flotteurs partout sur la ligne de mesure. L'équation mathématique est complexe. Le lecteur peut le prédire des mots : manque d'information, mesure réciproque (alias inverse) sans parler de l'erreur de mesure. Mais heureusement pour le physicien ou l'amateur, qui bien souvent sont les mêmes, il existe une règle intuitive en théorie de l'information : <b>on ne peut mesurer au maximum autant de valeurs que l'on a de données</b>. Ça veut dire qu'on peut s'épargner les calculs et considérer qu'on peut mesurer autant d'angles d'incidences de sources ponctuelles (vagues) que l'on a de détecteurs (flotteurs).
 
+TODO lien entropie de shanon
+
 <div>
 Comme nous pouvons mesurer l'angle de plusieurs sources ponctuelles, nous divisons la forme de la source en plusieurs sous-sources ponctuelles et puis interpoler pour trouver la forme continue de la source classique.<sup>[+]<div class="description">
 Il existe, plusieurs algorithmes d'interpolation et [déconvolution](https://en.wikipedia.org/wiki/Deconvolution) utilisable à cette fin :
@@ -465,7 +465,7 @@ En agitant artificiellement un électron dans une antenne, par exemple avec un a
 Au sein de cette antennes voisine, le photon fera accélérer un électron que cette dernière pourra mesurer, par exemple avec un aimant.<br/>
 Le photon est le [porteur de la force](https://en.wikipedia.org/wiki/Force_carrier) [électromagnétique](https://fr.wikipedia.org/wiki/%C3%89lectromagn%C3%A9tisme).
 
-La lumière, colonie de photon figés dans le temps et fonçant dans l'espace, est très intéressante autant dans la recherche que l'enseignement scientifique. Ce qui, en soi est naturel car c'est la seule chose que l'on voit. Sachez tout de même qu'un géologue aurait la même rhétorique pour le son.
+La lumière, colonie de photons figés dans le temps et fonçant dans l'espace, est très intéressante autant dans pour recherche que l'enseignement scientifique. Ce qui, en soi, est naturel car c'est la seule chose que l'on voit. Sachez tout de même qu'un géologue aurait la même rhétorique pour le son.
 
 <hr>
 
@@ -483,7 +483,7 @@ TODO ALMA a 66 antennes donc $\frac{66 \times 65}{2} = 2145$ paires, mesure une 
 Un processeur va à un rythme d'environ 1GHz, ALMA en a 130 millions.
 
 
-# <a name="so_new_limit"></a> Optionnel/ Limitations du réseau d'antennes
+# Optionnel/ <a name="so_new_limit"></a> Limitations du réseau d'antennes
 
 <blockquote> Dura lex, sed lex </blockquote>
 
@@ -509,10 +509,19 @@ Un processeur va à un rythme d'environ 1GHz, ALMA en a 130 millions.
   </figcaption>
 </figure>
 
-
-
+TODO ici un dessin de tache d'airy
 * TODO OPtional section: démonstration des anciennes et nouvelles limitations (young et aperture)
-* TODO ici un dessin de tache d'airy
+
+<hr>
+
+Voici quelques liens pour comprendre la mécanique physique du parcourt de la lumière et qui justifient l'analyse précédente.
+
+1. Propagations de la lumière, formatisme sur les ondes : ça avance en oscillant, tournant dans le plan complexe : [équation de Helmoth](https://en.wikipedia.org/wiki/Helmholtz_equation).
+2. Le spectre angulaire est la transformée de fourier de la forme de l'emétteur : [ondes planes](https://fr.wikipedia.org/wiki/Spectre_d%27ondes_planes)).
+2. Une onde se comporte comme si tout point agité se comportait comme un émetteur secondaire : [principe de Huygens-Fresnel](https://fr.wikipedia.org/wiki/Principe_de_Huygens-Fresnel).
+3. Une onde traversant une ouverture va se disperser : [théorie de la diffraction](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_diffraction).
+4. Figure de diffraction loins de l'ouverture : [diffraction de fraunhoffer](https://fr.wikipedia.org/wiki/Diffraction_de_Fraunhofer).
+5. On ne peut pas voir d'objets plus petit que la longueur d'onde : [diffraction de Fresnel](https://fr.wikipedia.org/wiki/Diffraction_de_Fresnel).
 
 
 
