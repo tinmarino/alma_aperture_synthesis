@@ -398,7 +398,7 @@ En réalité, les antennes d'ALMA sont séparées de 16km et mesurent l'angle d'
 $\theta = arcsin\left(\frac{10cm}{1600km}\right) = 0.0000036°$,
 deuxième angle où les deux flotteurs se retrouveront de nouveau en phase.
 
-<div>
+<div style="width:50%; max-width=500px">
 placeholder-rayleight
 </div>
 

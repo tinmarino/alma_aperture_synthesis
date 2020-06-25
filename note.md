@@ -16,7 +16,6 @@
 ## NEXT
 
 * Faire une intro sympa et honête (public, niveau, complétude, reference, from-where, where I am, where I go, doctrine, regles, physique)
-* 5.3 principe de rayleight
 
 ================================================================================
 
