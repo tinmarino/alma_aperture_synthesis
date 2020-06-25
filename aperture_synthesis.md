@@ -308,7 +308,23 @@ Encore une fois, on ne peut pas mesurer les "2 vagues" mais on peut mesurer le "
 En sommant les altitudes de X et de Z, en tout temps, on obtient zéro. Cette somme est une [interférence](https://fr.wikipedia.org/wiki/Interf%C3%A9rence) artificielle, ici destructive.
 On nomme (l'intégrale temporelle de) cette somme $V(b)$ pour "Visibilité avec la basse b".
 
-Chaque ligne permet de discriminer un rang d'angle différent. Supposez que l'on puisse faire tourner la ligne des flotteurs, alors $\theta$ changerai et chaque ligne nous apporterai des informations nouvelles. Le plus simple pour effectuer cette rotation avec un réseau d'antennes et une source extraterrestre est de faire tourner la planète. J'ai donc personnellement pris la responsabilité de maintenir la rotation de la terre et voyez-vous, elle continue de tourner.
+<div>
+Au final, ajouter une ligne de base nous a permis de restreindre le champs des possibilités sur la positions du callou, d'un facteur 2. Ce qui est le maximum qu'une information de plus peut nous apporter.
+De plus, ajouter un bouchon, dans ce cas nous a ajouté 2 lignes de base : celle de 0.5m __et__ celle de 1.5m.
+Ce qui nous donnde 2 informations de corrélations supplémentaires.
+Par exemple si la section 2 hésitait entre 100 choix possibles la ligne de 0.5m en élimine la moitié : il en reste alors 50. De la même manière la deuxième ligne en elimine aussi une moitié, il en reste 25.
+<sup>[+]<div class="description">
+Nous supposons ici que chaque ligne est indépendante, ce qui est le cas si leurs tailles sont différentes.<br/>
+Imaginez comment les techniciens d'ALMA s'amusent pour placer 66 antennes de manière à avoir 2145 lignes de base de taille différente ! Et en couvrant homogénement l'ensemble des tailles de base possible (généralement en coordonées circulaires).
+</div></sup>
+</div>
+
+
+Chaque ligne permet de discriminer un rang d'angle différent.
+En termes plus génériques, elle donne une information, comme un pixel dans une image.
+Supposez que l'on puisse faire tourner la ligne des flotteurs, alors $\theta$ changerai et chaque ligne nous apporterai des informations nouvelles (plus de pixels).
+Le plus simple pour effectuer cette rotation avec un réseau d'antennes et une source extraterrestre est de faire tourner la planète.
+J'ai donc personnellement pris la responsabilité de maintenir la rotation de la terre et voyez-vous, elle continue de tourner !
 
 
 
@@ -398,9 +414,22 @@ On sait déjà déterminer la position angulaire d'un point ([section 3](s3_modu
 
 En d'autre termes, on peut prédire précisément, avec une somme, ce que les récepteurs mesureront en fonctions de la positions des différentes sources ponctuelles. Réciproquement, on peut déterminer la position de chacune des sources en fonction des niveaux mesurés moyennant le manque d'information en réception.
 
-Ce manque d'information est dû au fait qu'il n'y a pas de flotteurs partout sur la ligne de mesure. L'équation mathématique est complexe. Le lecteur peut le prédire des mots : manque d'information, mesure réciproque (alias inverse) sans parler de l'erreur de mesure. Mais heureusement pour le physicien ou l'amateur, qui bien souvent sont les mêmes, il existe une règle intuitive en théorie de l'information : <b>on ne peut mesurer au maximum autant de valeurs que l'on a de données</b>. Ça veut dire qu'on peut s'épargner les calculs et considérer qu'on peut mesurer autant d'angles d'incidences de sources ponctuelles (vagues) que l'on a de détecteurs (flotteurs).
-
-TODO lien entropie de shanon
+<div>
+Ce manque d'information est dû au fait qu'il n'y a pas de flotteurs partout sur la ligne de mesure. L'équation mathématique est complexe. Le lecteur peut le prédire des mots : manque d'information, mesure réciproque (alias inverse) sans parler de l'erreur de mesure.
+Mais heureusement pour le physicien ou l'amateur, qui bien souvent sont les mêmes, il existe une règle<sup>[+]<div class="description">
+J'aprécie les régles : une fois notés leur champ d'amplication et leurs effets, qui souvent consistent à restreindre le chamsp des possibles, elles facilitent le procésus congnitif. Voir par exemple ma liste des <a href=https://tinmarino.github.io/?show=cosmo_obs_cheat>10 cosmondements</a>. Où ici même quelques exemples qui sont presques des définitions :
+<ul>
+<li>La matière ne traverse pas la matère.
+<li>Le temps s'écoule du passé vers le futur.</li>
+<li>Plus y'a de pression, plus ça part vite.</li>
+<li>Deux espaces parralèles n'entrent jamais en contact.</li>
+</ul>
+Beaucoup de médias revendiqueront la nouvelle découverte qui enfreint ces règles.
+Simplement ils mentent : si mon marteau la traverse, ce n'est pas de la matière; si ça voyage du futur vers le passé, ce n'est pas réel; si le flux est plus lent lorsque je l'augmente, ce n'est pas de la pression; enfin si on perçoit un espace, c'est qu'il n'est pas parallèle.
+</div></sup>
+en théorie de l'information : <b>on ne peut mesurer au maximum autant de valeurs que l'on a de données</b> (voir [Entropie de Shanon](https://fr.wikipedia.org/wiki/Entropie_de_Shannon). Ça veut dire qu'on peut s'épargner les calculs et considérer qu'on peut mesurer autant d'angles d'incidences de sources ponctuelles (vagues) que l'on a de détecteurs (flotteurs).
+<!-- Trick for sup --> <ul></ul>
+</div>
 
 <div>
 Comme nous pouvons mesurer l'angle de plusieurs sources ponctuelles, nous divisons la forme de la source en plusieurs sous-sources ponctuelles et puis interpoler pour trouver la forme continue de la source classique.<sup>[+]<div class="description">
@@ -600,6 +629,8 @@ Puisses-tu la célébrer pour, demain, te réveiller avec plus d'enthousiasme qu
 * [Visibility et tache d'Airy](https://web.njit.edu/~gary/728/Lecture6.htm)
 
 * [Procesus d'émisions en Astrophysique (livre, pdf)](http://www.bartol.udel.edu/~owocki/phys633/RadProc-RybLightman.pdf) : un fondamental scholaire.
+
+* [Guide intéractif de la Transformation de Fourier](https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/)
 
 ### Cosmologie
 

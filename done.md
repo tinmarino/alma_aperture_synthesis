@@ -24,7 +24,19 @@
 * IDEA Signature SVG
 * IDEA: Young bands are aliases in real life due to band paerture
 
+## Deleted
+
+* 1/ __La superficie__ est la surface non obstruée qui pointe vers l'objectif. Plus elle est grande, plus le flux lumineux obtenue sera elevé. C'est intéréssant pour les objects peu lumineux.
+* 1/ __La gamme dynamique__ est le ratio entre la plus petite valeur mesurable et la plus grande. C'est intéréssant pour réduire le bruit du signal.
+
+3/ Notez que si le bouchon de gauche est déphasé, il suffit de touner cette figure très légérement (pour les intimes : de $\frac{\lambda}{b}. TODO Est ce vrai ? Voir arccos
+
 ## Star representation pentagram
+
+heaxagram: https://en.wikipedia.org/wiki/Hexagram
+The symbol was adopted from the Hindu by the Jews from the spiritual symbol Anahata
+A five-pointed star (☆)
+https://en.wikipedia.org/wiki/Polygram_(geometry)#Regular_compound_polygons
 
 Phylosophy Pentagram
 Symbolize Venus, teh risig star, the guide
