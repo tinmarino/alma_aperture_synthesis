@@ -445,6 +445,8 @@ En ouverture synthétique, cette réduction ajoute l'avantage de diminuer le man
 
 Le concept mathématique utilisé par un télescope à synthèse d'ouverture est identique à celui du détecteur utilisant des flotteurs.
 
+## 5.1/ <a name="s51_correspond"></a> Correspondences
+
 Pour enrichir le vocabulaire du lecteur voici l'analogie:
 
 
@@ -467,17 +469,17 @@ Le photon est le [porteur de la force](https://en.wikipedia.org/wiki/Force_carri
 
 La lumière, colonie de photons figés dans le temps et fonçant dans l'espace, est très intéressante autant dans pour recherche que l'enseignement scientifique. Ce qui, en soi, est naturel car c'est la seule chose que l'on voit. Sachez tout de même qu'un géologue aurait la même rhétorique pour le son.
 
-<hr>
+## 5.2/ <a name="s52_antenna_vs_telescope"></a> Antenne > Télescope
 
 Ce document vous a expliqué, je l'espère, la synthèse d'ouverture, technique utilisée principalement par les réseaux d'antennes.
-Dans cette optique, je me permet de vous expliquer pourquoi les antennes (réflecteur + oscilloscope) sont supérieures aux télescopes (miroir + CCD ou bolomètre). La réponse réside dans les facultés de l'oscilloscope ou plus généralement du traitement de signal électrique par raport à l'optique.
+Dans cette optique, je me permet de vous expliquer pourquoi les antennes (réflecteur + [oscilloscope](https://fr.wikipedia.org/wiki/Oscilloscope)) sont supérieures aux télescopes (miroir + [CCD](https://fr.wikipedia.org/wiki/Capteur_photographique_CCD) ou [bolomètre](https://fr.wikipedia.org/wiki/Bolom%C3%A8tre)). La réponse réside dans les facultés de l'oscilloscope ou plus généralement du traitement de signal électrique par raport à l'optique.
 
 
 L'oscilloscope a la capacité de mesurer simultanément phase et amplitude alors que la CCD ou le bolomètre ne mesure que l'intensité (amplitude au carré).
 Cette capacité permet au réseau d'antennes d'enregistrer toutes ses mesures afin que les machines fassent, à postériori, le traitement du signal. La corrélation est effectué, au calme, avec des ordinateurs. Alors que dans l'optique, la corrélation doit être faite en temps réel, avec un banc optique vulnérable à la moindre oscillation, au milieu des machines à 3500m d'altitude, dans un pays sismique. Chaque acquisition du VLTI (optique) est une aventure humaine. Les acquisitions d'ALMA (radio) commence à ressmbler à une croisière (sauf pour les ordinateurs qui vitualisent tout le banc optique).<br/>
 De plus, un signal électrique peut être multiplié avec beaucoup moins de bruit qu'un signal optique. Ceci facilite la synthèse d'ouverture avec plus de deux antennes. Par exemple ALMA en a 66 alors que le VLTI n'en a que ... 2.
 
-<hr>
+## 5.3/ <a name="s53_cost"></a> Coût de calcul
 
 TODO ALMA a 66 antennes donc $\frac{66 \times 65}{2} = 2145$ paires, mesure une onde de 1mm donc de fréquence 300GHz. C'est à dire que 
 Un processeur va à un rythme d'environ 1GHz, ALMA en a 130 millions.
@@ -490,24 +492,41 @@ Un processeur va à un rythme d'environ 1GHz, ALMA en a 130 millions.
 * TODO Parler de la résolution totale fente d'young et principe de raylight
 * TODO link: https://fr.wikipedia.org/wiki/Fentes_de_Young
 
-<!-- Center Figure Fente de Young -->
-<figure style="margin:10px" >
-  <a name="f_carte"></a>
-  <img src='Figure/51_slit_two.svg#svgView(preserveAspectRatio(none))'
-      alt='missing'
-      style=" width:90%; min-width:300px; height:450px;
-    display: block;
-    margin: 0 auto;
-  "/>
+<!-- Left -->
+<div style="clear: both; margin:0; display:flex">
+<figure style="float: left; min-width:300px; width:450px; margin:0;
+    margin-top:auto;
+    align-self: flex-end;
+    " >
+  <a name="f_cas1"></a>
+  <img src='Figure/52_slit_one.svg' alt='missing' style="
+    width:90%;
+    "/>
   <figcaption style="
-    text-align:left;
-    width:70%; min-width:300px;
-    display: block;
-    margin: 0 auto;
+    text-align:center;
+    width:90%;
   ">
-    <b>Fentes de Young :</b>
+    <b>Une Fente</b>
   </figcaption>
 </figure>
+<!-- Right -->
+<figure style="float: right; min-width:300px; width:450px; margin:0;
+    margin-top:auto;
+    align-self: flex-end;
+    " >
+  <a name="f_cas2"></a>
+  <img src='Figure/51_slit_two.svg' alt='missing' style="
+    width:90%;
+    "/>
+  <figcaption style="
+    text-align:center;
+    width:90%;
+  ">
+    <b>Deux Fentes</b>
+  </figcaption>
+</figure>
+</div>
+<div style="display: block; clear: both;"></div>
 
 TODO ici un dessin de tache d'airy
 * TODO OPtional section: démonstration des anciennes et nouvelles limitations (young et aperture)
@@ -537,11 +556,11 @@ Ici le lecteur devrait avoir compris:
 * [Comment](#s3_modulo) déterminer la position angulaire d'une source avec la corrélation entre deux récepteurs.
 * La [différence entre interférométrie et triangulation](#s41_triangulation).
 * Pourquoi plus de deux récepteurs sont nécessaires pour [former une image](#s43_image).
-* Pourquoi le corrélateur a une importante charge de calcul (TODO cite 5.3)
-* Pourquoi la synthèse d'ouverture est plus facile à effectuer avec des antennes qu'avec des télescope (TODO cite 5.2)
+* Pourquoi le corrélateur a une importante [charge de calcul](s53_cost).
+* Pourquoi la synthèse d'ouverture est plus facile à effectuer avec des [antennes qu'avec des télescopes](s52_antenna_vs_telescope).
 
-Voilà cette explication est terminée.
-J'espère que tu as lu lentement sans quoi la compréhension a due être laborieuse.
+Voilà ce guide pratique est terminé.
+J'espère que tu l'as lu lentement sans quoi la compréhension a due être laborieuse.
 Quoi qu'il en soit, merci pour la lecture et félicitation pour l'effort.
 Si tu as appris quelque chose de nouveau, c'est une petite victoire.
 Puisses-tu la célébrer pour, demain, te réveiller avec plus d'enthousiasme qu'hier.
@@ -551,6 +570,34 @@ Puisses-tu la célébrer pour, demain, te réveiller avec plus d'enthousiasme qu
 
 <blockquote> Sic itur ad astra </blockquote>
 
-* [ESO spectroscopie (pdf)](https://www.eso.org/sci/meetings/2015/eris2015/program.html) : Introduction gentille à l'interférométrie : "ERIS : Enhanced Resolution Imager and Spectrograph"
+* [ESO spectroscopie (pdf)](https://www.eso.org/sci/meetings/2015/eris2015/program.html) : Introduction gentille à l'interférométrie : "ERIS : Enhanced Resolution Imager and Spectrograph".
 
-*
+* [Radioastronomie (présentations)](https://web.njit.edu/~gary/728/).
+
+### Corrélation
+
+* [20 lignes](https://astronomy.swin.edu.au/cosmos/C/Correlator).
+
+* [20 planches](https://web.njit.edu/~gary/728/Lecture7.html).
+
+* [20 présentations](http://www.aoc.nrao.edu/events/synthesis/2004/presentations.html).
+
+### Électromagnétisme et imagerie
+
+* [Électrodynamique quantique](http://www.johnboccio.com/courses/QESMS_2017/QED.pdf) : QED par Richard Feynman, principe de Huygens-Fresnel (1678) exploité par Feynman (1992) dans la théorie quantique des champs. Explication sans Mathématiques pour tous.
+
+* [Synthèse d'ouverture par Caltech](http://web.ipac.caltech.edu/staff/fmasci/home/astro_refs/InverseImageProblem.pdf) : juste Caltechniquement parfait.
+
+* [Échantillonage parfait](https://svi.nl/IdealSampling) : jolie explication du taux de Nyquist.
+
+* [Systèmes optiques limités par la diffraction](https://fr.wikipedia.org/wiki/Fonction_de_transfert_optique#Syst%C3%A8me_optique_limit%C3%A9_par_la_diffraction) : par wikipédia avec amour.
+
+* [Visibility et tache d'Airy](https://web.njit.edu/~gary/728/Lecture6.htm)
+
+* [Procesus d'émisions en Astrophysique (livre, pdf)](http://www.bartol.udel.edu/~owocki/phys633/RadProc-RybLightman.pdf) : un fondamental scholaire.
+
+### Cosmologie
+
+* [Les dix cosmondements (pdf)](https://tinmarino.github.io/pdf/2020_10_command_en.pdf) : de la voie et la vertu de la cosmologie observationnelle.
+
+* [Cosmocuentos (pdf)](http://astromania.cl/cosmocuentos/) : cosmogonies par des amateurs Chiliens.

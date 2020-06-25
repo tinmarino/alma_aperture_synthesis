@@ -24,6 +24,29 @@
 * IDEA Signature SVG
 * IDEA: Young bands are aliases in real life due to band paerture
 
+## Star representation pentagram
+
+Phylosophy Pentagram
+Symbolize Venus, teh risig star, the guide
+While Christians today will make the sign of a cross over their chest, Ancient Pagans would make the sign of the pentagram over theirs.
+Start at the left breast, then to forehead, then right breast, then left shoulder, right shoulder, then end it at the left breast.  This symbolized not only protection but completion.
+https://thepaganandthepen.wordpress.com/2010/05/25/the-origins-of-the-star-pentacle-pentagram/
+https://dreamastromeanings.com/spiritual-meaning-of-stars/
+It is a pagan religious symbol that is one of the oldest symbols on Earth and is known to have been used as early as 4000 years B.C. It represents the "sacred feminine" or "divine goddess" (Brown 2003, pp. 35-37).
+Da Vinci Code
+"The pentacle," Langdon clarified, "is a pre-Christian symbol that relates to Nature worship. The
+ancients envisioned their world in two halves—masculine and feminine. Their gods and goddesses
+worked to keep a balance of power. Yin and yang. When male and female were balanced, there
+was harmony in the world. When they were unbalanced, there was chaos." Langdon motioned to
+Saunière's stomach. "This pentacle is representative of the female half of all things—a concept
+religious historians call the 'sacred feminine' or the 'divine goddess.' Saunière, of all people, would
+know this."
+ It is considered to be representative of the five elements from which man is made, namely fire, air, water, earth and spirit. Often the terms Pentacle and Pentagram are used interchangeably, but there is a slight difference between the two. Some people believe that a Pentagram is not circled, while a Pentacle has the star enclosed by a circle.
+ Ithasbeen foundscratchedonthewallsofNeolithiccaves,andinBabyloniandrawings,whereit marksthepattern theplanetVenus makesonitstravels-asecretsymboloftheGoddessIshta
+ 5 visible planets then Venus
+ In normal vision, diffraction through eyelashes – and due to the edges of the eyelids if one is squinting – produce many diffractions spikes.
+
+
 ## Citation latines
 https://www.superprof.fr/blog/top-20-expressions-en-langue-latine/
 https://fr.wikipedia.org/wiki/Liste_de_locutions_latines
