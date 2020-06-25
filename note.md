@@ -5,15 +5,18 @@
 ## TODO forme: 
 * Mettre des couleurs tranquillement, souligner
 * Mettre des <hr> aussi 
+* Add ALMA svg
 
 
 ## Image
 * Bouchons sous les vagues de 37°, le front d'onde est mauvais
 * Aperture synthesis many small in one big (so I again metion de discretisation)
+* Think: Image dans la section 4 ?
 
 ## NEXT
 
 * Faire une intro sympa et honête (public, niveau, complétude, reference, from-where, where I am, where I go, doctrine, regles, physique)
+* 5.3 principe de rayleight
 
 
 ================================================================================

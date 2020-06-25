@@ -1,0 +1,35 @@
+\documentclass[tikz]{standalone}
+% \documentclass[dvisvgm]{standalone}
+% From: https://tex.stackexchange.com/questions/469109/how-to-change-arrowheads-to-lie-on-a-plane
+\usepackage{tikz}
+\input{01_include.tex}
+\input{53_slit_include.tex}
+
+
+% Warning, magics
+\definecolor{wall}{HTML}{665c54} % gb-dark3
+\definecolor{background}{HTML}{282828} % gb-dark0
+
+% Debug
+%\definecolor{background}{HTML}{ffffff} \AtBeginDocument{\globalcolor{black}}
+
+\begin{document}
+
+
+
+\tikzset{
+    every picture/.style={line width=1pt}
+}
+
+\begin{tikzpicture}[yscale=0.2]
+
+\draw[line width=0.5pt, dashed] plot[dashed, domain=-1:1] (\x, {(\x)^2});
+
+\draw plot[smooth, domain=-0.1:0.1] (1+\x, {1 + 25 *(\x)^2});
+
+\draw plot[smooth, domain=-0.1:0.1] (0.5+\x, {1 + 25 *(\x)^2});
+
+\draw plot[smooth, domain=-0.1:0.1] (-1+\x, {1 + 25 *(\x)^2});
+
+\end{tikzpicture}
+\end{document}

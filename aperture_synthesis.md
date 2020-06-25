@@ -76,7 +76,7 @@ Cette tache est d'autant plus petite que l'ouverture du télescope est grande.
 
 
 
-<!-- Figure diffraction -->
+<!-- Figure diffraction Right -->
 <figure style="float: right; width:300px;" >
   <a name="f_fente"></a>
   <img style='width:100%' src='Figure/12_diffraction.svg' alt='missing' />
@@ -532,7 +532,7 @@ Un processeur va à un rythme d'environ 1GHz, ALMA en a 130 millions.
     margin-top:auto;
     align-self: flex-end;
     " >
-  <a name="f_cas1"></a>
+  <a name="f_fente1"></a>
   <img src='Figure/52_slit_one.svg' alt='missing' style="
     width:90%;
     "/>
@@ -548,7 +548,7 @@ Un processeur va à un rythme d'environ 1GHz, ALMA en a 130 millions.
     margin-top:auto;
     align-self: flex-end;
     " >
-  <a name="f_cas2"></a>
+  <a name="f_fente2"></a>
   <img src='Figure/51_slit_two.svg' alt='missing' style="
     width:90%;
     "/>
@@ -562,8 +562,27 @@ Un processeur va à un rythme d'environ 1GHz, ALMA en a 130 millions.
 </div>
 <div style="display: block; clear: both;"></div>
 
-TODO ici un dessin de tache d'airy
-* TODO OPtional section: démonstration des anciennes et nouvelles limitations (young et aperture)
+<!-- Discretisation Right -->
+<figure style="float: right; width:300px;" >
+  <a name="f_fente"></a>
+  <img style='width:100%' src='Figure/54_parabola.svg' alt='missing' />
+  <figcaption>
+    <b>Interpolation de parabole :</b>
+    En combinant le signal des trois antennes, on simule une parabole trouée.
+  </figcaption>
+</figure>
+
+On peut calculer que la tache du lobe principal est deux fois plus petit pour une figure de diffraction avec deux ouvertures séparées d'une distance "d" (voir figure <a href="#f_fente2">deux fentes</a>) que pour une figure de diffraction d'une ouverture de taille "d" (voir figure <a href="#f_fente1">une fente</a>).
+La résolution est donc deux fois supérieure.
+Par contre, les lobes secondaires sont plus intenses et donc le bruit est supérieur.
+
+<div>
+Le sujet de la forme parfaite d'une parabole (i.e. faut-il le trouer ?) fait l'objet de recherches.<sup>[+]<div class="description">
+* [Canales 2006](https://spie.org/news/0452-improving-resolution-in-large-telescopes) : Improving resolution in large telescopes : Comparaison d'un masque annnulaire et un masque supergaussien.
+* [Proposition pour un télescope spatiale](https://spie.org/news/0452-improving-resolution-in-large-telescopes) : High-Resolution Imaging using Large Sparse-Aperture Telescopes
+</div></sup>
+</div>
+
 
 <hr>
 
@@ -590,10 +609,10 @@ Ici le lecteur devrait avoir compris:
 * [Comment](#s3_modulo) déterminer la position angulaire d'une source avec la corrélation entre deux récepteurs.
 * La [différence entre interférométrie et triangulation](#s41_triangulation).
 * Pourquoi plus de deux récepteurs sont nécessaires pour [former une image](#s43_image).
-* Pourquoi le corrélateur a une importante [charge de calcul](s53_cost).
-* Pourquoi la synthèse d'ouverture est plus facile à effectuer avec des [antennes qu'avec des télescopes](s52_antenna_vs_telescope).
+* Pourquoi le corrélateur a une importante [charge de calcul](#s53_cost).
+* Pourquoi la synthèse d'ouverture est plus facile à effectuer avec des [antennes qu'avec des télescopes](#s52_antenna_vs_telescope).
 
-Voilà ce guide pratique est terminé.
+Ce guide pratique est terminé.
 J'espère que tu l'as lu lentement sans quoi la compréhension a due être laborieuse.
 Quoi qu'il en soit, merci pour la lecture et félicitation pour l'effort.
 Si tu as appris quelque chose de nouveau, c'est une petite victoire.
@@ -603,8 +622,6 @@ Puisses-tu la célébrer pour, demain, te réveiller avec plus d'enthousiasme qu
 # Liens pour aller plus loin
 
 <blockquote> Sic itur ad astra </blockquote>
-
-* [ESO spectroscopie (pdf)](https://www.eso.org/sci/meetings/2015/eris2015/program.html) : Introduction gentille à l'interférométrie : "ERIS : Enhanced Resolution Imager and Spectrograph".
 
 * [Radioastronomie (présentations)](https://web.njit.edu/~gary/728/).
 
@@ -631,6 +648,8 @@ Puisses-tu la célébrer pour, demain, te réveiller avec plus d'enthousiasme qu
 * [Procesus d'émisions en Astrophysique (livre, pdf)](http://www.bartol.udel.edu/~owocki/phys633/RadProc-RybLightman.pdf) : un fondamental scholaire.
 
 * [Guide intéractif de la Transformation de Fourier](https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/)
+
+* [ESO spectroscopie (pdf)](https://www.eso.org/sci/meetings/2015/eris2015/program.html) : Introduction gentille à l'interférométrie : "ERIS : Enhanced Resolution Imager and Spectrograph".
 
 ### Cosmologie
 
