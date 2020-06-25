@@ -18,7 +18,6 @@
 * Faire une intro sympa et honête (public, niveau, complétude, reference, from-where, where I am, where I go, doctrine, regles, physique)
 * 5.3 principe de rayleight
 
-
 ================================================================================
 
 # Note copy paste
@@ -28,6 +27,10 @@
     <b>Carte des mers :</b>
 
 ### Copy: bloon
+<sup>[+]<div class="description">
+</div></sup>
+</div>
+### Copy Bloon other
 <div>
 <sup>[+]<div class="description">
 Ou mesure spectrale pour les ondes radios, 

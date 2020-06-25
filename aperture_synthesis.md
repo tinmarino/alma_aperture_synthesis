@@ -396,14 +396,17 @@ Alors pourquoi contruisons nous des observatoires artificiels ? On sent que la r
 Nous avons, dans l'exemple précédent, séparer deux bouchons de 2m pour mesurer l'orientation d'une vague de 10cm de longueur d'onde. En effet, c'était plus facile à dessiner.
 En réalité, les antennes d'ALMA sont séparées de 16km et mesurent l'angle d'incidence d'une onde de 1mm. En gardant notre exemple avec nos vagues et nos flotteurs, c'est comme si on séparait les flotteurs de $16km \times \frac{10cm}{1mm} = 1600km$. À cette distance, les flotteurs peuvent mesurer la différence entre une vague venant de $theta=0$ et une vague venant de
 $\theta = arcsin\left(\frac{10cm}{1600km}\right) = 0.0000036°$,
-deuxième angle où les deux flotteurs se retrouveront de nouveau en phase.<sup>[+]<div class="description">
-Nous avons utilisé le [critère de Rayleight](http://ressources.univ-lemans.fr/AccesLibre/UM/Pedago/physique/02/optiondu/rayleigh.html) qui stipule qu'on ne peut distinguer deux taches de diffraction si le maximum de l'une correspond au premier minima de l'autre.
-</div></sup>
+deuxième angle où les deux flotteurs se retrouveront de nouveau en phase.
+
+<div>
+placeholder-rayleight
 </div>
+
+Nous avons utilisé le [critère de Rayleight](http://ressources.univ-lemans.fr/AccesLibre/UM/Pedago/physique/02/optiondu/rayleigh.html) qui stipule qu'on ne peut distinguer deux taches de diffraction qu'après la distance où le maximum de l'une correspond au premier minimum de l'autre.
 
 La résolution d'ALMA est donc de 0.0000036° ou 10 mili-arc-segonde de degrés. Ce qui est très précis et permet de synthétiser des images avec un grand détail en suivant la méthode que nous décrirons prochainement à la <a href="#s43_image">section 4.3</a>.
-</div>
 
+<div style="clear:both"></div>
 
 ## 4.2/ <a name="s42_forme"></a> D'un point à une forme
 

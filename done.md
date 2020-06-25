@@ -31,6 +31,8 @@
 
 3/ Notez que si le bouchon de gauche est déphasé, il suffit de touner cette figure très légérement (pour les intimes : de $\frac{\lambda}{b}. TODO Est ce vrai ? Voir arccos
 
+
+
 ## Star representation pentagram
 
 heaxagram: https://en.wikipedia.org/wiki/Hexagram

@@ -24,7 +24,10 @@ svg: $(tikz) $(animates)
 
 html:
 	# Convert
-	pandoc aperture_synthesis.md -t html --self-contained -s --standalone --mathjax -o aperture_synthesis.html
+	cat aperture_synthesis.md | \
+		sed -e '/placeholder-rayleigh/{r rayleigh_app.html' -e 'd}' | \
+		cat > in.md
+	pandoc in.md -t html --self-contained -s --standalone --mathjax -o aperture_synthesis.html
 
 release: all
 	cp aperture_synthesis.html out1.html
