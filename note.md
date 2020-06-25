@@ -61,11 +61,6 @@ qui stipule que la résolution limite d'une ouverture est [longueur d'onde] / [t
 
 # To Say
 
-Baseline
-We experience this every day when we hear sound comminf from adjacent tooms
-
-Ad astra per aspera: Par des sentiers ardus jusqu'aux étoiles.: one has to go through great difficulties to reach divine-like heights.
-
 On a du mal a simulé une onde, imaginez la difficulté à simulé votre cerveau.Meme avec 130 millions de processeurs
 
 Vous savez sans doute que la lumière est quantique, que rien ne voyage plus vite qu'elle et qu'on peut voyage moins vite dans le temps quand on se déplace vite dans l'espace.

@@ -56,6 +56,7 @@ Errare humanum est : L'erreur est humainse
 Quod Erat Demonstrandum  : CQFD
 Qui tacet consentire videtur
 Verba volant scripta manent : Les paroles volent
+Ad astra per aspera: Par des sentiers ardus jusqu'aux étoiles.: one has to go through great difficulties to reach divine-like heights.
 
 OK : Quid novi : Quoi de neuf
 OK : Dura lex, sed lex : La loi est dure mais c'est la loi

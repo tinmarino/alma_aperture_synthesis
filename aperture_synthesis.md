@@ -37,8 +37,7 @@ Constitution d'image depuis plusieurs informations angulaires : "À l'abordage !
 On mesure la qualité d'une image astrophysique avec deux paramètres : sa [résolution angulaire](https://en.wikipedia.org/wiki/Dynamic_range#Photography) et sa [profondeur](https://fr.wikipedia.org/wiki/Liste_des_champs_profonds).
 
 
-1. __La profondeur__ est le flux de la source la moins lumineuse que l'on peut détecter.
-<sup>[+]<div class="description">
+1. __La profondeur__ est le flux de la source la moins lumineuse que l'on peut détecter.<sup>[+]<div class="description">
 Une grande profondeur permet de détecter des objets peu brillant. Par exemple, des objets lointains.
 </div></sup>
 2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre.<sup>[+]<div class="description">
@@ -62,12 +61,20 @@ En effet, si on ne voit rien sur les images comment sait-on vers où elles point
 Il nous faut donc un télescope suffisamment grand qui puisse absorber la lumière pour résoudre au moins deux étoiles de champs à chaque exposition.
 Vous pourrez penser : "si la mécanique du télescope est suffisamment bonne, les images sont alignées par le pointage". Malheureusement, il n'est pas possible d'obtenir une position précise sans [viseur d'étoile](https://fr.wikipedia.org/wiki/Viseur_d%27%C3%A9toiles) qui lui-même nécessite de voir un étoile proche du champ d'observation.
 
-Pour ce qui est de la __résolution angulaire__, la taille du télescope est limitant également.
+
+<div>
+Pour ce qui est de la <b>résolution angulaire</b>, la taille du télescope est limitant également.
 Mais cette fois, ce n'est plus pour une simple question de collecter un maximum de flux lumineux afin d'obtenir un bon signal sur bruit suffisant pour la détection.
-L'effet néfaste est la [diffraction](https://en.wikipedia.org/wiki/Diffraction#Mechanism) que subie toute onde qui passe par une ouverture (voir la figure
-<a href="#f_fente"><i>"fente"</i></a>).
-Dans le cas d'une ouverture circulaire comme celle du miroir principale, l'image d'un point est une [tache d'Airy](https://fr.wikipedia.org/wiki/Tache_d%27Airy). Ce n'est plus un point, même si le télescope est parfait.
+L'effet néfaste est la <a href="https://en.wikipedia.org/wiki/Diffraction#Mechanism">diffraction</a> que subie toute onde qui passe par une ouverture (voir la figure <a href="#f_fente"><i>"fente"</i></a>).<sup>[+]<div class="description">
+Nous faisons l'expérience de la diffraction tous les jours lorsque nous entendons le son provenant d'une pièce voisine.
+</div></sup>
+Dans le cas d'une ouverture circulaire comme celle du miroir principale, l'image d'un point est une <a href="https://fr.wikipedia.org/wiki/Tache_d%27Airy">tache d'Airy</a>.
+Ce n'est plus un point, même si le télescope est parfait.
 Cette tache est d'autant plus petite que l'ouverture du télescope est grande.
+<!-- Trick for sup --> <ul></ul>
+</div>
+
+
 
 <!-- Figure diffraction -->
 <figure style="float: right; width:300px;" >
@@ -179,8 +186,7 @@ L'altitude de chaque flotteur variera au grède la vague et suivra une sinusoïd
 Ce degrés de synchronisme est appelé [corrélation](https://kids.alma.cl/como-estan-conectadas-las-antenas-de-alma/).
 
 <div>
-On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\nu$ est la fréquence de l'onde et donc son inverse, $\frac{1}{\nu}$, est le temp qui sépare deux vagues.
-<sup>[+]<div class="description">
+On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\nu$ est la fréquence de l'onde et donc son inverse, $\frac{1}{\nu}$, est le temp qui sépare deux vagues.<sup>[+]<div class="description">
 On ne peut plus savoir sur quelle vague est chaque flotteur mais à quelle position de la vague : en haut, en descente ...
 (voir figure <a href="#f_altitude"><i>"altitude"</i></a>)<br/>
 Remarquez que ce manque d'information est drastique.
@@ -319,8 +325,7 @@ Félicitation au lecteur qui est arrivé jusqu'ici : il peut en effet désormais
 
 - [4.3:](#s43_image) Ce qui nous permettra de reconstuire la forme d'un caillou à partir des déplacements détectés.
 
-- [4.4:](#s44_spectre) Enfin nous aborderons l'importance des filtres et la mesure de la taille des vagues.
-<sup>[+]<div class="description">
+- [4.4:](#s44_spectre) Enfin nous aborderons l'importance des filtres et la mesure de la taille des vagues.<sup>[+]<div class="description">
 Ou mesure spectrale pour les ondes radios. En Français la couleur.
 </div></sup>
 
