@@ -32,10 +32,11 @@ html:
 	cat aperture_synthesis.md | \
 		sed -e '/placeholder-rayleigh/{r rayleigh_app.html' -e 'd}' | \
 		cat > in.md
-	pandoc in.md -t html --self-contained -s --standalone --mathjax -o aperture_synthesis.html
+	pandoc in.md -t html --self-contained -s --standalone -o aperture_synthesis.html
 
 clean:
-	rm aperture_synthesis.html in.md out1.html
+	rm aperture_synthesis.html in.md out1.html *.svg Figure/*
+	rm *.aux *.log *.fls *.fdb_latexmk *.out *synctex.gz *.tex.backup *.4ct *.4tc *.idv *.lg *.tmp *.xref *.xdv *.dvi *.bak *.toc
 
 mathjax:
 	cp aperture_synthesis.html out1.html
@@ -43,3 +44,14 @@ mathjax:
 	$$HOME/Program/MathJax/node_modules/mathjax-node-page/bin/mjpage --output CommonHTML < out1.html > aperture_synthesis.html 
 
 release: all mathjax
+
+move:
+	cp aperture_synthesis.html $$HOME/Software/Html/Page/pdf/2020_aperture_synthesis.html
+
+deploy:
+	move
+	pushd $$HOME/Software/Html/Page
+	git add -a
+	git commit 'Update aperture synthesis'
+	git push
+	popd

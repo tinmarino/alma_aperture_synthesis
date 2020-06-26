@@ -292,7 +292,8 @@ une vague venant de $\theta = 30°$ (centre-droite). Alors elle devra parcourir 
 
 <!-- Left -->
 <div style="clear: both; margin:0; display:flex">
-<figure style="float: left; min-width:300px; width:450px; margin:0;
+<figure style="float: left;
+    width:450px; margin:0;
     margin-top:auto;
     align-self: flex-end;
     " >
@@ -309,7 +310,8 @@ une vague venant de $\theta = 30°$ (centre-droite). Alors elle devra parcourir 
   </figcaption>
 </figure>
 <!-- Right -->
-<figure style="float: right; min-width:300px; width:450px; margin:0;
+<figure style="float: right;
+    width:450px; margin:0;
     margin-top:auto;
     align-self: flex-end;
     " >

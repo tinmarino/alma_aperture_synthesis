@@ -5,8 +5,6 @@
 * Mettre des couleurs tranquillement, souligner
 * Mettre des <hr> aussi 
 
-## NEXT
-* Square parabola for web site
 
 ================================================================================
 

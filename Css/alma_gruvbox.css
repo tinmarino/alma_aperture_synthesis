@@ -16,7 +16,9 @@ body {
 
 /* H1 */
 h1 { 
-  font-family: 'Droid serif', serif; font-size: 40px; font-weight: 400; font-style: italic; line-height: 44px; margin: 50px -10px 20px; 
+  font-family: "Century Gothic", "Avant Garde Gothic", "Avant Garde", "URW Gothic L", helvetica, sans-serif;
+  font-size: 40px; font-weight: 400;
+  line-height: 44px; margin: 50px -10px 20px; 
   max-width: 900px;
 }
 h1:after {
@@ -31,7 +33,7 @@ h1.title {
   text-align: center;
   font-size: 50px;
   line-height: 60px;
-  color: #eee;
+  color: #ddd;
   max-width: 900px;
   margin: 0;
 }
@@ -46,7 +48,7 @@ h1.title:before {
 h1.title:after {
   content:' ';
   display:block;
-  border:4px solid var(--gb-faded_red);
+  border:4px solid var(--gb-faded_blue);
   border-radius:4px;
   margin: 10px 0px 30px 0px;
   box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
