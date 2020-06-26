@@ -48,10 +48,10 @@ release: all mathjax
 move:
 	cp aperture_synthesis.html $$HOME/Software/Html/Page/pdf/2020_aperture_synthesis.html
 
-deploy:
-	move
-	pushd $$HOME/Software/Html/Page
-	git add -a
-	git commit 'Update aperture synthesis'
-	git push
-	popd
+#deploy:
+#	move
+#	pushd $$HOME/Software/Html/Page
+#	git add -a
+#	git commit 'Update aperture synthesis'
+#	git push
+#	popd

@@ -425,7 +425,7 @@ En réalité, les antennes d'ALMA sont séparées de 16km et mesurent l'angle d'
 $\theta = arcsin\left(\frac{10cm}{1600km}\right) = 0.0000036°$,
 deuxième angle où les deux flotteurs se retrouveront de nouveau en phase.
 
-<div style="min-width:400px; width:50%; margin:20px;">
+<div style="min-width:300px; width:50%; margin:10px;">
 placeholder-rayleight
 </div>
 
@@ -597,25 +597,13 @@ Pour résumé cette section : comme on pouvait s'y attendre, un réseau d'antenn
 
 <blockquote> Dura lex, sed lex </blockquote>
 
-<!-- Left -->
+
+
+<!-- Tache de young -->
 <div style="clear: both; margin:0; display:flex">
-<figure style="float: left; min-width:300px; width:450px; margin:0;
-    margin-top:auto;
-    align-self: flex-end;
-    " >
-  <a name="f_fente1"></a>
-  <img src='Figure/52_slit_one.svg' alt='missing' style="
-    width:90%;
-    "/>
-  <figcaption style="
-    text-align:center;
-    width:90%;
-  ">
-    <b>Une Fente</b>
-  </figcaption>
-</figure>
-<!-- Right -->
-<figure style="float: right; min-width:300px; width:450px; margin:0;
+<!-- Left -->
+<figure style="float: left;
+    width:450px; margin:0;
     margin-top:auto;
     align-self: flex-end;
     " >
@@ -630,7 +618,27 @@ Pour résumé cette section : comme on pouvait s'y attendre, un réseau d'antenn
     <b>Deux Fentes</b>
   </figcaption>
 </figure>
+
+<!-- Right -->
+<figure style="float: right;
+    width:450px; margin:0;
+    margin-top:auto;
+    align-self: flex-end;
+    " >
+  <a name="f_fente1"></a>
+  <img src='Figure/52_slit_one.svg' alt='missing' style="
+    width:90%;
+    "/>
+  <figcaption style="
+    text-align:center;
+    width:90%;
+  ">
+    <b>Une Fente</b>
+  </figcaption>
+</figure>
 </div>
+
+
 <div style="display: block; clear: both;"></div>
 
 <!-- Discretisation Right -->
@@ -643,8 +651,8 @@ Pour résumé cette section : comme on pouvait s'y attendre, un réseau d'antenn
   </figcaption>
 </figure>
 
-On peut calculer que la tache du lobe principal est deux fois plus petit pour une figure de diffraction avec deux ouvertures séparées d'une distance "d" (voir figure <a href="#f_fente2">deux fentes</a>) que pour une figure de diffraction d'une ouverture de taille "d" (voir figure <a href="#f_fente1">une fente</a>).
-La résolution est donc deux fois supérieure.
+On peut calculer que le lobe principal est deux fois plus petit pour une figure de diffraction avec deux ouvertures séparées d'une distance "d" (voir figure <a href="#f_fente2">deux fentes</a>) que pour une figure de diffraction d'une ouverture de taille "d" (voir figure <a href="#f_fente1">une fente</a>).
+La résolution est donc deux fois supérieure pour les petites fentes séparées.
 Par contre, les lobes secondaires sont plus intenses et donc le bruit est supérieur.
 
 <div>
