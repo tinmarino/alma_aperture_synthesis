@@ -25,12 +25,18 @@
 * IDEA: Young bands are aliases in real life due to band paerture
 
 ## Deleted
-
+### Intro
+ et que simuler un grand télescope signifie obtenir cette même résolution 
+ 
+ 
 * 1/ __La superficie__ est la surface non obstruée qui pointe vers l'objectif. Plus elle est grande, plus le flux lumineux obtenue sera elevé. C'est intéréssant pour les objects peu lumineux.
 * 1/ __La gamme dynamique__ est le ratio entre la plus petite valeur mesurable et la plus grande. C'est intéréssant pour réduire le bruit du signal.
 
 3/ Notez que si le bouchon de gauche est déphasé, il suffit de touner cette figure très légérement (pour les intimes : de $\frac{\lambda}{b}. TODO Est ce vrai ? Voir arccos
 
+* TODO Reconstruction d'image somme de sinusoïde:
+  * text + image: pourquoi c'est comme plusieurs petits
+  * image step function de -thete a theta)
 
 
 ## Star representation pentagram

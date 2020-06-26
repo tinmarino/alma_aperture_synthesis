@@ -1,21 +1,17 @@
 # TODO
 
 
+https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27%C3%A9chantillonnage
 
 ## TODO forme: 
 * Mettre des couleurs tranquillement, souligner
 * Mettre des <hr> aussi 
-* Add ALMA svg
-
 
 ## Image
 * Bouchons sous les vagues de 37°, le front d'onde est mauvais
-* Aperture synthesis many small in one big (so I again metion de discretisation)
 * Think: Image dans la section 4 ?
 
 ## NEXT
-
-* Faire une intro sympa et honête (public, niveau, complétude, reference, from-where, where I am, where I go, doctrine, regles, physique)
 
 ================================================================================
 
@@ -32,9 +28,10 @@
 ### Copy Bloon other
 <div>
 <sup>[+]<div class="description">
-Ou mesure spectrale pour les ondes radios, 
+BlaBla
 </div></sup>
-<!-- Trick for sup --> <ul></ul>
+<!-- Trick for sup -->
+<ul></ul>
 </div>
 
 

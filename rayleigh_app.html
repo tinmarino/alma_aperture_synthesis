@@ -1,20 +1,14 @@
 <!-- Rayleigth copied from http://ressources.univ-lemans.fr/AccesLibre/UM/Pedago/physique/02/optiondu/rayleigh.html -->
 <style type="text/css">
     #commande{
-       width: 400px;
-       height: 30px;
-       margin-left: 30px;
-       font-family: Arial;
-       font-weight: bold;
-       font-size: 10pt;}
-
-    input[type=range] {
-        -webkit-appearance: none;
-        background-color: silver;
-        width: 150px;
-        height:5px;
-        margin-left: 5px;
-        margin-right: 10px;}
+        width: 400px;
+        height: 30px;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 10pt;
+        margin-left:10px;
+        margin-right:20px;
+    }
 
     #canv{
         width:480px;
@@ -28,20 +22,123 @@
         margin-left: 120px;
         margin-bottom: 3px;
         width:150px;}
- </style>
-<style type="text/css">
+
+
+    input[type="range"] {
+      width: 300px;
+      background: transparent;
+    }
+    /*###################################*/
+    /*###########Responsive Range########*/
+    /*###################################*/
+    /*##############Core Style###########*/
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+    }
+
+    input[type="range"]:focus {
+      outline: none;
+    }
+
+    input[type="range"]::-ms-track {
+      width: 100%;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+    /*#############Thumb##############*/
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 36px;
+      width: 36px;
+      background: #504945;
+      cursor: pointer;
+      margin-top: -12px;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      height: 36px;
+      width: 36px;
+      background: #504945;
+      cursor: pointer;
+    }
+
+    input[type="range"]::-ms-thumb {
+      height: 36px;
+      width: 36px;
+      background: #504945;
+      cursor: pointer;
+    }
+    /*#############Track##############*/
+
+    input[type="range"]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 12px;
+      cursor: pointer;
+      background: #eddbb2;
+    }
+
+    input[type="range"]:active::-webkit-slider-runnable-track {
+      background: #d6d6d6;
+    }
+
+    input[type="range"]::-moz-range-track {
+      width: 100%;
+      height: 12px;
+      cursor: pointer;
+      background: #ebdbb2;
+    }
+
+    input[type="range"]::-ms-track {
+      width: 100%;
+      height: 12px;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+
+    input[type="range"]::-ms-fill-lower {
+      background: #ebdbb2;
+    }
+
+    input[type="range"]:focus::-ms-fill-lower {
+      background: #fbf1c7;
+    }
+
+    input[type="range"]::-ms-fill-upper {
+      background: #ebdbb2;
+    }
+
+    input[type="range"]:focus::-ms-fill-upper {
+      background: #fbf1c7;
+    }
 </style>
 <!-- InstanceEndEditable
 <link rel="stylesheet" type="text/css" href="../styles.css">
+width: 330px;
+margin-left: 110px
  -->
-
-<div id="commande">      
-<label id="vD">Séparation</label> 
-<input type="range" id="valD" min="40" max="530" step="1" value="260">
+<div id="commande" style="width:100%">      
+<label id="vD" sytle="width:90%">Séparation</label> 
+<input type="range" id="valD" min="40" max="530" step="1" value="260" style="
+    width:100%;
+">
 </div>
 
-<div id="canv">                                     
-   <canvas id="canvas" width="480" height="440" style="border: 3px solid rgb(0, 0, 0);"></canvas>
+<div id="canv" style=width:100%>                                     
+   <canvas id="canvas" width="480" height="440" style="
+       border: 3px solid var(--gb-neutral-aqua);
+       width:100%;
+   "></canvas>
 </div>
                   
 <script type="text/javascript">
@@ -65,7 +162,12 @@
                 
     Dinput.addEventListener('mousemove', function() {
         Xc=parseInt(document.getElementById('valD').value)-20;
-        trace();});
+        trace();
+    });
+    Dinput.addEventListener('touchmove', function() {
+        Xc=parseInt(document.getElementById('valD').value)-20;
+        trace();
+    });
             
     // Utilitaires  ******************************************
 
@@ -92,10 +194,11 @@
     }
     
     function cadre3D(x,y,w,ha){
-        hh.strokeStyle="rgb(130,130,130)";  
+        // Acqua
+        hh.strokeStyle="#689d6a";  
         drawLine(x,y+1,w-1,y+1);	drawLine(x,y,x,ha);
         drawLine(x+1,y,x+1,ha-1);   drawLine(x,y,w,y);
-        hh.strokeStyle="rgb(230,230,230)";  		
+        hh.strokeStyle="#689d6a";  		
         drawLine(x,ha,w,ha);	drawLine(w,y+1,w,ha);
         drawLine(x+1,ha-1,w,ha-1);	drawLine(w-1,y+2,w-1,ha);
     }
@@ -128,11 +231,11 @@
 
     function trace(){ 
         hh.font="bold 12px Arial";
-        hh.fillStyle="rgb(192,192,192)";     hh.fillRect(0,0,480,440);
-        hh.fillStyle="rgb(0,0,0)";           hh.fillRect(20,280,439,140);
+        hh.fillStyle="#3c3836";     hh.fillRect(0,0,480,440);
+        hh.fillStyle="#000000";  hh.fillRect(20,280,439,140);
         hh.lineWidth=1;             
-        hh.fillStyle="rgb(0,0,0)"; 
-        hh.strokeStyle="rgb(0,0,0)";  droite(-2,0,5,0);
+        hh.fillStyle="#eddbb2"; 
+        hh.strokeStyle="#eddbb2";  droite(-2,0,5,0);
         for (var i=-2;	i<6; i++){
             droite(i,0.02,i,-0.07);
             hh.fillText(""+i,xei,yei+25);}
@@ -159,10 +262,13 @@
                     cercle(xei,Y,R,false);
                     cercle(X1,Y,R,false);}}}			
             hh.lineWidth=2;	
-            hh.strokeStyle="red";		droite(xi,ysi,xf,ysf);
-            hh.strokeStyle="blue";		droite(xi,yi1,xf,yf1);			
+            // Red
+            hh.strokeStyle="#cc241D";		droite(xi,ysi,xf,ysf);
+            // Blue
+            hh.strokeStyle="#458588";		droite(xi,yi1,xf,yf1);			
             droite(xi,yi2,xf,yf2);			
             xi=xf;	yi1=yf1;	yi2=yf2;	ysi=ysf;}
+        // Star images
         X1=150.5;
         if(xc<=2){
             for(var i=-58; i<180; i+=4){

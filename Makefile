@@ -29,7 +29,12 @@ html:
 		cat > in.md
 	pandoc in.md -t html --self-contained -s --standalone --mathjax -o aperture_synthesis.html
 
-release: all
+clean:
+	rm aperture_synthesis.html in.md out1.html
+
+mathjax:
 	cp aperture_synthesis.html out1.html
 	# Independentize from MathJax CDN
 	$$HOME/Program/MathJax/node_modules/mathjax-node-page/bin/mjpage --output CommonHTML < out1.html > aperture_synthesis.html 
+
+release: all mathjax
