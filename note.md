@@ -30,10 +30,13 @@ BlaBla
 
 # Destinataires
 
-* Famille: Tourneboeuf
 * Amis: Bobo, Hyppo
-* Gastons mignons: Bechet, Gomez
 * X: Achal, Chetra, Ana, Vianney, Alfredo
-* Chile: Arturito, Rocio, Christobal
-* Astro: Julien Girard
+* Famille: Tourneboeuf
 * DGA: Bion, Chauveau, Amiaux, Pollet, Perrin
+* Astro: Julien Girard
+
+# Sent
+
+* Gastons mignons: Bechet, Gomez
+* Chile: Arturito, Rocio
