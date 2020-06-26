@@ -1,17 +1,12 @@
 # TODO
 
 
-https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27%C3%A9chantillonnage
-
 ## TODO forme: 
 * Mettre des couleurs tranquillement, souligner
 * Mettre des <hr> aussi 
 
-## Image
-* Bouchons sous les vagues de 37°, le front d'onde est mauvais
-* Think: Image dans la section 4 ?
-
 ## NEXT
+* Square parabola for web site
 
 ================================================================================
 

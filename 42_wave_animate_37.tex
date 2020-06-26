@@ -1,4 +1,5 @@
 \documentclass[dvisvgm]{standalone}
+%\documentclass[tikz]{standalone}
 \usepackage{tikz}
 \input{01_include.tex}
 
@@ -48,13 +49,14 @@
     \end{scope}
 }
 
+% Wavefront
+\draw (10, 0, 0) -- (-10,0, 13.9 );
+
 %Draw
 \draw[dashed] (10, 3, 0) -- (10, 0, 0);
-\draw[dashed] (5, 3, 5) -- (5, 0, 5);
-\draw[dashed] (-9.6, 4, 20) -- (-9.6, -1, 20);
+\draw[dashed] (5, 3, 3.475) -- (5, 0, 3.475);
+\draw[dashed] (-10, 3, 13.9) -- (-10, 0, 13.9);
 
-% Wavefront
-\draw (10, 0, 0) -- (-10,0, 20 );
 
 
 \end{tikzpicture}

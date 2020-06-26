@@ -15,14 +15,14 @@ Ce grand télescope virtuel a pour diamètre la distance maximale entre deux pet
 <div>
 C'est un sujet qui invoque des mathématiques de Bac+2. Pourtant, la présente explication qui ne requiert d'un niveau collège<sup>[+]<div class="description">
 Il faut pouvoir lire le Français, les équations et savoir que, dans un triangle rectangle : 
-$$sin(angle) = \frac{cotes\:oppose}{hypothenuse}$
+$$sin(angle) = \frac{cotes\:oppose}{hypothenuse}$$
 </div></sup>
 vise à être complète.
 Ce qui explique qu'elle soit un peu longue.<br/>
 Le lecteur impatient peut lire uniquement la <a href="s2_dirac">section 2</a>.
 En effet, il comprendra comment des interférences artificielles peuvent révéler l'angle d'une source pour, petit à petit, construire une carte du ciel.
 Par contre, en s'abstenant des autres sections,
-ce lecteur manquera de cette vulgaire page, l'invitation 
+ce lecteur manquera de ce vulgaire guide, l'invitation 
 vers une des plus belles histoires naturelles, celle du [photon](https://fr.wikipedia.org/wiki/Photon).
 <!-- Trick for sup -->
 <ul></ul></div>
@@ -31,11 +31,11 @@ vers une des plus belles histoires naturelles, celle du [photon](https://fr.wiki
 
 - [1/ Limitations du télescope :](#s1_limit) La taille du télescope comme frontière de sa résolution angulaire : "Pourquoi moi ?"
 
-- [2/ Délai :](#s2_dirac) Section fondamentale. Une métaphore avec les vagues eau-airs montre comment le délai de réception d'une vague entre deux flotteurs peut nous donner la direction d'une vague : "Bienvenu à bord !"
+- [2/ Délai :](#s2_dirac) Section fondamentale. Une métaphore avec les vagues eau-airs montre comment le délai de réception d'une vague entre deux flotteurs peut révéler la direction d'une vague : "Bienvenu à bord !"
 
 - [3/ Sinusoïde :](#s3_modulo) Ajout de réalisme au modèle, la vague devient une sinusoïde, c'est-à-dire un ensemble de vagues : "On s'amarine moussaillon ?"
 
-- [4/ Imagerie :](#s4_image) Le caillou ponctuel devient continue : une forme.
+- [4/ Imagerie :](#s4_image) Le caillou ponctuel devient continue.
 Constitution d'image depuis plusieurs informations angulaires : "À l'abordage !"
 
 - [5/ Onde radio : ](#s5_radio) Augmentation de la distance des flotteurs et transformation en antennes. "Cap vers les étoiles !"
@@ -55,13 +55,13 @@ On mesure la qualité d'une image astrophysique avec deux paramètres : sa [rés
 
 
 1. __La profondeur__ est le flux de la source la moins lumineuse que l'on peut détecter.<sup>[+]<div class="description">
-Une grande profondeur permet de détecter des objets peu brillant. Par exemple, des objets lointains.
+Une grande profondeur permet de détecter des objets peu brillants. Par exemple, des objets lointains.
 </div></sup>
 2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre.<sup>[+]<div class="description">
 C'est à dire que deux objets séparés d'un angle inférieur à la résolution apparaîtront comme un seul.<br/>
 Ou tout objet de taille inférieur à la résolution angulaire apparaîtra comme un point.<br/>
-<b>Exemple :</b> un télescope optique de 1m de diamètre ($D$), observant un signal de longueur d'onde $\lambda = 550nm$ (dans le jaune) a une résolution de 0.1 seconde de degrés c'est à dire 0.1 degré divisé par 3600.
-Une grande résolution angulaire permet d'observer des objets de petite taille angulaire par exemple, des objets lointains.
+<b>Exemple :</b> un télescope optique de 1m de diamètre ($D$), observant un signal de longueur d'onde $\lambda = 550nm$ (dans le jaune) a une résolution de 0.1 seconde de degrés c'est à dire 0.1 degré divisé par 3600.<br/>
+Une grande résolution angulaire permet d'observer des objets de petite taille angulaire. Par exemple, des objets lointains.
 </div></sup>
 
 -> Jusqu'à preuve du contraire, un télescope quelconque peut générer des images d'une résolution et profondeur arbitrairement grande à condition de :
@@ -96,7 +96,7 @@ Vous devriez comprendre pourquoi à la fin de ce guide.<br/>
 <!-- Trick for sup --> <ul></ul>
 </div>
 
-
+<hr>
 
 <!-- Figure diffraction Right -->
 <figure style="float: right; width:300px;" >
@@ -105,7 +105,7 @@ Vous devriez comprendre pourquoi à la fin de ce guide.<br/>
   <figcaption>
     <b>Fente :</b>
     Diffraction d'une onde traversant une porte.<br/>
-    Le front d'onde linéaire devient circulaire avec pour rayon de courbure $\frac{\lambda}{D}$ où $\lambda$ est la longueur d'onde de la vague et D la taille de la porte.
+    Le front d'onde, auparavant linéaire, se courbe comme si l'ouverture était l'émetteur.
   </figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ Cependant il est économiquement difficile de construire de très grandes ouvert
 C'est pourquoi la [synthèse d'ouverture](https://fr.wikipedia.org/wiki/Synth%C3%A8se_d%27ouverture)
 est utilisée pour simuler un télescope de grande ouverture avec plusieurs petits.
 
-La synthèse d'ouverture est une technologie très liée à la radioastronome car son emploi est aujourd'hui techniquement proche du miracle dans l'optique visible.
+La synthèse d'ouverture est une technologie très liée à la radioastronomie car son emploi est aujourd'hui techniquement proche du miracle dans l'optique visible.
 En effet, comme vous allez le voir, les détecteurs radios permettent de mesurer la lumière comme une onde, ce qui permet une reconstruction d'ouverture à posteriori.
 Par la suite, les détecteurs (antennes) seront modélisés par des flotteurs dans l'eau et leur position est mesurable. En optique visible, cette position n'est pas mesurable, on peut juste savoir si le flotteur bouge. En termes techniques, on dit que les antennes radios (ou millimétriques) mesurent simultanément la phase et l'amplitude du signal électromagnétique.
 
@@ -159,7 +159,7 @@ En employant une formule magique ("trigonometrum s'il te plum") dans le triangle
 <a href="#f_trigo"><i>"trigonométrie"</i></a>
 ), on obtient :
 
-$$sin(\theta) = \frac{a}{b} = \frac{oppose}{hypothenuse}$$
+$$sin(\theta) = \frac{oppose}{hypothenuse} = \frac{a}{b}$$
 
 <!-- Figure diffraction -->
 <figure style="float: left; min-width:40%; width:300px" >
@@ -170,10 +170,10 @@ $$sin(\theta) = \frac{a}{b} = \frac{oppose}{hypothenuse}$$
   </figcaption>
 </figure>
 
-Où:
+Avec :
 
-* $b$ est une distance connue : la distance entre les deux flotteurs (b pour [ligne de Base](https://en.wikipedia.org/wiki/Astronomical_interferometer)).
-* $a$ est la distance supplémentaire que la vague a dû parcourir (a pour À remplacer).
+* $b$ : une distance connue : la distance entre les deux flotteurs (b pour [ligne de Base](https://en.wikipedia.org/wiki/Astronomical_interferometer)).
+* $a$ : la distance supplémentaire que la vague a dû parcourir (a pour À remplacer).
 
 
 Remplaçons-le ! On connait à priori la vitesse de la vague $v$ et on mesure le temps de délai $\Delta t$ que la vague a pris pour atteindre le deuxième flotteur
@@ -188,7 +188,7 @@ $$
 \end{aligned}
 $$
 
-On a $\theta$ et ... c'est ce qu'on cherchait : la position angulaire de la pierre.
+On a $\theta$ et ... c'est ce qu'on cherchait : la position angulaire de la pierre !
 
 Par exemple:
 

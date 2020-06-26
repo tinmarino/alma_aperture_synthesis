@@ -1,0 +1,71 @@
+\documentclass[tikz]{standalone}
+% \documentclass[dvisvgm]{standalone}
+% From: https://tex.stackexchange.com/questions/469109/how-to-change-arrowheads-to-lie-on-a-plane
+\usepackage{tikz}
+\input{01_include.tex}
+
+
+% Debug
+%\definecolor{background}{HTML}{ffffff} \AtBeginDocument{\globalcolor{black}}
+
+\begin{document}
+
+
+
+\tikzset{
+    every picture/.style={line width=1pt}
+}
+
+% tan(80°) = 6
+\begin{tikzpicture}[yscale=0.5]
+
+% Arrow style
+\tikzset{ decoration={
+    markings,
+    mark=at position 0.75 with {
+        \arrowreversed{angle 60[length=2mm, width=1mm]}
+    }
+} }
+
+% Parabola main
+\draw[line width=1pt, dashed] plot[dashed, domain=-1:1] (\x, {(\x)^2});
+
+% Base line
+\draw[line width=0.3] (1, 1) -- node[below]{\tiny$b$} (-1, 1);
+
+% Parabola sub
+\draw plot[smooth, domain=-0.18:0.18] (1+\x, {1 + 12 *(\x)^2});
+
+\draw plot[smooth, domain=-0.18:0.18] (0.5+\x, {1 + 12 *(\x)^2});
+
+\draw plot[smooth, domain=-0.18:0.18] (-1+\x, {1 + 12 *(\x)^2});
+
+% Sight
+\draw[postaction={decorate}, line width=0.5pt, densely dotted] (1, 1) -- (1.125, 1.725);
+\draw[postaction={decorate}, line width=0.5pt, densely dotted] (0.5, 1) -- (1, 4);
+\draw[postaction={decorate}, line width=0.5pt, densely dotted] (-1, 1) -- (-0.5, 4);
+
+
+% Normal
+\coordinate (X) at (1, 1);
+\coordinate (Y) at (-1, 1);
+\coordinate (C) at (-0.819, 2.137);
+\draw[line width=0.3] (1, 1) -- (C);
+
+% Right angle
+\tkzMarkRightAngle[line width=0.3, size=0.1,yscale=1](X,C,Y);
+
+% Theta
+% 30 is 1 !
+\draw pic [draw, line width=0.3, <-, "\tiny$\theta$", angle radius=25, angle eccentricity=1.2] {angle = C--X--Y};
+
+% Formulae
+\node[align=center, font=\tiny] at (0, 3){
+    \linespread{0.2}
+    $sin(\theta)$\\
+    =\\
+    $\frac{\Delta t \times v}{b}$
+};
+
+\end{tikzpicture}
+\end{document}

@@ -23,6 +23,7 @@
 * IDEA: Un faisceau (sinuzoidale si t'es chaud qui bouge et une sinuzoide que "ralentit" sur la ligne de base, jusquà même être nulle. Ainsi on peux voir
 * IDEA Signature SVG
 * IDEA: Young bands are aliases in real life due to band paerture
+* IDEA to think: Image dans la section 4 ?
 
 ## Deleted
 ### Intro
