@@ -24,6 +24,7 @@
 * IDEA Signature SVG
 * IDEA: Young bands are aliases in real life due to band paerture
 * IDEA to think: Image dans la section 4 ?
+* Dire que la quantique o s'en fout
 
 ## Deleted
 ### Intro

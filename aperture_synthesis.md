@@ -317,9 +317,10 @@ Ce bouchon nous apportera une information cruciale permettant de dinstinguer le 
   <figcaption style="
     text-align:center;
     width:90%;
+    height:60px;
   ">
     <b>Cas 1 : $\theta = 53°$ :</b>
-    Ces vagues agitent X, Y, Z sont en phase.
+    X, Y, Z en phase.
   </figcaption>
 </figure>
 <!-- Right -->
@@ -335,9 +336,10 @@ Ce bouchon nous apportera une information cruciale permettant de dinstinguer le 
   <figcaption style="
     text-align:center;
     width:90%;
+    height:60px;
   ">
     <b>Cas 2 : $\theta = 30°$ :</b>
-    Ces vagues agitent Z en opposition de phase avec X ou Y.
+    Z en opposition de phase.
   </figcaption>
 </figure>
 </div>

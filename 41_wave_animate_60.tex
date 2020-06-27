@@ -1,4 +1,5 @@
 \documentclass[dvisvgm]{standalone}
+%\documentclass[tikz]{standalone}
 \usepackage{tikz}
 \input{01_include.tex}
 
@@ -7,9 +8,18 @@
 \begin{document}
 
 \tikzset{every picture/.style={line width=20pt}}
+
+
 \begin{tikzpicture}[
+    %3d view,
+    %perspective={p = {(10,10,10)}},
     x={(10.0cm,0.0cm)}, y={(0.0cm,10.0cm)}, z={(5.0cm,8.66cm)}, 
 ]
+% Box limit
+\useasboundingbox (-12,-3) -- (19,25);
+
+% Axes for perspective
+\drawaxes
 
 % Horizontal line
 \draw[gb-neutral-blue] (-12.0, 0.0, 0.0) -- (16.0, 0.0, 0.0);
