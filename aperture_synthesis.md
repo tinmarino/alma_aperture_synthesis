@@ -60,7 +60,19 @@ Une grande profondeur permet de détecter des objets peu brillants. Par exemple,
 2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre.<sup>[+]<div class="description">
 C'est-à-dire que deux objets séparés d'un angle inférieur à la résolution apparaîtront comme un seul.<br/>
 Ou tout objet de taille inférieur à la résolution angulaire apparaîtra comme un point.<br/>
-<b>Exemple :</b> un télescope optique de 1m de diamètre ($D$), observant un signal de longueur d'onde $\lambda = 550nm$ (dans le jaune) a une résolution de 0.1 seconde de degrés c'est-à-dire 0.1 degré divisé par 3600.<br/>
+<b>Exemple :</b> un télescope optique de 1m de diamètre ($D$),
+observant un signal de longueur d'onde $\lambda = 550nm$ (dans le jaune) a une résolution 
+(comme on verra dans [section optionelle](#so_new_limit)) de
+$\lambda / D$
+$= 550nm / 1m$
+$= 5.5 \times 10^7 radians$
+$\left(= 0.00000055 radian\right)$
+$= 5.5 \times 10^7 * 180 / \pi °$
+$= 3.15 \times 10^{-5} °$
+$= 3.15 \times 10^{-5} / 3600 ''$
+= 0.1 seconde de degrés.<br/>
+<b>Notez</b> que les atronomes ne comptent pas en radian [rad] ni en degré [°] qui sont des angles bien trop grands mais en seconde de degré [''] voir en milli seconde de degré [mas].
+Ce sont des unitées telles qu'il y a autant de secondes (respectivement de milli seconde) de degré dans un degré que de (milli) seconde dans une heure soit 3600 (respectivement 3.600.000).<br/>
 Une grande résolution angulaire permet d'observer des objets de petite taille angulaire. Par exemple, des objets lointains.
 </div></sup>
 
@@ -149,7 +161,7 @@ le flotteur de droite va recevoir la vague avant celui de gauche. Réciproquemen
     margin: 0 auto;
   ">
     <b>Carte du lac :</b>
-    Vague crée par un caillou jeter dans l'eau et reçue par deux flotteurs au premier plan. La vague va soulever le flotteur de droite puis le flotteur de gauche.<br/>
+    Vague créée par un caillou jeté dans l'eau et reçue par deux flotteurs au premier plan. La vague va soulever le flotteur de droite puis le flotteur de gauche.<br/>
     Le caillou a été lancé à une position angulaire de $\theta$, et se situe à une distance infinie, c'est pourquoi le front d'onde arrive en forme de ligne sur le flotteur à l'image d'une majestueuse vague de houle en haute mer et non d'un misérable ricochet de lavoir.<br/>
     Note: Infinie signifie simplement : "beaucoup plus grand que la distance entre les deux flotteurs".
   </figcaption>
@@ -230,15 +242,16 @@ En effet, avec une ligne de base de 16km et des ondes de 1mm, on peut avoir un d
   ">
     <b>Altitude :</b>
     On peut mesurer que A et C sont en phase et A et B sont déphasé de $\frac{\pi}{2}$.</br>
-    Mais il est impossible de savoir que A sur la même vague que B et une autre que C par la seule mesure de la position verticale des bouchons puisque toutes les vagues sont parfaitement identiques.
+    Mais il est impossible de savoir que A est sur la même vague que B et que C est sur une autre
+    par la seule mesure de la position verticale des bouchons puisque toutes les vagues sont parfaitement identiques.
   </figcaption>
 </figure>
 
 * Par exemple, supposons que la longueur d'onde est de $\lambda = 10cm = 0.1m$.
-* Rappelant les valeurs précédentes (vitesse: $v= 1m/s$, ligne de base: $b = 2m$), le temps qui sépare deux maximums est donc de \frac{1}{\nu} = 0.1s.
-<sup>[+]<div class="description">
-Utilisant : $v = \frac{d}{t} \left(= \frac{distance}{temps}\right) = \lambda\nu$
+* Rappelant la valeur précédente : la vitesse: $v= 1m/s$ donc le temps qui sépare deux maximums est donc de \frac{1}{\nu} = 0.1s.<sup>[+]<div class="description">
+Utilisant : $v$ $= \frac{distance}{temps}$ $= \lambda\nu$
 </div></sup></div>
+Rappelons ausi que la ligne de base : $b = 2m$.
 
 <!-- Figure Multiple direction in -->
 <figure style="float: right; width:300px;" >
@@ -267,8 +280,8 @@ une vague venant de $\theta = 30°$ (centre-droite). Alors elle devra parcourir 
 * [Keck](https://fr.wikipedia.org/wiki/Observatoire_W._M._Keck) c'est ti qu'on fait pour savoir si le caillou a été jeté à 53° (cas 1) ou a 30° (cas 2) ?
 
 * Rajoutons un bouchon : "Z". Par exemple, à 0.5m à gauche du bouchon de référence, celui de droite : "X", et donc a 1.5m à droite de celui de gauche : "Y". Comme sur la figure
-<a href="#f_reseau"><i>"réseau"</i></a>
-:
+<a href="#f_reseau"><i>"réseau"</i></a>.
+Ce bouchon nous apportera une information cruciale permettant de dinstinguer le cas 1 du cas 2.
 
 <figure style="margin:10px" >
   <a name="f_reseau"></a>
@@ -365,7 +378,7 @@ Félicitation au lecteur qui est arrivé jusqu'ici : il peut en effet désormais
 
 - [4.1:](#s41_triangulation) Afin que le lecteur comprenne la puissance de cette technique nous allons rapidement énoncer sa précision et ce qui la différencie de la triangulation.
 
-- [4.2:](#s42_forme) Puis verrons comment un caillou non ponctuel peut être considéré comme plusieurs cailloux ponctuels côte à côte.
+- [4.2:](#s42_forme) Puis nous verrons comment un caillou non ponctuel peut être considéré comme plusieurs cailloux ponctuels côte à côte.
 
 - [4.3:](#s43_image) Ce qui nous permettra de reconstruire la forme d'un caillou à partir des déplacements détectés.
 
@@ -421,7 +434,7 @@ Alors pourquoi construisons nous des observatoires artificiels ? On sent que la 
 
 <b>Réponse : la précision de la mesure angulaire.</b>
 Nous avons, dans l'exemple précédent, séparer deux bouchons de 2m pour mesurer l'orientation d'une vague de 10cm de longueur d'onde. En effet, c'était plus facile à dessiner.
-En réalité, les antennes d'ALMA sont séparées de 16km et mesurent l'angle d'incidence d'une onde de 1mm. En gardant notre exemple avec nos vagues et nos flotteurs, c'est comme si on séparait les flotteurs de $16km \times \frac{10cm}{1mm} = 1600km$. À cette distance, les flotteurs peuvent mesurer la différence entre une vague venant de $theta=0$ et une vague venant de
+En réalité, les antennes d'ALMA sont séparées de 16km et mesurent l'angle d'incidence d'une onde de 1mm. En gardant notre exemple avec nos vagues et nos flotteurs, c'est comme si on séparait les flotteurs de $16km \times \frac{10cm}{1mm} = 1600km$. À cette distance, les flotteurs peuvent mesurer la différence entre une vague venant de $\theta=0$ et une vague venant de
 $\theta = arcsin\left(\frac{10cm}{1600km}\right) = 0.0000036°$,
 deuxième angle où les deux flotteurs se retrouveront de nouveau en phase.
 
@@ -431,14 +444,16 @@ placeholder-rayleight
 
 Nous avons utilisé le [critère de Rayleight](http://ressources.univ-lemans.fr/AccesLibre/UM/Pedago/physique/02/optiondu/rayleigh.html) qui stipule qu'on ne peut distinguer deux taches de diffraction qu'après la distance où le maximum de l'une correspond au premier minimum de l'autre.
 
-La résolution d'ALMA est donc de 0.0000036° ou 10 mili-arc-seconde de degrés (mas). Ce qui est très précis et permet de synthétiser des images avec un grand détail en suivant la méthode que nous décrirons prochainement à la <a href="#s43_image">section 4.3</a>.
+La résolution d'ALMA est donc de 0.0000036° ou 10 milli-arc-seconde de degrés (mas). Ce qui est très précis et permet de synthétiser des images avec un grand détail en suivant la méthode que nous décrirons prochainement à la <a href="#s43_image">section 4.3</a>.
 
 <div style="clear:both"></div>
 
 ## 4.2/ <a name="s42_forme"></a> D'un point à une forme
 
 Supposons que le caillou ne soit pas ponctuel mais d'une certaine taille.
-Alors, la vague engendrée sera différente. Par exemple, elle ne sera pas parfaitement sphérique à l'origine. Mais surtout elle n'arrivera pas avec un angle d'incidence unique, un front d'onde droit.
+Alors, les vagues engendrées seront différentes. Par exemple, elles ne seront pas parfaitement sphériques à l'origine. Mais surtout elles n'arriveront pas avec un angle d'incidence unique, un front d'onde droit, c'est-à-dire qu'elles ne seront pas linéaires.
+C'est comme, par exemple, ces doubles vagues qu'aiment les surfeurs débutants où s'ajoute, à la vague principale, une petite vague oblique qui permet de se lever plus tôt. Ou ces vagues qu'on voit de loin qui épousent la forme d'une baie. Bref, des vagues où le front d'onde, la ligne que dessine le haut de chaque vague, n'est pas une ligne.
+
 
 On sait déjà déterminer la position angulaire d'un point ([section 3](s3_modulo)). Alors si plusieurs points émettent des ondes, ces différentes ondes se propageront indépendamment dans le milieu (voir [principe de superposition](https://fr.wikipedia.org/wiki/Principe_de_superposition)).
 Les détecteurs recevront donc la somme de chaque onde. C'est-à-dire la somme des altitudes qu'ils auraient reçu pour chaque point.
@@ -453,7 +468,7 @@ J'apprécie les règles : une fois notés leur champ d'application et leurs effe
 <li>La matière ne traverse pas la matière.
 <li>Le temps s'écoule du passé vers le futur.</li>
 <li>Plus y'a de pression, plus ça part vite.</li>
-<li>Deux espaces parralèles n'entrent jamais en contact.</li>
+<li>Deux espaces parrallèles n'entrent jamais en contact.</li>
 </ul>
 Beaucoup de médias revendiquent une nouvelle découverte qui enfreint un de ces règles.
 Simplement ils mentent : si mon marteau la traverse, ce n'est pas de la matière; si ça voyage du futur vers le passé, ce n'est pas réel; si le flux est plus lent lorsque je l'augmente, ce n'est pas de la pression; enfin si on perçoit un espace, c'est qu'il n'est pas parallèle au nôtre.
@@ -527,14 +542,14 @@ Pour enrichir le vocabulaire du lecteur voici l'analogie:
 J'ai l'espoir d'avoir démontré au lecteur que, comme moi-même, il ignore beaucoup sur la nature des vagues de surface eau-air. Pourtant, grosso modo, il sait de quoi il s'agit.
 De même, il est intéressant d'appréhender la notion d’onde électromagnétique (alias : lumière, photon).
 
-Quelle est la différence entre le caillou et le bouchon ? (Réfléchir ... réponse : ) Le premier émet des vagues en se déplaçant verticalement dans l'eau et le second se déplace verticalement sur l'eau lorsqu'il reçoit des vagues. De plus, si j'agitais artificiellement le bouchon, il emmétrait des vagues. Donc la différence n'est pas dans leur nature mais dans leur comportement.
+Quelle est la différence entre le caillou et le bouchon ? (Réfléchir ... réponse : ) Le premier émet des vagues en se déplaçant verticalement dans l'eau et le second se déplace verticalement sur l'eau lorsqu'il reçoit des vagues. De plus, si j'agitais artificiellement le bouchon, il émettrait des vagues. Donc la différence n'est pas dans leur nature mais dans leur comportement.
 
 L'accélération d'une charge électrique, typiquement un électron, engendre l'émission d'un [photon](https://fr.wikipedia.org/wiki/Photon) et réciproquement la réception d'un photon engendre l'accélération d'un électron.<br/>
 En agitant artificiellement un électron dans une antenne, par exemple avec un aimant, on peut transmettre un signal photonique à une antenne voisine
 au sein de laquelle, le photon fera accélérer un électron, mesurable par exemple avec un aimant.<br/>
 Le photon est le [porteur de la force](https://en.wikipedia.org/wiki/Force_carrier) [électromagnétique](https://fr.wikipedia.org/wiki/%C3%89lectromagn%C3%A9tisme).
 
-La lumière, colonie de photons figés dans le temps et fonçant dans l'espace, est très intéressante autant dans pour recherche que l'enseignement scientifique. Ce qui, en soi, est naturel car c'est la seule chose que l'on voit. Sachez tout de même qu'un géologue aurait la même rhétorique pour le son.
+La lumière, colonie de photons figés dans le temps et fonçant dans l'espace, est très intéressante autant pour la recherche que l'enseignement scientifique. Ce qui, en soi, est naturel car c'est la seule chose que l'on voit. Sachez tout de même qu'un géologue aurait la même rhétorique pour le son.
 
 ## 5.2/ <a name="s52_antenna_vs_telescope"></a> Antenne > Télescope
 
@@ -651,9 +666,12 @@ Pour résumé cette section : comme on pouvait s'y attendre, un réseau d'antenn
   </figcaption>
 </figure>
 
+Les deux figures ci dessus représentent l'expérience des [fentes de Young](https://fr.wikipedia.org/wiki/Fentes_de_Young).
 On peut calculer que le lobe principal est deux fois plus petit pour une figure de diffraction avec deux ouvertures séparées d'une distance "d" (voir figure <a href="#f_fente2">deux fentes</a>) que pour une figure de diffraction d'une ouverture de taille "d" (voir figure <a href="#f_fente1">une fente</a>).
 La résolution est donc deux fois supérieure pour les petites fentes séparées.
-Par contre, les lobes secondaires sont plus intenses et donc le bruit est supérieur.
+Par contre, les lobes secondaires sont plus intenses et donc le bruit est supérieur.<br/>
+__À retenir :__ dans les deux cas, la résolution angulaire est d'environ
+<span class='box'>$\lambda / D$</span> radians. Où D est la taille maximale de l'ouverture (potentiellement trouée) et $\lambda$, pour changer, la longeur d'onde.
 
 <div>
 Le sujet de la forme parfaite d'une parabole (i.e. faut-il la trouer ?) fait l'objet de recherches.<sup>[+]<div class="description">
@@ -735,3 +753,8 @@ Puisses-tu la célébrer pour, demain, te réveiller avec plus d'enthousiasme qu
 * [Les dix cosmondements (pdf)](https://tinmarino.github.io/pdf/2020_10_command_en.pdf) : de la voie et la vertu de la cosmologie observationnelle.
 
 * [Cosmocuentos (pdf)](http://astromania.cl/cosmocuentos/) : cosmogonies par des amateurs Chiliens.
+
+
+<footer>
+Tinmarino.
+</footer>

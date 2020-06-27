@@ -1,5 +1,7 @@
 # TODO
 
+* Dire que la quantique o s'en fout
+* 3 montrer la projection dans le dessin la profondeur, perspective ?
 
 ## TODO forme: 
 * Mettre des couleurs tranquillement, souligner

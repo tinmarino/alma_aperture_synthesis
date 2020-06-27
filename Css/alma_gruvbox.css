@@ -63,6 +63,19 @@ h2 {
   margin: 60px 0 20px 0;
 }
 
+/* Box */
+.box {
+    outline: 2px solid var(--gb-neutral_aqua);
+    padding: 4px;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    margin-right: 100px;
+    line-height: 150%;
+}
+
 /* Normal */
 p {
   margin: 0 0 14px; 
