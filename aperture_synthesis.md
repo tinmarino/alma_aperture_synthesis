@@ -195,8 +195,8 @@ En inversant la formule trigonométrique et replaçant $a$, on a :
 
 $$
 \begin{aligned}
-\theta &= arcsin\left(\frac{b}{v\times\Delta t}\right) \\
-       & = arcsin\left( \frac{Distance\_de\_la\_base}{Vitesse\_de\_la\_vague \times Delai\_temporel\_mesure} \right) \\
+\theta &= arcsin\left(\frac{v\times\Delta t}{b}\right) \\
+       & = arcsin\left( \frac{Vitesse\_de\_la\_vague \times Delai\_temporel\_mesure}{Distance\_de\_la\_base} \right) \\
 \end{aligned}
 $$
 
@@ -205,7 +205,10 @@ On a $\theta$ et ... c'est ce qu'on cherchait : la position angulaire de la pier
 Par exemple:
 
 - Si la vitesse de la vague est de 1m/s, la distance entre les deux flotteurs est de 2m et le temps mesuré est de 2 seconde, c'est que $\theta = 90°$. C'est-à-dire que la vague vient de l'extrême droite (à ne pas citer hors contexte).
-- Si le temps mesuré est de 1 seconde, la vague viens d'un angle $\theta = arcsin\left(\frac{2}{1 \times 1 }\right) = arcsin(1/2) = 30°$ (en effet $sin(30°) = 1/2$). C'est la situation représentée dans la
+- Si le temps mesuré est de 1 seconde, la vague viens d'un angle
+$\theta$
+$= arcsin\left(\frac{1 \times 1}{2}\right) = arcsin\left(1/2\right)$
+$= 30°$ (en effet : $sin(30°) = 1/2$). C'est la situation représentée dans la
 <a href="#f_carte"><i>"carte des mers"</i></a>
 .
 
@@ -266,10 +269,15 @@ Rappelons ausi que la ligne de base : $b = 2m$.
 
 * Imaginons,
 <a href="#f_cas1"><i>cas 1</i></a>,
-une vague venant de $\theta=53°$ (bien à droite) alors elle devra parcourir $b \times sin(\theta)=2\times sin(53°) = 1.6m$ de plus pour arriver au bouchon de gauche. 1.6m étant multiple de 0.1m, le bouchon de gauche sera en retard de 16 vagues sur celui de droite mais "en phase" (i.e. à la même altitude à tout moment)
+une vague venant de $\theta=53°$ (bien à droite) alors elle devra parcourir
+$b \times sin(\theta)=2\times sin(53°) = 1.6m$ de plus pour arriver au bouchon de gauche. 1.6m étant multiple de 0.1m, le bouchon de gauche sera en retard de 16 vagues sur celui de droite mais "en phase" (i.e. à la même altitude à tout moment)
 * Imaginons maintenant,
 <a href="#f_cas2"><i>cas 2</i></a>,
-une vague venant de $\theta = 30°$ (centre-droite). Alors elle devra parcourir $a = b \times sin(\theta) = 2 \times sin(30°) = \frac{1}{2} * 2 = 1m$. 1m étant aussi multiple de 10cm, les deux bouchons seront aussi en phase.
+une vague venant de $\theta = 30°$ (centre-droite). Alors elle devra parcourir $a$
+$= b \times sin(\theta)$
+$= 2 \times sin(30°)$
+$= \frac{1}{2} * 2$
+$= 1m$. 1m étant aussi multiple de 10cm, les deux bouchons seront aussi en phase.
 * En mesurant l'altitude des deux bouchons, nous ne pourrons pas discriminer le cas 1 du cas 2.
 * Quelques valeurs possibles de $\theta$ pour deux bouchons en phase sont dans la figure
 <a href="#f_possible"><i>"angles possibles"</i></a>
@@ -436,8 +444,12 @@ Alors pourquoi construisons nous des observatoires artificiels ? On sent que la 
 
 <b>Réponse : la précision de la mesure angulaire.</b>
 Nous avons, dans l'exemple précédent, séparer deux bouchons de 2m pour mesurer l'orientation d'une vague de 10cm de longueur d'onde. En effet, c'était plus facile à dessiner.
-En réalité, les antennes d'ALMA sont séparées de 16km et mesurent l'angle d'incidence d'une onde de 1mm. En gardant notre exemple avec nos vagues et nos flotteurs, c'est comme si on séparait les flotteurs de $16km \times \frac{10cm}{1mm} = 1600km$. À cette distance, les flotteurs peuvent mesurer la différence entre une vague venant de $\theta=0$ et une vague venant de
-$\theta = arcsin\left(\frac{10cm}{1600km}\right) = 0.0000036°$,
+En réalité, les antennes d'ALMA sont séparées de 16km et mesurent l'angle d'incidence d'une onde de 1mm. En gardant notre exemple avec nos vagues et nos flotteurs, c'est comme si on séparait les flotteurs de
+$16km \times \frac{10cm}{1mm}$
+$= 1600 km$. À cette distance, les flotteurs peuvent mesurer la différence entre une vague venant de $\theta=0$ et une vague venant de
+$\theta$
+$= arcsin\left(\frac{10cm}{1600km}\right)$
+$= 0.0000036°$,
 deuxième angle où les deux flotteurs se retrouveront de nouveau en phase.
 
 <div style="min-width:300px; width:50%; margin:10px;">
@@ -446,7 +458,7 @@ placeholder-rayleight
 
 Nous avons utilisé le [critère de Rayleight](http://ressources.univ-lemans.fr/AccesLibre/UM/Pedago/physique/02/optiondu/rayleigh.html) qui stipule qu'on ne peut distinguer deux taches de diffraction qu'après la distance où le maximum de l'une correspond au premier minimum de l'autre.
 
-La résolution d'ALMA est donc de 0.0000036° ou 10 milli-arc-seconde de degrés (mas). Ce qui est très précis et permet de synthétiser des images avec un grand détail en suivant la méthode que nous décrirons prochainement à la <a href="#s43_image">section 4.3</a>.
+La résolution d'ALMA est donc de 0.0000036° ou <span class='box'>10 mas</span> : 10 milli-arc-seconde de degrés. Ce qui est très précis et permet de synthétiser des images avec un grand détail en suivant la méthode que nous décrirons prochainement à la <a href="#s43_image">section 4.3</a>.
 
 <div style="clear:both"></div>
 
