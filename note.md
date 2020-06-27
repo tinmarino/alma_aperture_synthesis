@@ -4,6 +4,8 @@
 ## TODO forme: 
 * Mettre des couleurs tranquillement, souligner
 * Mettre des <hr> aussi 
+* Restorer mathjax: sans le --mathjjax, certains equation ne s'étendent pas et avec, on a un (cannot load ...)
+* Lien non visité mettre couleur plus claire
 
 
 ================================================================================

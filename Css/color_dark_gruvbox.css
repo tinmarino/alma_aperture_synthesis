@@ -58,8 +58,8 @@ body {
   --col-h2:    var(--gb-bright_blue);
   --col-h3:    var(--gb-bright_yellow);
 
-  --col-link:  var(--gb-neutral_blue);
-  --col-link-visited: var(--gb-neutral_yellow);
+  --col-link:  var(--gb-neutral_yellow);
+  --col-link-visited: var(--gb-neutral_orange);
   --col-link-hover:   var(--gb-neutral_purple);
 
   --col-code-fg:      var(--gb-neutral_green);
