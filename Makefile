@@ -3,6 +3,8 @@ tikz = 21_float_n_stone 12_diffraction 22_float_triangle 23_float_three 24_float
 
 animates = 41_wave_animate_60 42_wave_animate_37
 
+SHELL:=/bin/bash 
+
 all: svg html
 
 $(tikz):
@@ -47,10 +49,9 @@ release: all
 move:
 	cp aperture_synthesis.html $$HOME/Software/Html/Page/pdf/2020_aperture_synthesis.html
 
-deploy:
-	move
+deploy: move
 	pushd $$HOME/Software/Html/Page
-	git add -a
-	git commit 'Update aperture synthesis'
+	git add -A
+	git commit -m 'Update aperture synthesis'
 	git push
 	popd
