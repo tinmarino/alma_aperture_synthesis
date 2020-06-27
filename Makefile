@@ -50,8 +50,7 @@ move:
 	cp aperture_synthesis.html $$HOME/Software/Html/Page/pdf/2020_aperture_synthesis.html
 
 deploy: move
-	pushd $$HOME/Software/Html/Page
+	cd $$HOME/Software/Html/Page 
 	git add -A
 	git commit -m 'Update aperture synthesis'
 	git push
-	popd

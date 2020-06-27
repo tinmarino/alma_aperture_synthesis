@@ -32,13 +32,13 @@ BlaBla
 
 # Destinataires
 
-* Amis: Bobo, Hyppo
-* X: Achal, Chetra, Ana, Vianney, Alfredo
+* X: Achal, Chetra, Ana, Vianney, Alfredo, Vinneth
 * Famille: Tourneboeuf
 * DGA: Bion, Chauveau, Amiaux, Pollet, Perrin
 * Astro: Julien Girard
 
 # Sent
 
-* Gastons mignons: Bechet, Gomez
 * Chile: Arturito, Rocio
+* Gastons mignons: Bechet, Gomez
+* Amis: Bobo, Hyppo
