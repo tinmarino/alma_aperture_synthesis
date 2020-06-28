@@ -32,8 +32,8 @@ BlaBla
 
 * X: Achal, Chetra, Ana, Vianney, Alfredo, Vinneth
 * Famille: Tourneboeuf
-* DGA: Bion, Chauveau, Amiaux, Pollet, Perrin
 * Astro: Julien Girard
+* DGA: Bion, Chauveau, Amiaux, Pollet, Perrin
 
 # Sent
 

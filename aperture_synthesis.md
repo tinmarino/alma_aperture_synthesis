@@ -65,7 +65,7 @@ observant un signal de longueur d'onde $\lambda = 550nm$ (dans le jaune) a une r
 (comme on verra dans [section optionelle](#so_new_limit)) de
 $\lambda / D$
 $= 550nm / 1m$
-$= 5.5 \times 10^7 radians$
+$= 5.5 \times 10^{-7} radians$
 $\left(= 0.00000055 radian\right)$
 $= 5.5 \times 10^7 * 180 / \pi °$
 $= 3.15 \times 10^{-5} °$
