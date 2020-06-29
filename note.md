@@ -1,11 +1,6 @@
 # TODO
 
 
-## TODO forme: 
-* Mettre des couleurs tranquillement, souligner
-* Mettre des <hr> aussi 
-
-
 ================================================================================
 
 # Note copy paste
@@ -28,15 +23,14 @@ BlaBla
 </div>
 
 
-# Destinataires
-
-* X: Achal, Chetra, Ana, Vianney, Alfredo, Vinneth
-* Famille: Tourneboeuf
-* Astro: Julien Girard
-* DGA: Bion, Chauveau, Amiaux, Pollet, Perrin
-
 # Sent
 
 * Chile: Arturito, Rocio
 * Gastons mignons: Bechet, Gomez
 * Amis: Bobo, Hyppo
+* X: Achal, Chetra, Ana, Vianney, Alfredo, Vinneth
+* DGA: Bion, Pollet, Perrin, Eddy, Cristophe
+* Chauveau
+* Famille: Tourneboeuf
+* Astro: Julien Girard
+* DGA ex : Amiaux

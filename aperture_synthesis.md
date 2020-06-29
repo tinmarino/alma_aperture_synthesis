@@ -14,7 +14,7 @@ Ce grand télescope virtuel a pour diamètre la distance maximale entre deux pet
 
 <div>
 C'est un sujet qui invoque des mathématiques de Bac+2. Pourtant, la présente explication qui ne requiert d'un niveau collège<sup>[+]<div class="description">
-Il faut pouvoir lire le Français, les équations et savoir que, dans un triangle rectangle : 
+Il faut pouvoir lire le français, les équations et savoir que, dans un triangle rectangle : 
 $$sin(angle) = \frac{cotes\:oppose}{hypothenuse}$$
 </div></sup>
 vise à être complète.
