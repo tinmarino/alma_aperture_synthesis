@@ -1,68 +1,67 @@
 ---
-title: Synthèse d'ouverture
-category: Astronomie, Radio, Optique
+title: Síntesis de apertura
+category: Astronomia, Radio, Optica
 header-includes: |
     <link rel="stylesheet" type="text/css" href="Css/alma_gruvbox.css">
 ---
 
 
-
-La [synthèse d'ouverture](https://fr.wikipedia.org/wiki/Synth%C3%A8se_d%27ouverture)
-est le processus de construction d'image utilisé par les réseaux d'antennes comme [ALMA](https://fr.wikipedia.org/wiki/Grand_r%C3%A9seau_d%27antennes_millim%C3%A9trique/submillim%C3%A9trique_de_l%27Atacama).
-Elle permet de simuler l'ouverture d'un grand [télescope](https://en.wikipedia.org/wiki/Telescope) avec plusieurs petits.
-Ce grand télescope virtuel a pour diamètre la distance maximale entre deux petits.
+La [síntesis de apertura](https://es.wikipedia.org/wiki/S%C3%ADntesis_de_apertura)
+es el proceso de creación de imágenes utilizado por redes de antenas como [ALMA](https://es.wikipedia.org/wiki/Atacama_Large_Millimeter_Array).
+Permite simular la apertura de un gran [telescopio](https://es.wikipedia.org/wiki/Telescopio) con varios pequeños.
+Este gran telescopio virtual tiene como diámetro la distancia máxima entre dos pequeños.
 
 <div>
-C'est un sujet qui invoque des mathématiques de Bac+2. Pourtant, la présente explication qui ne requiert qu'un niveau collège<sup>[+]<div class="description">
-Il faut pouvoir lire le français, les équations et savoir que, dans un triangle rectangle :
-$$sin(angle) = \frac{cotes\:oppose}{hypothenuse}$$
+Es un tema que invoca las matemáticas de Bac+2. Sin embargo, esta explicación que requiere unicamente un nivel de educacion bascica<sup>[+]<div class="description">
+Es necesario poder leer el chilenito, las ecuaciones y saber que, en un triángulo rectángulo:
+$$sin(angle) = \frac{cotes\:opuesto}{hypotenusa}$$
 </div></sup>
-vise à être complète.
-Ce qui explique qu'elle soit un peu longue.<br/>
-Le lecteur impatient peut lire uniquement la <a href="s2_dirac">section 2</a>.
-En effet, il comprendra comment des interférences artificielles peuvent révéler l'angle d'une source pour, petit à petit, construire une carte du ciel.
-Par contre, en s'abstenant des autres sections,
-ce lecteur manquera de ce vulgaire guide, l'invitation 
-vers une des plus belles histoires naturelles, celle du [photon](https://fr.wikipedia.org/wiki/Photon).
+tiene por objeto ser completa.
+Por eso es un poco larga.<br/>
+El lector impaciente puede leer solamente la <a href="s2_dirac">sección 2</a>.
+Así, comprenderá cómo las interferencias artificiales pueden revelar el ángulo de una fuente para, poco a poco, construir un mapa del cielo.
+Sin embargo, absteniéndose de las demás secciones,
+este lector carecerá de esta guía vulgar, la invitación
+hacia una de las más bellas historias naturales, la del [fotón](https://es.wikipedia.org/wiki/Fot%C3%B3n).
 <!-- Trick for sup -->
 <ul></ul></div>
 
 
 
-- [1/ Limitations du télescope :](#s1_limit) La taille du télescope comme frontière de sa résolution angulaire : "Pourquoi moi ?"
+- [1/ Limitaciones del telescopio:](#s1_limit) El tamaño del telescopio como límite de su resolución angular: "¿Por qué yo?"
 
-- [2/ Délai :](#s2_dirac) Section fondamentale. Une métaphore avec les vagues eau-airs montre comment le délai de réception d'une vague entre deux flotteurs peut révéler la direction d'une vague : "Bienvenu à bord !"
+- [2/ Plazo:](#s2_dirac) Sección fundamental. Una metáfora con las olas agua-aire muestra cómo el tiempo de recepción de una ola entre dos flotadores puede revelar la dirección de una ola: "¡Bienvenido a bordo!"
 
-- [3/ Sinusoïde :](#s3_modulo) Ajout de réalisme au modèle, la vague devient une sinusoïde, c'est-à-dire un ensemble de vagues : "On s'amarine moussaillon ?"
+- [3/ Sinusoide:](#s3_modulo) Adición de realismo al modelo, la ola se convierte en un sinusoide, es decir, un conjunto de olas: "¿Vamos a navegar marinero?"
 
-- [4/ Imagerie :](#s4_image) Le caillou ponctuel devient continue.
-Constitution d'image depuis plusieurs informations angulaires : "À l'abordage !"
+- [4/ Imagen:](#s4_image) La piedra puntual se hace continua.
+Creación de imagen desde varias informaciones angulares: "¡Al abordaje!"
 
-- [5/ Onde radio : ](#s5_radio) Augmentation de la distance des flotteurs et transformation en antennes. "Cap vers les étoiles !"
+- [5/ Onda de radio: ](#s5_radio) Aumento de la distancia de los flotadores y transformación en antenas. "¡Rumbo a las estrellas!"
 
-- [Optionnel/ Nouvelles limitations:](#so_new_limit) Calcul des limitations anciennes et nouvelles. Détermination de la qualité maximale atteignable. "Marc Pageot ne navigue pas sur des cageots."
+- [Optionnel/ Nouvelles limitations:](#so_new_limit) Calcul des limitations anciennes et nouvelles. Détermination de la qualité maximale atteignable. "Arturo Prat no navega en cajas."
 
-- [Conclusion: ](#s_conclusion) "C'est pas bientôt fini !"
+- [Conclusión: ](#s_conclusion) "¿Queda mucho?"
 
-- [Aller plus loin: ](#s_conclusion) "Quand y'en a plus, y'en a encore."
-
-
-# 1/ <a name="s1_limit"></a> Limitations du télescope
-
-<blockquote> Nosce te ipsum </blockquote>
-
-On mesure la qualité d'une image astrophysique avec deux paramètres : sa [résolution angulaire](https://en.wikipedia.org/wiki/Optical_resolution) et sa [profondeur](https://fr.wikipedia.org/wiki/Liste_des_champs_profonds).
+- [Ir más lejos: ](#s_conclusion) "El que guarda, siempre tiene."
 
 
-1. __La profondeur__ est le flux de la source la moins lumineuse que l'on peut détecter.<sup>[+]<div class="description">
-Une grande profondeur permet de détecter des objets peu brillants. Par exemple, des objets lointains.
+# 1/ <a name="s1_limit"></a> Limitaciones del telescopio
+
+<blockquote> Nosce te ipsum</blockquote>
+
+La calidad de una imagen astrofísica se mide con dos parámetros: su [resolución angular](https://en.wikipedia.org/wiki/Optical_resolution) y su [profundidad](https://fr.wikipedia.org/wiki/L_istedes_champs_profundidades).
+
+
+1. __La profundidad__ es el flujo de la fuente menos luminosa que se puede detectar.<sup>[+]<div class="description">
+Una gran profundidad permite detectar objetos poco brillantes. Por ejemplo, objetos lejanos.
 </div></sup>
-2. __La résolution angulaire__ est le plus petit angle qu'un télescope peut résoudre.<sup>[+]<div class="description">
-C'est-à-dire que deux objets séparés d'un angle inférieur à la résolution apparaîtront comme un seul.<br/>
-Ou tout objet de taille inférieur à la résolution angulaire apparaîtra comme un point.<br/>
-<b>Exemple :</b> un télescope optique de 1m de diamètre ($D$),
-observant un signal de longueur d'onde $\lambda = 550nm$ (dans le jaune) a une résolution 
-(comme on verra dans [section optionelle](#so_new_limit)) de
+2. __La resolución angular__ es el ángulo más pequeño que un telescopio puede resolver.<sup>[+]<div class="description">
+Es decir, dos objetos separados de un ángulo inferior a la resolución aparecerán como un solo.<br/>
+O cualquier objeto de tamaño inferior a la resolución angular aparecerá como un punto.<br/>
+<b>Ejemplo:</b> un telescopio óptico de 1 m de diámetro ($D$),
+observando una señal de longitud de onda $ lambda = 550nm$ (en amarillo) tiene una resolución
+(como se verá en [sección opcional](#so_new_limit)) de
 $\lambda / D$
 $= 550nm / 1m$
 $= 5.5 \times 10^{-7} radians$
@@ -70,42 +69,51 @@ $\left(= 0.00000055 radian\right)$
 $= 5.5 \times 10^7 * 180 / \pi °$
 $= 3.15 \times 10^{-5} °$
 $= 3.15 \times 10^{-5} / 3600 ''$
-= 0.1 seconde de degrés.<br/>
-<b>Notez</b> que les atronomes ne comptent pas en radian [rad] ni en degré [°] qui sont des angles bien trop grands mais en seconde de degré [''] voir en milli seconde de degré [mas].
-Ce sont des unitées telles qu'il y a autant de secondes (respectivement de milli seconde) de degré dans un degré que de (milli) seconde dans une heure soit 3600 (respectivement 3.600.000).<br/>
-Une grande résolution angulaire permet d'observer des objets de petite taille angulaire. Par exemple, des objets lointains.
+= 0,1 segundos de grados.<br/>
+<b>Fígense</b> que los atrónomos no cuentan en radianes [rad] ni en grados [°] que son ángulos demasiado grandes pero en segundos de grado [''] o en milisegundos de grado [mas].
+Son unidades tales que hay tantos segundos (respectivamente de milisegundo) de grado en un grado que de (milli) segundos en una hora, es decir 3600 (respectivamente 3.600.000).<br/>
+Una gran resolución angular permite observar objetos de pequeño tamaño angular. Por ejemplo, objetos lejanos.
 </div></sup>
 
--> Jusqu'à preuve du contraire, un télescope quelconque peut générer des images d'une résolution et profondeur arbitrairement grande à condition de :
+-> Hasta que se demuestre lo contrario, cualquier telescopio puede generar imágenes de gran resolución y profundidad arbitrariamente, a condición de:
 
-1. Exposer suffisamment longtemps l'objet pour obtenir plus de lumière de ce dernier que le bruit du ciel et de l'appareil.
-2. Utiliser un détecteur (Couple Charged Device) avec suffisamment de pixels par cm.<sup>[+]<div class="description">
-Le nombre de pixels par centimètre peut être arbitrairement élevé avec des bancs optiques à l'intérieur du détecteur. Par exemple les nouveaux téléphones portables déclarent des détecteurs de 9Mpixels (= 3000x3000) et de 2mm tandis qu'un détecteur de télescope est de 1Mpixel (1000x1000) et mesure 3cm.
+1. Exponer el objeto durante el tiempo suficiente para obtener más luz de ese que el ruido del cielo y del aparato.
+2. Utilizar un detector (Couple Charged Device) con suficientes píxeles por cm.<sup>[+]<div class="description">
+El número de píxeles por centímetro puede ser arbitrariamente alto con bancos ópticos dentro del detector. Por ejemplo, los nuevos teléfonos móviles declaran detectores de 9Mpixeles (= 3000x3000) y 2mm, mientras que un detector de telescopio es de 1Mpixel (1000x1000) y mide 3cm.
 </div></sup>
 
-<- Voici maintenant la preuve du contraire :
+<- Aquí está la prueba de lo contrario:
 
-Pour ce qui est de la __profondeur__, un grand télescope est nécessaire.
-En effet, bien qu'en sommant un grand nombre d'images du même endroit, nous pouvons obtenir une profondeur infinie, avant de pouvoir les sommer, il faut pouvoir les aligner convenablement et pour ceci, il faut ... des images suffisamment profondes et résolues.
-En effet, si on ne voit rien sur les images comment sait-on vers où elles pointent.
-Il nous faut donc un télescope suffisamment grand qui puisse absorber la lumière pour résoudre au moins deux étoiles de champs à chaque exposition.
-Vous pourrez penser : "si la mécanique du télescope est suffisamment bonne, les images sont alignées par le pointage". Malheureusement, il n'est pas possible d'obtenir une position précise sans [viseur d'étoile](https://fr.wikipedia.org/wiki/Viseur_d%27%C3%A9toiles) qui lui-même nécessite de voir un étoile proche du champ d'observation.
+<div>
+En cuanto a la __profundidad__, se necesita un gran telescopio.
+En efecto, aunque sumando un gran número de imágenes del mismo lugar, podemos obtener una profundidad infinita, antes de poderlas sommer, es necesario poderlas alinear convenientemente y para esto, es necesario ... imágenes suficientemente profundas y resueltas.
+En efecto, si no se ve nada en las imágenes cómo se sabe hacia dónde apuntan.
+Así que necesitamos un telescopio lo suficientemente grande como para absorber la luz para resolver al menos dos estrellas de campo en cada exposición.
+Usted puede pensar: "si la mecánica del telescopio es suficientemente buena, las imágenes se alinean por el punteo". Desafortunadamente, no es posible obtener una posición precisa sin <a href="https://en.wikipedia.org/wiki/Star_tracker">visor de estrellas</a> que requiere ver una estrella cerca del campo de observación.<sup>[+]<div class="description">
+La __Escala de píxeles__ es un tema interesante y conexo a ese,
+ya que es fundamental en la mediada de la posición de una estrella,
+pues en la alineación de imágenes.
+(Ver <a href="https://starizona.com/tutorial/harold-nyquist">debate del criterio de Nyquist para las CCD</a>).
+</div></sup>
+<!-- Trick for sup --> <ul></ul>
+</div>
+
 
 
 <div>
-Pour ce qui est de la <b>résolution angulaire</b>, la taille du télescope est limitante également.
-Mais cette fois, ce n'est plus pour la simple raison de collecter un maximum de flux lumineux afin d'obtenir un signal sur bruit suffisant pour la détection.
-C'est plus compliqué.
-L'effet néfaste est la <a href="https://en.wikipedia.org/wiki/Diffraction#Mechanism">diffraction</a> que subie toute onde qui passe par une ouverture (voir la figure <a href="#f_fente"><i>"fente"</i></a>).<sup>[+]<div class="description">
-Nous faisons l'expérience de la diffraction tous les jours lorsque nous entendons le son provenant d'une pièce voisine.
+En cuanto a la __resolución angular__, el tamaño del telescopio también es limitado.
+Pero esta vez, no es por la simple razón de recoger un máximo de flujo luminoso con el fin de obtener una señal de ruido suficiente para la detección.
+Es más complicado que eso.
+El efecto adverso es la <a href="https://es.wikipedia.org/wiki/Difracci%C3%B3n_(f%C3%ADsica)">diffraction</a> que sufra cualquier onda que pase por una abertura (ver la figura <a href="#f_fente"><i>"rendija"</i></a>). <sup>[+]<div class="description">
+Experimentamos la difracción todos los días cuando escuchamos el sonido de una habitación cercana.
 </div></sup>
-Dans le cas d'une ouverture circulaire comme celle du miroir principale, l'image d'un point (d'une étoile<sup>[+]<div class="description">
-Le diamètre angulaire des étoiles est bien plus petit que la résolution du meilleur télescope. Elles ont donc la même image qu'un point (infiniment petit). Ce n'est pas le cas des galaxies.
+En el caso de una abertura circular como la del espejo principal, la imagen de un punto (de una estrella>[+]<div class="description">
+El diámetro angular de las estrellas es mucho menor que la resolución del mejor telescopio. Así que tienen la misma imagen que un punto (infinitamente pequeño). Las galaxias no lo son.
 </div></sup>
-) n'est plus un point mais s'étale selon la forme symétrique de la <a href="https://fr.wikipedia.org/wiki/Tache_d%27Airy">tache d'Airy</a>.
-Cette tache est d'autant plus petite que l'ouverture du télescope est grande.
-Vous devriez comprendre pourquoi à la fin de ce guide.<br/>
-<!-- Trick for sup --> <ul></ul>
+) ya no es un punto pero se extiende según la forma simétrica del <a href="https://es.wikipedia.org/wiki/Disco_de_Airy">disco de Airy</a>.
+Esta mancha es más pequeña cuanto mayor es la apertura del telescopio.
+Debería entender por qué al final de esta guía.<br/>
+<!-- Trick for --> <ul></ul>
 </div>
 
 <hr>
@@ -115,36 +123,36 @@ Vous devriez comprendre pourquoi à la fin de ce guide.<br/>
   <a name="f_fente"></a>
   <img style='width:100%' src='Figure/12_diffraction.svg' alt='missing'></img>
   <figcaption>
-    <b>Fente :</b>
-    Diffraction d'une onde traversant une porte.<br/>
-    Le front d'onde, auparavant linéaire, se courbe comme si l'ouverture était l'émetteur.
+    <b>Rendija :</b>
+    Difracción de una onda que atraviesa una puerta.<br/>
+    El frente de onda, antes lineal, se curva como si la apertura fuera el emisor.
   </figcaption>
 </figure>
 
 
-Ces deux raisons expliquent l'intérêt pour les grands télescopes.
-Cependant il est économiquement difficile de construire de très grandes ouvertures de qualités, réflecteurs ou lentilles.
-C'est pourquoi la [synthèse d'ouverture](https://fr.wikipedia.org/wiki/Synth%C3%A8se_d%27ouverture)
-est utilisée pour simuler un télescope de grande ouverture avec plusieurs petits.
+Ambas razones explican el interés por los grandes telescopios.
+Sin embargo, es económicamente difícil construir grandes aberturas de calidad, sean reflectores o lentes.
+Es por eso que la [síntesis de apertura](https://fr.wikipedia.org/wiki/Synth%C3%A8se_d%27apertura)
+se utiliza para simular un telescopio de gran apertura con varios pequeños.
 
-La synthèse d'ouverture est une technologie très liée à la radioastronomie car son emploi est aujourd'hui techniquement proche du miracle dans l'optique visible.
-En effet, comme vous allez le voir, les détecteurs radios permettent de mesurer la lumière comme une onde, ce qui permet une reconstruction d'ouverture à posteriori.
-Par la suite, les détecteurs (antennes) seront modélisés par des flotteurs dans l'eau et leur position est mesurable. En optique visible, cette position n'est pas mesurable, on peut juste savoir si le flotteur bouge. En termes techniques, on dit que les antennes radios (ou millimétriques) mesurent simultanément la phase et l'amplitude du signal électromagnétique.
+La síntesis de apertura es una tecnología muy relacionada con la radioastronomía, ya que su uso es hoy técnicamente cercano al milagro en la óptica visible.
+De hecho, como verán, los detectores de radio miden la luz como una onda, lo que permite una reconstrucción de la apertura a posteriori.
+Posteriormente, los detectores (antenas) serán modelados por flotadores en el agua y su posición es medible. En óptica visible, esta posición no es mensurable, sólo se puede saber si el flotador se mueve. En términos técnicos, se dice que las antenas de radio (o milimétricas) miden simultáneamente la fase y la amplitud de la señal electromagnética.
 
 
-# 2/ <a name="s2_dirac"></a> Délai d'un choc
+# 2/ <a name="s2_dirac"></a> Retraso de un choque
 
-<blockquote> Verba docent, exempla trahunt </blockquote>
+<blockquote> Verba Docent, exempla trahunt</blockquote>
 
-Supposons qu'une pierre soit lancée dans un lac calme.
-Une vague va se propager en cercles concentriques autour de cette pierre.
-Nous disposons de deux flotteurs pour mesurer la position de la source de la vague, c'est-à-dire l'endroit où la pierre est tombée.
-Comme en astrophysique, nous voulons mesurer sa position angulaire et non sa distance que nous supposerons infinie.
+Supongamos que una piedra es arrojada a un lago tranquilo.
+Una ola se extenderá en círculos concéntricos alrededor de esta piedra.
+Disponemos de dos flotadores para medir la posición de la fuente de la ola, es decir, el lugar donde cayó la piedra.
+Como en astrofísica, queremos medir su posición angular y no su distancia que suponemos infinita.
 
-Supposons, pour commencer, qu'il n'y a qu'une vague générée par cette pierre.
-Alors, si la pierre a été lancée à droite, comme sur la figure
-<a href="#f_carte"><i>"carte du lac"</i></a>,
-le flotteur de droite va recevoir la vague avant celui de gauche. Réciproquement, si nous mesurons que le flotteur de droite est déplacé avant celui de gauche, c'est que la vague a été lancé à droite.
+Supongamos, para empezar, que sólo hay una ola generada por esta piedra.
+Entonces, si la piedra fue lanzada a la derecha, como en la figura
+<a href="#f_mapa"<i>"mapa del lago"</i></a>,
+El flotador de la derecha recibirá la ola antes que el de la izquierda. Inversamente, si medimos que el flotador de la derecha se mueve antes que el de la izquierda, es que la ola fue lanzada a la derecha.
 
 <!-- Center Figure diffraction -->
 <figure style="margin:10px" >
@@ -156,77 +164,77 @@ le flotteur de droite va recevoir la vague avant celui de gauche. Réciproquemen
     text-align:left;
     width:70%; min-width:300px;
   ">
-    <b>Carte du lac :</b>
-    Vague créée par un caillou jeté dans l'eau et reçue par deux flotteurs au premier plan. La vague va soulever le flotteur de droite puis le flotteur de gauche.<br/>
-    Le caillou a été lancé à une position angulaire de $\theta$ et à une distance infinie, c'est pourquoi le front d'onde arrive en forme de ligne sur le flotteur à l'image d'une majestueuse vague de houle en haute mer et non d'un misérable ricochet de lavoir.<br/>
-    Note: Infinie signifie simplement : "beaucoup plus grand que la distance entre les deux flotteurs".
+    <b>Mapa del lago:</b>
+    Ola creada por una roca arrojada al agua y recibida por dos flotadores en primer plano. La ola levantará el flotador de la derecha y luego el flotador de la izquierda.<br/>
+    El guijarro fue lanzado en una posición angular de $\theta$ y a una distancia infinita, es porqué el frente de onda llega en forma de línea en el flotador a la imagen de una majestuosa ola del oleaje en alta mar y no de un miserable rebote de lavadero.<br/>
+    Nota: Infinito significa simplemente: "mucho más grande que la distancia entre los dos flotadores".
   </figcaption>
 </figure>
 
-En employant une formule magique ("trigonometrum s'il te plum") dans le triangle ABC (figure
-<a href="#f_trigo"><i>"trigonométrie"</i></a>
-), on obtient :
+Utilizando una fórmula mágica ("trigonometrum por favum") en el triángulo ABC (figura
+<a href="#f_trigo"><i>"trigonometría"</i></a>
+), se obtiene lo siguiente:
 
-$$sin(\theta) = \frac{oppose}{hypothenuse} = \frac{a}{b}$$
+$$sin(\theta) = \frac{opuesto}{hypotenusa} = \frac{a}{b}$$
 
 <!-- Figure diffraction -->
 <figure style="float: left; min-width:40%; width:300px" >
   <a name="f_trigo"></a>
   <img style="width:100%" src='Figure/22_float_triangle.svg' alt='missing'></img>
   <figcaption style="text-align:center">
-    <b>Trigonométrie</b>
+    <b>Trigonométría</b>
   </figcaption>
 </figure>
 
-Avec :
+Con:
 
-* $b$ : une distance connue : la distance entre les deux flotteurs (b pour [ligne de Base](https://en.wikipedia.org/wiki/Astronomical_interferometer)).
-* $a$ : la distance supplémentaire que la vague a dû parcourir (a pour À remplacer).
+* $b$ : una distancia conocida: la distancia entre los dos flotadores (b para [línea de Base](https://es.wikipedia.org/wiki/Interfer%C3%B3metro_astron%C3%B3mico)).
+* $a$ : la distancia adicional que la ola tuvo que recorrer (a para A remplazar).
 
 
-Remplaçons-le ! On connait à priori la vitesse de la vague $v$ et on mesure le temps de délai $\Delta t$ que la vague a pris pour atteindre le deuxième flotteur.
+¡Lo remplazamos! Se conoce a priori la velocidad de la ola $v$ y se mide el tiempo de retardo $\Delta t$ que la ola tomó para alcanzar el segundo flotador
 
-La formule $vitesse = \frac{distance}{temps}$ $\Leftrightarrow$ $distance = vistesse \times temps$ nous donne $a = v \times \Delta t$.
-En inversant la formule trigonométrique et replaçant $a$, on a :
+La fórmula $velocidad = \frac{distancia}{tiempo}$ $\Leftrightarrow$ $distancia = velocidad \times tiempos$ nos da $a = v \times \Delta t$.
+Invirtiendo la fórmula trigonométrica y cambiando $a$, tenemos:
 
 $$
 \begin{aligned}
 \theta &= arcsin\left(\frac{v\times\Delta t}{b}\right) \\
-       & = arcsin\left( \frac{Vitesse\_de\_la\_vague \times Delai\_temporel\_mesure}{Taille\_de\_la\_base} \right) \\
+       & = arcsin\left( \frac{Velocidad\_de\_ola \times Demora\_temporal\_medida}{Tamano\_de\_la\_base} \right) \\
 \end{aligned}
 $$
 
-On a $\theta$ et ... c'est ce qu'on cherchait : la position angulaire de la pierre !
+Tenemos $\theta$ y... es lo que estábamos buscando: ¡la posición angular de la piedra!
 
-Par exemple:
+Por ejemplo:
 
-- Si la vitesse de la vague est de 1m/s, la distance entre les deux flotteurs est de 2m et le temps mesuré est de 2 seconde, c'est que $\theta = 90°$. C'est-à-dire que la vague vient de l'extrême droite (à ne pas citer hors contexte).
-- Si le temps mesuré est de 1 seconde, la vague viens d'un angle
+- Si la velocidad de la ola es de 1 m/s, la distancia entre los dos flotadores es de 2m y el tiempo medido es de 2 segundos, es decir, $\theta = 90°$. Es decir, la ola viene de la extrema derecha (no citar fuera de contexto).
+- Si el tiempo medido es de un segundo, la onda viene de un ángulo
 $\theta$
-$= arcsin\left(\frac{1 \times 1}{2}\right) = arcsin\left(1/2\right)$
-$= 30°$ (en effet : $sin(30°) = 1/2$). C'est la situation représentée dans la
-<a href="#f_carte"><i>"carte des mers"</i></a>.
+$= arcsin(\left(\frac{1 times 1}{2}\right) = arcsin(1/2)$
+$= 30°$ (en efecto: $sin(30°) = 1/2$). Es la situación representada en el
+<a href="#f_carte"><i>"mapa de los mares"</i></a>.
 
 
-# 3/ <a name="s3_modulo"></a> Délai d'une onde
+# 3/ <a name="s3_modulo"></a> Retardo de una onda
 
-<blockquote> Fluctuat nec mergitur </blockquote>
+<blockquote> Fluctuat nec mergitur</blockquote>
 
 
-La section précédente nous a donné $\theta$ : la position (angulaire) de l'objectif.
-C'est donc mission accomplie pour la section 2 !
+La sección anterior nos dio $\theta$ : la posición (angular) del objetivo.
+¡Así que la Sección 2 ha cumplido su misión!
 
-Le problème est que les objectifs astrophysiques, ne s'allument pas d'un seul coup mais émettent de manière continue.
-Il n'y a donc pas de front d'onde (ou vague) de référence.
-L'altitude de chaque flotteur variera au gré de la vague et suivra une sinusoïde plus ou moins synchronisée avec l'autre flotteur.
-Ce degrés de synchronisme est appelé [corrélation](https://kids.alma.cl/como-estan-conectadas-las-antenas-de-alma/).
+El problema es que los objetivos astrofísicos no se encienden de un solo golpe, sino que emiten de manera continua.
+Por lo tanto, no hay un frente de onda (o ola) de referencia.
+La altitud de cada flotador variará según la ola y seguirá un sinusoide más o menos sincronizado con el otro flotador.
+Este grado de sincronización se denomina [correlación](https://kids.alma.cl/como-estan-conectadas-las-antenas-de-alma/).
 
 <div>
-On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\nu$ est la fréquence de l'onde et donc son inverse, $\frac{1}{\nu}$, est le temps qui sépare deux vagues.<sup>[+]<div class="description">
-On ne peut plus savoir sur quelle vague est chaque flotteur mais à quelle position de la vague : en haut, en descente ...
-(voir figure <a href="#f_altitude"><i>"altitude"</i></a>)<br/>
-Remarquez que ce manque d'information est drastique.
-En effet, avec une ligne de base de 16km et des ondes de 1mm, on peut avoir un doute entre $\frac{16km \times \pi}{1mm} = 50M$ (50 millions) de valeurs possibles de $\theta$ pour une source ponctuelle. Pour 10 sources, ce serai $(50M)^{10} = 9\times10^{76}$. 
+No se puede medir $\Delta t$ pero $\Delta t$ modulo $\frac{1}{\nu}$ donde $\nu$ es la frecuencia de la onda y por lo tanto su inverso, $\frac{1}{\nu}$, es el tiempo que separa dos olas.<sup>[+]<div class="description">
+Ya no se puede saber en qué ola está cada flotador pero en qué posición de la ola: arriba, abajo...
+(véase la figura <a href="#f_altitude"><i>"altura"</i></a>) <br/>
+Tenga en cuenta que esta falta de información es drástica.
+En efecto, con una línea de base de 16 km y ondas de 1 mm, se puede tener una duda entre $\frac{16km \times \pi}{1mm} = 50M$ (50 millones) de valores posibles de $\theta$ para una fuente puntual. Para 10 fuentes, sería $(50M)^{10} = 9\times10^{76}$.
 </div></sup></div>
 
 <!-- Figure Multiple direction in -->
@@ -234,53 +242,53 @@ En effet, avec une ligne de base de 16km et des ondes de 1mm, on peut avoir un d
   <a name="f_altitude"></a>
   <img style="width:100%" src='Figure/31_wave_which.svg' alt='missing'></img>
   <figcaption style="width:90%; min-width:300px;">
-    <b>Altitude :</b>
-    On peut mesurer que A et C sont en phase et A et B sont déphasé de $\frac{\pi}{2}$.<br/>
-    Mais il est impossible de savoir que A est sur la même vague que B et que C est sur une autre
-    par la seule mesure de la position verticale des bouchons puisque toutes les vagues sont parfaitement identiques.
+    <b>Altura :</b>
+    Se puede medir que A y C están en fase y A y B están desfasados de $\frac{\pi}{2}$.<br/>
+    Pero es imposible saber que A está en la misma onda que B y que C está en otra
+    por la única medida de la posición vertical de los flotadores ya que todas las olas son perfectamente idénticas.
   </figcaption>
 </figure>
 
-* Par exemple, supposons que la longueur d'onde est de $\lambda = 10cm = 0.1m$.
-* Rappelant la valeur précédente : la vitesse: $v=1m/s$ donc le temps qui sépare deux maximums est donc de \frac{1}{\nu} = 0.1s.<sup>[+]<div class="description">
-Utilisant : $v$ $= \frac{distance}{temps}$ $= \lambda\nu$
+* Por ejemplo, supongamos que la longitud de onda es $\lambda = 10cm = 0,1m$.
+* Recordando el valor anterior: la velocidad: $v=1m/s$ por lo tanto el tiempo que separa dos máximos es de $\frac{1}{\nu} = 0.1s.<sup>[+]<div class="description">
+Usando: $v$ $= frac{distancia}{tiempo}$ $=\lambda\nu$
 </div></sup></div>
-Rappelons ausi que la ligne de base : $b = 2m$.
+Recordemos también que la línea de base: $b = 2m$.
 
 <!-- Figure Multiple direction in -->
 <figure style="float: right; width:300px;" >
   <a name="f_possible"></a>
   <img style="width:100%" src='Figure/24_float_all.svg' alt='missing'></img>
   <figcaption>
-    <b>Angles possibles :</b>
-    Quelques angles d'origine des vagues qui permettent d'avoir les deux bouchons en phase.<br/>
-    Le nombre de vagues de retard du bouchon de gauche est indiqué. C'est justement ce nombre qu'on ne peut pas mesurer.<br/>
+    <b>Ángulos posibles:</b>
+    Algunos ángulos de origen de las olas que permiten tener los dos flotadores en fase.<br/>
+    Se indica el número de ondas de retraso del tapón izquierdo. Es precisamente este número que no se puede medir.<br/>
   </figcaption>
 </figure>
 
-* Imaginons,
-<a href="#f_cas1"><i>cas 1</i></a>,
-une vague venant de $\theta=53°$ (bien à droite) alors elle devra parcourir
-$b \times sin(\theta)=2\times sin(53°) = 1.6m$ de plus pour arriver au bouchon de gauche. 1.6m étant multiple de 0.1m, le bouchon de gauche sera en retard de 16 vagues sur celui de droite mais "en phase" (i.e. à la même altitude à tout moment).
-* Imaginons maintenant,
-<a href="#f_cas2"><i>cas 2</i></a>,
-une vague venant de $\theta = 30°$ (centre-droite). Alors elle devra parcourir $a$
+* Imaginamos,
+<a href="#f_cas1"><i>caso 1</i></a>,
+una ola que viene de $\theta=53°$ (bien a la derecha) entonces tendrá que recorrer
+$b \times sin(\theta)=2 \times sin(53°) = 1.6m$ más para llegar al tapón izquierdo. 1.6m siendo múltiplo de 0.1m, el tapón de la izquierda será en retraso de 16 ondas sobre el de la derecha pero "en fase" (e.d. a la misma altitud en cualquier momento).
+* Supongamos que ahora,
+<a href="#f_cas2"><i>caso 2</i></a>,
+una ola que viene de $\theta = 30°$ (centro-derecha). Entonces tendrá que navegar $a$
 $= b \times sin(\theta)$
 $= 2 \times sin(30°)$
 $= \frac{1}{2} \times 2$
 $= 1m$.
-1m étant aussi multiple de 10cm, les deux bouchons seront aussi en phase.
-* En mesurant l'altitude des deux bouchons, nous ne pourrons pas discriminer le cas 1 du cas 2.
-* Quelques valeurs possibles de $\theta$ pour deux bouchons en phase sont dans la figure
-<a href="#f_possible"><i>"angles possibles"</i></a>.
+Dado que un metro es también múltiplo de 10cm, los dos tapones también estarán en fase.
+* Al medir la altitud de los dos tapones, no podremos discriminar el caso 1 del caso 2.
+* Algunos valores posibles de $\theta$ para dos tapones en fase están en la figura
+<a href="#f_possible"><i>"ángulos posibles"</i></a>.
 
 
 
-* [Keck](https://fr.wikipedia.org/wiki/Observatoire_W._M._Keck) c'est ti qu'on fait pour savoir si le caillou a été jeté à 53° (cas 1) ou a 30° (cas 2) ?
+* ¿[Keck](https://es.wikipedia.org/wiki/Observatoire_W._M._Keck) se hace para saber si la piedra ha sido arrojada a 53° (caso 1) o a 30° (caso 2)?
 
-* Rajoutons un bouchon : "Z". Par exemple, à 0.5m à gauche du bouchon de référence, celui de droite : "X", et donc a 1.5m à droite de celui de gauche : "Y". Comme sur la figure
-<a href="#f_reseau"><i>"réseau"</i></a>.
-Ce bouchon nous apportera une information cruciale permettant de dinstinguer le cas 1 du cas 2.
+* Añadamos un flotador: "Z". Por ejemplo, a 0.5m a la izquierda del tapón de referencia, el de la derecha: "X", y por lo tanto a 1.5m a la derecha del de la izquierda: "Y". Como en la figura
+<a href="#f_reseau"><i>"red"</i></a>.
+Este corcho nos dará una información crucial que nos permitirá discriminar el caso 1 del caso 2.
 
 <figure style="margin:10px" >
   <a name="f_reseau"></a>
@@ -295,12 +303,12 @@ Ce bouchon nous apportera une information cruciale permettant de dinstinguer le 
     display: block;
     margin: 0 auto;
   ">
-    <b>Réseau :</b>
-    Trois bouchons valent mieux que deux.
+    <b>Red :</b>
+    Tres corchos son mejores que dos.
   </figcaption>
 </figure>
 
-* Alors si $\theta = 53°$ (cas 1), le bouchon Z recevra l'onde $0.5 \times arcsin(53°) = 0.40m = 40cm$ plus loin. Ce bouchon aura 4 vagues de retard sur X et sera en phase.
+* Entonces si $\theta = 53°$ (caso 1), el flotador Z recibirá la onda $0.5 \times arcsin(53°)$ $= 0.40m$ $= 40cm$ más lejos. Este corcho tendrá 4 olas de retraso sobre X y estará en fase.
 
 <!-- Left -->
 <div style="clear: both; margin:0; display:flex">
@@ -319,7 +327,7 @@ Ce bouchon nous apportera une information cruciale permettant de dinstinguer le 
     height:60px;
   ">
     <b>Cas 1 : $\theta = 53°$ :</b>
-    X, Y, Z en phase.
+    X, Y, Z en fase.
   </figcaption>
 </figure>
 <!-- Right -->
@@ -338,36 +346,36 @@ Ce bouchon nous apportera une information cruciale permettant de dinstinguer le 
     height:60px;
   ">
     <b>Cas 2 : $\theta = 30°$ :</b>
-    Z en opposition de phase.
+    Z en oposición de fase.
   </figcaption>
 </figure>
 </div>
 <div style="display: block; clear: both;"></div>
 
 
-* Mais si $\theta = 30°$, le bouchon Z recevra le front d'onde $0.5 \times cos(30°) = 0.25m = 20cm + 5cm$ plus loin. Ce bouchon aura 2 vagues et demi de retard.
-Encore une fois, on ne peut pas mesurer les "2 vagues" mais on peut mesurer le "et demi" car Z sera en opposition de phase (déphasé de $\pi$) avec X : quand X sera au sommet de la vague, il sera en bas.
-En sommant les altitudes de X et de Z, en tout temps, on obtient zéro. Cette somme est une [interférence](https://fr.wikipedia.org/wiki/Interf%C3%A9rence) artificielle, ici destructive.<sup>[+]<div class="description">
-Dans la pratique, on effectue 1/ une projection dans l'espace complexe; 2/ une multiplication puis 3/ une intégration pour mesurer le 
-[degré de cohérence](https://en.wikipedia.org/wiki/Degree_of_coherence) puis appliquer le [théorème de Van Cittert–Zernike](https://en.wikipedia.org/wiki/Van_Cittert%E2%80%93Zernike_theorem#Aperture_synthesis).
+* Pero si $\theta = 30°$, el flotador Z recibirá el frente de onda $0.5 \times cos(30°)$ $=0.25m = 20cm + 5cm$ más lejos. Este tapón tendrá dos olas y media de retraso.
+Una vez más, no se pueden medir las "2 olas", pero se puede medir el "y medio" porque Z estará en oposición de fase (desfasado de $\pi$) con X: cuando X esté en la cima de la ola, estará abajo.
+Si sumamos las altitudes de X y Z, obtenemos cero en todo momento. Esta suma es una [interferencia](https://es.wikipedia.org/wiki/Interferencia) artificial, aquí destructiva.<sup>[+]<div class="description">
+En la práctica, se realiza 1/ proyección en el espacio complejo; 2/ multiplicación y 3/ integración para medir el
+[grado de coherencia](https://es.wikipedia.org/wiki/Grado_de_coherencia) y aplicar el [teorema de Van Cittert-Zernike](https://en.wikipedia.org/wiki/Van_Cittert%E2%80%93Zernike_theorem#Aperture_synthesis).
 </div></sup>
 
 <div>
-Au final, ajouter une ligne de base nous a permis de restreindre le champ des possibilités sur la position du caillou, d'un facteur 2. Ce qui est le maximum qu'une information de plus peut nous apporter.
-De plus, ajouter un bouchon, dans ce cas nous a ajouté 2 lignes de base : celle de 0.5m __et__ celle de 1.5m.
-Ce qui nous a donné 2 informations de corrélations supplémentaires.
-Par exemple, si la section 2 hésitait entre 100 choix possibles, la ligne de 0.5m en élimine la moitié : il en reste alors 50. De la même manière la deuxième ligne en élimine aussi une moitié, il en reste 25.<sup>[+]<div class="description">
-Nous supposons ici que chaque ligne est indépendante, ce qui est le cas si leurs tailles sont différentes.<br/>
-Imaginez comment les techniciens d'ALMA s'amusent pour placer 66 antennes de manière à avoir 2145 lignes de base de tailles différentes ! Et en couvrant homogénement l'ensemble des tailles de base possibles (généralement en coordonnées circulaires).
+Al final, añadir una línea de base nos ha permitido restringir el campo de posibilidades en la posición de la piedra, de un factor 2. Es el máximo que una información más puede darnos.
+Además, añadir un tapón, en este caso nos ha añadido 2 líneas de base: la de 0.5m __y__ la de 1.5m.
+Lo que nos dio dos informaciones adicionales.
+Por ejemplo, si la sección 2 vacilaba entre 100 opciones posibles, la línea de 0.5m elimina la mitad: quedan 50. De la misma manera, la segunda línea también elimina la mitad, quedando 25.<sup>[+]<div class="description">
+Aquí suponemos que cada línea es independiente, lo que es el caso si sus tamaños son diferentes.<br/>
+¡Imaginen cómo los técnicos de ALMA se divierten colocando 66 antenas para tener 2145 líneas de base de diferentes tamaños! Y cubriendo uniformemente el conjunto de los tamaños de base posibles (generalmente en coordenadas circulares).
 </div></sup>
 </div>
 
 
-Chaque ligne permet de discriminer un rang d'angle différent.
-En termes plus génériques, elle donne une information, comme un pixel dans une image.
-Supposez que l'on puisse faire tourner la ligne des flotteurs, alors $\theta$ changerai et chaque ligne nous apporterai des informations nouvelles (plus de pixels).
-Le plus simple pour effectuer cette rotation avec un réseau d'antennes et une source extraterrestre est de faire tourner la planète.
-Et puisqu'elle tourne déjà, il suffit d'attendre.
+Cada línea discrimina un rango de ángulo diferente.
+En términos más genéricos, da una información, como un pixel en una imagen.
+Supongamos que podemos hacer girar la línea de flotadores, entonces $ theta$ cambiará y cada línea nos traerá nueva información (más píxeles).
+La forma más sencilla de hacer esta rotación con una red de antenas y una fuente extraterrestre es hacer que el planeta gire.
+Y como ya está girando, basta con esperar.
 
 
 # 4/ <a name="s4_image"></a>Délai de plusieurs objets : reconstruction d'image

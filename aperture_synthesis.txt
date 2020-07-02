@@ -51,7 +51,7 @@ Constitution d'image depuis plusieurs informations angulaires : "À l'abordage !
 
 <blockquote> Nosce te ipsum </blockquote>
 
-On mesure la qualité d'une image astrophysique avec deux paramètres : sa [résolution angulaire](https://en.wikipedia.org/wiki/Optical_resolution) et sa [profondeur](https://fr.wikipedia.org/wiki/Liste_des_champs_profonds).
+On mesure la qualité d'une image astrophysique avec deux paramètres : sa [résolution angulaire](https://en.wikipedia.org/wiki/Dynamic_range#Photography) et sa [profondeur](https://fr.wikipedia.org/wiki/Liste_des_champs_profonds).
 
 
 1. __La profondeur__ est le flux de la source la moins lumineuse que l'on peut détecter.<sup>[+]<div class="description">
@@ -78,7 +78,7 @@ Une grande résolution angulaire permet d'observer des objets de petite taille a
 
 -> Jusqu'à preuve du contraire, un télescope quelconque peut générer des images d'une résolution et profondeur arbitrairement grande à condition de :
 
-1. Exposer suffisamment longtemps l'objet pour obtenir plus de lumière de ce dernier que le bruit du ciel et de l'appareil.
+1. Exposer suffisamment longtemps l'objet pour obtenir plus de lumière dans sa direction que le bruit du ciel et de l'appareil.
 2. Utiliser un détecteur (Couple Charged Device) avec suffisamment de pixels par cm.<sup>[+]<div class="description">
 Le nombre de pixels par centimètre peut être arbitrairement élevé avec des bancs optiques à l'intérieur du détecteur. Par exemple les nouveaux téléphones portables déclarent des détecteurs de 9Mpixels (= 3000x3000) et de 2mm tandis qu'un détecteur de télescope est de 1Mpixel (1000x1000) et mesure 3cm.
 </div></sup>
@@ -158,7 +158,7 @@ le flotteur de droite va recevoir la vague avant celui de gauche. Réciproquemen
   ">
     <b>Carte du lac :</b>
     Vague créée par un caillou jeté dans l'eau et reçue par deux flotteurs au premier plan. La vague va soulever le flotteur de droite puis le flotteur de gauche.<br/>
-    Le caillou a été lancé à une position angulaire de $\theta$ et à une distance infinie, c'est pourquoi le front d'onde arrive en forme de ligne sur le flotteur à l'image d'une majestueuse vague de houle en haute mer et non d'un misérable ricochet de lavoir.<br/>
+    Le caillou a été lancé à une position angulaire de $\theta$, et se situe à une distance infinie, c'est pourquoi le front d'onde arrive en forme de ligne sur le flotteur à l'image d'une majestueuse vague de houle en haute mer et non d'un misérable ricochet de lavoir.<br/>
     Note: Infinie signifie simplement : "beaucoup plus grand que la distance entre les deux flotteurs".
   </figcaption>
 </figure>
@@ -184,15 +184,15 @@ Avec :
 * $a$ : la distance supplémentaire que la vague a dû parcourir (a pour À remplacer).
 
 
-Remplaçons-le ! On connait à priori la vitesse de la vague $v$ et on mesure le temps de délai $\Delta t$ que la vague a pris pour atteindre le deuxième flotteur.
+Remplaçons-le ! On connait à priori la vitesse de la vague $v$ et on mesure le temps de délai $\Delta t$ que la vague a pris pour atteindre le deuxième flotteur
 
-La formule $vitesse = \frac{distance}{temps}$ $\Leftrightarrow$ $distance = vistesse \times temps$ nous donne $a = v \times \Delta t$.
+La formule $vitesse = \frac{distance}{temps} \Leftrightarrow distance = vistesse \times temps$ nous donne $a = v \times \Delta t$.
 En inversant la formule trigonométrique et replaçant $a$, on a :
 
 $$
 \begin{aligned}
 \theta &= arcsin\left(\frac{v\times\Delta t}{b}\right) \\
-       & = arcsin\left( \frac{Vitesse\_de\_la\_vague \times Delai\_temporel\_mesure}{Taille\_de\_la\_base} \right) \\
+       & = arcsin\left( \frac{Vitesse\_de\_la\_vague \times Delai\_temporel\_mesure}{Distance\_de\_la\_base} \right) \\
 \end{aligned}
 $$
 
@@ -205,7 +205,8 @@ Par exemple:
 $\theta$
 $= arcsin\left(\frac{1 \times 1}{2}\right) = arcsin\left(1/2\right)$
 $= 30°$ (en effet : $sin(30°) = 1/2$). C'est la situation représentée dans la
-<a href="#f_carte"><i>"carte des mers"</i></a>.
+<a href="#f_carte"><i>"carte des mers"</i></a>
+.
 
 
 # 3/ <a name="s3_modulo"></a> Délai d'une onde
@@ -222,7 +223,7 @@ L'altitude de chaque flotteur variera au gré de la vague et suivra une sinusoï
 Ce degrés de synchronisme est appelé [corrélation](https://kids.alma.cl/como-estan-conectadas-las-antenas-de-alma/).
 
 <div>
-On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\nu$ est la fréquence de l'onde et donc son inverse, $\frac{1}{\nu}$, est le temps qui sépare deux vagues.<sup>[+]<div class="description">
+On ne peut plus mesurer $\Delta t$ mais $\Delta t$ modulo $\frac{1}{\nu}$ où $\nu$ est la fréquence de l'onde et donc son inverse, $\frac{1}{\nu}$, est le temp qui sépare deux vagues.<sup>[+]<div class="description">
 On ne peut plus savoir sur quelle vague est chaque flotteur mais à quelle position de la vague : en haut, en descente ...
 (voir figure <a href="#f_altitude"><i>"altitude"</i></a>)<br/>
 Remarquez que ce manque d'information est drastique.
@@ -242,7 +243,7 @@ En effet, avec une ligne de base de 16km et des ondes de 1mm, on peut avoir un d
 </figure>
 
 * Par exemple, supposons que la longueur d'onde est de $\lambda = 10cm = 0.1m$.
-* Rappelant la valeur précédente : la vitesse: $v=1m/s$ donc le temps qui sépare deux maximums est donc de \frac{1}{\nu} = 0.1s.<sup>[+]<div class="description">
+* Rappelant la valeur précédente : la vitesse: $v= 1m/s$ donc le temps qui sépare deux maximums est donc de \frac{1}{\nu} = 0.1s.<sup>[+]<div class="description">
 Utilisant : $v$ $= \frac{distance}{temps}$ $= \lambda\nu$
 </div></sup></div>
 Rappelons ausi que la ligne de base : $b = 2m$.
@@ -253,7 +254,7 @@ Rappelons ausi que la ligne de base : $b = 2m$.
   <img style="width:100%" src='Figure/24_float_all.svg' alt='missing'></img>
   <figcaption>
     <b>Angles possibles :</b>
-    Quelques angles d'origine des vagues qui permettent d'avoir les deux bouchons en phase.<br/>
+    Quelques angles d'origine des vagues qui permettent d'avoir les deux bouchons en phase. <br/>
     Le nombre de vagues de retard du bouchon de gauche est indiqué. C'est justement ce nombre qu'on ne peut pas mesurer.<br/>
   </figcaption>
 </figure>
@@ -261,18 +262,18 @@ Rappelons ausi que la ligne de base : $b = 2m$.
 * Imaginons,
 <a href="#f_cas1"><i>cas 1</i></a>,
 une vague venant de $\theta=53°$ (bien à droite) alors elle devra parcourir
-$b \times sin(\theta)=2\times sin(53°) = 1.6m$ de plus pour arriver au bouchon de gauche. 1.6m étant multiple de 0.1m, le bouchon de gauche sera en retard de 16 vagues sur celui de droite mais "en phase" (i.e. à la même altitude à tout moment).
+$b \times sin(\theta)=2\times sin(53°) = 1.6m$ de plus pour arriver au bouchon de gauche. 1.6m étant multiple de 0.1m, le bouchon de gauche sera en retard de 16 vagues sur celui de droite mais "en phase" (i.e. à la même altitude à tout moment)
 * Imaginons maintenant,
 <a href="#f_cas2"><i>cas 2</i></a>,
 une vague venant de $\theta = 30°$ (centre-droite). Alors elle devra parcourir $a$
 $= b \times sin(\theta)$
 $= 2 \times sin(30°)$
-$= \frac{1}{2} \times 2$
-$= 1m$.
-1m étant aussi multiple de 10cm, les deux bouchons seront aussi en phase.
+$= \frac{1}{2} * 2$
+$= 1m$. 1m étant aussi multiple de 10cm, les deux bouchons seront aussi en phase.
 * En mesurant l'altitude des deux bouchons, nous ne pourrons pas discriminer le cas 1 du cas 2.
 * Quelques valeurs possibles de $\theta$ pour deux bouchons en phase sont dans la figure
-<a href="#f_possible"><i>"angles possibles"</i></a>.
+<a href="#f_possible"><i>"angles possibles"</i></a>
+.
 
 
 
@@ -300,7 +301,7 @@ Ce bouchon nous apportera une information cruciale permettant de dinstinguer le 
   </figcaption>
 </figure>
 
-* Alors si $\theta = 53°$ (cas 1), le bouchon Z recevra l'onde $0.5 \times arcsin(53°) = 0.40m = 40cm$ plus loin. Ce bouchon aura 4 vagues de retard sur X et sera en phase.
+* Alors si $\theta = 53°$ (cas 1), le bouchon Z recevra l'onde $0.5 \times arcsin(53°) = 0.40m = 40cm$ plus loin. Ce bouchon aura 4 vagues de retard sur X et sera en phase
 
 <!-- Left -->
 <div style="clear: both; margin:0; display:flex">
@@ -353,12 +354,12 @@ Dans la pratique, on effectue 1/ une projection dans l'espace complexe; 2/ une m
 </div></sup>
 
 <div>
-Au final, ajouter une ligne de base nous a permis de restreindre le champ des possibilités sur la position du caillou, d'un facteur 2. Ce qui est le maximum qu'une information de plus peut nous apporter.
+Au fina, ajouter une ligne de base nous a permis de restreindre le champ des possibilités sur la position du caillou, d'un facteur 2. Ce qui est le maximum qu'une information de plus peut nous apporter.
 De plus, ajouter un bouchon, dans ce cas nous a ajouté 2 lignes de base : celle de 0.5m __et__ celle de 1.5m.
 Ce qui nous a donné 2 informations de corrélations supplémentaires.
-Par exemple, si la section 2 hésitait entre 100 choix possibles, la ligne de 0.5m en élimine la moitié : il en reste alors 50. De la même manière la deuxième ligne en élimine aussi une moitié, il en reste 25.<sup>[+]<div class="description">
+Par exemple si la section 2 hésitait entre 100 choix possibles la ligne de 0.5m en élimine la moitié : il en reste alors 50. De la même manière la deuxième ligne en élimine aussi une moitié, il en reste 25.<sup>[+]<div class="description">
 Nous supposons ici que chaque ligne est indépendante, ce qui est le cas si leurs tailles sont différentes.<br/>
-Imaginez comment les techniciens d'ALMA s'amusent pour placer 66 antennes de manière à avoir 2145 lignes de base de tailles différentes ! Et en couvrant homogénement l'ensemble des tailles de base possibles (généralement en coordonnées circulaires).
+Imaginez comment les techniciens d'ALMA s'amusent pour placer 66 antennes de manière à avoir 2145 lignes de base de taille différente ! Et en couvrant homogénement l'ensemble des tailles de base possible (généralement en coordonnées circulaires).
 </div></sup>
 </div>
 

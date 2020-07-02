@@ -154,3 +154,10 @@ blockquote:after {
 blockquote p {
     display: inline;
 }
+
+/* Shorten HTML */
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
