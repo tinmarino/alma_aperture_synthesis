@@ -44,7 +44,7 @@ Constitution d'image depuis plusieurs informations angulaires : "À l'abordage !
 
 - [Conclusion: ](#s_conclusion) "C'est pas bientôt fini !"
 
-- [Aller plus loin: ](#s_conclusion) "Quand y'en a plus, y'en a encore."
+- [Aller plus loin: ](#s_link) "Quand y'en a plus, y'en a encore."
 
 
 # 1/ <a name="s1_limit"></a> Limitations du télescope
@@ -721,7 +721,7 @@ Si tu as appris quelque chose de nouveau, c'est une petite victoire.
 Puisses-tu la célébrer pour, demain, te réveiller avec plus d'enthousiasme qu'hier.
 
 
-# Liens pour aller plus loin
+# <a name="s_link"></a> Liens pour aller plus loin
 
 <blockquote> Sic itur ad astra </blockquote>
 
