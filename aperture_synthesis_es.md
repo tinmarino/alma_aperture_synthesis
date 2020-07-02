@@ -12,8 +12,8 @@ Permite simular la apertura de un gran [telescopio](https://es.wikipedia.org/wik
 Este gran telescopio virtual tiene como diámetro la distancia máxima entre dos pequeños.
 
 <div>
-Es un tema que invoca las matemáticas de Bac+2. Sin embargo, esta explicación que requiere unicamente un nivel de educacion bascica<sup>[+]<div class="description">
-Es necesario poder leer el chilenito, las ecuaciones y saber que, en un triángulo rectángulo:
+Es un tema que invoca matemáticas de segundo año de universidad. Sin embargo, esta explicación que requiere unicamente un nivel de educacion bascica<sup>[+]<div class="description">
+Es necesario poder leer el castellanito, las ecuaciones y saber que, en un triángulo rectángulo:
 $$sin(angle) = \frac{cotes\:opuesto}{hypotenusa}$$
 </div></sup>
 tiene por objeto ser completa.
@@ -21,7 +21,7 @@ Por eso es un poco larga.<br/>
 El lector impaciente puede leer solamente la <a href="s2_dirac">sección 2</a>.
 Así, comprenderá cómo las interferencias artificiales pueden revelar el ángulo de una fuente para, poco a poco, construir un mapa del cielo.
 Sin embargo, absteniéndose de las demás secciones,
-este lector carecerá de esta guía vulgar, la invitación
+este lector carecerá de esta humilde guía, la invitación
 hacia una de las más bellas historias naturales, la del [fotón](https://es.wikipedia.org/wiki/Fot%C3%B3n).
 <!-- Trick for sup -->
 <ul></ul></div>
@@ -30,7 +30,7 @@ hacia una de las más bellas historias naturales, la del [fotón](https://es.wik
 
 - [1/ Limitaciones del telescopio:](#s1_limit) El tamaño del telescopio como límite de su resolución angular: "¿Por qué yo?"
 
-- [2/ Plazo:](#s2_dirac) Sección fundamental. Una metáfora con las olas agua-aire muestra cómo el tiempo de recepción de una ola entre dos flotadores puede revelar la dirección de una ola: "¡Bienvenido a bordo!"
+- [2/ Plazo:](#s2_dirac) Sección fundamental. Una metáfora con las olas agua-aire muestra cómo el desfase de tiempo de recepción de una ola entre dos flotadores puede revelar la dirección de una ola: "¡Bienvenido a bordo!"
 
 - [3/ Sinusoide:](#s3_modulo) Adición de realismo al modelo, la ola se convierte en un sinusoide, es decir, un conjunto de olas: "¿Vamos a navegar marinero?"
 
@@ -39,7 +39,7 @@ Creación de imagen desde varias informaciones angulares: "¡Al abordaje!"
 
 - [5/ Onda de radio: ](#s5_radio) Aumento de la distancia de los flotadores y transformación en antenas. "¡Rumbo a las estrellas!"
 
-- [Optionnel/ Nouvelles limitations:](#so_new_limit) Calcul des limitations anciennes et nouvelles. Détermination de la qualité maximale atteignable. "Arturo Prat no navega en cajas."
+- [Optionnel/ Nuevas limitaciones:](#so_new_limit) Cálculo de las limitaciones antiguas y nuevas. Determinación de la calidad máxima alcanzable. "Arturo Prat no navega en cajas."
 
 - [Conclusión: ](#s_conclusion) "¿Queda mucho?"
 
@@ -403,28 +403,28 @@ En efecto, en ambos casos, la correlación entre dos detectores: respectivamente
 
 <div class="border-aqua">
 <b>La Triangulación:</b>
-permite [percibir la profundidad](https://es.wikipedia.org/wiki/Perception_de_la_profundidad). Supone que cada ojo conoce su orientación. La combinación de los dos ojos por una fórmula trigonométrica da la profundidad. En resumen:
+permite [percibir la profundidad](https://es.wikipedia.org/wiki/Percepci%C3%B3n_de_profundidad). Supone que cada ojo conoce su orientación. La combinación de los dos ojos por una fórmula trigonométrica da la profundidad. En resumen:
 <ul><li>
-Distancia entre los dos ojos      ángulo del ojo derecho       ángulo del ojo izquierdo   ->   distancia del objeto.
+Distancia entre los dos ojos   &nbsp;&nbsp;&&nbsp;&nbsp;    ángulo del ojo derecho  &nbsp;&nbsp;&&nbsp;&nbsp;      ángulo del ojo izquierdo   &nbsp;&nbsp;->&nbsp;&nbsp;   distancia del objeto.
 </li></ul>
 </div>
 
 
 <div class="border-aqua">
-<b>L 'Interferometría:</b>
-permite conocer el ángulo del transmisor. Supone que cada detector puede medir la intensidad y la fase de la onda incidente. Es decir, el tamaño de las olas __et__ la altitud del flotador.
-Por el contrario, en la triangulación nunca se trata de la naturaleza ondulatoria de las líneas. Además: 1/ ojo humano es incapaz de medir la fase de la luz incidente y 2/ sensores interferométricos<sup>[+]<div class="description">
+<b>La Interferometría:</b>
+permite conocer el ángulo del transmisor. Supone que cada detector puede medir la intensidad __y__ la fase de la onda incidente. Es decir, el tamaño de las olas __y__ la altitud del flotador.
+Por el contrario, en la triangulación nunca se trata de la naturaleza ondulatoria de los rayos. Además: 1/ el ojo humano es incapaz de medir la fase de la luz incidente y 2/ los sensores interferométricos<sup>[+]<div class="description">
 Ejemplo de sensor:<br/>
 <b>1/ Radio</b><br/>
 <b>2/ Telescopio</b> con fibra óptica en el foco imagen.
 Esta fibra óptica mezclará todos los ángulos y perderá la información angular de los rayos incidentes. Esto no es grave, ya que esta información se medirá mucho más precisamente posteriormente a través de la interferencia con otro telescopio remoto. Véase, por ejemplo, el [Very Large Telescope Interferometer](https://www.eso.org/sci/facilities/paranal/telescopes/vlti.html).<br/>
-<b>3/ Sismómetro</b>. Se habla de [interferometría sísmica] (https://en.wikipedia.org/wikiSeismic_interferometry)
+<b>3/ Sismómetro</b>. Se habla de [interferometría sísmica] (https://en.wikipedia.org/wiki/Seismic_interferometry)
 ([Sens-Schönfelder y Wegler 2011](https://www.sciencedirect.com/science/article/pii/S1631071311000861))<br/>
 <b>4/ Flotador de Tinmarino</b>. Ver [aquí mismo](https://tinmarino.github.io/?show=aperture_synthesis_page)<br/>
 </div></sup>
-son incapaces, independientemente, de medir el ángulo del emisor. En otro lugar es el objetivo de la medición sincronizada. En resumen:
+son incapaces, independientemente, de medir el ángulo del emisor. De hecho, es el objetivo de la medición sincronizada. En resumen:
 <ul><li>
-Distancia entre los sensores      fase del sensor derecho      fase del sensor izquierdo    ->   ángulo del objeto.
+Distancia entre los sensores  &nbsp;&nbsp;&&nbsp;&nbsp;        fase del sensor derecho   &nbsp;&nbsp;&&nbsp;&nbsp;       fase del sensor izquierdo    &nbsp;&nbsp;->&nbsp;&nbsp;       ángulo del objeto.
 </li></ul>
 </div>
 
@@ -432,32 +432,33 @@ Distancia entre los sensores      fase del sensor derecho      fase del sensor i
 <div>
 Al aproximarlos, la vulgarización hace una analogía fácilmente comprensible pero incorrecta.
 Además, la distancia de los astros lejanos por triangulación es imposible.<sup>[+]<div class="description">
-La distancia de los astros es mucho mayor que la de los sensores y éstos los ven a una distancia infinita.<br/>
+El diametro aparente de los astros es mucho menor que la resolución angular de los sensores y éstos los ven a una distancia infinita.<br/>
 Para medir la distancia de los astros (estrellas, supernovas, galaxias), los físicos recurren a una comprensión fina de estos últimos, respectivamente: luminosidad, disminución luminosa y frecuencias de oscilaciones conocidas desplazadas por la expansión del universo.
 </div></sup>
-Ahora que usted sabe que estos mecanismos son diferentes, viene, en mi opinión, una pregunta legítima: ¿Cuál es la ventaja de la interferometría? </b><sup>[+]<div class="description">
+Ahora que usted sabe que estos mecanismos son diferentes, viene, en mi opinión, una pregunta legítima: ¿Cuál es la ventaja de la interferometría?</b><sup>[+]<div class="description">
 El ojo humano es una tecnología notable: pequeño, ligero, resistente, rápido, de bajo consumo de energía, ya conectado (al cerebro), dotado de una amplia gama dinámica, de un gran campo de visión y de una aceptable resolución angular y profundidad.<br/>
 Entonces, ¿por qué estamos construyendo observatorios artificiales? Sentimos que la respuesta está en la resolución angular y la profundidad.
 </div></sup>
 </div>
 
 <b>Respuesta: la precisión de la medición angular.</b>
-En el ejemplo anterior, separamos dos tapones de 2m para medir la orientación de una onda de 10cm de longitud de onda. De hecho, era más fácil de dibujar.
-De hecho, las antenas de ALMA están separadas por 16 km y miden el ángulo de incidencia de una onda de 1 mm. Guardando nuestro ejemplo con nuestras olas y flotadores, es como separar los flotadores de
-$16km times frac{10cm}{1mm}$
-$= 1600 km$. A esta distancia, los flotadores pueden medir la diferencia entre una ola que viene de $theta=0$ y una ola que viene de
-$ theta$
+En el ejemplo anterior, separamos dos corchos de 2m para medir la orientación de una onda de 10cm de longitud de onda. esas dimaciones eran más fácil de dibujar.
+En realidad, las antenas de ALMA están separadas por 16 km y miden el ángulo de incidencia de una onda de 1mm. Guardando nuestro ejemplo con nuestras olas y flotadores, es como separar los flotadores de
+$16km \times \frac{10cm}{1mm}$
+$= 1600 km$.
+A esta distancia, los flotadores pueden medir la diferencia entre una ola que viene de $\theta=0$ y una ola que viene de
+$\theta$
 $= arcsin \left(\frac{10cm}{1600km}\right)$
-$= 0.0000036~$,
+$= 0.0000036°$,
 Segundo ángulo donde los dos flotadores se encontrarán de nuevo en fase.
 
 <div style="min-width:300px; width:50%; margin:10px;">
 placeholder-rayleight
 </div>
 
-Hemos utilizado el [criterio de Rayleight](http://ressources.univ-Lemans.fr/Acceslibre/UM/Pedago/physique/02/optiondu/Rayleigh.html), que estipula que sólo se pueden distinguir dos manchas de difracción después de la distancia donde el máximo de una corresponde al primer mínimo de la otra.
+Hemos utilizado el [criterio de Rayleight](http://ressources.univ-lemans.fr/AccesLibre/UM/Pedago/physique/02/optiondu/rayleigh.html), que estipula que sólo se pueden distinguir dos manchas de difracción después de la distancia donde el máximo de una corresponde al primer mínimo de la otra.
 
-Por lo tanto, la resolución de ALMA es de 0.0000036~o span class='box '>10 mas/span>: 10 milisegundos de arco. Lo que es muy preciso y permite sintetizar imágenes con gran detalle siguiendo el método que describiremos próximamente a la <a href="#s43_image">section 4.3</a>.
+Por lo tanto, la resolución de ALMA es de 0.0000036° o <span class='box'>10 mas</span>: 10 milisegundos de arco. Lo que es muy preciso y permite sintetizar imágenes con gran detalle siguiendo el método que describiremos próximamente a la <a href="#s43_image">section 4.3</a>.
 
 <div style="clear:both"></div>
 
@@ -465,72 +466,72 @@ Por lo tanto, la resolución de ALMA es de 0.0000036~o span class='box '>10 mas/
 
 Supongamos que la piedra no es puntual sino de un cierto tamaño.
 Entonces las olas generadas serán diferentes. Por ejemplo, no serán perfectamente esféricas al principio. Pero sobre todo no llegarán con un ángulo de incidencia único, un frente de onda recta, es decir, no serán lineales.
-Es como, por ejemplo, esas olas dobles que les gustan a los surfistas principiantes donde se añade, a la ola principal, una pequeña ola oblicua que permite levantarse antes. O las olas que se ven desde lejos, que se asemejan a una bahía. En resumen, olas donde el frente de onda, la línea que dibuja la parte superior de cada ola, no es una línea.
+Es como, por ejemplo, esas olas dobles que les gustan a los surfistas principiantes donde se añade, a la ola principal, una pequeña ola oblicua que permite levantarse antes. O las olas que se ven desde lejos, que se asemejan a la bahía que penetran. En resumen, olas donde el frente de onda, la línea que dibuja la parte superior de cada ola, no es una línea.
 
 
-Ya se sabe determinar la posición angular de un punto ([sección 3](s3_modulo)). Entonces si varios puntos emiten ondas, estas diferentes ondas se propagarán independientemente en el medio (véase [principio de superposición](https://fr.wikipedia.org/wiki/Principe_de_superposición)).
+Ya se sabe determinar la posición angular de un punto ([sección 3](#s3_modulo)). Entonces si varios puntos emiten ondas, estas diferentes ondas se propagarán independientemente en el medio (véase [principio de superposición](https://es.wikipedia.org/wiki/Principio_de_superposici%C3%B3n)).
 Los detectores recibirán la suma de cada onda. Es decir, la suma de las altitudes que habrían recibido por cada punto.
 
-En otras palabras, se puede predecir con precisión, con una suma, lo que los receptores medirán en función de la posición de las diferentes fuentes puntuales. A la inversa, se puede determinar la posición de cada una de las fuentes en función de los niveles medidos por la falta de información en recepción.
+En otras palabras, se puede predecir con precisión, con una suma, lo que los receptores medirán en función de la posición de las diferentes fuentes puntuales. A la inversa, se puede determinar la posición de cada una de las fuentes en función de los niveles medidos si no falta informaciones en recepción.
 
 <div>
-Esta falta de información se debe al hecho de que no hay flotadores en todas partes en la línea de medición. La ecuación matemática es compleja. El lector puede predecir palabras: falta de información, medida recíproca (alias inverso) sin hablar del error de medición.
-Pero afortunadamente para el físico o el 'aficionado que a menudo son los mismos, hay una regla<sup>[+]<div class="description">
-Valoro las reglas: una vez anotadas su campo de aplicación y sus efectos, que a menudo consisten en restringir el campo de las posibles, facilitan el proceso cognitivo. Véase, por ejemplo, mi lista de <a href=https://tinmarino.github.io/? show=cosmo_obs_cheat>10 cosmondements</a>. O aquí mismo algunos ejemplos que son casi definiciones:
+Esta falta de información se debe al hecho de que no hay flotadores en todas partes en la línea de medición. La ecuación matemática es compleja. El lector lo puede predecir de las palabras: falta de información, medida recíproca (alias inverso) sin hablar del error de medición.
+Pero afortunadamente para el físico o el aficionado que a menudo son los mismos, hay una regla<sup>[+]<div class="description">
+Valoro las reglas: una vez anotadas su campo de aplicación y sus efectos, que a menudo consisten en restringir el campo de las posibles, facilitan el proceso cognitivo. Véase, por ejemplo, mi lista de <a href=https://tinmarino.github.io/?show=cosmo_obs_cheat>10 cosmondements</a>. O aquí mismo algunos ejemplos que son casi definiciones:
 <ul>
 <li>La materia no atraviesa la materia.</li>
 <li>El tiempo pasa del pasado al futuro.</li>
-<li>Más presión, más rápido se va.</li>
+<li>Más presión hay, más rápido sale.</li>
 <li>Dos espacios parraleles nunca entran en contacto.</li>
 </ul>
-Muchos medios reclaman un nuevo descubrimiento que viola una de estas reglas.
-Simplemente mienten: si mi martillo lo atraviesa, no es materia; si viaja del futuro al pasado, no es real; si el flujo es más lento cuando lo subo, no es presión; finalmente si percibimos un espacio, No es paralelo al nuestro.
+Muchos medios afirman un nuevo descubrimiento que viola una de estas reglas.
+Simplemente mienten: si mi martillo lo atraviesa, no es materia; si viaja del futuro al pasado, no es real; si el flujo es más lento cuando lo subo, no es presión; finalmente si percibimos un espacio, no es paralelo al nuestro.
 </div></sup>
-en teoría de la información: <b>no se pueden medir al máximo tantos valores como se tiene de datos</b> (véase [Entropie de Shanon](https://fr.wikipedia.org/wiki/Entropie_de_Shannon)). Esto significa que se pueden ahorrar los cálculos y considerar que se pueden medir tantos ángulos de impacto de fuentes puntuales (olas) como un par independiente de detectores (flotadores).
-!-- Trick for sup --> <ul></ul>
+en teoría de la información: <b>se pueden medir al máximo tantos valores como se tiene de datos</b> (véase [Entropie de Shanon](https://es.wikipedia.org/wiki/Entrop%C3%ADa_(informaci%C3%B3n))). Esto significa que se pueden ahorrar los cálculos y considerar que se pueden medir tantos ángulos de impacto de fuentes puntuales (olas) como pares independientes de detectores (flotadores).
+<!-- Trick for sup --> <ul></ul>
 </div>
 
 <div>
 Como podemos medir el ángulo de varias fuentes puntuales, dividimos la forma de la fuente en varias subfuentes puntuales y luego interpolamos para encontrar la forma continua de la fuente original.<sup>[+]<div class="description">
-Existen varios algoritmos de interpolación y [desconvolución](https://en.wikipedia.org/wiki/Deconvolution) que pueden utilizarse para este fin:
+Existen varios algoritmos de interpolación y [desconvolución](https://es.wikipedia.org/wiki/Deconvoluci%C3%B3n) que pueden utilizarse para este fin:
 [CLEAN](https://en.wikipedia.org/wiki/CLEAN_(algorithm)), [Maximum Entropy Method](http://repositorio.uchile.cl/handle/2250/149958), Hybrid.<br/>
-Estos algoritmos difieren en las hipótesis que hacen en el emisor. Son iterativos y configurables.<br/>
+Estos algoritmos difieren en las hipótesis que hacen sobre el emisor. Son iterativos y configurables.<br/>
 Véase la página de [radioastronomía Español](http://www.iram.fr/IRAMFR/GILDAS/doc/html/map-html/node35.html) para una pequeña descripción agradable.
 </div></sup>
 </div>
 
-En resumen: vamos de un punto a una forma pasando por varios puntos. El término técnico de este enfoque es "Descrédito".
+En resumen: vamos de un punto a una forma pasando por varios puntos. El término técnico de este enfoque es "Discretización".
 
 
 ## 4.3/ <a name="s43_image"></a> Reconstrucción de imagen
 
 De esta manera, con varias líneas de base, es posible detectar simultáneamente olas procedentes de diferentes lugares.
-La comprensión de los detalles de este proceso implica una visión eficaz de las sumas de sinusoides que proporciona la [transformación de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier) o las [ondelettes](https://fr.wikipedia.org/wiki/Ondelette) y hará quizásser objeto de un capítulo 2.
+La comprensión de los detalles del proceso matemático implica una visión eficaz de las sumas de sinusoides que proporciona la [transformada de Fourier](https://es.wikipedia.org/wiki/Transformada_de_Fourier) o las [ondícula](https://es.wikipedia.org/wiki/Ond%C3%ADcula) y hará quizásser objeto de un capítulo 2.
 
-Para los impacientes, no olviden el [principio de retorno inverso de la luz](https://es.wikipedia.org/wiki/Principe_de_Fermat#Principe_du_retour_inverse_de_la_lumi%C3%A8re)
-que permite experimentar el pensamiento de la inversión del transmisor y del receptor y garantiza que el curso de la luz será el mismo.
-Por lo tanto, "basta" con propagar lo que se recibe como olas, como agitar los tapones artificialmente en agua tranquila. Y la onda, la ola, que veremos en el infinito será... la fuente!
+Para los impacientes, no olviden el [principio de retorno inverso de la luz](https://es.wikipedia.org/wiki/Principio_de_Fermat)
+que permite hacer la experiencia de pensamiento de la inversión del transmisor y del receptor y garantiza que el curso de la luz será el mismo.
+Por lo tanto, "basta" con propagar lo que se recibe como olas, como agitar los corchos artificialmente en agua tranquila. Y la onda, la ola, que veremos en el infinito será... la fuente!
 
 Si usted ha hecho esta experiencia de pensamiento, usted acaba de reconstruir la imagen. O la transformada de Fourier de la distribución de intensidad de los pares de receptores para sacar las palabrotas. En cualquier caso, buen trabajo!
 
 
 ## 4.4/ <a name="s44_spectre"></a> Con varias longitudes de onda
 
-No aquí serio, se vuelve complicado: hay más parámetros a determinar (posiciones, longitudes de onda) que parámetros medibles. Sin información a priori, es imposible porque es absurdo (véase [parcimonie](https://fr.wikipedia.org/wiki/Parcimonie) y luego [entropie de Shannon](https://fr.wikipedia.org/wiki/Entropie_de_Shannon)).
+No, aquí, en serio, se vuelve complicado: hay más parámetros a determinar (posiciones, longitudes de onda) que parámetros medibles. Sin información a priori, es imposible porque es absurdo (véase [parsimonia](https://es.wikipedia.org/wiki/Navaja_de_Ockham) y luego [entropie de Shannon](https://es.wikipedia.org/wiki/Entrop%C3%ADa_(informaci%C3%B3n))).
 
 <blockquote> Pluralitas non est ponenda sine necessitate </blockquote>
 
 La solución más simple en este caso, el caso real, es limitar físicamente:
 
 1. El campo de visión con diques que bloquean las olas que no vienen de la dirección de observación. En efecto, contaminarían la medida.
-2. Frecuencias medidas con filtros estrechos.<sup>[+]<div class="description">
-El espesor del filtro $ Delta lambda$ es muy inferior a $lambda$, la longitud de onda central del filtro.<br/>
-Por ejemplo, para nuestros flotadores bajo ondas de frecuencia $0.1s$, limitaríamos la velocidad de oscilación de los flotadores a $0.1s pm pequeño times 0.1s$. Digamos $0.1s pm0.00001s$<br/>
+2. Las frecuencias medidas con filtros estrechos.<sup>[+]<div class="description">
+El espesor del filtro $\Delta\lambda$ es muy inferior a $\lambda$, la longitud de onda central del filtro.<br/>
+Por ejemplo, para nuestros flotadores bajo ondas de frecuencia $0.1s$, limitaríamos la velocidad de oscilación de los flotadores a $0.1s \pm pequeno \times 0.1s$. Digamos $0.1s \pm 0.00001s$<br/>
 </div></sup>
 Al forzar la velocidad de oscilación de los corchos, las olas más rápidas o más lentas serán ignoradas.
 
-Esta reducción del perímetro de análisis es realizada por telescopios independientes para reducir el ruido y el coste de las mediciones.
-En apertura sintética, esta reducción añade la ventaja de disminuir la falta de información. Esto reduce el ruido sistemático de la medición (alias [sesgo](https://fr.wikipedia.org/wikiBiais_(statistics)).
+Esta reducción del perímetro de análisis es realizada por telescopios independientes para reducir el ruido y el costo de las mediciones.
+En apertura sintética, esta reducción añade la ventaja de disminuir la falta de información. Esto reduce el ruido sistemático de la medición (alias [sesgo](https://es.wikipedia.org/wiki/Sesgo_estad%C3%ADstico)).
 
 
 
@@ -545,56 +546,58 @@ El concepto matemático utilizado por un telescopio de apertura sintética es id
 Para enriquecer el vocabulario del lector, aquí está la analogía:
 
 
-| Esta explicación | [ALMA](https://fr.wikipedia.org/wiki/Grand_r%C3%A9seau_d%27antennes_millim%C3%A9trique/submillim%C3%A9trique_de_l%27Atacama) |
-| --- | -- |
-| Onda | Onda electromagnética |
-| Guijarros | Estrella |
-| Tapón | Antena |
-| Posición | Aceleración del electrón |
+| Esta explicación | [ALMA](https://es.wikipedia.org/wiki/Atacama_Large_Millimeter_Array) |
+| ---              | --- |
+| Onda             | Onda electromagnética |
+| Guijarros        | Estrella |
+| Tapón            | Antena |
+| Posición         | Aceleración del electrón |
 
 Tengo la esperanza de haber demostrado al lector que, como yo mismo, ignora mucho sobre la naturaleza de las olas de superficie agua-aire. Sin embargo, en términos generales, sabe de qué se trata.
 También es interesante comprender la noción de onda electromagnética (alias: luz, fotón).
 
 ¿Cuál es la diferencia entre la piedra y el corcho? (Pensar... respuesta:) El primero emite olas moviéndose verticalmente en el agua y el segundo se mueve verticalmente sobre el agua cuando recibe olas. Además, si agitara artificialmente el tapón, emitiría olas. Así que la diferencia no está en su naturaleza, sino en su comportamiento.
 
-La aceleración de una carga eléctrica, típicamente un electrón, genera la emisión de un [fotón](https://fr.wikipedia.org/wiki/Photon) y viceversa la recepción de un fotón provoca la aceleración de un electrón.<br/>
+La aceleración de una carga eléctrica, típicamente un electrón, genera la emisión de un [fotón](https://es.wikipedia.org/wiki/Fot%C3%B3n) y viceversa la recepción de un fotón provoca la aceleración de un electrón.<br/>
 Agitando artificialmente un electrón en una antena, por ejemplo con un imán, se puede transmitir una señal fotónica a una antena vecina
 en la cual, el fotón acelerará un electrón, mensurable por ejemplo con un imán.<br/>
-El fotón es el [portador de la fuerza] (https://en.wikipedia.org/wiki/Force_carrier) [electromagnético](https://fr.wikipedia.org/wiki/%C3%89lectromagn%C3%A9tisme).
+El fotón es el [portador de la fuerza](https://en.wikipedia.org/wiki/Force_carrier) [electromagnética](https://es.wikipedia.org/wiki/Electromagnetismo).
 
-La luz, colonia de fotones congelados en el tiempo y que se adentran en el espacio, es muy interesante tanto para la investigación como para la enseñanza científica. Lo que, en sí mismo, es natural porque es lo único que se ve. Sepan que un geólogo tendría la misma retórica para el sonido.
+La luz, colonia de fotones congelados en el tiempo y corriendo en el espacio, es muy interesante tanto para la investigación como para la enseñanza científica. Lo que, en sí mismo, es natural porque es lo único que se ve. Sepan que un geólogo tendría la misma retórica para el sonido.
 
 
 ## 5.2/ <a name="s52_antenna_vs_telescope"></a> Antena > Telescopio
 
 Este documento les ha explicado, espero, la síntesis de apertura, técnica utilizada principalmente por las redes de antenas.
-En este sentido, me permito explicarles por qué las antenas (reflector + [oscilloscope](https://fr.wikipedia.org/wiki/Oscilloscope)) son superiores a los telescopios (espejo + [CCD](https://fr.wikipedia.org/wikiCapteur_photographique_CCD) o [bolometro](https://fr.wikipedia.org/wiki/Bolom%C3%A8tre)). La respuesta está en el procesamiento de la señal eléctrica en comparación con la óptica.
+En este sentido, me permito explicarles por qué las antenas (reflector + [osciloscopio](https://es.wikipedia.org/wiki/Osciloscopio)) son superiores a los telescopios (espejo + [CCD](https://es.wikipedia.org/wiki/Dispositivo_de_carga_acoplada) o [bolometro](https://es.wikipedia.org/wiki/Bol%C3%B3metro)). La respuesta está en el procesamiento de la señal eléctrica en comparación con la óptica.
 
 
 El osciloscopio tiene la capacidad de medir simultáneamente fase y amplitud mientras que la CCD o el bolometro sólo mide la intensidad (amplitud al cuadrado).
 Esta capacidad permite a la red de antenas registrar todas sus mediciones para que las máquinas hagan, a posteriori, el tratamiento de la señal.
-Por lo tanto, la correlación se realiza, en silencio, con las computadoras. Mientras que en la óptica, la correlación debe hacerse en tiempo real, con un banco óptico vulnerable a la mínima oscilación, en medio de las máquinas a 3500m de altitud, en un país sísmico. Cada adquisición del VLTI (óptica) es una aventura humana. Las adquisiciones de ALMA (radio) comienzan a parecerse a un crucero (excepto para las computadoras que virtualizan todo el banco óptico).<br/>
+Por lo tanto, la correlación se realiza, tranquilo, con las computadoras.
+Mientras que en la óptica, la correlación debe hacerse en tiempo real, con un banco óptico vulnerable a la mínima oscilación, en medio de las máquinas a 3500m de altitud, en un país sísmico.
+Cada adquisición del VLTI (óptica) es una aventura humana. Las adquisiciones de ALMA (radio) comienzan a parecerse a un crucero (excepto para las computadoras que virtualizan todo el banco óptico).<br/>
 Además, una señal eléctrica puede multiplicarse con mucho menos ruido que una señal óptica. Esto facilita la síntesis de la apertura con más de dos antenas. Por ejemplo, ALMA tiene 66, mientras que el VLTI tiene sólo... 2.
 
 
-## 5.3/ <a name="s53_cost"></a> Coste de cálculo
+## 5.3/ <a name="s53_cost"></a> Costo de cálculo
 
-El coste de cálculo de la tubería de procesamiento de imágenes está ampliamente dominado por el correlador, como usted va a entender rápidamente.
-Tenga en cuenta que los cálculos son aproximados (a un factor 10 véase 1000 prenso).
+El costo de cálculo de la tubería de procesamiento de imágenes está ampliamente dominado por el correlador, como usted va a entender rápidamente.
+Tenga en cuenta que los cálculos son aproximados (a un factor 10).
 
 #### Correlador
 
-* __Líneas de base:__ ALMA tiene 66 antenas $ frac{66 times 65}{2} = 2.145$ pares (en la práctica [1291](https://public.nrao.edu/telescopes/alma/)).
+* __Líneas de base:__ ALMA tiene 66 antenas $\frac{66 \times 65}{2} = 2.145$ pares (en la práctica [1291](https://public.nrao.edu/telescopes/alma/)).
 
 * __Muestreo:__ El observatorio mide una onda de 1mm de frecuencia 300GHz.
-después del [teorema de muestreo](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27%C3%A9muestreo),
+después del [teorema de muestreo](https://es.wikipedia.org/wiki/Teorema_de_muestreo_de_Nyquist-Shannon),
 es necesario tomar muestras a una frecuencia superior al doble de la frecuencia, es decir, de 600GHz.
 
 * __Operación elemental:__ Para cada muestra temporal de la onda hay que hacer una multiplicación compleja, es decir, 4 multiplicaciones reales.
 
 Supongamos que el procesador (FPGA) tiene una frecuencia de reloj de 1GHz, y hace una multiplicación en 2 tiempos de relojes. Entonces el número de procesadores:
 
-$$ N_{CPU} = 2145 times frac{600 [Ghz]}{1 [Ghz]}| times 4 times 2 = 102 : millions$$
+$$ N_{CPU} = 2145 \times \frac{600 [Ghz]}{1 [Ghz]} \times 4 \times 2 = 102 \: millions$$
 
 El correlador de ALMA tiene 130 millones de procesadores FPGA: ¡es una gran máquina!
 
@@ -604,26 +607,27 @@ A hacer cada minuto como máximo.
 Una única operación que, desde una imagen correlacionada, da la ganancia asociada a cada antena.
 Algunos procesadores deberían bastar.
 
-#### Reductor de imagen
+#### Redución de imagen
 
 Esto sólo se hace de una vez por todas las adquisiciones correlacionadas y calibradas del mismo lugar del cielo.
 Esta operación no es crítica y se puede hacer en calma, 40 días después de la adquisición.
-Es un algoritmo recursivo que hará 1000 transformados de Fourier de una imagen de, digamos $1.000 times 1.000$ = 1M pixels (seamos ingenuos).
+Es un algoritmo recursivo que hará 1000 transformadas de Fourier de una imagen de, digamos $1.000 times 1.000$ = 1M pixels (seamos ingenuos).
 
-La transformada de Fourier tiene un coste de $N times log(N)$ donde N es el número de píxeles (véase [transformación de Fourier rapide](https://fr.wikipedia.org/wiki/Transformation_de_Fourier_rapide)).
+La transformada de Fourier tiene un coste de $N \times log(N)$ donde N es el número de píxeles (véase [transformación de Fourier rapide](https://es.wikipedia.org/wiki/Transformada_r%C3%A1pida_de_Fourier)).
 Si cada operación toma 8 ciclos de relojes como en el ejemplo anterior, el número de tiempos de reloj es entonces:
 
-$$ N_{tick} = 1k times 1M times log(1M) times 8 = 110G$
+$$ N_{tick} = 1k \times 1M \times log(1M) \times 8 = 110G$
 
-Es decir, 110 mil millones de dólares. Un procesador de 1GHz hará esta reducción en 110 segundos.
+Es decir, 110 mil millones de operaciones. Un procesador de 1GHz hará esta reducción en 110 segundos.
+Para ir más rapido, comprar un mejor procesador.
 Para una calidad superior, más iteraciones se pueden realizar en serie.
 
-hr>
+<hr>
 
 Para resumir esta sección: como era de esperar, una red de antenas real es más precisa pero más costosa que una red de flotadores.
 
 
-# Optionnel/ <a name="so_new_limit"></a> Limitaciones de la red de antenas
+# Opcional/ <a name="so_new_limit"></a> Limitaciones de la red de antenas
 
 <blockquote> Dura lex, sed lex </blockquote>
 
@@ -673,7 +677,7 @@ Para resumir esta sección: como era de esperar, una red de antenas real es más
 
 <!-- Discretisation Right -->
 <figure style="float: right; width:300px;" >
-  <a name="f_fente"></a>
+  <a name="f_parabol"></a>
   <img style='width:100%' src='Figure/54_parabola.svg' alt='missing'></img>
   <figcaption>
     <b>Interpolación de parábola:</b>
@@ -682,12 +686,12 @@ Para resumir esta sección: como era de esperar, una red de antenas real es más
 </figure>
 
 
-Las dos figuras anteriores representan la experiencia de [ranuras de Young] (https://fr.wikipedia.org/wikiFentes_de_Young).
+Las dos figuras anteriores representan la experiencia de [ranuras de Young] (https://es.wikipedia.org/wiki/Experimento_de_Young).
 Se puede calcular que el lóbulo principal es dos veces más pequeño para una figura de difracción con dos aberturas separadas de una distancia "d" (véase la figura <a href="#f_fente2">dos ranuras</a>) que para una figura de difracción de una abertura de tamaño "d" (véase la figura <a href="#f_fente1">una ranura</a>).
 Por lo tanto, la resolución es el doble para las pequeñas ranuras separadas.
 Por el contrario, los lóbulos secundarios son más intensos y por lo tanto el ruido es superior.<br/>
 En ambos casos, la resolución angular es de aproximadamente
-span class= 'box '>$ lambda/ D$/span> radians. Donde D es el tamaño máximo de la apertura (potencialmente agujereada) y $lambda$, para cambiar, la longitud de onda.
+<span class= 'box'>$\lambda/D$</span> radians. Donde D es el tamaño máximo de la apertura (potencialmente agujereada) y $\lambda$, para variar, la longitud de onda.
 
 <div>
 El tema de la forma perfecta de una parábola (e.d. ¿es necesario agujerearla?) es objeto de investigación.<sup>[+]<div class="description">
@@ -701,12 +705,12 @@ El tema de la forma perfecta de una parábola (e.d. ¿es necesario agujerearla?)
 
 Aquí hay algunos enlaces para comprender la mecánica física del recorrido de la luz y que justifican el análisis anterior.
 
-1. Propagaciones de la luz, formalismo sobre las ondas: avanza oscilando, girando en el plano complejo: [ecuación de Helmoth](https://en.wikipedia.org/wiki/Helmholtz_equation).
-2. El espectro angular es la transformada de Fourier de la forma del emisor: [ondas planas](https://fr.wikipedia.org/wiki/Spectre_d%27ondes_planes)).
-3. Una onda se comporta como si cada punto agitado se comportara como un emisor secundario: [principio de Huygens-Fresnel](https://fr.wikipedia.org/wiki/Principe_de_Huygens-Fresnel).
+1. Propagaciones de la luz, formalismo sobre las ondas: avanza oscilando, girando en el plano complejo: [ecuación de Helmoth](https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_de_Helmholtz).
+2. El espectro angular es la transformada de Fourier de la forma del emisor: [ondas planas](https://en.wikipedia.org/wiki/Angular_spectrum_method)).
+3. Una onda se comporta como si cada punto agitado se comportara como un emisor secundario: [principio de Huygens-Fresnel](https://es.wikipedia.org/wiki/Principio_de_Fresnel_-_Huygens).
 4. Una onda que atraviesa una abertura se dispersará: [teoría de la difracción](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_diffraction).
-5. Figura de difracción lejos de la apertura: [difracción de Fraunhoffer](https://fr.wikipedia.org/wiki/Diffraction_de_Fraunhofer).
-6. No se puede ver un objeto más pequeño que la longitud de onda: [difracción de Fresnel](https://es.wikipedia.org/wiki/Diffraction_de_Fresnel). ¡Esto no es para nosotros!
+5. Figura de difracción lejos de la apertura: [difracción de Fraunhoffer](https://es.wikipedia.org/wiki/Difracci%C3%B3n_de_Fraunhofer).
+6. No se puede ver un objeto más pequeño que la longitud de onda: [difracción de Fresnel](https://es.wikipedia.org/wiki/Difracci%C3%B3n_de_Fresnel). ¡Pero esto no es para nosotros!
 
 
 
@@ -714,13 +718,13 @@ Aquí hay algunos enlaces para comprender la mecánica física del recorrido de 
 
 <blockquote> Quid Novi </blockquote>
 
-La sección 5 muestra que es posible detectar la agitación electrónica extraterrestre a través de otra inducida en la Tierra. En la sección 1 se indican las limitaciones. Por último, las otras secciones explican cómo la correlación de varios receptores remotos puede empujar el límite a la de un telescopio del tamaño de su separación.
+La sección 5 muestra que es posible detectar la agitación electrónica extraterrestre a través de otra inducida en la Tierra. En la sección 1 se indican las limitaciones. Las otras secciones explican cómo la correlación de varios receptores remotos puede empujar el límite a la de un telescopio del tamaño de su separación.
 
 Ahora el lector debe haber entendido:
 
 * El origen de la [limitación de telescopios](#s1_limit).
-* [Comment](#s3_modulo) determinar la posición angular de una fuente mediante la correlación entre dos receptores.
-* La [diferencia entre interferometría y triangulación](#s41_triangulación).
+* [Como](#s3_modulo) determinar la posición angular de una fuente mediante la correlación entre dos receptores.
+* La [diferencia entre interferometría y triangulación](#s41_triangulation).
 * Por qué se necesitan más de dos receptores para [formar una imagen](#s43_image).
 * Por qué el correlador tiene una importante [carga de cálculo](#s53_cost).
 * Por qué la síntesis de apertura es más fácil con [antenas que con telescopios] (#s52_antenna_vs_telescope).
@@ -729,7 +733,7 @@ Esta guía práctica está completa.
 Espero que lo hayas leído lentamente o la comprensión debe haber sido laboriosa.
 De todos modos, gracias por la lectura y felicitaciones por el esfuerzo.
 Si has aprendido algo nuevo, es una pequeña victoria.
-Que la celebres mañana para despertar con más entusiasmo que ayer.
+Que la celebres para, mañana, despertar con más entusiasmo que ayer.
 
 
 # <a name="s_link"></a> Enlaces para ir más lejos
@@ -750,11 +754,11 @@ Que la celebres mañana para despertar con más entusiasmo que ayer.
 
 * [Electrodinámica cuántica](http://www.johnboccio.com/courses/QESMS_2017/QED.pdf): QED por Richard Feynman, principio de Huygens-Fresnel (1678) operado por Feynman (1992) en la teoría cuántica de los campos. Explicación sin Matemáticas para todos.
 
-* [Síntesis de apertura de Caltech](http://web.ipac.caltech.edu/staff/fmasci/home/astro_refs/InverseImageProblem.pdf): Sólo Caltécnicamente perfecto.
+* [Síntesis de apertura de Caltech](http://web.ipac.caltech.edu/staff/fmasci/home/astro_refs/InverseImageProblem.pdf): Simplemente Caltécnicamente perfecto.
 
 * [Muestreo perfecto](https://svi.nl/IdealSampling): buena explicación de la tasa de Nyquist.
 
-* [Sistemas ópticos limitados por difracción](https://es.wikipedia.org/wiki/Fonction_de_transfert_optique#Syst%C3%A8me_optique_limit%C3%A9_par_la_diffraction): por wikipedia con amor.
+* [Sistemas ópticos limitados por difracción](https://es.wikipedia.org/wiki/Fonction_de_transfert_optique#Syst%C3%A8me_optique_limit%C3%A9_par_la_diffraction): de wikipedia con amor.
 
 * [Visibilidad y mancha de Airy] (https://web.njit.edu/~Gary/728/Lecture6.htm)
 

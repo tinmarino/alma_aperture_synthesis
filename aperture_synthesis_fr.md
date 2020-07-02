@@ -404,7 +404,7 @@ Distance entre les deux yeux &nbsp;&nbsp;&&nbsp;&nbsp; angle oeil droit &nbsp;&n
 
 <div class="border-aqua">
 <b>L'Interférométrie :</b>
-permet de connaitre l'angle de l'émetteur. Elle suppose que chaque détecteur puisse mesurer l'intensité et la phase de l'onde incidente. C'est-à-dire la taille des vagues __et__ l'altitude du flotteur.
+permet de connaitre l'angle de l'émetteur. Elle suppose que chaque détecteur puisse mesurer l'intensité __et__ la phase de l'onde incidente. C'est-à-dire la taille des vagues __et__ l'altitude du flotteur.
 Au contraire, dans la triangulation, il n'est jamais question de la nature ondulatoire des raies. Par ailleurs: 1/ l'oeil humain est incapable de mesurer la phase de la lumière incidente et 2/ les capteurs interférométriques<sup>[+]<div class="description">
 Exemple de capteur :<br/>
 <b>1/ Antenne radio</b><br/>
@@ -424,7 +424,7 @@ Distance entre les capteurs &nbsp;&nbsp;&&nbsp;&nbsp; phase capteur droit &nbsp;
 <div>
 En les rapprochant, la vulgarisation fait une analogie facilement compréhensible mais incorrecte.
 De plus, la distance des astres lointains par triangulation est impossible.<sup>[+]<div class="description">
-La distance des astres est bien plus grande que celle des capteurs et ces derniers les voient à une distance infinie.<br/>
+Le diamètre apparent des astres est bien plus petit que la résolution angulaire des capteurs et ces derniers les voient à une distance infinie.<br/>
 Pour mesurer la distance  des astres (étoiles, supernovaes, galaxies), les physiciens font appel à une compréhension fine de ces derniers, respectivement : luminosité, décroissance lumineuse et fréquences d'oscilations connues décalés par l'expansion de l'univers.
 </div></sup>
 Maintenant que vous savez que ces mécanismes sont différents, vient, à mon avis, une question légitime : <b>quel est l'avantage de l'interférométrie ?</b><sup>[+]<div class="description">
@@ -437,7 +437,8 @@ Alors pourquoi construisons nous des observatoires artificiels ? On sent que la 
 Nous avons, dans l'exemple précédent, séparer deux bouchons de 2m pour mesurer l'orientation d'une vague de 10cm de longueur d'onde. En effet, c'était plus facile à dessiner.
 En réalité, les antennes d'ALMA sont séparées de 16km et mesurent l'angle d'incidence d'une onde de 1mm. En gardant notre exemple avec nos vagues et nos flotteurs, c'est comme si on séparait les flotteurs de
 $16km \times \frac{10cm}{1mm}$
-$= 1600 km$. À cette distance, les flotteurs peuvent mesurer la différence entre une vague venant de $\theta=0$ et une vague venant de
+$= 1600 km$.
+À cette distance, les flotteurs peuvent mesurer la différence entre une vague venant de $\theta=0$ et une vague venant de
 $\theta$
 $= arcsin\left(\frac{10cm}{1600km}\right)$
 $= 0.0000036°$,
@@ -460,10 +461,10 @@ Alors, les vagues engendrées seront différentes. Par exemple, elles ne seront 
 C'est comme, par exemple, ces doubles vagues qu'aiment les surfeurs débutants où s'ajoute, à la vague principale, une petite vague oblique qui permet de se lever plus tôt. Ou ces vagues qu'on voit de loin qui épousent la forme d'une baie. Bref, des vagues où le front d'onde, la ligne que dessine le haut de chaque vague, n'est pas une ligne.
 
 
-On sait déjà déterminer la position angulaire d'un point ([section 3](s3_modulo)). Alors si plusieurs points émettent des ondes, ces différentes ondes se propageront indépendamment dans le milieu (voir [principe de superposition](https://fr.wikipedia.org/wiki/Principe_de_superposition)).
+On sait déjà déterminer la position angulaire d'un point ([section 3](#s3_modulo)). Alors si plusieurs points émettent des ondes, ces différentes ondes se propageront indépendamment dans le milieu (voir [principe de superposition](https://fr.wikipedia.org/wiki/Principe_de_superposition)).
 Les détecteurs recevront donc la somme de chaque onde. C'est-à-dire la somme des altitudes qu'ils auraient reçu pour chaque point.
 
-En d'autre termes, on peut prédire précisément, avec une somme, ce que les récepteurs mesureront en fonctions de la positions des différentes sources ponctuelles. Réciproquement, on peut déterminer la position de chacune des sources en fonction des niveaux mesurés moyennant le manque d'information en réception.
+En d'autre termes, on peut prédire précisément, avec une somme, ce que les récepteurs mesureront en fonctions de la positions des différentes sources ponctuelles. Réciproquement, on peut déterminer la position de chacune des sources en fonction des niveaux mesurés s'il ne manque pas d'informations en réception.
 
 <div>
 Ce manque d'information est dû au fait qu'il n'y a pas de flotteurs partout sur la ligne de mesure. L'équation mathématique est complexe. Le lecteur peut le prédire des mots : manque d'information, mesure réciproque (alias inverse) sans parler de l'erreur de mesure.
@@ -475,7 +476,7 @@ J'apprécie les règles : une fois notés leur champ d'application et leurs effe
 <li>Plus y'a de pression, plus ça part vite.</li>
 <li>Deux espaces parrallèles n'entrent jamais en contact.</li>
 </ul>
-Beaucoup de médias revendiquent une nouvelle découverte qui enfreint un de ces règles.
+Beaucoup de médias affirment une nouvelle découverte qui enfreint un de ces règles.
 Simplement ils mentent : si mon marteau la traverse, ce n'est pas de la matière; si ça voyage du futur vers le passé, ce n'est pas réel; si le flux est plus lent lorsque je l'augmente, ce n'est pas de la pression; enfin si on perçoit un espace, c'est qu'il n'est pas parallèle au nôtre.
 </div></sup>
 en théorie de l'information : <b>on ne peut mesurer au maximum autant de valeurs que l'on a de données</b> (voir [Entropie de Shanon](https://fr.wikipedia.org/wiki/Entropie_de_Shannon)). Ça veut dire qu'on peut s'épargner les calculs et considérer qu'on peut mesurer autant d'angles d'incidences de sources ponctuelles (vagues) que l'on a de paire indépendante de détecteurs (flotteurs).
@@ -497,7 +498,7 @@ En résumé : nous allons d'un point à un forme en passant par plusieurs points
 ## 4.3/ <a name="s43_image"></a> Reconstruction d'image
 
 De cette manière, avec plusieurs lignes de base, il est possible de détecter simultanément des vagues provenant de différents endroits.
-La compréhension des détails de ce processus implique une vision performante des sommes de sinusoïdes que procure la [transformation de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier) ou les [ondelettes](https://fr.wikipedia.org/wiki/Ondelette) et fera peut-être l'objet d'un chapitre 2.
+La compréhension des détails du processus mathématique implique une vision performante des sommes de sinusoïdes que procure la [transformation de Fourier](https://fr.wikipedia.org/wiki/Transformation_de_Fourier) ou les [ondelettes](https://fr.wikipedia.org/wiki/Ondelette) et fera peut-être l'objet d'un chapitre 2.
 
 Pour les impatients, n'oubliez pas le [principe de retour inverse de la lumière](https://fr.wikipedia.org/wiki/Principe_de_Fermat#Principe_du_retour_inverse_de_la_lumi%C3%A8re)
 qui permet de faire l'expérience de pensée d'inversion de l'émetteur et du récepteur et garantit que le parcours de la lumière sera le même.
@@ -663,7 +664,7 @@ Pour résumé cette section : comme on pouvait s'y attendre, un réseau d'antenn
 
 <!-- Discretisation Right -->
 <figure style="float: right; width:300px;" >
-  <a name="f_fente"></a>
+  <a name="f_parabol"></a>
   <img style='width:100%' src='Figure/54_parabola.svg' alt='missing'></img>
   <figcaption>
     <b>Interpolation de parabole :</b>

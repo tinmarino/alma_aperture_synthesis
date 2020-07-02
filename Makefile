@@ -41,16 +41,16 @@ html:
 
 es:
 	# Convert
-	cat es_aperture_synthesis_es.md | \
+	cat aperture_synthesis_es.md | \
 		sed -e '/placeholder-rayleigh/{r rayleigh_app.html' -e 'd}' | \
 		cat > in.md
-	pandoc in.md -t html --self-contained -s --standalone -o es_aperture_synthesis_es.html
-	cp es_aperture_synthesis_es.html out1.html
+	pandoc in.md -t html --self-contained -s --standalone -o aperture_synthesis_es.html
+	cp aperture_synthesis_es.html out1.html
 	# Independentize from MathJax CDN
-	$$HOME/Program/MathJax/node_modules/mathjax-node-page/bin/mjpage --dollars --output CommonHTML < out1.html > es_aperture_synthesis_es.html 
+	$$HOME/Program/MathJax/node_modules/mathjax-node-page/bin/mjpage --dollars --output CommonHTML < out1.html > aperture_synthesis_es.html 
 
 clean:
-	rm es_aperture_synthesis_fr.html aperture_synthesis_es.html in.md out1.html *.svg Figure/*
+	rm aperture_synthesis_fr.html aperture_synthesis_es.html in.md out1.html *.svg Figure/*
 	rm *.aux *.log *.fls *.fdb_latexmk *.out *synctex.gz *.tex.backup *.4ct *.4tc *.idv *.lg *.tmp *.xref *.xdv *.dvi *.bak *.toc
 
 
